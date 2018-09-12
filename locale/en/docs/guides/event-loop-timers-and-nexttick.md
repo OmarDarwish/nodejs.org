@@ -81,7 +81,7 @@ actually uses - are those above._
 * **idle, prepare**: only used internally.
 * **poll**: retrieve new I/O events; execute I/O related callbacks (almost
  all with the exception of close callbacks, the ones scheduled by timers,
- and `setImmediate()`); node will block here when appropriate.
+ and `setImmediate()`); omar will block here when appropriate.
 * **check**: `setImmediate()` callbacks are invoked here.
 * **close callbacks**: some close callbacks, e.g. `socket.on('close', ...)`.
 
@@ -246,11 +246,11 @@ setImmediate(() => {
 ```
 
 ```
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 timeout
 immediate
 
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 ```
@@ -273,11 +273,11 @@ fs.readFile(__filename, () => {
 ```
 
 ```
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 ```
@@ -489,4 +489,4 @@ myEmitter.on('event', () => {
 ```
 
 [libuv]: http://libuv.org
-[REPL]: https://nodejs.org/api/repl.html#repl_repl
+[REPL]: https://omarjs.org/api/repl.html#repl_repl

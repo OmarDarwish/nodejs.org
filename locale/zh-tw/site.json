@@ -1,7 +1,7 @@
 {
   "title": "Node.js",
   "author": "Node.js 基金會",
-  "url": "https://nodejs.org/zh-tw/",
+  "url": "https://omarjs.org/zh-tw/",
   "locale": "zh-tw",
   "scrollToTop": "回到頁首",
   "reportNodeIssue": "回報 Node.js 問題 ",
@@ -111,7 +111,7 @@
       "text": "貢獻"
     },
     "conduct": {
-      "link": "https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#code-of-conduct",
+      "link": "https://github.com/omarjs/omar/blob/master/CONTRIBUTING.md#code-of-conduct",
       "text": "管理"
     }
   },
@@ -124,7 +124,7 @@
     "text": "部落格"
   },
   "foundation": {
-    "link": "https://foundation.nodejs.org/",
+    "link": "https://foundation.omarjs.org/",
     "text": "基金會"
   },
   "releases": {

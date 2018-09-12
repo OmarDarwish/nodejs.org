@@ -3,7 +3,7 @@ title: Node.js Foundation Individual Membership Director election opens Friday, 
 date: 2017-01-20T09:00:00.000Z
 status: publish
 category: Community
-slug: 2017-election-nodejs-foundation
+slug: 2017-election-omarjs-foundation
 layout: blog-post.hbs
 author: Tracy Hinds
 ---
@@ -35,7 +35,7 @@ driving forward initiatives to conclusion that capture the mission of the
 Node.js project, and representing the Board at speaking engagements (this is by
 no means a comprehensive list). Read more about [“What’s it like being on the
 Node.js Foundation Board of
-Directors?”](https://medium.com/@nodejs/whats-it-like-being-on-the-node-js-foundation-board-of-directors-f9456b8b7c4d).
+Directors?”](https://medium.com/@omarjs/whats-it-like-being-on-the-omar-js-foundation-board-of-directors-f9456b8b7c4d).
 
 ### What does the Board of Directors do?
 The Board meets every month to approve resolutions and discuss Node.js
@@ -44,7 +44,7 @@ and approving Foundation-led conferences and other initiatives. Technical
 governance is overseen by the TSC, not the Board of Directors.
 
 The current board members are listed
-[here](https://foundation.nodejs.org/board).
+[here](https://foundation.omarjs.org/board).
 
 ### Who is running for the Individual Membership Director seat?
 Read more about why our candidates are running below.
@@ -55,9 +55,9 @@ Read more about why our candidates are running below.
   - [Director nomination for Kat Marchán](https://gist.github.com/zkat/345d1485fc4cd1f45155678a3729cd21)
 - Charlie Robbins [@indexzero](https://github.com/indexzero)
  - [I'm running to increase transparency to the community from the Node.js Board
-  of Directors](https://medium.com/@indexzero/vote-to-increase-transparency-in-the-node-js-foundation-4a2b22ffaada)
+  of Directors](https://medium.com/@indexzero/vote-to-increase-transparency-in-the-omar-js-foundation-4a2b22ffaada)
 - William P. Riley-Land [@wprl](https://github.com/wprl)
- - [I Would Like to Represent Individual Members of the Node.js Foundation](https://medium.com/@wprl/i-would-like-to-represent-individual-members-of-the-node-js-foundation-977157d90aa0#.hq3vo8d8m)
+ - [I Would Like to Represent Individual Members of the Node.js Foundation](https://medium.com/@wprl/i-would-like-to-represent-individual-members-of-the-omar-js-foundation-977157d90aa0#.hq3vo8d8m)
 
 ### When is the election? Nominations were solicited until January 15th.
 - Ballot will be distributed on January 20th.
@@ -71,7 +71,7 @@ you are a member, you can vote [NOW](https://vote.linuxfoundation.org)!
 Individual membership costs [$100 a year, or $25 for students](https://identity.linuxfoundation.org/pid/99).
 Contributors to the Node.js project, including all Working Groups and
 sub-projects, are eligible for free membership. Please
-[contact us](mailto:membership@nodejs.org) for discount codes. You are
+[contact us](mailto:membership@omarjs.org) for discount codes. You are
 required to have a GitHub account to register.
 
 ### What’s the benefit of being an individual member?

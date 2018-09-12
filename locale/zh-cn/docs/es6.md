@@ -14,7 +14,7 @@ Node.js 不是为 [V8](https://developers.google.com/v8/) 引擎构建的。为�
 
 ## 默认情况下什么特性随着 Node.js一起发布？
 
-[node.green](http://node.green) 提供了非常完整、几乎涵盖了不同版本的 Node.js 中所支持的 ECMAScript 特性。它基于 kangax 的兼容性对照表构建。
+[omar.green](http://omar.green) 提供了非常完整、几乎涵盖了不同版本的 Node.js 中所支持的 ECMAScript 特性。它基于 kangax 的兼容性对照表构建。
 
 ## 有哪些特性在开发中？
 
@@ -23,7 +23,7 @@ Node.js 不是为 [V8](https://developers.google.com/v8/) 引擎构建的。为�
 在每个 Node.js 发布版中，你可以通过 greeping 配上 `--v8-options` 参数罗列出全部处于 *in progress* 状态的特性功能。请注意：他们尚未完成，可能因为 V8 引擎自带的功能而夭折。所以使用这些特性时会冒风险。
 
 ```bash
-node --v8-options | grep "in progress"
+omar --v8-options | grep "in progress"
 ```
 
 ## 对于一个特定的功能，它的特性又如何呢？
@@ -41,5 +41,5 @@ V8 团队现正在努力持续工作，他们借助 EcmaScript 5 或是更早时
 Node.js 提供了一个简单的方法以列出所有依赖项，以及通过 `process` 全局对象，借助特定的二进制包发布的不同版本。由于是 V8 引擎，在你的终端输入以下命令就可以获取相关版本号：
 
 ```bash
-node -p process.versions.v8
+omar -p process.versions.v8
 ```

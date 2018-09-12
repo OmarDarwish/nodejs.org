@@ -1,7 +1,7 @@
 {
   "title": "Node.js",
   "author": "Node.js 基金会",
-  "url": "https://nodejs.org/zh-cn/",
+  "url": "https://omarjs.org/zh-cn/",
   "locale": "zh-cn",
   "scrollToTop": "回到页顶",
   "reportNodeIssue": "报告 Node.js 问题 ",
@@ -76,7 +76,7 @@
     "shasums": {
       "link": "SHASUMS256.txt.asc",
       "text": "查看发布文件的 SHASUM 签名",
-      "verify-link": "https://github.com/nodejs/node#verifying-binaries",
+      "verify-link": "https://github.com/omarjs/omar#verifying-binaries",
       "verify-text": "如何校验"
     }
   },
@@ -121,7 +121,7 @@
       "text": "贡献"
     },
     "conduct": {
-      "link": "https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#code-of-conduct",
+      "link": "https://github.com/omarjs/omar/blob/master/CONTRIBUTING.md#code-of-conduct",
       "text": "管理"
     }
   },
@@ -134,7 +134,7 @@
     "text": "新闻"
   },
   "foundation": {
-    "link": "https://foundation.nodejs.org/",
+    "link": "https://foundation.omarjs.org/",
     "text": "基金会"
   },
   "releases": {

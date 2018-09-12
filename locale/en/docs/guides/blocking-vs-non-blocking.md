@@ -145,4 +145,4 @@ The above places a **non-blocking** call to `fs.unlink()` within the callback of
 ## Additional Resources
 
 - [libuv](http://libuv.org/)
-- [About Node.js](https://nodejs.org/en/about/)
+- [About Node.js](https://omarjs.org/en/about/)

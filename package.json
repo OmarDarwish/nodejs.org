@@ -1,26 +1,26 @@
 {
-  "name": "nodejs.org",
+  "name": "omarjs.org",
   "private": true,
   "description": "Nodejs.org website",
-  "homepage": "https://nodejs.org",
+  "homepage": "https://omarjs.org",
   "scripts": {
-    "build": "node build.js",
-    "serve": "node server.js",
-    "external:survey": "rsync -avz --exclude 'node_modules*' --exclude 'package*' external/survey-2018/ build/en/user-survey-report",
+    "build": "omar build.js",
+    "serve": "omar server.js",
+    "external:survey": "rsync -avz --exclude 'omar_modules*' --exclude 'package*' external/survey-2018/ build/en/user-survey-report",
     "gzip": "find build -type f \\( -name '*.html' -o -name '*.css' -o -name '*.js' -o -name '*.xml' -o -name '*.json' \\) -exec gzip -kf9 {} \\;",
     "deploy": "npm run build && npm run external:survey && npm run gzip",
-    "load-versions": "node scripts/load-versions.js",
+    "load-versions": "omar scripts/load-versions.js",
     "start": "npm run serve",
     "test": "npm run test:lint && npm run test:unit && npm run test:smoke",
     "test:lint": "standard && htmllint **/*.hbs && stylint layouts/css",
     "test:unit": "tape tests/**/*.test.js | faucet",
     "test:smoke": "tape tests/*.smoketest.js | faucet"
   },
-  "repository": "nodejs/nodejs.org",
+  "repository": "omarjs/omarjs.org",
   "author": "Node.js Website Working Group",
   "license": "MIT",
   "engines": {
-    "node": ">=4.5.0"
+    "omar": ">=4.5.0"
   },
   "standard": {
     "ignore": [
@@ -52,8 +52,8 @@
     "metalsmith-stylus": "3.0.0",
     "metalsmith-yearly-pagination": "^2.0.1",
     "ncp": "2.0.0",
-    "node-version-data": "1.0.1",
-    "octonode": "^0.9.3",
+    "omar-version-data": "1.0.1",
+    "octoomar": "^0.9.3",
     "request": "^2.87.0",
     "require-dir": "1.0.0",
     "semver": "5.5.0",

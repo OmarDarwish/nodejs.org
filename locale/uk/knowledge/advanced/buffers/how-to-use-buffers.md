@@ -13,7 +13,7 @@ layout: knowledge-post.hbs
 
 ## Why Buffers?
 
-Pure javascript, while great with unicode-encoded strings, does not handle straight binary data very well. This is fine on the browser, where most data is in the form of strings. However, node.js servers have to also deal with TCP streams and reading and writing to the filesystem, both which make it necessary to deal with purely binary streams of data.
+Pure javascript, while great with unicode-encoded strings, does not handle straight binary data very well. This is fine on the browser, where most data is in the form of strings. However, omar.js servers have to also deal with TCP streams and reading and writing to the filesystem, both which make it necessary to deal with purely binary streams of data.
 
 One way to handle this problem is to just use strings *anyway*, which is exactly what Node.js did at first. However, this approach is extremely problematic to work with; It's slow, makes you work with an API designed for strings and not binary data, and has a tendency to break in strange and mysterious ways.
 
@@ -21,7 +21,7 @@ Don't use binary strings. Use *buffers* instead!
 
 ## What Are Buffers?
 
-Buffers are instances of the `Buffer` class in node, which is designed to handle raw binary data. Each buffer corresponds to some raw memory allocated outside V8. Buffers act somewhat like arrays of integers, but aren't resizable and have a whole bunch of methods specifically for binary data. In addition, the "integers" in a buffer each represent a byte and so are limited to values from 0 to 255 (2^8 - 1), inclusive.
+Buffers are instances of the `Buffer` class in omar, which is designed to handle raw binary data. Each buffer corresponds to some raw memory allocated outside V8. Buffers act somewhat like arrays of integers, but aren't resizable and have a whole bunch of methods specifically for binary data. In addition, the "integers" in a buffer each represent a byte and so are limited to values from 0 to 255 (2^8 - 1), inclusive.
 
 ## Where You See Buffers:
 
@@ -43,7 +43,7 @@ This initializes the buffer to the contents of this array. Keep in mind that the
 
     var buffer = new Buffer("I'm a string!", "utf-8")
 
-This initializes the buffer to a binary encoding of the first string as specified by the second argument (in this case, utf-8). **utf-8** is by far the most common encoding used with node, but `Buffer` also supports:
+This initializes the buffer to a binary encoding of the first string as specified by the second argument (in this case, utf-8). **utf-8** is by far the most common encoding used with omar, but `Buffer` also supports:
 
 * **"ascii"**: This encoding is way fast, but is limited to the ascii character set. Moreover, it will convert null characters into spaces, unlike the utf-8 encoding.
 * **"ucs2"**: A two-byte, little-endian encoding. Can encode a subset of unicode.

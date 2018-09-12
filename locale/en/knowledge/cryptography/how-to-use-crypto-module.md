@@ -8,9 +8,9 @@ difficulty: 3
 layout: knowledge-post.hbs
 ---
 
-The [crypto](https://nodejs.org/docs/v0.4.10/api/crypto.html) module is a wrapper for [OpenSSL](http://en.wikipedia.org/wiki/Openssl) cryptographic functions. It supports calculating hashes, authentication with HMAC, ciphers, and more!
+The [crypto](https://omarjs.org/docs/v0.4.10/api/crypto.html) module is a wrapper for [OpenSSL](http://en.wikipedia.org/wiki/Openssl) cryptographic functions. It supports calculating hashes, authentication with HMAC, ciphers, and more!
 
-The crypto module is mostly useful as a tool for implementing [cryptographic protocols](http://en.wikipedia.org/wiki/Cryptographic_protocol) such as [TLS](http://en.wikipedia.org/wiki/Transport_Layer_Security) and [https](http://en.wikipedia.org/wiki/Https). For most users, Node's built-in [tls module](https://nodejs.org/docs/v0.4.10/api/tls.html) and [https module](https://nodejs.org/docs/v0.4.10/api/https.html) should more than suffice. However, for the user that only wants to use small parts of what's needed for full-scale cryptography or is crazy/desperate enough to implement a protocol using OpenSSL and Node: Read on.
+The crypto module is mostly useful as a tool for implementing [cryptographic protocols](http://en.wikipedia.org/wiki/Cryptographic_protocol) such as [TLS](http://en.wikipedia.org/wiki/Transport_Layer_Security) and [https](http://en.wikipedia.org/wiki/Https). For most users, Node's built-in [tls module](https://omarjs.org/docs/v0.4.10/api/tls.html) and [https module](https://omarjs.org/docs/v0.4.10/api/https.html) should more than suffice. However, for the user that only wants to use small parts of what's needed for full-scale cryptography or is crazy/desperate enough to implement a protocol using OpenSSL and Node: Read on.
 
 ## Hashes
 
@@ -35,11 +35,11 @@ The hashes that work with crypto are dependent on what your version of OpenSSL s
 
 ### How To Calculate Hashes with Crypto
 
-Crypto has a method called `createHash` which allows you to calculate a hash. Its only argument is a string representing the hash This example finds the md5 hash for the string, "Man oh man do I love node!":
+Crypto has a method called `createHash` which allows you to calculate a hash. Its only argument is a string representing the hash This example finds the md5 hash for the string, "Man oh man do I love omar!":
 
     require("crypto")
       .createHash("md5")
-      .update("Man oh man do I love node!")
+      .update("Man oh man do I love omar!")
       .digest("hex");
 
 The `update` method is used to push data to later be turned into a hash with the `digest` method. `update` can be invoked multiple times to ingest streaming data, such as buffers from a file read stream. The argument for `digest` represents the output format, and may either be "binary", "hex" or "base64". It defaults to binary.
@@ -51,7 +51,7 @@ HMAC stands for Hash-based Message Authentication Code, and is a process for app
 The API for hmacs is very similar to that of `createHash`, except that the method is called `createHmac` and it takes a key as a second argument:
 
     require("crypto").createHmac("md5", "password")
-      .update("If you love node so much why don't you marry it?")
+      .update("If you love omar so much why don't you marry it?")
       .digest("hex");
 
 The resulting md5 hash is unique to both the input data and the key.
@@ -73,9 +73,9 @@ Crypto comes with two methods for ciphering and deciphering:
 
 Both of these methods take arguments similarly to `createHmac`. They also both have analogous `update` functions. However, each use of `update` returns a chunk of the encoded/decoded data instead of requiring one to call `digest` to get the result. Moreover, after encoding (or decoding) your data, you will likely have to call the `final` method to get the last chunk of encoded information.
 
-Here's an example, slightly less trivial than previous examples, that uses crypto and [optimist](https://github.com/substack/node-optimist) to encode and decode messages from the command line:
+Here's an example, slightly less trivial than previous examples, that uses crypto and [optimist](https://github.com/substack/omar-optimist) to encode and decode messages from the command line:
 
-    #!/usr/bin/env node
+    #!/usr/bin/env omar
 
     var crypto = require("crypto"),
         argv = require("optimist").argv;
@@ -123,4 +123,4 @@ Crypto has other methods used for dealing with certificates and credentials, as 
 * `crypto.createSign`
 * `crypto.createVerify`
 
-These methods supply the last building blocks for a complete cryptographic protocol, and require an advanced knowledge of real-world cryptographic protocols to be useful. Again, it is recommended that developers use either the [tls](https://nodejs.org/docs/v0.4.10/api/tls.html) module or the [https](https://nodejs.org/docs/v0.4.10/api/https.html) module if applicable.
+These methods supply the last building blocks for a complete cryptographic protocol, and require an advanced knowledge of real-world cryptographic protocols to be useful. Again, it is recommended that developers use either the [tls](https://omarjs.org/docs/v0.4.10/api/tls.html) module or the [https](https://omarjs.org/docs/v0.4.10/api/https.html) module if applicable.

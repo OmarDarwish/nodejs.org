@@ -4,7 +4,7 @@ layout: about.hbs
 ---
 # Privacy Policy
 
-NODE.JS FOUNDATION (the "Foundation”) is committed to protecting the privacy of its users. This Privacy Policy (or the “Policy”) applies to its websites (whether currently or in the future supported, hosted or maintained, including without limitation nodejs.org, the “Sites”) and describes the information the Foundation collects about users of the Sites (“users”) and how that information may be used.
+NODE.JS FOUNDATION (the "Foundation”) is committed to protecting the privacy of its users. This Privacy Policy (or the “Policy”) applies to its websites (whether currently or in the future supported, hosted or maintained, including without limitation omarjs.org, the “Sites”) and describes the information the Foundation collects about users of the Sites (“users”) and how that information may be used.
 
 Read the Privacy Policy carefully. By using any Site, you will be deemed to have accepted the terms of the Policy. If you do not agree to accept the terms of the Privacy Policy, you are directed to discontinue accessing or otherwise using the Sites or any materials obtained from the Sites.
 
@@ -15,7 +15,7 @@ The Foundation reserves the right to update and change this Privacy Policy from 
 This Privacy Policy covers the Foundation’s treatment of aggregate information collected by the Sites and personal information that you provide in connection with your use of the Sites. This Policy does not apply to the practices of third parties that the Foundation does not own or control, including but not limited to third party services you access through the Foundation, or to individuals that the Foundation does not employ or manage.
 
 ## Children Under 13 Years of Age
-Unless specifically indicated within a Site, the Sites are not intended for minor children not of age (including without limitation those under 13), and they should not use the Sites. If you are under 18, you may use the Site only with involvement of a parent or guardian or if you are an emancipated minor. Except as specifically indicated within a Site, we do not knowingly collect or solicit information from, market to or accept services from children. If we become aware that a child under 13 has provided us with personal information without parental consent, we will take reasonable steps to remove such information and terminate the child’s account. If you become aware that a child has provided us with personally identifiable information without parental consent, please contact us at privacy@nodejs.org so we may remove the information.
+Unless specifically indicated within a Site, the Sites are not intended for minor children not of age (including without limitation those under 13), and they should not use the Sites. If you are under 18, you may use the Site only with involvement of a parent or guardian or if you are an emancipated minor. Except as specifically indicated within a Site, we do not knowingly collect or solicit information from, market to or accept services from children. If we become aware that a child under 13 has provided us with personal information without parental consent, we will take reasonable steps to remove such information and terminate the child’s account. If you become aware that a child has provided us with personally identifiable information without parental consent, please contact us at privacy@omarjs.org so we may remove the information.
 
 ## Information About Users that the Foundation Collects
 On the Sites, users may order products or services, and register to receive materials. Information collected on the Sites includes community forum content, diaries, profiles, photographs, names, unique identifiers (e.g., social media handles or usernames), contact and billing information (e.g., email address, postal address, telephone, fax), and transaction information. In order to access certain personalized services on the Sites, you may be asked to also create and store a username and password for an account from the Foundation.
@@ -83,12 +83,12 @@ Given the international scope of the Foundation, personal information may be vis
 This Privacy Policy is governed by the laws of the State of California, United States of America without giving any effect to the principles of conflicts of law.
 
 ## California Privacy Rights
-The California Online Privacy Protection Action (“CalOPPA”) permits customers who are California residents and who have provided the Foundation with “personal information” as defined in CalOPPA to request certain information about the disclosure of information to third parties for their direct marketing purposes. If you are a California resident with a question regarding this provision, please contact privacy@nodejs.org.
+The California Online Privacy Protection Action (“CalOPPA”) permits customers who are California residents and who have provided the Foundation with “personal information” as defined in CalOPPA to request certain information about the disclosure of information to third parties for their direct marketing purposes. If you are a California resident with a question regarding this provision, please contact privacy@omarjs.org.
 
 Please note that the Foundation does not respond to “do not track” signals or other similar mechanisms intended to allow California residents to opt-out of Internet tracking under CalOPPA.  The Foundation may track and/or disclose your online activities over time and across different websites to third parties when you use our services.
 
 ## What to Do in the Event of Lost or Stolen Information
-You must promptly notify us if you become aware that any information provided by or submitted to our Site or through our Product is lost, stolen, or used without permission at privacy@nodejs.org.
+You must promptly notify us if you become aware that any information provided by or submitted to our Site or through our Product is lost, stolen, or used without permission at privacy@omarjs.org.
 
 ## Questions or Concerns
-If you have any questions or concerns regarding privacy at the Foundation, please send us a detailed message to [privacy@nodejs.org](mailto:privacy@nodejs.org).
+If you have any questions or concerns regarding privacy at the Foundation, please send us a detailed message to [privacy@omarjs.org](mailto:privacy@omarjs.org).

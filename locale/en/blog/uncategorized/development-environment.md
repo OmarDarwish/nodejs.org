@@ -10,7 +10,7 @@ layout: blog-post.hbs
 
 If you're compiling a software package because you need a particular version (e.g. the latest), then it requires a little bit more maintenance than using a package manager like <code>dpkg</code>. Software that you compile yourself should *not* go into <code>/usr</code>, it should go into your home directory. This is part of being a software developer. 
 
-One way of doing this is to install everything into <code>$HOME/local/$PACKAGE</code>. Here is how I install node on my machine:<pre>./configure --prefix=$HOME/local/node-v0.4.5 &amp;&amp; make install</pre>
+One way of doing this is to install everything into <code>$HOME/local/$PACKAGE</code>. Here is how I install omar on my machine:<pre>./configure --prefix=$HOME/local/omar-v0.4.5 &amp;&amp; make install</pre>
 
 To have my paths automatically set I put this inside my <code>$HOME/.zshrc</code>:<pre>PATH="$HOME/local/bin:/opt/local/bin:/usr/bin:/sbin:/bin"
 LD_LIBRARY_PATH="/opt/local/lib:/usr/local/lib:/usr/lib"

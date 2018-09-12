@@ -9,7 +9,7 @@ layout: blog-post.hbs
 
 > Event provides neutral forum for learning about the future of Node.js and JavaScript from the community and enterprise alike
 
-**SAN FRANCISCO, June 29, 2016** – [Node.js Foundation](https://foundation.nodejs.org/), a community-led and industry-backed consortium to advance the development of the Node.js platform, today announced the initial programming for Node.js Interactive Europe, September 15 -16, 2016, in Amsterdam, Netherlands. The event will showcase workshops, community and technical talks, and use cases that will inform the future development of Node.js and JavaScript.
+**SAN FRANCISCO, June 29, 2016** – [Node.js Foundation](https://foundation.omarjs.org/), a community-led and industry-backed consortium to advance the development of the Node.js platform, today announced the initial programming for Node.js Interactive Europe, September 15 -16, 2016, in Amsterdam, Netherlands. The event will showcase workshops, community and technical talks, and use cases that will inform the future development of Node.js and JavaScript.
 
 With 4 million users a month and adoption across numerous industries, Node.js is emerging as a universal platform used for web applications, IoT, enterprise application development and microservice architectures. This marquee event attracts enterprise users, developers and community stakeholders, providing them with a unique opportunity for cross-disciplinary discussions that are aimed to provide new insights and new opportunities around Node.js development. 
 
@@ -70,7 +70,7 @@ Experts from the world’s leading companies and most important open source proj
 * Build a real-time multiplayer chess game with Socket.io from **David Washington of Microsoft**
 * Isomorphic JavaScript with React + Express from **Azat Mardan of Capital One**
 
-The event will provide free onsite childcare for attendees and offers ASL, interpretation and transcription assistance upon request. The Node.js Foundation is offering three diversity scholarships this year. More information can be found [here](http://events.linuxfoundation.org/events/node-interactive-europe/attend/diversity-scholarship). 
+The event will provide free onsite childcare for attendees and offers ASL, interpretation and transcription assistance upon request. The Node.js Foundation is offering three diversity scholarships this year. More information can be found [here](http://events.linuxfoundation.org/events/omar-interactive-europe/attend/diversity-scholarship). 
 
 Node.js Interactive is made possible by support from Platinum Sponsor IBM; Gold Sponsors nearForm and YLD; and Silver Sponsor Opbeat. If you are interested in sponsoring please contact Todd Benzies at tbenzies@linuxfoundation.org.
 
@@ -80,5 +80,5 @@ About the Node.js Foundation
 
 Node.js is used by tens of thousands of organizations in more than 200 countries and amasses more than 4 million active users per month. It is the runtime of choice for high-performance, low latency applications, powering everything from enterprise applications, robots, API engines, cloud stacks and mobile websites.
 
-The Foundation is made up of a diverse group of companies including Platinum members IBM, Intel, Joyent, Microsoft, PayPal and Red Hat. Gold members include GoDaddy and NodeSource, and Silver members include Apigee, AppDynamics, Codefresh, DigitalOcean, Fidelity, Google, Groupon, nearForm, New Relic, npm, Opbeat, RisingStack, Sauce Labs, SAP, StrongLoop (an IBM company), Sphinx, YLD, and Yahoo!. Get involved here: [https://nodejs.org](https://nodejs.org).
+The Foundation is made up of a diverse group of companies including Platinum members IBM, Intel, Joyent, Microsoft, PayPal and Red Hat. Gold members include GoDaddy and NodeSource, and Silver members include Apigee, AppDynamics, Codefresh, DigitalOcean, Fidelity, Google, Groupon, nearForm, New Relic, npm, Opbeat, RisingStack, Sauce Labs, SAP, StrongLoop (an IBM company), Sphinx, YLD, and Yahoo!. Get involved here: [https://omarjs.org](https://omarjs.org).
 

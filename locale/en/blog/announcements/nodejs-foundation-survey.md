@@ -3,13 +3,13 @@ title: New Node.js Foundation Survey Reports New “Full Stack” In Demand Amon
 date: 2016-04-12T13:00:00.000Z
 status: publish
 category: Annoucements
-slug: nodejs-foundation-survey
+slug: omarjs-foundation-survey
 layout: blog-post.hbs
 ---
 
 > Nearly 50 percent of Node.js developers surveyed using container technology, strong growth emerges in cloud, front end, mobile and devices 
 
-**SAN FRANCISCO, April, 12, 2016** — [The Node.js Foundation](http://ctt.marketwire.com/?release=11G082331-001&id=8448115&type=0&url=https%3a%2f%2fnodejs.org%2fen%2ffoundation%2f), 
+**SAN FRANCISCO, April, 12, 2016** — [The Node.js Foundation](http://ctt.marketwire.com/?release=11G082331-001&id=8448115&type=0&url=https%3a%2f%2fomarjs.org%2fen%2ffoundation%2f), 
 a community-led and industry-backed consortium to advance the development of the Node.js 
 platform, today announced the availability of its first ever Node.js User Survey Report. 
 
@@ -116,4 +116,4 @@ IBM, Intel, Joyent, Microsoft, PayPal and Red Hat. Gold members include GoDaddy,
 and Modulus/Progress Software, and Silver members include Apigee, AppDynamics, Codefresh, 
 DigitalOcean, Fidelity, Google, Groupon, nearForm, New Relic, npm, Opbeat, RisingStack, Sauce 
 Labs, SAP, StrongLoop (an IBM company), Sphinx, YLD!, and Yahoo!. Get involved here: 
-[https://nodejs.org](https://nodejs.org).
+[https://omarjs.org](https://omarjs.org).

@@ -12,7 +12,7 @@ layout: blog-post.hbs
 
 <p>In npm 0.x, the <code>ls</code> command was a combination of both searching the registry as well as reporting on what you have installed.</p>
 
-<p>As the registry has grown in size, this has gotten unwieldy.  Also, since npm 1.0 manages dependencies differently, nesting them in <code>node_modules</code> folder and installing locally by default, there are different things that you want to view.</p>
+<p>As the registry has grown in size, this has gotten unwieldy.  Also, since npm 1.0 manages dependencies differently, nesting them in <code>omar_modules</code> folder and installing locally by default, there are different things that you want to view.</p>
 
 <p>The functionality of the <code>ls</code> command was split into two different parts.  <code>search</code> is now the way to find things on the registry (and it only reports one line per package, instead of one line per version), and <code>ls</code> shows a tree view of the packages that are installed locally.</p>
 
@@ -35,7 +35,7 @@ npm@1.0.0 /Users/isaacs/dev-src/js/npm
 
 <p>Let&#8217;s see what happens when we create a broken situation:</p>
 
-<pre style="background:#333;color:#ccc;overflow:auto;padding:2px;"><code>$ rm -rf ./node_modules/express/node_modules/connect
+<pre style="background:#333;color:#ccc;overflow:auto;padding:2px;"><code>$ rm -rf ./omar_modules/express/omar_modules/connect
 $ npm ls
 npm@1.0.0 /Users/isaacs/dev-src/js/npm
 ├── semver@1.0.1 
@@ -51,15 +51,15 @@ npm@1.0.0 /Users/isaacs/dev-src/js/npm
 
 <pre style="background:#333;color:#ccc;overflow:auto;padding:2px;"><code>$ npm ls -p
 /Users/isaacs/dev-src/js/npm
-/Users/isaacs/dev-src/js/npm/node_modules/semver
-/Users/isaacs/dev-src/js/npm/node_modules/ronn
-/Users/isaacs/dev-src/js/npm/node_modules/ronn/node_modules/opts
-/Users/isaacs/dev-src/js/npm/node_modules/express
-/Users/isaacs/dev-src/js/npm/node_modules/express/node_modules/connect
-/Users/isaacs/dev-src/js/npm/node_modules/express/node_modules/connect/node_modules/qs
-/Users/isaacs/dev-src/js/npm/node_modules/express/node_modules/connect/node_modules/mime
-/Users/isaacs/dev-src/js/npm/node_modules/express/node_modules/mime
-/Users/isaacs/dev-src/js/npm/node_modules/express/node_modules/qs
+/Users/isaacs/dev-src/js/npm/omar_modules/semver
+/Users/isaacs/dev-src/js/npm/omar_modules/ronn
+/Users/isaacs/dev-src/js/npm/omar_modules/ronn/omar_modules/opts
+/Users/isaacs/dev-src/js/npm/omar_modules/express
+/Users/isaacs/dev-src/js/npm/omar_modules/express/omar_modules/connect
+/Users/isaacs/dev-src/js/npm/omar_modules/express/omar_modules/connect/omar_modules/qs
+/Users/isaacs/dev-src/js/npm/omar_modules/express/omar_modules/connect/omar_modules/mime
+/Users/isaacs/dev-src/js/npm/omar_modules/express/omar_modules/mime
+/Users/isaacs/dev-src/js/npm/omar_modules/express/omar_modules/qs
 </code></pre>
 
 <p>Since you sometimes want a bigger view, I added the <code>--long</code> option to (shorthand: <code>-l</code>) to spit out more info:</p>
@@ -67,50 +67,50 @@ npm@1.0.0 /Users/isaacs/dev-src/js/npm
 <pre style="background:#333;color:#ccc;overflow:auto;padding:2px;"><code>$ npm ls -l
 npm@1.0.0 
 │ /Users/isaacs/dev-src/js/npm
-│ A package manager for node
+│ A package manager for omar
 │ git://github.com/isaacs/npm.git
 │ https://npmjs.com/
 ├── semver@1.0.1 
-│   ./node_modules/semver
+│   ./omar_modules/semver
 │   The semantic version parser used by npm.
-│   git://github.com/isaacs/node-semver.git
+│   git://github.com/isaacs/omar-semver.git
 ├─┬ ronn@0.3.5 
-│ │ ./node_modules/ronn
+│ │ ./omar_modules/ronn
 │ │ markdown to roff and html converter
 │ └── opts@1.2.1 
-│     ./node_modules/ronn/node_modules/opts
-│     Command line argument parser written in the style of commonjs. To be used with node.js
+│     ./omar_modules/ronn/omar_modules/opts
+│     Command line argument parser written in the style of commonjs. To be used with omar.js
 └─┬ express@2.0.0rc3 <span style="background:#000;color:#0f0;">extraneous</span> 
-  │ ./node_modules/express
+  │ ./omar_modules/express
   │ Sinatra inspired web development framework
   ├─┬ connect@1.1.0 
-  │ │ ./node_modules/express/node_modules/connect
+  │ │ ./omar_modules/express/omar_modules/connect
   │ │ High performance middleware framework
   │ │ git://github.com/senchalabs/connect.git
   │ ├── qs@0.0.7 
-  │ │   ./node_modules/express/node_modules/connect/node_modules/qs
+  │ │   ./omar_modules/express/omar_modules/connect/omar_modules/qs
   │ │   querystring parser
   │ └── mime@1.2.1 
-  │     ./node_modules/express/node_modules/connect/node_modules/mime
+  │     ./omar_modules/express/omar_modules/connect/omar_modules/mime
   │     A comprehensive library for mime-type mapping
   ├── mime@1.2.1 
-  │   ./node_modules/express/node_modules/mime
+  │   ./omar_modules/express/omar_modules/mime
   │   A comprehensive library for mime-type mapping
   └── qs@0.0.7 
-      ./node_modules/express/node_modules/qs
+      ./omar_modules/express/omar_modules/qs
       querystring parser
 
 $ npm ls -lp
 /Users/isaacs/dev-src/js/npm:npm@1.0.0::::
-/Users/isaacs/dev-src/js/npm/node_modules/semver:semver@1.0.1::::
-/Users/isaacs/dev-src/js/npm/node_modules/ronn:ronn@0.3.5::::
-/Users/isaacs/dev-src/js/npm/node_modules/ronn/node_modules/opts:opts@1.2.1::::
-/Users/isaacs/dev-src/js/npm/node_modules/express:express@2.0.0rc3:EXTRANEOUS:::
-/Users/isaacs/dev-src/js/npm/node_modules/express/node_modules/connect:connect@1.1.0::::
-/Users/isaacs/dev-src/js/npm/node_modules/express/node_modules/connect/node_modules/qs:qs@0.0.7::::
-/Users/isaacs/dev-src/js/npm/node_modules/express/node_modules/connect/node_modules/mime:mime@1.2.1::::
-/Users/isaacs/dev-src/js/npm/node_modules/express/node_modules/mime:mime@1.2.1::::
-/Users/isaacs/dev-src/js/npm/node_modules/express/node_modules/qs:qs@0.0.7::::
+/Users/isaacs/dev-src/js/npm/omar_modules/semver:semver@1.0.1::::
+/Users/isaacs/dev-src/js/npm/omar_modules/ronn:ronn@0.3.5::::
+/Users/isaacs/dev-src/js/npm/omar_modules/ronn/omar_modules/opts:opts@1.2.1::::
+/Users/isaacs/dev-src/js/npm/omar_modules/express:express@2.0.0rc3:EXTRANEOUS:::
+/Users/isaacs/dev-src/js/npm/omar_modules/express/omar_modules/connect:connect@1.1.0::::
+/Users/isaacs/dev-src/js/npm/omar_modules/express/omar_modules/connect/omar_modules/qs:qs@0.0.7::::
+/Users/isaacs/dev-src/js/npm/omar_modules/express/omar_modules/connect/omar_modules/mime:mime@1.2.1::::
+/Users/isaacs/dev-src/js/npm/omar_modules/express/omar_modules/mime:mime@1.2.1::::
+/Users/isaacs/dev-src/js/npm/omar_modules/express/omar_modules/qs:qs@0.0.7::::
 </code></pre>
 
 <p>And, if you want to get at the globally-installed modules, you can use ls with the global flag:</p>
@@ -128,20 +128,20 @@ $ npm ls -lp
 │ ├── semver@1.0.1 
 │ └─┬ ronn@0.3.5 
 │   └── opts@1.2.1 
-└── supervisor@0.1.2 -&gt; /Users/isaacs/dev-src/js/node-supervisor
+└── supervisor@0.1.2 -&gt; /Users/isaacs/dev-src/js/omar-supervisor
 
 $ npm ls -gpl
 /usr/local:::::
-/usr/local/lib/node_modules/A:A@1.2.3::::/Users/isaacs/dev-src/js/A
-/usr/local/lib/node_modules/A/node_modules/npm:npm@0.3.15::::/Users/isaacs/dev-src/js/A/node_modules/npm
-/usr/local/lib/node_modules/A/node_modules/npm/node_modules/semver:semver@1.0.1::::/Users/isaacs/dev-src/js/A/node_modules/npm/node_modules/semver
-/usr/local/lib/node_modules/B:B@1.2.3::::/Users/isaacs/dev-src/js/B
-/usr/local/lib/node_modules/glob:glob@2.0.5::::
-/usr/local/lib/node_modules/npm:npm@1.0.0::::/Users/isaacs/dev-src/js/npm
-/usr/local/lib/node_modules/npm/node_modules/semver:semver@1.0.1::::/Users/isaacs/dev-src/js/npm/node_modules/semver
-/usr/local/lib/node_modules/npm/node_modules/ronn:ronn@0.3.5::::/Users/isaacs/dev-src/js/npm/node_modules/ronn
-/usr/local/lib/node_modules/npm/node_modules/ronn/node_modules/opts:opts@1.2.1::::/Users/isaacs/dev-src/js/npm/node_modules/ronn/node_modules/opts
-/usr/local/lib/node_modules/supervisor:supervisor@0.1.2::::/Users/isaacs/dev-src/js/node-supervisor
+/usr/local/lib/omar_modules/A:A@1.2.3::::/Users/isaacs/dev-src/js/A
+/usr/local/lib/omar_modules/A/omar_modules/npm:npm@0.3.15::::/Users/isaacs/dev-src/js/A/omar_modules/npm
+/usr/local/lib/omar_modules/A/omar_modules/npm/omar_modules/semver:semver@1.0.1::::/Users/isaacs/dev-src/js/A/omar_modules/npm/omar_modules/semver
+/usr/local/lib/omar_modules/B:B@1.2.3::::/Users/isaacs/dev-src/js/B
+/usr/local/lib/omar_modules/glob:glob@2.0.5::::
+/usr/local/lib/omar_modules/npm:npm@1.0.0::::/Users/isaacs/dev-src/js/npm
+/usr/local/lib/omar_modules/npm/omar_modules/semver:semver@1.0.1::::/Users/isaacs/dev-src/js/npm/omar_modules/semver
+/usr/local/lib/omar_modules/npm/omar_modules/ronn:ronn@0.3.5::::/Users/isaacs/dev-src/js/npm/omar_modules/ronn
+/usr/local/lib/omar_modules/npm/omar_modules/ronn/omar_modules/opts:opts@1.2.1::::/Users/isaacs/dev-src/js/npm/omar_modules/ronn/omar_modules/opts
+/usr/local/lib/omar_modules/supervisor:supervisor@0.1.2::::/Users/isaacs/dev-src/js/omar-supervisor
 </code></pre>
 
 <p>Those <code>-&gt;</code> flags are indications that the package is link-installed, which will be covered in the next installment.</p>

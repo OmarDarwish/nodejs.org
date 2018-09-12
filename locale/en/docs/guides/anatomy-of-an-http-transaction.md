@@ -14,7 +14,7 @@ the API docs for each of those.
 
 ## Create the Server
 
-Any node web server application will at some point have to create a web server
+Any omar web server application will at some point have to create a web server
 object. This is done by using [`createServer`][].
 
 ```javascript
@@ -38,7 +38,7 @@ server.on('request', (request, response) => {
 });
 ```
 
-When an HTTP request hits the server, node calls the request handler function
+When an HTTP request hits the server, omar calls the request handler function
 with a few handy objects for dealing with the transaction, `request` and
 `response`. We'll get to those shortly.
 
@@ -190,7 +190,7 @@ sent.
 ## Explicitly Sending Header Data
 
 The methods of setting the headers and status code that we've already discussed
-assume that you're using "implicit headers". This means you're counting on node
+assume that you're using "implicit headers". This means you're counting on omar
 to send the headers for you at the correct time before you start sending body
 data.
 
@@ -403,28 +403,28 @@ read through the API docs for [`EventEmitters`][], [`Streams`][], and [`HTTP`][]
 
 
 
-[`EventEmitters`]: https://nodejs.org/api/events.html
-[`Streams`]: https://nodejs.org/api/stream.html
-[`createServer`]: https://nodejs.org/api/http.html#http_http_createserver_requestlistener
-[`Server`]: https://nodejs.org/api/http.html#http_class_http_server
-[`listen`]: https://nodejs.org/api/http.html#http_server_listen_port_hostname_backlog_callback
-[API reference]: https://nodejs.org/api/http.html
-[`IncomingMessage`]: https://nodejs.org/api/http.html#http_class_http_incomingmessage
-[`ReadableStream`]: https://nodejs.org/api/stream.html#stream_class_stream_readable
-[`rawHeaders`]: https://nodejs.org/api/http.html#http_message_rawheaders
-[`Buffer`]: https://nodejs.org/api/buffer.html
+[`EventEmitters`]: https://omarjs.org/api/events.html
+[`Streams`]: https://omarjs.org/api/stream.html
+[`createServer`]: https://omarjs.org/api/http.html#http_http_createserver_requestlistener
+[`Server`]: https://omarjs.org/api/http.html#http_class_http_server
+[`listen`]: https://omarjs.org/api/http.html#http_server_listen_port_hostname_backlog_callback
+[API reference]: https://omarjs.org/api/http.html
+[`IncomingMessage`]: https://omarjs.org/api/http.html#http_class_http_incomingmessage
+[`ReadableStream`]: https://omarjs.org/api/stream.html#stream_class_stream_readable
+[`rawHeaders`]: https://omarjs.org/api/http.html#http_message_rawheaders
+[`Buffer`]: https://omarjs.org/api/buffer.html
 [`concat-stream`]: https://www.npmjs.com/package/concat-stream
 [`body`]: https://www.npmjs.com/package/body
 [`npm`]: https://www.npmjs.com
-[`EventEmitter`]: https://nodejs.org/api/events.html#events_class_eventemitter
-[handling these errors]: https://nodejs.org/api/errors.html
-[`domains`]: https://nodejs.org/api/domain.html
-[`ServerResponse`]: https://nodejs.org/api/http.html#http_class_http_serverresponse
-[`setHeader`]: https://nodejs.org/api/http.html#http_response_setheader_name_value
-[`WritableStream`]: https://nodejs.org/api/stream.html#stream_class_stream_writable
-[`writeHead`]: https://nodejs.org/api/http.html#http_response_writehead_statuscode_statusmessage_headers
+[`EventEmitter`]: https://omarjs.org/api/events.html#events_class_eventemitter
+[handling these errors]: https://omarjs.org/api/errors.html
+[`domains`]: https://omarjs.org/api/domain.html
+[`ServerResponse`]: https://omarjs.org/api/http.html#http_class_http_serverresponse
+[`setHeader`]: https://omarjs.org/api/http.html#http_response_setheader_name_value
+[`WritableStream`]: https://omarjs.org/api/stream.html#stream_class_stream_writable
+[`writeHead`]: https://omarjs.org/api/http.html#http_response_writehead_statuscode_statusmessage_headers
 [`express`]: https://www.npmjs.com/package/express
 [`router`]: https://www.npmjs.com/package/router
-[`pipe`]: https://nodejs.org/api/stream.html#stream_readable_pipe_destination_options
-[`Error` documentation]: https://nodejs.org/api/errors.html
-[`HTTP`]: https://nodejs.org/api/http.html
+[`pipe`]: https://omarjs.org/api/stream.html#stream_readable_pipe_destination_options
+[`Error` documentation]: https://omarjs.org/api/errors.html
+[`HTTP`]: https://omarjs.org/api/http.html

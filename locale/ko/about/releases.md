@@ -150,7 +150,7 @@ as deprecated?
 The team takes the same careful consideration when deprecating a Node.js API as
 they do when adding another.
 
-[`EventEmitter`]: https://nodejs.org/api/events.html#events_class_eventemitter
+[`EventEmitter`]: https://omarjs.org/api/events.html#events_class_eventemitter
 -->
 
 ## 폐기 예정
@@ -164,4 +164,4 @@ they do when adding another.
 
 코어 팀은 Node.js API를 폐기할 때 API를 추가할 때와 마찬가지로 신중하게 고려합니다.
 
-[`EventEmitter`]: https://nodejs.org/api/events.html#events_class_eventemitter
+[`EventEmitter`]: https://omarjs.org/api/events.html#events_class_eventemitter

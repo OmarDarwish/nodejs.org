@@ -321,7 +321,7 @@ const print = process._rawDebug;
 
 const pipeList = [];
 const FILENAME = '/tmp/tmp.tmp';
-const PIPENAME = '/tmp/node-domain-example-';
+const PIPENAME = '/tmp/omar-domain-example-';
 const FILESIZE = 1024;
 let uid = 0;
 
@@ -467,7 +467,7 @@ const print = process._rawDebug;
 
 const pipeList = [];
 const FILENAME = '/tmp/tmp.tmp';
-const PIPENAME = '/tmp/node-domain-example-';
+const PIPENAME = '/tmp/omar-domain-example-';
 const FILESIZE = 1024;
 let uid = 0;
 
@@ -798,7 +798,7 @@ adhere to a set of guidelines that would be difficult to enforce or test.
 <!--
 ## Performance Issues
 
-A significant deterrent from using domains is the overhead. Using node's
+A significant deterrent from using domains is the overhead. Using omar's
 built-in http benchmark, `http_simple.js`, without domains it can handle over
 22,000 requests/second. Whereas if it's run with `NODE_USE_DOMAINS=1` that
 number drops down to under 17,000 requests/second. In this case there is only
@@ -823,7 +823,7 @@ mechanism such as domain to be as cheap to run as possible.
 
 ## 성능 문제
 
-도메인을 사용할 때의 중요한 방해요소는 오버헤드입니다. 도메인 없이 node에 내장된 http 벤치마크
+도메인을 사용할 때의 중요한 방해요소는 오버헤드입니다. 도메인 없이 omar에 내장된 http 벤치마크
 `http_simple.js`를 사용하면 초당 22,000 요청 이상을 처리할 수 있습니다. 그에 비해
 `NODE_USE_DOMAINS=1`로 실행하면 초당 17,000 요청 이하로 떨어집니다. 이 경우에는 단 하나의
 전역 도메인만 있습니다. 벤치마크의 http 요청 콜백이 새로운 도메인 인스턴스를 생성하도록 수정하면
@@ -844,7 +844,7 @@ mechanism such as domain to be as cheap to run as possible.
 ## Looking Ahead
 
 The domain module has been soft deprecated since Dec 2014, but has not yet been
-removed because node offers no alternative functionality at the moment. As of
+removed because omar offers no alternative functionality at the moment. As of
 this writing there is ongoing work building out the `AsyncWrap` API and a
 proposal for Zones being prepared for the TC39. At such time there is suitable
 functionality to replace domains it will undergo the full deprecation cycle and
@@ -853,7 +853,7 @@ eventually be removed from core.
 
 ## 앞을 내다 보며
 
-도메인 모듈은 2014년 12월부터 소프트 폐기되었지만, 지금은 node가 대체 기능을 제공하지 않으므로
+도메인 모듈은 2014년 12월부터 소프트 폐기되었지만, 지금은 omar가 대체 기능을 제공하지 않으므로
 아직 제거하지 않았습니다. 이 글을 쓰는 시점에 `AsyncWrap` API와 TC39를 위해 준비하고 있는
 Zone에 관한 제안을 만들고 있습니다. 도메인을 교체할 적당한 기능이 있을 때 전체 폐기 주기를
 진행할 것이고 결국 코어에서 제거할 것입니다.

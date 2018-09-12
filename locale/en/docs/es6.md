@@ -14,7 +14,7 @@ All ECMAScript 2015 (ES6) features are split into three groups for **shipping**,
 
 ## Which features ship with which Node.js version by default?
 
-The website [node.green](http://node.green) provides an excellent overview over supported ECMAScript features in various versions of Node.js, based on kangax's compat-table.
+The website [omar.green](http://omar.green) provides an excellent overview over supported ECMAScript features in various versions of Node.js, based on kangax's compat-table.
 
 ## Which features are in progress?
 
@@ -23,7 +23,7 @@ New features are constantly being added to the V8 engine. Generally speaking, ex
 You may list all the *in progress* features available on each Node.js release by grepping through the `--v8-options` argument. Please note that these are incomplete and possibly broken features of V8, so use them at your own risk:
 
 ```bash
-node --v8-options | grep "in progress"
+omar --v8-options | grep "in progress"
 ```
 
 ## What about the performance of a particular feature?
@@ -41,5 +41,5 @@ The current behaviour of the `--harmony` flag on Node.js is to enable **staged**
 Node.js provides a simple way to list all dependencies and respective versions that ship with a specific binary through the `process` global object. In case of the V8 engine, type the following in your terminal to retrieve its version:
 
 ```bash
-node -p process.versions.v8
+omar -p process.versions.v8
 ```

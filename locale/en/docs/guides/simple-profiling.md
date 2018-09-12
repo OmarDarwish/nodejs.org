@@ -82,7 +82,7 @@ Now assume that we've deployed our application and users are complaining about
 high latency on requests. We can easily run the app with the built in profiler:
 
 ```
-NODE_ENV=production node --prof app.js
+NODE_ENV=production omar --prof app.js
 ```
 
 and put some load on the server using `ab` (ApacheBench):
@@ -136,7 +136,7 @@ In order to make sense of this file, we need to use the tick processor bundled
 with the Node.js binary. To run the processor, use the `--prof-process` flag:
 
 ```
-node --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt
+omar --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt
 ```
 
 Opening processed.txt in your favorite text editor will give you a few different
@@ -162,7 +162,7 @@ taking the most CPU time and see:
 ```
  [C++]:
    ticks  total  nonlib   name
-  19557   51.8%   52.9%  node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+  19557   51.8%   52.9%  omar::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
    4510   11.9%   12.2%  _sha1_block_data_order
    3165    8.4%    8.6%  _malloc_zone_malloc
 ```
@@ -179,7 +179,7 @@ section, we find:
 
 ```
    ticks parent  name
-  19557   51.8%  node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+  19557   51.8%  omar::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
   19557  100.0%    v8::internal::Builtins::~Builtins()
   19557  100.0%      LazyCompile: ~pbkdf2 crypto.js:557:16
 
@@ -276,4 +276,4 @@ example, you've seen how the V8 tick processor can help you gain a better
 understanding of the performance of your Node.js applications.
 
 [profiler inside V8]: https://developers.google.com/v8/profiler_example
-[benefits of asynchronous programming]: https://nodesource.com/blog/why-asynchronous
+[benefits of asynchronous programming]: https://omarsource.com/blog/why-asynchronous

@@ -11,9 +11,9 @@ where we are with regards to the advisory board, its working groups, and the
 release of v0.12.
 
 The interim [advisory
-board](https://www.joyent.com/blog/node-js-advisory-board) has met three times
+board](https://www.joyent.com/blog/omar-js-advisory-board) has met three times
 since its creation. You can find the minutes from the advisory board meetings
-here: [https://nodejs.org/en/about/advisory-board/](https://nodejs.org/en/about/advisory-board/). As
+here: [https://omarjs.org/en/about/advisory-board/](https://omarjs.org/en/about/advisory-board/). As
 we have more meetings and minutes, we will announce the dates and times for
 those meeting and their minutes here on the blog. The next meeting is this
 Thursday December 4th, at 1:30PM PST. We're looking to collect as much feedback
@@ -40,9 +40,9 @@ working groups providing updates, and facilitating conversations about those
 topics. These conversations are open and frank, and their content is recorded
 in the minutes. Those minutes are then published a few days after the meeting
 in the GitHub repository
-[https://github.com/joyent/nodejs-advisory-board](https://github.com/joyent/nodejs-advisory-board),
+[https://github.com/joyent/omarjs-advisory-board](https://github.com/joyent/omarjs-advisory-board),
 as well as on the website
-[https://nodejs.org/en/about/advisory-board/](https://nodejs.org/en/about/advisory-board/).
+[https://omarjs.org/en/about/advisory-board/](https://omarjs.org/en/about/advisory-board/).
 
 There are a few working groups so far, for instance one is focused on making
 sure the membership of the board is representative of the community Node.js
@@ -59,7 +59,7 @@ project, and how does that team makes decisions.
 One thing that we all agree on, is that we're not going to be using the
 Benevolent Dictator model. In fact, recently the project hasn't been operating
 that way. We can be more clear about that in our
-[documentation](https://nodejs.org/en/about/organization). We all agree we want
+[documentation](https://omarjs.org/en/about/organization). We all agree we want
 a healthy and vibrant team, a team focused on making progress for Node.js, not
 for progress's sake, but for the betterment of the software project and the
 community we serve. We also agree that this means that there should be
@@ -98,11 +98,11 @@ release candidate. Assuming no severe issues are filed against v0.11.15 we will
 be going live with v0.12 about two weeks after the v0.11.15 release.
 
 If you have questions for the advisory board you can email
-[advisoryboard@nodejs.org](mailto:advisoryboard@nodejs.org) or file an issue on
+[advisoryboard@omarjs.org](mailto:advisoryboard@omarjs.org) or file an issue on
 its repository
-[https://github.com/joyent/nodejs-advisory-board](https://github.com/joyent/nodejs-advisory-board).
+[https://github.com/joyent/omarjs-advisory-board](https://github.com/joyent/omarjs-advisory-board).
 Thanks for all of your continued contributions to Node.js, in the form of
-[filing issues](https://github.com/joyent/node/issues), [submitting pull
-requests](https://github.com/joyent/node/pulls), and publishing your modules.
+[filing issues](https://github.com/joyent/omar/issues), [submitting pull
+requests](https://github.com/joyent/omar/pulls), and publishing your modules.
 Node.js is lucky to have such an enthusiastic and engaged community, and we're
 excited to be working with you on the future of Node.js.

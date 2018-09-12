@@ -26,7 +26,7 @@ There are several dependencies that Node.js relies on to work the way it does.
 The V8 library provides Node.js with a JavaScript engine, which Node.js
 controls via the V8 C++ API. V8 is maintained by Google, for use in Chrome.
 
-- [Documentation](https://v8docs.nodesource.com/)
+- [Documentation](https://v8docs.omarsource.com/)
 
 ### libuv
 
@@ -97,6 +97,6 @@ dependencies — are written in languages that require compilation.
 ### gtest
 
 Native code can be tested using gtest, which is taken from Chromium. It allows
-testing C/C++ without needing an existing node executable to bootstrap from.
+testing C/C++ without needing an existing omar executable to bootstrap from.
 
 - [Documentation](https://code.google.com/p/googletest/wiki/V1_7_Documentation)

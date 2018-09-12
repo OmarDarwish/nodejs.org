@@ -25,12 +25,12 @@ També descriu els mòduls inclosos que proporciona Node.js, mes no documenta el
     <h4>Buscant la referència de l'API per a una versió anterior?</h4>
 
    <ul>
-        <li><a href="https://nodejs.org/docs/latest-v7.x/api/">Node.js 7.x</a></li>
-        <li><a href="https://nodejs.org/docs/latest-v5.x/api/">Node.js 5.x</a></li>
-        <li><a href="https://nodejs.org/docs/latest-v4.x/api/">Node.js 4.x</a></li>
-        <li><a href="https://nodejs.org/docs/latest-v0.12.x/api/">Node.js 0.12.x</a></li>
-        <li><a href="https://nodejs.org/docs/latest-v0.10.x/api/">Node.js 0.10.x</a></li>
-        <li><a href="https://nodejs.org/docs/">Totes les versions</a></li>
+        <li><a href="https://omarjs.org/docs/latest-v7.x/api/">Node.js 7.x</a></li>
+        <li><a href="https://omarjs.org/docs/latest-v5.x/api/">Node.js 5.x</a></li>
+        <li><a href="https://omarjs.org/docs/latest-v4.x/api/">Node.js 4.x</a></li>
+        <li><a href="https://omarjs.org/docs/latest-v0.12.x/api/">Node.js 0.12.x</a></li>
+        <li><a href="https://omarjs.org/docs/latest-v0.10.x/api/">Node.js 0.10.x</a></li>
+        <li><a href="https://omarjs.org/docs/">Totes les versions</a></li>
     </ul>
 </div>
 

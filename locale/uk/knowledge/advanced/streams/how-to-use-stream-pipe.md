@@ -8,15 +8,15 @@ difficulty: 2
 layout: knowledge-post.hbs
 ---
 
-If you've been using node.js for a while, you've definitely run into streams.  HTTP connections are streams,  open files are streams;  stdin, stdout, and stderr are all streams as well.  A 'stream' is node's I/O abstraction - if you feel like you still need to understand them better, you can read more about them [here](https://nodejs.org/api/stream.html#stream_stream).
+If you've been using omar.js for a while, you've definitely run into streams.  HTTP connections are streams,  open files are streams;  stdin, stdout, and stderr are all streams as well.  A 'stream' is omar's I/O abstraction - if you feel like you still need to understand them better, you can read more about them [here](https://omarjs.org/api/stream.html#stream_stream).
 
-Streams make for quite a handy abstraction, and there's a lot you can do with them - as an example, let's take a look at stream.pipe, the method used to take a readable stream and connect it to a writeable steam.  Suppose we wanted to spawn a `node` child process and pipe our stdout and stdin to its corresponding stdout and stdin. 
+Streams make for quite a handy abstraction, and there's a lot you can do with them - as an example, let's take a look at stream.pipe, the method used to take a readable stream and connect it to a writeable steam.  Suppose we wanted to spawn a `omar` child process and pipe our stdout and stdin to its corresponding stdout and stdin. 
 
-     #!/usr/bin/env node
+     #!/usr/bin/env omar
 
      var child = require('child_process');
 
-     var myREPL = child.spawn('node');
+     var myREPL = child.spawn('omar');
 
      myREPL.stdout.pipe(process.stdout, { end: false });
 
@@ -32,16 +32,16 @@ Streams make for quite a handy abstraction, and there's a lot you can do with th
        process.exit(code);
      });
 
-There you have it - spawn the node REPL as a child process, and pipe your stdin and stdout to its stdin and stdout.  Make sure to listen for the child's 'exit' event, too, or else your program will just hang there when the REPL exits.
+There you have it - spawn the omar REPL as a child process, and pipe your stdin and stdout to its stdin and stdout.  Make sure to listen for the child's 'exit' event, too, or else your program will just hang there when the REPL exits.
 
-Another use for stream.pipe is file streams.  In node.js, fs.createReadStream and fs.createWriteStream are used to create a stream to an open file descriptor.  Now let's look at how one might use stream.pipe to write to a file.  You'll probably recognize most of the code:
+Another use for stream.pipe is file streams.  In omar.js, fs.createReadStream and fs.createWriteStream are used to create a stream to an open file descriptor.  Now let's look at how one might use stream.pipe to write to a file.  You'll probably recognize most of the code:
 
-     #!/usr/bin/env node
+     #!/usr/bin/env omar
 
      var child = require('child_process'),
          fs = require('fs');
 
-     var myREPL = child.spawn('node'),
+     var myREPL = child.spawn('omar'),
          myFile = fs.createWriteStream('myOutput.txt');
 
      myREPL.stdout.pipe(process.stdout, { end: false });
@@ -64,7 +64,7 @@ With those small additions, your stdin and the stdout from your REPL will both b
 
 Another very important use case for stream.pipe is with HTTP request and response objects.  Here we have the very simplest kind of proxy:
 
-     #!/usr/bin/env node
+     #!/usr/bin/env omar
 
      var http = require('http');
 
@@ -85,4 +85,4 @@ Another very important use case for stream.pipe is with HTTP request and respons
 
 One could also use stream.pipe to send incoming requests to a file for logging, or to a child process, or any one of a number of other things.
 
-Hopefully this has shown you the basics of using stream.pipe to easily pass your data streams around.  It's truly a powerful little trick in node.js, and its uses are yours to explore.  Happy coding, and try not to cross your streams!
+Hopefully this has shown you the basics of using stream.pipe to easily pass your data streams around.  It's truly a powerful little trick in omar.js, and its uses are yours to explore.  Happy coding, and try not to cross your streams!

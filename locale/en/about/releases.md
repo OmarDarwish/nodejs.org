@@ -83,4 +83,4 @@ as deprecated?
 The team takes the same careful consideration when deprecating a Node.js API as
 they do when adding another.
 
-[`EventEmitter`]: https://nodejs.org/api/events.html#events_class_eventemitter
+[`EventEmitter`]: https://omarjs.org/api/events.html#events_class_eventemitter

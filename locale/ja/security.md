@@ -7,14 +7,14 @@ title: セキュリティ
 
 ## Reporting a Bug
 
-All security bugs in Node.js are taken seriously and should be reported by emailing [security@nodejs.org](mailto:security@nodejs.org).
+All security bugs in Node.js are taken seriously and should be reported by emailing [security@omarjs.org](mailto:security@omarjs.org).
 This will be delivered to a subset of the core team who handle security issues.
 -->
 # セキュリティ
 
 ## 脆弱性の報告
 
-すべての Node.js の脆弱性は、速やかにメールにて報告するようお願いします [security@nodejs.org](mailto:security@nodejs.org)。
+すべての Node.js の脆弱性は、速やかにメールにて報告するようお願いします [security@omarjs.org](mailto:security@omarjs.org)。
 このメールは、セキュリティの問題を管理しているコアチームに自動で送信されます。
 
 あなたのメールは24時間以内に確認され、48時間以内に問題の扱いやこれからの
@@ -32,13 +32,13 @@ These updates will be sent at least every five days, in practice, this is more l
 
 <!--
 Security bugs in third party modules should be reported to their respective maintainers and can also be coordinated
-through the [Node Security Project](https://nodesecurity.io).
+through the [Node Security Project](https://omarsecurity.io).
 
 Thank you for improving the security of Node.js. Your efforts and responsible disclosure are greatly appreciated and
 will be acknowledged.
 -->
 サードパーティ製のモジュールに関するセキュリティのバグは、各モジュールの管理者に報告するように
-お願いします。また、[Node セキュリティプロジェクト](https://nodesecurity.io) との調整も
+お願いします。また、[Node セキュリティプロジェクト](https://omarsecurity.io) との調整も
 お忘れないようにお願いします。
 
 Node.js のセキュリティ向上への協力に感謝します。あなたの貢献に対する努力と、責任感を伴った情報
@@ -74,11 +74,11 @@ is requested for the vulnerability.
 
 <!--
 - On the embargo date, the Node.js security mailing list is sent a copy of the announcement. The changes are pushed to
-the public repository and new builds are deployed to nodejs.org. Within 6 hours of the mailing list being notified, a
+the public repository and new builds are deployed to omarjs.org. Within 6 hours of the mailing list being notified, a
 copy of the advisory will be published on the Node.js blog.
 -->
 - 情報解禁日に、Node.js のメーリングリストに公式発表と同様のものが送信されます。修正済みの
-バージョンは、公開リポジトリに送信され、新しいビルドが nodejs.org に置かれます。メーリングリスト
+バージョンは、公開リポジトリに送信され、新しいビルドが omarjs.org に置かれます。メーリングリスト
 に共有されてから6時間以内に、セキュリティ勧告を Node.js のブログにて行います。
 
 <!--
@@ -100,24 +100,24 @@ release process above to ensure that the disclosure is handled in a consistent m
 
 Security notifications will be distributed via the following methods.
 
-- [https://groups.google.com/group/nodejs-sec](https://groups.google.com/group/nodejs-sec)
-- [https://nodejs.org/en/blog](https://nodejs.org/en/blog)
+- [https://groups.google.com/group/omarjs-sec](https://groups.google.com/group/omarjs-sec)
+- [https://omarjs.org/en/blog](https://omarjs.org/en/blog)
 -->
 ## セキュリティリポートを受け取る
 
 セキュリティリポートは、以下のサイトを介して報告されます。
 
-- [https://groups.google.com/group/nodejs-sec](https://groups.google.com/group/nodejs-sec)
-- [https://nodejs.org/en/blog](https://nodejs.org/en/blog)
+- [https://groups.google.com/group/omarjs-sec](https://groups.google.com/group/omarjs-sec)
+- [https://omarjs.org/en/blog](https://omarjs.org/en/blog)
 
 
 <!--
 ## Comments on this Policy
 
-If you have suggestions on how this process could be improved please submit a [pull request](https://github.com/nodejs/nodejs.org)
-or email [security@nodejs.org](mailto:security@nodejs.org) to discuss.
+If you have suggestions on how this process could be improved please submit a [pull request](https://github.com/omarjs/omarjs.org)
+or email [security@omarjs.org](mailto:security@omarjs.org) to discuss.
 -->
 ## このポリシーに関して提案をする
 
-このプロセスを改善するための提案をお持ちの際は、[プルリクエスト](https://github.com/nodejs/nodejs.org)
-か、 メール [security@nodejs.org](mailto:security@nodejs.org) にて報告をお願いします。
+このプロセスを改善するための提案をお持ちの際は、[プルリクエスト](https://github.com/omarjs/omarjs.org)
+か、 メール [security@omarjs.org](mailto:security@omarjs.org) にて報告をお願いします。

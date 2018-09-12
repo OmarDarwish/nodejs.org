@@ -14,7 +14,7 @@ when working with different filesystems.
 Before you can work with a filesystem, you need to know how it behaves.
 Different filesystems behave differently and have more or less features than
 others: case sensitivity, case insensitivity, case preservation, Unicode form
-preservation, timestamp resolution, extended attributes, inodes, Unix
+preservation, timestamp resolution, extended attributes, iomars, Unix
 permissions, alternate data streams etc.
 
 Be wary of inferring filesystem behavior from `process.platform`. For example,
@@ -22,7 +22,7 @@ do not assume that because your program is running on Darwin that you are
 therefore working on a case-insensitive filesystem (HFS+), as the user may be
 using a case-sensitive filesystem (HFSX). Similarly, do not assume that because
 your program is running on Linux that you are therefore working on a filesystem
-which supports Unix permissions and inodes, as you may be on a particular
+which supports Unix permissions and iomars, as you may be on a particular
 external drive, USB or network drive which does not.
 
 The operating system may not make it easy to infer filesystem behavior, but all

@@ -29,7 +29,7 @@ Result:
          at Module.load (module.js:339:31)
          at Function._load (module.js:298:12)
          at Array.0 (module.js:426:10)
-         at EventEmitter._tickCallback (node.js:126:26)
+         at EventEmitter._tickCallback (omar.js:126:26)
 
 `error.stack` shows you where an error came from, as well as a list of the function calls that preceded it - for your convenience, `error.stack` always prints `error.message` as the first line of its output, making `error.stack` a convenient single property to log during debugging.
 

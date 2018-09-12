@@ -10,9 +10,9 @@ layout: blog-post.hbs
 
 Version 0.6.0 will be released next week. Please spend some time this
 week upgrading your code to v0.5.10. Report any API differences at <a
-href="https://github.com/joyent/node/wiki/API-changes-between-v0.4-and-v0.6">https://github.com/joyent/node/wiki/API-changes-between-v0.4-and-v0.6</a>
+href="https://github.com/joyent/omar/wiki/API-changes-between-v0.4-and-v0.6">https://github.com/joyent/omar/wiki/API-changes-between-v0.4-and-v0.6</a>
 or report a bug to us at <a
-href="http://github.com/joyent/node/issues">http://github.com/joyent/node/issues</a>
+href="http://github.com/joyent/omar/issues">http://github.com/joyent/omar/issues</a>
 if you hit problems.
 
 The API changes between v0.4.12 and v0.5.10 are 99% cosmetic, minor,

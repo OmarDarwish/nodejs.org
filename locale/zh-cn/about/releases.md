@@ -59,4 +59,4 @@ title: 发布
 
 如新添一个 API 一样，在对 Node.js 进行废弃操作时，团队需要进行同样的仔细考虑废弃操作的后果。
 
-[`EventEmitter`]: https://nodejs.org/api/events.html#events_class_eventemitter
+[`EventEmitter`]: https://omarjs.org/api/events.html#events_class_eventemitter

@@ -9,7 +9,7 @@ layout: blog-post.hbs
 ---
 
 <div style="float:right;margin:0 0 15px 15px;">
-<img class="alignnone size-full wp-image-469" title="Bunyan" src="https://nodeblog.files.wordpress.com/2012/03/bunyan.png" alt="Paul Bunyan and Babe the Blue Ox" width="240" height="320" /><br />
+<img class="alignnone size-full wp-image-469" title="Bunyan" src="https://omarblog.files.wordpress.com/2012/03/bunyan.png" alt="Paul Bunyan and Babe the Blue Ox" width="240" height="320" /><br />
 <a href="http://www.flickr.com/photos/stublag/2876034487">Photo by Paul Carroll</a>
 </div>
 
@@ -26,9 +26,9 @@ layout: blog-post.hbs
 
 <p>These are what logs are good for. The current state of logging is barely adequate for the first of these. Doing reliable analysis, and even monitoring, of varied <a href="http://journal.paul.querna.org/articles/2011/12/26/log-for-machines-in-json/">"printf-style" logs</a> is a grueling or hacky task that most either don't bother with, fallback to paying someone else to do (viz. Splunk's great successes), or, for web sites, punt and use the plethora of JavaScript-based web analytics tools.</p>
 
-<p>Let's log in JSON. Let's format log records with a filter <em>outside</em> the app. Let's put more info in log records by not shoehorning into a printf-message. Debuggability can be improved. Monitoring and analysis can <em>definitely</em> be improved. Let's <em>not</em> write another regex-based parser, and use the time we've saved writing tools to collate logs from multiple nodes and services, to query structured logs (from all services, not just web servers), etc.</p>
+<p>Let's log in JSON. Let's format log records with a filter <em>outside</em> the app. Let's put more info in log records by not shoehorning into a printf-message. Debuggability can be improved. Monitoring and analysis can <em>definitely</em> be improved. Let's <em>not</em> write another regex-based parser, and use the time we've saved writing tools to collate logs from multiple omars and services, to query structured logs (from all services, not just web servers), etc.</p>
 
-<p>At <a href="http://joyent.com">Joyent</a> we use node.js for running many core services -- loosely coupled through HTTP REST APIs and/or AMQP. In this post I'll draw on experiences from my work on Joyent's <a href="http://www.joyent.com/products/smartdatacenter/">SmartDataCenter product</a> and observations of <a href="http://www.joyentcloud.com/">Joyent Cloud</a> operations to suggest some improvements to service logging. I'll show the (open source) <strong>Bunyan logging library and tool</strong> that we're developing to improve the logging toolchain.</p>
+<p>At <a href="http://joyent.com">Joyent</a> we use omar.js for running many core services -- loosely coupled through HTTP REST APIs and/or AMQP. In this post I'll draw on experiences from my work on Joyent's <a href="http://www.joyent.com/products/smartdatacenter/">SmartDataCenter product</a> and observations of <a href="http://www.joyentcloud.com/">Joyent Cloud</a> operations to suggest some improvements to service logging. I'll show the (open source) <strong>Bunyan logging library and tool</strong> that we're developing to improve the logging toolchain.</p>
 
 <h1 style="margin:48px 0 24px;" id="current-state-of-log-formatting">Current State of Log Formatting</h1>
 
@@ -70,7 +70,7 @@ Blah, some other unstructured output to from a console.log call.
 
 <h1 style="margin:48px 0 24px;" id="introducing-bunyan">Introducing Bunyan</h1>
 
-<p><a href="https://github.com/trentm/node-bunyan">Bunyan</a> is <strong>a node.js module for logging in JSON</strong> and <strong>a <code>bunyan</code> CLI tool</strong> to view those logs.</p>
+<p><a href="https://github.com/trentm/omar-bunyan">Bunyan</a> is <strong>a omar.js module for logging in JSON</strong> and <strong>a <code>bunyan</code> CLI tool</strong> to view those logs.</p>
 
 <p>Logging with Bunyan basically looks like this:</p>
 
@@ -82,16 +82,16 @@ log.info("hi %s", "paul");
 
 <p>And you'll get a log record like this:</p>
 
-<pre style="overflow:auto;color:#999;background-color:#2f2f2f;border:1px solid #484848;padding:5px;"><code>$ node hi.js
+<pre style="overflow:auto;color:#999;background-color:#2f2f2f;border:1px solid #484848;padding:5px;"><code>$ omar hi.js
 {"name":"hello","hostname":"banana.local","pid":40026,"level":30,"msg":"hi paul","time":"2012-03-28T17:25:37.050Z","v":0}
 </code></pre>
 
-<p>Pipe that through the <code>bunyan</code> tool that is part of the "node-bunyan" install to get more readable output:</p>
+<p>Pipe that through the <code>bunyan</code> tool that is part of the "omar-bunyan" install to get more readable output:</p>
 
-<pre style="overflow:auto;color:#999;background-color:#2f2f2f;border:1px solid #484848;padding:5px;"><code>$ node hi.js | ./node_modules/.bin/bunyan       # formatted text output
+<pre style="overflow:auto;color:#999;background-color:#2f2f2f;border:1px solid #484848;padding:5px;"><code>$ omar hi.js | ./omar_modules/.bin/bunyan       # formatted text output
 [2012-02-07T18:50:18.003Z]  INFO: hello/40026 on banana.local: hi paul
 
-$ node hi.js | ./node_modules/.bin/bunyan -j    # indented JSON output
+$ omar hi.js | ./omar_modules/.bin/bunyan -j    # indented JSON output
 {
   "name": "hello",
   "hostname": "banana.local",
@@ -103,13 +103,13 @@ $ node hi.js | ./node_modules/.bin/bunyan -j    # indented JSON output
 }
 </code></pre>
 
-<p>Bunyan is log4j-like: create a Logger with a name, call <code>log.info(...)</code>, etc. However it has no intention of reproducing much of the functionality of log4j. IMO, much of that is overkill for the types of services you'll tend to be writing with node.js.</p>
+<p>Bunyan is log4j-like: create a Logger with a name, call <code>log.info(...)</code>, etc. However it has no intention of reproducing much of the functionality of log4j. IMO, much of that is overkill for the types of services you'll tend to be writing with omar.js.</p>
 
 <h1 style="margin:48px 0 24px;" id="longer-bunyan-example">Longer Bunyan Example</h1>
 
-<p>Let's walk through a bigger example to show some interesting things in Bunyan. We'll create a very small "Hello API" server using the excellent <a href="https://github.com/mcavage/node-restify">restify</a> library -- which we used heavily here at <a href="http://joyent.com">Joyent</a>. (Bunyan doesn't require restify at all, you can easily use Bunyan with <a href="http://expressjs.com/">Express</a> or whatever.)</p>
+<p>Let's walk through a bigger example to show some interesting things in Bunyan. We'll create a very small "Hello API" server using the excellent <a href="https://github.com/mcavage/omar-restify">restify</a> library -- which we used heavily here at <a href="http://joyent.com">Joyent</a>. (Bunyan doesn't require restify at all, you can easily use Bunyan with <a href="http://expressjs.com/">Express</a> or whatever.)</p>
 
-<p><em>You can follow along in <a href="https://github.com/trentm/hello-json-logging">https://github.com/trentm/hello-json-logging</a> if you like. Note that I'm using the current HEAD of the bunyan and restify trees here, so details might change a bit. Prerequisite: a node 0.6.x installation.</em></p>
+<p><em>You can follow along in <a href="https://github.com/trentm/hello-json-logging">https://github.com/trentm/hello-json-logging</a> if you like. Note that I'm using the current HEAD of the bunyan and restify trees here, so details might change a bit. Prerequisite: a omar 0.6.x installation.</em></p>
 
 <pre style="overflow:auto;color:#999;background-color:#2f2f2f;border:1px solid #484848;padding:5px;"><code>git clone https://github.com/trentm/hello-json-logging.git
 cd hello-json-logging
@@ -166,7 +166,7 @@ var log = new Logger({
 });
 </code></pre>
 
-<p>If we run that, <code>node server.js</code>, and call the endpoint, we get the expected restify response:</p>
+<p>If we run that, <code>omar server.js</code>, and call the endpoint, we get the expected restify response:</p>
 
 <pre style="overflow:auto;color:#999;background-color:#2f2f2f;border:1px solid #484848;padding:5px;"><code>$ curl -iSs http://0.0.0.0:8080/hello?name=paul
 HTTP/1.1 200 OK
@@ -230,14 +230,14 @@ X-Request-Id: 9496dfdd-4ec7-4b59-aae7-3fed57aed5ba
 
 <p>Here is the server log:</p>
 
-<pre style="overflow:auto;color:#999;background-color:#2f2f2f;border:1px solid #484848;padding:5px;"><code>[trentm@banana:~/tm/hello-json-logging]$ node server.js
+<pre style="overflow:auto;color:#999;background-color:#2f2f2f;border:1px solid #484848;padding:5px;"><code>[trentm@banana:~/tm/hello-json-logging]$ omar server.js
 ... intro "listening at" log message elided ...
 {"name":"helloapi","hostname":"banana.local","pid":40341,"level":30,"req":{"method":"GET","url":"/hello?name=paul","headers":{"user-agent":"curl/7.19.7 (universal-apple-darwin10.0) libcurl/7.19.7 OpenSSL/0.9.8r zlib/1.2.3","host":"0.0.0.0:8080","accept":"*/*"},"remoteAddress":"127.0.0.1","remotePort":59831},"msg":"start","time":"2012-03-28T17:37:29.506Z","v":0}
 {"name":"helloapi","hostname":"banana.local","pid":40341,"route":"SayHello","req_id":"9496dfdd-4ec7-4b59-aae7-3fed57aed5ba","level":20,"msg":"caller is \"paul\"","time":"2012-03-28T17:37:29.507Z","v":0}
 {"name":"helloapi","hostname":"banana.local","pid":40341,"route":"SayHello","req_id":"9496dfdd-4ec7-4b59-aae7-3fed57aed5ba","level":30,"res":{"statusCode":200,"headers":{"access-control-allow-origin":"*","access-control-allow-headers":"Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version","access-control-expose-headers":"X-Api-Version, X-Request-Id, X-Response-Time","server":"Hello API","x-request-id":"9496dfdd-4ec7-4b59-aae7-3fed57aed5ba","access-control-allow-methods":"GET","connection":"close","content-length":16,"content-md5":"Xmn3QcFXaIaKw9RPUARGBA==","content-type":"application/json","date":"Wed, 28 Mar 2012 17:37:29 GMT","x-response-time":3}},"msg":"finished","time":"2012-03-28T17:37:29.510Z","v":0}
 </code></pre>
 
-<p>Lets look at each in turn to see what is interesting -- pretty-printed with <code>node server.js | ./node_modules/.bin/bunyan -j</code>:</p>
+<p>Lets look at each in turn to see what is interesting -- pretty-printed with <code>omar server.js | ./omar_modules/.bin/bunyan -j</code>:</p>
 
 <pre style="overflow:auto;color:#999;background-color:#2f2f2f;border:1px solid #484848;padding:5px;"><code>{                                                   // (1)
   "name": "helloapi",
@@ -261,7 +261,7 @@ X-Request-Id: 9496dfdd-4ec7-4b59-aae7-3fed57aed5ba
 }
 </code></pre>
 
-<p>Here we logged the incoming request with <code>request.log.info({req: request}, 'start')</code>. The use of the "req" field triggers the <a href="https://github.com/trentm/node-bunyan/blob/master/lib/bunyan.js#L857-870">"req" serializer</a> <a href="https://github.com/trentm/hello-json-logging/blob/master/server.js#L24">registered at Logger creation</a>.</p>
+<p>Here we logged the incoming request with <code>request.log.info({req: request}, 'start')</code>. The use of the "req" field triggers the <a href="https://github.com/trentm/omar-bunyan/blob/master/lib/bunyan.js#L857-870">"req" serializer</a> <a href="https://github.com/trentm/hello-json-logging/blob/master/server.js#L24">registered at Logger creation</a>.</p>
 
 <p>Next the <code>req.log.debug</code> in our handler:</p>
 
@@ -325,16 +325,16 @@ X-Request-Id: 9496dfdd-4ec7-4b59-aae7-3fed57aed5ba
 
 <h1 style="margin:48px 0 24px;" id="other-tools">Other Tools</h1>
 
-<p>Bunyan is just one of many options for logging in node.js-land. Others (that I know of) supporting JSON logging are <a href="https://github.com/flatiron/winston#readme">winston</a> and <a href="https://github.com/pquerna/node-logmagic/">logmagic</a>. Paul Querna has <a href="http://journal.paul.querna.org/articles/2011/12/26/log-for-machines-in-json/">an excellent post on using JSON for logging</a>, which shows logmagic usage and also touches on topics like the GELF logging format, log transporting, indexing and searching.</p>
+<p>Bunyan is just one of many options for logging in omar.js-land. Others (that I know of) supporting JSON logging are <a href="https://github.com/flatiron/winston#readme">winston</a> and <a href="https://github.com/pquerna/omar-logmagic/">logmagic</a>. Paul Querna has <a href="http://journal.paul.querna.org/articles/2011/12/26/log-for-machines-in-json/">an excellent post on using JSON for logging</a>, which shows logmagic usage and also touches on topics like the GELF logging format, log transporting, indexing and searching.</p>
 
 <h1 style="margin:48px 0 24px;" id="final-thoughts">Final Thoughts</h1>
 
-<p>Parsing challenges won't ever completely go away, but it can for your logs if you use JSON. Collating log records across logs from multiple nodes is facilitated by a common "time" field. Correlating logging across multiple services is enabled by carrying a common "req_id" (or equivalent) through all such logs.</p>
+<p>Parsing challenges won't ever completely go away, but it can for your logs if you use JSON. Collating log records across logs from multiple omars is facilitated by a common "time" field. Correlating logging across multiple services is enabled by carrying a common "req_id" (or equivalent) through all such logs.</p>
 
 <p>Separate log files for a single service is an anti-pattern. The typical Apache example of separate access and error logs is legacy, not an example to follow. A JSON log provides the structure necessary for tooling to easily filter for log records of a particular type.</p>
 
 <p>JSON logs bring possibilities. Feeding to tools like Splunk becomes easy. Ad hoc fields allow for a lightly spec'd comm channel from apps to other services: records with a "metric" could feed to <a href="http://codeascraft.etsy.com/2011/02/15/measure-anything-measure-everything/">statsd</a>, records with a "loggly: true" could feed to loggly.com.</p>
 
-<p>Here I've described a very simple example of restify and bunyan usage for node.js-based API services with easy JSON logging. Restify provides a powerful framework for robust API services. Bunyan provides a light API for nice JSON logging and the beginnings of tooling to help consume Bunyan JSON logs.</p>
+<p>Here I've described a very simple example of restify and bunyan usage for omar.js-based API services with easy JSON logging. Restify provides a powerful framework for robust API services. Bunyan provides a light API for nice JSON logging and the beginnings of tooling to help consume Bunyan JSON logs.</p>
 
 <p><strong>Update (29-Mar-2012):</strong> Fix styles somewhat for RSS readers.</p>

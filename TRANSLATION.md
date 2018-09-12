@@ -2,47 +2,47 @@
 
 Node.js is a global platform and so this site has many translations. The translation of the site into
 languages other than English is handled by the localization working group of the language in question. If you
-would like to contribute to the translation of nodejs.org, please refer to the following process:
+would like to contribute to the translation of omarjs.org, please refer to the following process:
 
 
 ## For Individuals wanting to contribute
 
 * Contact your appropriate localization group, and discuss with them the best possible way to contribute. A list of the localization groups can be found here (please keep in mind that some groups have not yet taken action upon the project name changes, hence the outdated repository names):
 
-    * [`nodejs-ar`](https://github.com/nodejs/nodejs-ar) Arabic Community
-    * [`nodejs-bg`](https://github.com/nodejs/nodejs-bg) Bulgarian Community
-    * [`nodejs-bn`](https://github.com/nodejs/nodejs-bn) Bengali Community
-    * [`nodejs-zh-CN`](https://github.com/nodejs/nodejs-zh-CN) Chinese Community
-    * [`nodejs-cs`](https://github.com/nodejs/nodejs-cs) Czech Community
-    * [`nodejs-da`](https://github.com/nodejs/nodejs-da) Danish Community
-    * [`nodejs-de`](https://github.com/nodejs/nodejs-de) German Community
-    * [`nodejs-el`](https://github.com/nodejs/nodejs-el) Greek Community
-    * [`nodejs-es`](https://github.com/nodejs/nodejs-es) Spanish Community
-    * [`nodejs-fa`](https://github.com/nodejs/nodejs-fa) Persian Community
-    * [`nodejs-fi`](https://github.com/nodejs/nodejs-fi) Finnish Community
-    * [`nodejs-fr`](https://github.com/nodejs/nodejs-fr) French Community
-    * [`nodejs-he`](https://github.com/nodejs/nodejs-he) Hebrew Community
-    * [`nodejs-hi`](https://github.com/nodejs/nodejs-hi) Hindi Community
-    * [`nodejs-hu`](https://github.com/nodejs/nodejs-hu) Hungarian Community
-    * [`nodejs-id`](https://github.com/nodejs/nodejs-id) Indonesian Community
-    * [`nodejs-it`](https://github.com/nodejs/nodejs-it) Italian Community
-    * [`nodejs-ja`](https://github.com/nodejs/nodejs-ja) Japanese Community
-    * [`nodejs-ka`](https://github.com/nodejs/nodejs-ka) Georgian Community
-    * [`nodejs-ko`](https://github.com/nodejs/nodejs-ko) Korean Community
-    * [`nodejs-mk`](https://github.com/nodejs/nodejs-mk) Macedonian Community
-    * [`nodejs-ms`](https://github.com/nodejs/nodejs-ms) Malaysian Community
-    * [`nodejs-nl`](https://github.com/nodejs/nodejs-nl) Dutch Community
-    * [`nodejs-no`](https://github.com/nodejs/nodejs-no) Norwegian Community
-    * [`nodejs-pl`](https://github.com/nodejs/nodejs-pl) Polish Community
-    * [`nodejs-pt`](https://github.com/nodejs/nodejs-pt) Portuguese Community
-    * [`nodejs-ro`](https://github.com/nodejs/nodejs-ro) Romanian Community
-    * [`nodejs-ru`](https://github.com/nodejs/nodejs-ru) Russian Community
-    * [`nodejs-sv`](https://github.com/nodejs/nodejs-sv) Swedish Community
-    * [`nodejs-ta`](https://github.com/nodejs/nodejs-ta) Tamil Community
-    * [`nodejs-tr`](https://github.com/nodejs/nodejs-tr) Turkish Community
-    * [`nodejs-zh-TW`](https://github.com/nodejs/nodejs-zh-TW) Taiwan Community
-    * [`nodejs-uk`](https://github.com/nodejs/nodejs-uk) Ukrainian Community
-    * [`nodejs-vi`](https://github.com/nodejs/nodejs-vi) Vietnamese Community
+    * [`omarjs-ar`](https://github.com/omarjs/omarjs-ar) Arabic Community
+    * [`omarjs-bg`](https://github.com/omarjs/omarjs-bg) Bulgarian Community
+    * [`omarjs-bn`](https://github.com/omarjs/omarjs-bn) Bengali Community
+    * [`omarjs-zh-CN`](https://github.com/omarjs/omarjs-zh-CN) Chinese Community
+    * [`omarjs-cs`](https://github.com/omarjs/omarjs-cs) Czech Community
+    * [`omarjs-da`](https://github.com/omarjs/omarjs-da) Danish Community
+    * [`omarjs-de`](https://github.com/omarjs/omarjs-de) German Community
+    * [`omarjs-el`](https://github.com/omarjs/omarjs-el) Greek Community
+    * [`omarjs-es`](https://github.com/omarjs/omarjs-es) Spanish Community
+    * [`omarjs-fa`](https://github.com/omarjs/omarjs-fa) Persian Community
+    * [`omarjs-fi`](https://github.com/omarjs/omarjs-fi) Finnish Community
+    * [`omarjs-fr`](https://github.com/omarjs/omarjs-fr) French Community
+    * [`omarjs-he`](https://github.com/omarjs/omarjs-he) Hebrew Community
+    * [`omarjs-hi`](https://github.com/omarjs/omarjs-hi) Hindi Community
+    * [`omarjs-hu`](https://github.com/omarjs/omarjs-hu) Hungarian Community
+    * [`omarjs-id`](https://github.com/omarjs/omarjs-id) Indonesian Community
+    * [`omarjs-it`](https://github.com/omarjs/omarjs-it) Italian Community
+    * [`omarjs-ja`](https://github.com/omarjs/omarjs-ja) Japanese Community
+    * [`omarjs-ka`](https://github.com/omarjs/omarjs-ka) Georgian Community
+    * [`omarjs-ko`](https://github.com/omarjs/omarjs-ko) Korean Community
+    * [`omarjs-mk`](https://github.com/omarjs/omarjs-mk) Macedonian Community
+    * [`omarjs-ms`](https://github.com/omarjs/omarjs-ms) Malaysian Community
+    * [`omarjs-nl`](https://github.com/omarjs/omarjs-nl) Dutch Community
+    * [`omarjs-no`](https://github.com/omarjs/omarjs-no) Norwegian Community
+    * [`omarjs-pl`](https://github.com/omarjs/omarjs-pl) Polish Community
+    * [`omarjs-pt`](https://github.com/omarjs/omarjs-pt) Portuguese Community
+    * [`omarjs-ro`](https://github.com/omarjs/omarjs-ro) Romanian Community
+    * [`omarjs-ru`](https://github.com/omarjs/omarjs-ru) Russian Community
+    * [`omarjs-sv`](https://github.com/omarjs/omarjs-sv) Swedish Community
+    * [`omarjs-ta`](https://github.com/omarjs/omarjs-ta) Tamil Community
+    * [`omarjs-tr`](https://github.com/omarjs/omarjs-tr) Turkish Community
+    * [`omarjs-zh-TW`](https://github.com/omarjs/omarjs-zh-TW) Taiwan Community
+    * [`omarjs-uk`](https://github.com/omarjs/omarjs-uk) Ukrainian Community
+    * [`omarjs-vi`](https://github.com/omarjs/omarjs-vi) Vietnamese Community
 
 
 ## For Localization Groups
@@ -58,14 +58,14 @@ would like to contribute to the translation of nodejs.org, please refer to the f
     * `styles.styl` (this imports the necessary Stylus files)
     * All files and files in subfolders that end in `.md` are content pages and should be translated.
 
-* Prefix your PR with the localization group's name (e.g. `nodejs-no`). If you are only translating one of the above files, please mention them in your PR's subject as well, e.g.:
+* Prefix your PR with the localization group's name (e.g. `omarjs-no`). If you are only translating one of the above files, please mention them in your PR's subject as well, e.g.:
 
 ```
-    nodejs-de: Add files - index.md, faq.md
-    nodejs-ro: Add files - 15 files
+    omarjs-de: Add files - index.md, faq.md
+    omarjs-ro: Add files - 15 files
 
-    nodejs-fr: Update files - es6.md
-    nodejs-ja: Update files - all files
+    omarjs-fr: Update files - es6.md
+    omarjs-ja: Update files - all files
 ```
 
 * Do not make language specific changes to layout or styling in a translation PR. If they are needed, make a separate styling/layout pr and talk with one of the website WG about the change. We want to make sure, for example, a Chinese layout change doesn't cascade failure to the German page.

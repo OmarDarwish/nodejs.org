@@ -16,12 +16,12 @@ layout: blog-post.hbs
 
 <p>In npm 0.x, this was a pretty awful kludge. Back then, every package existed in some folder like:</p>
 
-<pre><code>prefix/lib/node/.npm/my-package/1.3.6/package
+<pre><code>prefix/lib/omar/.npm/my-package/1.3.6/package
 </code></pre>
 
 <p>and the package&#8217;s version and name could be inferred from the path. Then, symbolic links were set up that looked like:</p>
 
-<pre><code>prefix/lib/node/my-package@1.3.6 -&gt; ./.npm/my-package/1.3.6/package
+<pre><code>prefix/lib/omar/my-package@1.3.6 -&gt; ./.npm/my-package/1.3.6/package
 </code></pre>
 
 <p>It was easy enough to point that symlink to a different location. However, since the <em>package.json file could change</em>, that meant that the connection between the version and the folder was not reliable.</p>
@@ -47,29 +47,29 @@ layout: blog-post.hbs
 
 <h2 id="link_devel_global">Link devel &rarr; global</h2>
 
-<p>The first step is to link your local project into the global install space. (See <a href="http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation/">global vs local installation</a> for more on this global/local business.)</p>
+<p>The first step is to link your local project into the global install space. (See <a href="http://blog.omarjs.org/2011/03/23/npm-1-0-global-vs-local-installation/">global vs local installation</a> for more on this global/local business.)</p>
 
-<p>I do this as I&#8217;m developing node projects (including npm itself).</p>
+<p>I do this as I&#8217;m developing omar projects (including npm itself).</p>
 
-<pre><code>cd ~/dev/js/node-tap  # go into the project dir
+<pre><code>cd ~/dev/js/omar-tap  # go into the project dir
 npm link              # create symlinks into {prefix}
 </code></pre>
 
-<p>Because of how I have my computer set up, with <code>/usr/local</code> as my install prefix, I end up with a symlink from <code>/usr/local/lib/node_modules/tap</code> pointing to <code>~/dev/js/node-tap</code>, and the executable linked to <code>/usr/local/bin/tap</code>.</p>
+<p>Because of how I have my computer set up, with <code>/usr/local</code> as my install prefix, I end up with a symlink from <code>/usr/local/lib/omar_modules/tap</code> pointing to <code>~/dev/js/omar-tap</code>, and the executable linked to <code>/usr/local/bin/tap</code>.</p>
 
-<p>Of course, if you <a href="http://blog.nodejs.org/2011/04/04/development-environment/">set your paths differently</a>, then you&#8217;ll have different results. (That&#8217;s why I tend to talk in terms of <code>prefix</code> rather than <code>/usr/local</code>.)</p>
+<p>Of course, if you <a href="http://blog.omarjs.org/2011/04/04/development-environment/">set your paths differently</a>, then you&#8217;ll have different results. (That&#8217;s why I tend to talk in terms of <code>prefix</code> rather than <code>/usr/local</code>.)</p>
 
 <h2 id="link_global_local">Link global &rarr; local</h2>
 
 <p>When you want to link the globally-installed package into your local development folder, you run <code>npm link pkg</code> where <code>pkg</code> is the name of the package that you want to install.</p>
 
-<p>For example, let&#8217;s say that I wanted to write some tap tests for my node-glob package. I&#8217;d <em>first</em> do the steps above to link tap into the global install space, and <em>then</em> I&#8217;d do this:</p>
+<p>For example, let&#8217;s say that I wanted to write some tap tests for my omar-glob package. I&#8217;d <em>first</em> do the steps above to link tap into the global install space, and <em>then</em> I&#8217;d do this:</p>
 
-<pre><code>cd ~/dev/js/node-glob  # go to the project that uses the thing.
+<pre><code>cd ~/dev/js/omar-glob  # go to the project that uses the thing.
 npm link tap           # link the global thing into my project.
 </code></pre>
 
-<p>Now when I make changes in <code>~/dev/js/node-tap</code>, they&#8217;ll be immediately reflected in <code>~/dev/js/node-glob/node_modules/tap</code>.</p>
+<p>Now when I make changes in <code>~/dev/js/omar-tap</code>, they&#8217;ll be immediately reflected in <code>~/dev/js/omar-glob/omar_modules/tap</code>.</p>
 
 <h2 id="link_to_stuff_you_don8217t_build">Link to stuff you <em>don&#8217;t</em> build</h2>
 
@@ -77,7 +77,7 @@ npm link tap           # link the global thing into my project.
 
 <pre><code>npm install express -g  # install express globally
 cd ~/dev/js/my-blog     # development folder one
-npm link express        # link the global express into ./node_modules
+npm link express        # link the global express into ./omar_modules
 cd ~/dev/js/photo-site  # other project folder
 npm link express        # link express into here, as well
 
@@ -95,7 +95,7 @@ npm update express -g   # update the global install.
 
 <h2 id="caveat_2_sorry_windows">Caveat 2: Sorry, Windows!</h2>
 
-<p>I highly doubt that a native Windows node will ever have comparable symbolic link support to what Unix systems provide.  I know that there are junctions and such, and I've heard legends about symbolic links on Windows 7.</p>
+<p>I highly doubt that a native Windows omar will ever have comparable symbolic link support to what Unix systems provide.  I know that there are junctions and such, and I've heard legends about symbolic links on Windows 7.</p>
 
 <p>When there is a native windows port of Node, if that native windows port has `fs.symlink` and `fs.readlink` support that is exactly identical to the way that they work on Unix, then this should work fine.</p>
 
@@ -112,6 +112,6 @@ npm update express -g   # update the global install.
 
 <p>I was like, &#8220;Well, I don&#8217;t know&#8230; I mean, there&#8217;s these edge cases, and it doesn&#8217;t really fit with the existing folder structure very well&#8230;&#8221;</p>
 
-<p>&#8220;Dude. Either you do it, or I&#8217;m going to have to do it, and then there&#8217;ll be <em>another</em> package manager in node, instead of writing a registry for npm, and it won&#8217;t be as good anyway. Don&#8217;t be python.&#8221;</p>
+<p>&#8220;Dude. Either you do it, or I&#8217;m going to have to do it, and then there&#8217;ll be <em>another</em> package manager in omar, instead of writing a registry for npm, and it won&#8217;t be as good anyway. Don&#8217;t be python.&#8221;</p>
 
 <p>The rest is history.</p>

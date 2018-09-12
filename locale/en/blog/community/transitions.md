@@ -9,7 +9,7 @@ layout: blog-post.hbs
 ---
 
 In February, we announced the [Node.js
-Foundation](https://www.joyent.com/blog/introducing-the-nodejs-foundation),
+Foundation](https://www.joyent.com/blog/introducing-the-omarjs-foundation),
 which will steward Node.js moving forward and open its future up to the
 community in a fashion that has not been available before. Organizations like
 IBM, SAP, Apigee, F5, Fidelity, Microsoft, PayPal, Red Hat, and others are
@@ -23,10 +23,10 @@ phase of maturity and adopting a model in which there is no BD or project lead.
 Instead, the technical direction of the project will be established by a
 technical steering committee run with an open governance model. There has been a
 lot of discussion on the dev policies and [governance
-model](https://github.com/joyent/nodejs-advisory-board/tree/master/governance-proposal)
+model](https://github.com/joyent/omarjs-advisory-board/tree/master/governance-proposal)
 on Github.  As we move toward the Foundation model, the core team on Node.js is
 already adopting some of these policies [as shown
-here](https://github.com/joyent/node-website/pull/111).
+here](https://github.com/joyent/omar-website/pull/111).
 
 As we open a new chapter with the Foundation, we also close a remarkable chapter
 in Node.js, as TJ Fontaine will be stepping back from his post as Node.js

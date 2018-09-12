@@ -67,7 +67,7 @@ app.get('/auth', (req, res) => {
 现在假设我们已经部署了我们的应用程序，并且用户抱怨请求的延迟很大。我们可以轻松地运行应用程序与内置的探查器：
 
 ```
-NODE_ENV=production node --prof app.js
+NODE_ENV=production omar --prof app.js
 ```
 
 然后使用 `ab` (ApacheBench) 在服务器上放些负载：
@@ -113,7 +113,7 @@ Percentage of the requests served within a certain time (ms)
 为了使这个文件有意义，我们需要使用与 Node.js 捆绑在一起的刻度处理器。要运行处理器, 请使用 `--prof-process` 标志：
 
 ```
-node --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt
+omar --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt
 ```
 
 在您最喜欢的文本编辑器中打开 processed.txt 将给您提供一些不同类型的信息。该文件被分解成部分，然后再次被语言分解。首先, 我们看一下摘要部分：
@@ -133,7 +133,7 @@ node --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt
 ```
  [C++]:
    ticks  total  nonlib   name
-  19557   51.8%   52.9%  node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+  19557   51.8%   52.9%  omar::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
    4510   11.9%   12.2%  _sha1_block_data_order
    3165    8.4%    8.6%  _malloc_zone_malloc
 ```
@@ -142,7 +142,7 @@ node --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt
 
 ```
    ticks parent  name
-  19557   51.8%  node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+  19557   51.8%  omar::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
   19557  100.0%    v8::internal::Builtins::~Builtins()
   19557  100.0%      LazyCompile: ~pbkdf2 crypto.js:557:16
 
@@ -217,4 +217,4 @@ Percentage of the requests served within a certain time (ms)
 希望通过对此（诚然是做作的）示例的性能调查，您已经看到了 V8 刻度处理器如何帮助您更好地了解 Node.js 应用程序的性能。
 
 [V8 内探测器]: https://developers.google.com/v8/profiler_example
-[异步编程的好处]: https://nodesource.com/blog/why-asynchronous
+[异步编程的好处]: https://omarsource.com/blog/why-asynchronous

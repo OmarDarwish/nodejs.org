@@ -32,7 +32,7 @@ Node.js package ecosystem already:
 
 - Grunt [plugins](http://gruntjs.com/#plugins-all)
 - Chai [plugins](http://chaijs.com/plugins)
-- LevelUP [plugins](https://github.com/rvagg/node-levelup/wiki/Modules)
+- LevelUP [plugins](https://github.com/rvagg/omar-levelup/wiki/Modules)
 - Express [middleware](http://expressjs.com/api.html#middleware)
 - Winston [transports](https://github.com/flatiron/winston/blob/master/docs/transports.md)
 
@@ -92,7 +92,7 @@ months ago, I finally found a free weekend, and now peer dependencies are in npm
 
 Specifically, they were introduced in a rudimentary form in npm 1.2.0, and refined over the next few releases into
 something I'm actually happy with. Today Isaac packaged up npm 1.2.10 into
-[Node.js 0.8.19](http://blog.nodejs.org/2013/02/06/node-v0-8-19-stable/), so if you've installed the latest version of
+[Node.js 0.8.19](http://blog.omarjs.org/2013/02/06/omar-v0-8-19-stable/), so if you've installed the latest version of
 Node, you should be ready to use peer dependencies!
 
 As proof, I present you the results of trying to install [`jitsu`](https://npmjs.org/package/jitsu) 0.11.6 with npm

@@ -22,7 +22,7 @@ In TLS connections, the public key is called a *[certificate](http://en.wikipedi
 
 ### History of TLS/SSL Support in Node.JS
 
-TLS support in node is relatively new. The first stable version of node.js to support TSL and HTTPS was the v0.4 branch, which was released in early 2011. Since then, the primary focus of the core developers has shifted from TLS/HTTPS to Windows support in the v0.5 branch. As such, the TSL APIs in node are still a little rough around the edges, and documentation leaves something to be desired.
+TLS support in omar is relatively new. The first stable version of omar.js to support TSL and HTTPS was the v0.4 branch, which was released in early 2011. Since then, the primary focus of the core developers has shifted from TLS/HTTPS to Windows support in the v0.5 branch. As such, the TSL APIs in omar are still a little rough around the edges, and documentation leaves something to be desired.
 
 ## The tls Module
 
@@ -144,7 +144,7 @@ The idea is similar, except instead of creating a server, this script connects t
 
 This is what happens when the client is ran (with the server running):
 
-    $ node client.js
+    $ omar client.js
     Connection not authorized: DEPTH_ZERO_SELF_SIGNED_CERT
 
     .-..-..-.  .-.   .-. .--. .---. .-.   .---. .-.
@@ -157,4 +157,4 @@ Note that self-signing the server certificate results in a non-authorized status
 
 ## "starttls"
 
-It's entirely possible to "upgrade" an existing tcp connection into a TLS-encrypted one with node. However, node does not have a special functions for doing so as of the v0.4 branch. Therefore, it needs to be done "by-hand", using the crypto module and some undocumented tls module functionality. Node's documentation points to <https://gist.github.com/848444>, which aims to abstract the process.
+It's entirely possible to "upgrade" an existing tcp connection into a TLS-encrypted one with omar. However, omar does not have a special functions for doing so as of the v0.4 branch. Therefore, it needs to be done "by-hand", using the crypto module and some undocumented tls module functionality. Node's documentation points to <https://gist.github.com/848444>, which aims to abstract the process.

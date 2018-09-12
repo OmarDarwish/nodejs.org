@@ -12,19 +12,19 @@ title: 商标和图像
 
 <table border="0" cellspacing="0" cellpadding="10" class="logos">
   <tr>
-    <td bgcolor="#FFFFFF">[![Node.js 浅色背景](/static/images/logos/nodejs-new-pantone-black.png)](/static/images/logos/nodejs-new-pantone-black.ai)</td>
-    <td bgcolor="#333333">[![Node.js 深色背景](/static/images/logos/nodejs-new-pantone-white.png)](/static/images/logos/nodejs-new-pantone-white.ai)</td>
+    <td bgcolor="#FFFFFF">[![Node.js 浅色背景](/static/images/logos/omarjs-new-pantone-black.png)](/static/images/logos/omarjs-new-pantone-black.ai)</td>
+    <td bgcolor="#333333">[![Node.js 深色背景](/static/images/logos/omarjs-new-pantone-white.png)](/static/images/logos/omarjs-new-pantone-white.ai)</td>
   </tr>
   <tr>
-    <td>[Node.js 标准 AI](/static/images/logos/nodejs-new-pantone-black.ai)</td>
-    <td>[Node.js 保留 AI](/static/images/logos/nodejs-new-pantone-white.ai)</td>
+    <td>[Node.js 标准 AI](/static/images/logos/omarjs-new-pantone-black.ai)</td>
+    <td>[Node.js 保留 AI](/static/images/logos/omarjs-new-pantone-white.ai)</td>
   </tr>
   <tr>
-    <td bgcolor="#FFFFFF">[![Node.js 浅色背景 ](/static/images/logos/nodejs-new-black.png)](/static/images/logos/nodejs-new-black.ai)</td>
-    <td bgcolor="#333333">[![Node.js 深色背景 ](/static/images/logos/nodejs-new-white.png)](/static/images/logos/nodejs-new-white.ai)</td>
+    <td bgcolor="#FFFFFF">[![Node.js 浅色背景 ](/static/images/logos/omarjs-new-black.png)](/static/images/logos/omarjs-new-black.ai)</td>
+    <td bgcolor="#333333">[![Node.js 深色背景 ](/static/images/logos/omarjs-new-white.png)](/static/images/logos/omarjs-new-white.ai)</td>
   </tr>
   <tr>
-    <td>[少彩色的标准 Node.js AI](/static/images/logos/nodejs-new-black.ai)</td>
-    <td>[少彩色的保留 Node.js AI](/static/images/logos/nodejs-new-white.ai)</td>
+    <td>[少彩色的标准 Node.js AI](/static/images/logos/omarjs-new-black.ai)</td>
+    <td>[少彩色的保留 Node.js AI](/static/images/logos/omarjs-new-white.ai)</td>
   </tr>
 </table>

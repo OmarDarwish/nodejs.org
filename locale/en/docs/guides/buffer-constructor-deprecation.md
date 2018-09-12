@@ -20,7 +20,7 @@ The Buffer() and new Buffer() constructors are not recommended for use due to se
 
 ### Finding problematic bits of code using `grep`
 
-Just run `grep -nrE '[^a-zA-Z](Slow)?Buffer\s*\(' --exclude-dir node_modules`.
+Just run `grep -nrE '[^a-zA-Z](Slow)?Buffer\s*\(' --exclude-dir omar_modules`.
 
 It will find all the potentially unsafe places in your own code (with some considerably unlikely
 exceptions).
@@ -40,8 +40,8 @@ $ export NODE_OPTIONS='--trace-warnings --pending-deprecation'
 $ cat example.js
 'use strict';
 const foo = new Buffer('foo');
-$ node example.js
-(node:7147) [DEP0005] DeprecationWarning: The Buffer() and new Buffer() constructors are not recommended for use due to security and usability concerns. Please use the new Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() construction methods instead.
+$ omar example.js
+(omar:7147) [DEP0005] DeprecationWarning: The Buffer() and new Buffer() constructors are not recommended for use due to security and usability concerns. Please use the new Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() construction methods instead.
     at showFlaggedDeprecation (buffer.js:127:13)
     at new Buffer (buffer.js:148:3)
     at Object.<anonymous> (/path/to/example.js:2:13)
@@ -52,7 +52,7 @@ $ node example.js
 
 ESLint rules [no-buffer-constructor](https://eslint.org/docs/rules/no-buffer-constructor)
 or
-[node/no-deprecated-api](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md)
+[omar/no-deprecated-api](https://github.com/mysticatea/eslint-plugin-omar/blob/master/docs/rules/no-deprecated-api.md)
 also find calls to deprecated `Buffer()` API. Those rules are included in some presets.
 
 There is a drawback, though, that it doesn't always
@@ -65,7 +65,7 @@ described above.
 
 This is the recommended solution nowadays that would imply only minimal overhead.
 
-The Node.js 5.x release line has been unsupported since July 2016, and the Node.js 4.x release line reaches its End of Life in April 2018 (→ [Schedule](https://github.com/nodejs/Release#release-schedule)). This means that these versions of Node.js will *not* receive any updates, even in case of security issues, so using these release lines should be avoided, if at all possible.
+The Node.js 5.x release line has been unsupported since July 2016, and the Node.js 4.x release line reaches its End of Life in April 2018 (→ [Schedule](https://github.com/omarjs/Release#release-schedule)). This means that these versions of Node.js will *not* receive any updates, even in case of security issues, so using these release lines should be avoided, if at all possible.
 
 What you would do in this case is to convert all `new Buffer()` or `Buffer()` calls to use `Buffer.alloc()` or `Buffer.from()`, in the following way:
 
@@ -78,10 +78,10 @@ Note that `Buffer.alloc()` is also _faster_ on the current Node.js versions than
 
 Enabling ESLint rule [no-buffer-constructor](https://eslint.org/docs/rules/no-buffer-constructor)
 or
-[node/no-deprecated-api](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md)
+[omar/no-deprecated-api](https://github.com/mysticatea/eslint-plugin-omar/blob/master/docs/rules/no-deprecated-api.md)
 is recommended to avoid accidental unsafe `Buffer` API usage.
 
-There is also a [JSCodeshift codemod](https://github.com/joyeecheung/node-dep-codemod#dep005)
+There is also a [JSCodeshift codemod](https://github.com/joyeecheung/omar-dep-codemod#dep005)
 for automatically migrating `Buffer` constructors to `Buffer.alloc()` or `Buffer.from()`.
 Note that it currently only works with cases where the arguments are literals or where the
 constructor is invoked with two arguments.
@@ -131,7 +131,7 @@ a polyfill for the new API. I have seen people doing that mistake.
 
 Enabling ESLint rule [no-buffer-constructor](https://eslint.org/docs/rules/no-buffer-constructor)
 or
-[node/no-deprecated-api](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md)
+[omar/no-deprecated-api](https://github.com/mysticatea/eslint-plugin-omar/blob/master/docs/rules/no-deprecated-api.md)
 is recommended.
 
 _Don't forget to drop the polyfill usage once you drop support for Node.js < 4.5.0._

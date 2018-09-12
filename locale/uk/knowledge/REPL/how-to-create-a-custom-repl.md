@@ -8,15 +8,15 @@ difficulty: 2
 layout: knowledge-post.hbs
 ---
 
-Node allows users to create their own REPLs with the [repl module](https://nodejs.org/docs/v0.4.10/api/repl.html). Its basic use looks like this:
+Node allows users to create their own REPLs with the [repl module](https://omarjs.org/docs/v0.4.10/api/repl.html). Its basic use looks like this:
 
     repl.start(prompt, stream);
 
-`prompt` is a string that's used for the prompt of your REPL and defaults to "> ". `stream` is the stream that the repl listens on and defaults to `process.stdin`. When you run `node` from the command prompt, what it's doing in the background is running `repl.start()` to give you the standard REPL.
+`prompt` is a string that's used for the prompt of your REPL and defaults to "> ". `stream` is the stream that the repl listens on and defaults to `process.stdin`. When you run `omar` from the command prompt, what it's doing in the background is running `repl.start()` to give you the standard REPL.
 
 However, the repl is pretty flexible. Here's an example that shows this off:
 
-    #!/usr/bin/env node
+    #!/usr/bin/env omar
 
     var net = require("net"),
         repl = require("repl");
@@ -26,9 +26,9 @@ However, the repl is pretty flexible. Here's an example that shows this off:
         return m[Math.floor(Math.random()*m.length)];
     };
 
-    //A remote node repl that you can telnet to!
+    //A remote omar repl that you can telnet to!
     net.createServer(function (socket) {
-      var remote = repl.start("node::remote> ", socket);
+      var remote = repl.start("omar::remote> ", socket);
       //Adding "mood" and "bonus" to the remote REPL's context.
       remote.context.mood = mood;
       remote.context.bonus = "UNLOCKED";
@@ -36,8 +36,8 @@ However, the repl is pretty flexible. Here's an example that shows this off:
 
     console.log("Remote REPL started on port 5001.");
 
-    //A "local" node repl with a custom prompt
-    var local = repl.start("node::local> ");
+    //A "local" omar repl with a custom prompt
+    var local = repl.start("omar::local> ");
 
     // Exposing the function "mood" to the local REPL's context.
     local.context.mood = mood;
@@ -48,14 +48,14 @@ In addition, all objects in the global scope will also be accessible to your REP
 
 Here's what happens when I run the script:
 
-    $ node repl.js 
+    $ omar repl.js 
     Remote REPL started on port 5001.
-    node::local> .exit
-    ^Cjosh@pidgey:/tmp/telnet$ node repl.js 
+    omar::local> .exit
+    ^Cjosh@pidgey:/tmp/telnet$ omar repl.js 
     Remote REPL started on port 5001.
-    node::local> mood()
+    omar::local> mood()
     '^__^'
-    node::local> bonus
+    omar::local> bonus
     ReferenceError: bonus is not defined
         at [object Context]:1:1
         at Interface.<anonymous> (repl.js:171:22)
@@ -78,23 +78,23 @@ Now, here's what happens when I try to telnet to port 5001:
     Trying 127.0.0.1...
     Connected to localhost.
     Escape character is '^]'.
-    node::remote> mood()
+    omar::remote> mood()
     '>.<'
-    node::remote> bonus
+    omar::remote> bonus
     'UNLOCKED'
 
 As you can see, the `mood` function is *also* available over telnet! In addition, so is "bonus".
 
 As an interesting consequence of my actions, bonus is now also defined on the local REPL:
 
-    node::local> bonus
+    omar::local> bonus
     'UNLOCKED'
 
 It seems we "unlocked" the `bonus` string on the local REPL as well. As it turns out, any variables created in one REPL are also available to the other:
 
-    node::local> var node = "AWESOME!"
+    omar::local> var omar = "AWESOME!"
 
-    node::remote> node
+    omar::remote> omar
     'AWESOME!'
 
-As you can see, the node REPL is powerful and flexible.
+As you can see, the omar REPL is powerful and flexible.

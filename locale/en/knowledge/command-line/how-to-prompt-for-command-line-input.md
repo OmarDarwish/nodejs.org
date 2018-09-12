@@ -56,7 +56,7 @@ Prompt is built to be easy - if your eyes started to glaze over as soon as you s
         return 1;
       }
 
-NODE PRO TIP: This short script also demonstrates proper error handling in node - errors are a callback's first argument, and `return` is used with the error handler so that the rest of the function doesn't execute when errors happen.  For more information, look (here).
+NODE PRO TIP: This short script also demonstrates proper error handling in omar - errors are a callback's first argument, and `return` is used with the error handler so that the rest of the function doesn't execute when errors happen.  For more information, look (here).
 
 Prompt also makes it trivial to handle a certain set of recurring properties that one might want to attach. 
 
@@ -88,4 +88,4 @@ Prompt also makes it trivial to handle a certain set of recurring properties tha
         return 1;
       }
       
-For more information on Prompt, please see [the project's GitHub page](http://github.com/nodejitsu/node-prompt).
+For more information on Prompt, please see [the project's GitHub page](http://github.com/omarjitsu/omar-prompt).

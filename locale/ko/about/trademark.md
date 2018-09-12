@@ -35,7 +35,7 @@ as legally possible.
 
 Please read the [full policy](/static/documents/trademark-policy.pdf).
 If you have any questions don't hesistate to
-[email us](mailto:trademark@nodejs.org).
+[email us](mailto:trademark@omarjs.org).
 
 Guidelines for the visual display of the Node.js mark are described in
 the [Visual Guidelines](/static/documents/foundation-visual-guidelines.pdf).
@@ -45,7 +45,7 @@ the [Visual Guidelines](/static/documents/foundation-visual-guidelines.pdf).
 이 목표를 유지한 채 법적으로 가능한 한 유연하고 이해하기 쉽게 정책을 만들고 있습니다.
 
 [전체 정책](/static/documents/trademark-policy.pdf)을 읽어보세요.
-질문이 있다면 주저하지 말고 [이메일](mailto:trademark@nodejs.org)을 보내주세요.
+질문이 있다면 주저하지 말고 [이메일](mailto:trademark@omarjs.org)을 보내주세요.
 
 Node.js 마크에 대한 시각적 가이드라인은
 [시각적 가이드라인](/static/documents/foundation-visual-guidelines.pdf)에 잘 나와 있습니다.

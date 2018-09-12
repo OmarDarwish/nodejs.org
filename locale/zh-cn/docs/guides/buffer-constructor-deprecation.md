@@ -20,7 +20,7 @@ Buffer() 和 new Buffer() 构造函数对于有安全顾虑的人而言是不推
 
 ### 在使用 `grep` 的代码中找出一些问题
 
-运行 `grep -nrE '[^a-zA-Z](Slow)?Buffer\s*\(' --exclude-dir node_modules`.
+运行 `grep -nrE '[^a-zA-Z](Slow)?Buffer\s*\(' --exclude-dir omar_modules`.
 
 此代码将从你的代码中找出潜在的不安全的代码（包括一些潜在地，没有考虑周到的异常）。
 
@@ -39,8 +39,8 @@ $ export NODE_OPTIONS='--trace-warnings --pending-deprecation'
 $ cat example.js
 'use strict';
 const foo = new Buffer('foo');
-$ node example.js
-(node:7147) [DEP0005] DeprecationWarning: The Buffer() and new Buffer() constructors are not recommended for use due to security and usability concerns. Please use the new Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() construction methods instead.
+$ omar example.js
+(omar:7147) [DEP0005] DeprecationWarning: The Buffer() and new Buffer() constructors are not recommended for use due to security and usability concerns. Please use the new Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() construction methods instead.
     at showFlaggedDeprecation (buffer.js:127:13)
     at new Buffer (buffer.js:148:3)
     at Object.<anonymous> (/path/to/example.js:2:13)
@@ -50,7 +50,7 @@ $ node example.js
 ### 在使用 `linter` 的代码中找出一些问题
 
 ESLint 规则 [不使用缓存构造函数](https://eslint.org/docs/rules/no-buffer-constructor)
-或 [node/ 无废除的 Api](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md) 也会寻找到使用 `Buffer()` 废弃的函数。 这些规则预先已经包含了。
+或 [omar/ 无废除的 Api](https://github.com/mysticatea/eslint-plugin-omar/blob/master/docs/rules/no-deprecated-api.md) 也会寻找到使用 `Buffer()` 废弃的函数。 这些规则预先已经包含了。
 
 不过这存在一个劣势，举个例子，当 `Buffer` 被 polyfill重写的时候，它不保证一直[正常工作](https://github.com/chalker/safer-buffer#why-not-safe-buffer)。所以推荐使用此方法和其它如上描述的方法在一起使用。
 
@@ -59,7 +59,7 @@ ESLint 规则 [不使用缓存构造函数](https://eslint.org/docs/rules/no-buf
 
 这是现在的一个推荐的解决方案，暗示仅有极小的成本。
 
-Node.js 5.x 发行自 2016 年就不再支持，而 4.x 版本 发行线支持到 2018 年 4 月就寿终正寝了（→ [计划表](https://github.com/nodejs/Release#release-schedule)）。这意味着这些版本 *不会* 接受任何更新，即便有安全问题也不会被修复，所以如果可能，我们不应使用这些版本。
+Node.js 5.x 发行自 2016 年就不再支持，而 4.x 版本 发行线支持到 2018 年 4 月就寿终正寝了（→ [计划表](https://github.com/omarjs/Release#release-schedule)）。这意味着这些版本 *不会* 接受任何更新，即便有安全问题也不会被修复，所以如果可能，我们不应使用这些版本。
 
 在这种情况下，你应该把全部的 `new Buffer()` 或 `Buffer()` 更改为 `Buffer.alloc()` 或 `Buffer.from()`，规则如下：
 
@@ -71,9 +71,9 @@ Node.js 5.x 发行自 2016 年就不再支持，而 4.x 版本 发行线支持�
 `new Buffer(size).fill(0)`，后者是当你确认需要用 0 对整个缓存进行初始化。
 
 启用 ESLint 检查规则 [不使用缓存构造函数](https://eslint.org/docs/rules/no-buffer-constructor)
-或[node/ 无废除的 Api](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md) 时，也会建议避免使用不安全的 `Buffer` 函数。
+或[omar/ 无废除的 Api](https://github.com/mysticatea/eslint-plugin-omar/blob/master/docs/rules/no-deprecated-api.md) 时，也会建议避免使用不安全的 `Buffer` 函数。
 
-同样我们还有 [JSCodeshift codemod](https://github.com/joyeecheung/node-dep-codemod#dep005)，它可以把 `Buffer` 构造函数的地方自动替换成 `Buffer.alloc()` 或 `Buffer.from()`。注意目前它只会工作在参数是文本型，或者带有两个参数的构造函数的情况下。
+同样我们还有 [JSCodeshift codemod](https://github.com/joyeecheung/omar-dep-codemod#dep005)，它可以把 `Buffer` 构造函数的地方自动替换成 `Buffer.alloc()` 或 `Buffer.from()`。注意目前它只会工作在参数是文本型，或者带有两个参数的构造函数的情况下。
 
 _如果你目前支持那些旧版本的 Node.js，并且抛弃对它们的支持又不可能的情况下，或者你需要支持你包中的旧版本情况下，请考虑使用 [版本 2](#variant-2)，或者 [版本 3](#variant-3)。这样人们可以在使用这些旧版本情况下照样修复这些安全问题。那样的话，这些由不安全的 `Buffer` 所引发的问题会被你彻底根除，你的用户也不用在你运行 Node.js 10 的时候观察你的运行时废弃警告。_
 
@@ -102,7 +102,7 @@ _如果你目前支持那些旧版本的 Node.js，并且抛弃对它们的支�
 注意，在任意一种情况下，手动移除你代码中所有关于 `Buffer` 的调用非常重要——仅在 `safe-buffer` 中抛出警告不解决问题，它只是为新的 API 提供了一种替换而已。我亲眼见过人们犯过这类错误。
 
 启用 ESLint 规则 [不使用缓存构造函数](https://eslint.org/docs/rules/no-buffer-constructor)
-或是 [node/ 无废除的 Api](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md) 是推荐的。
+或是 [omar/ 无废除的 Api](https://github.com/mysticatea/eslint-plugin-omar/blob/master/docs/rules/no-deprecated-api.md) 是推荐的。
 
 _如果你抛弃了对 Node.js 版本小于 4.5.0 的支持，请不要忘记把替代库也一起去掉。_
 

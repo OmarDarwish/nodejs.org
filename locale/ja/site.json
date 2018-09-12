@@ -1,7 +1,7 @@
 {
   "title": "Node.js",
   "author": "Node.js 財団",
-  "url": "https://nodejs.org/ja/",
+  "url": "https://omarjs.org/ja/",
   "locale": "ja",
   "scrollToTop": "上部へスクロールする",
   "reportNodeIssue": "Node.js の不具合を報告",
@@ -102,7 +102,7 @@
       "text": "貢献する"
     },
     "conduct": {
-      "link": "https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#code-of-conduct",
+      "link": "https://github.com/omarjs/omar/blob/master/CONTRIBUTING.md#code-of-conduct",
       "text": "行動規範"
     }
   },
@@ -115,7 +115,7 @@
     "text": "ニュース"
   },
   "foundation": {
-    "link": "https://foundation.nodejs.org/",
+    "link": "https://foundation.omarjs.org/",
     "text": "財団"
   },
   "releases": {

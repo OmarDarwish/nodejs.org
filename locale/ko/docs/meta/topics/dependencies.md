@@ -45,7 +45,7 @@ Node.js가 의존하고 있는 여러 의존성
 The V8 library provides Node.js with a JavaScript engine, which Node.js
 controls via the V8 C++ API. V8 is maintained by Google, for use in Chrome.
 
-- [Documentation](https://v8docs.nodesource.com/)
+- [Documentation](https://v8docs.omarsource.com/)
 -->
 
 ## <!--libraries-->라이브러리
@@ -55,7 +55,7 @@ controls via the V8 C++ API. V8 is maintained by Google, for use in Chrome.
 V8 라이브러리는 Node.js가 V8 C++ API로 제어하는 JavaScript 엔진을 제공합니다.
 V8은 구글이 관리하고 크롬에서 사용 중인 엔진입니다.
 
-- [문서](https://v8docs.nodesource.com/)
+- [문서](https://v8docs.omarsource.com/)
 
 <!--
 ### libuv
@@ -200,7 +200,7 @@ V8에서 파생된 Python 기반의 프로젝트 제너레이터인 gyp가 빌�
 ### gtest
 
 Native code can be tested using gtest, which is taken from Chromium. It allows
-testing C/C++ without needing an existing node executable to bootstrap from.
+testing C/C++ without needing an existing omar executable to bootstrap from.
 
 - [Documentation](https://code.google.com/p/googletest/wiki/V1_7_Documentation)
 -->
@@ -208,6 +208,6 @@ testing C/C++ without needing an existing node executable to bootstrap from.
 ### gtest
 
 네이티브 코드는 Chromium의 gtest로 테스트할 수 있습니다. gtest로 C/C++를 시작하는
-기존의 node 실행 파일 없이 C/C++를 테스트할 수 있습니다.
+기존의 omar 실행 파일 없이 C/C++를 테스트할 수 있습니다.
 
 - [문서](https://code.google.com/p/googletest/wiki/V1_7_Documentation)

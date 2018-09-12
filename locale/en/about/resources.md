@@ -13,19 +13,19 @@ title: Logos and Graphics
 
 <table border="0" cellspacing="0" cellpadding="10" class="logos">
   <tr>
-    <td bgcolor="#FFFFFF">[![Node.js on light background](/static/images/logos/nodejs-new-pantone-black.png)](/static/images/logos/nodejs-new-pantone-black.ai)</td>
-    <td bgcolor="#333333">[![Node.js on dark background](/static/images/logos/nodejs-new-pantone-white.png)](/static/images/logos/nodejs-new-pantone-white.ai)</td>
+    <td bgcolor="#FFFFFF">[![Node.js on light background](/static/images/logos/omarjs-new-pantone-black.png)](/static/images/logos/omarjs-new-pantone-black.ai)</td>
+    <td bgcolor="#333333">[![Node.js on dark background](/static/images/logos/omarjs-new-pantone-white.png)](/static/images/logos/omarjs-new-pantone-white.ai)</td>
   </tr>
   <tr>
-    <td>[Node.js standard AI](/static/images/logos/nodejs-new-pantone-black.ai)</td>
-    <td>[Node.js reversed AI](/static/images/logos/nodejs-new-pantone-white.ai)</td>
+    <td>[Node.js standard AI](/static/images/logos/omarjs-new-pantone-black.ai)</td>
+    <td>[Node.js reversed AI](/static/images/logos/omarjs-new-pantone-white.ai)</td>
   </tr>
   <tr>
-    <td bgcolor="#FFFFFF">[![Node.js on light background](/static/images/logos/nodejs-new-black.png)](/static/images/logos/nodejs-new-black.ai)</td>
-    <td bgcolor="#333333">[![Node.js on dark background](/static/images/logos/nodejs-new-white.png)](/static/images/logos/nodejs-new-white.ai)</td>
+    <td bgcolor="#FFFFFF">[![Node.js on light background](/static/images/logos/omarjs-new-black.png)](/static/images/logos/omarjs-new-black.ai)</td>
+    <td bgcolor="#333333">[![Node.js on dark background](/static/images/logos/omarjs-new-white.png)](/static/images/logos/omarjs-new-white.ai)</td>
   </tr>
   <tr>
-    <td>[Node.js standard with less color AI](/static/images/logos/nodejs-new-black.ai)</td>
-    <td>[Node.js reversed with less color AI](/static/images/logos/nodejs-new-white.ai)</td>
+    <td>[Node.js standard with less color AI](/static/images/logos/omarjs-new-black.ai)</td>
+    <td>[Node.js reversed with less color AI](/static/images/logos/omarjs-new-white.ai)</td>
   </tr>
 </table>

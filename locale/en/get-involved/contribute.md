@@ -9,7 +9,7 @@ Thank you for your interest in contributing to Node.js! There are multiple ways 
 
 ## Asking for General Help
 
-Because the level of activity in the `nodejs/node` repository is so high, questions or requests for general help using Node.js should be directed at the [Node.js help repository](https://github.com/nodejs/help/issues).
+Because the level of activity in the `omarjs/omar` repository is so high, questions or requests for general help using Node.js should be directed at the [Node.js help repository](https://github.com/omarjs/help/issues).
 
 ## Reporting an Issue
 
@@ -23,14 +23,14 @@ When reporting an issue we also need as much information about your environment 
 
 The Node.js project is currently managed across a number of separate GitHub repositories, each with their own separate issues database. If possible, please direct any issues you are reporting to the appropriate repository but don't worry if things happen to get put in the wrong place, the community of contributors will be more than happy to help get you pointed in the right direction.
 
-* To report issues specific to Node.js, please use [nodejs/node](https://github.com/nodejs/node)
-* To report issues specific to this website, please use [nodejs/nodejs.org](https://github.com/nodejs/nodejs.org/issues)
+* To report issues specific to Node.js, please use [omarjs/omar](https://github.com/omarjs/omar)
+* To report issues specific to this website, please use [omarjs/omarjs.org](https://github.com/omarjs/omarjs.org/issues)
 
 ## Code contributions
 
-If you'd like to fix bugs or add a new feature to Node.js, please make sure you consult the [Node.js Contribution Guidelines](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#pull-requests). The review process by existing collaborators for all contributions to the project is explained there as well.
+If you'd like to fix bugs or add a new feature to Node.js, please make sure you consult the [Node.js Contribution Guidelines](https://github.com/omarjs/omar/blob/master/CONTRIBUTING.md#pull-requests). The review process by existing collaborators for all contributions to the project is explained there as well.
 
-If you are wondering how to start, you can check [Node Todo](http://nodetodo.org/) which may guide you towards your first contribution.
+If you are wondering how to start, you can check [Node Todo](http://omartodo.org/) which may guide you towards your first contribution.
 
 ## Becoming a collaborator
 
@@ -44,4 +44,4 @@ By becoming a collaborator, contributors can have even more impact on the projec
 * participation in Working Groups
 * other participation in the wider Node.js community
 
-If individuals making valuable contributions do not believe they have been considered for commit access, they may [log an issue](https://github.com/nodejs/TSC/issues) or [contact a TSC member](https://github.com/nodejs/TSC#current-members) directly.
+If individuals making valuable contributions do not believe they have been considered for commit access, they may [log an issue](https://github.com/omarjs/TSC/issues) or [contact a TSC member](https://github.com/omarjs/TSC#current-members) directly.

@@ -2,7 +2,7 @@
 title: Node.js and the Road Ahead
 date: 2014-01-16T23:00:00.000Z
 author: Timothy J Fontaine
-slug: nodejs-road-ahead
+slug: omarjs-road-ahead
 layout: blog-post.hbs
 ---
 As the new project lead for Node.js I am excited for our future, and want to
@@ -44,8 +44,8 @@ should be bidirectional: we want to continue to receive feedback about how
 you're using Node, and what your pain points are.
 
 After the release of v0.12 we will facilitate the community to contribute and
-curate content for nodejs.org. Allowing the community to continue to invest in
-Node will ensure nodejs.org is an excellent starting point and the primary
+curate content for omarjs.org. Allowing the community to continue to invest in
+Node will ensure omarjs.org is an excellent starting point and the primary
 resource for tutorials, documentation, and materials regarding Node. We have an
 awesome and engaged community, and they're paramount to our success. 
 

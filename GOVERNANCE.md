@@ -6,9 +6,9 @@ All of the Node.js Foundation websites, including this repo, are jointly governe
 by a Working Group (WG). The WG is responsible for high-level guidance of this and
 related projects which include:
 
-- [nodejs/iojs.org](https://github.com/nodejs/iojs.org) published to https://iojs.org
-- [nodejs/nodejs.org](https://github.com/nodejs/iojs.org) published to https://nodejs.org
-- [nodejs/nodejs.org-archive](https://github.com/nodejs/nodejs.org-archive) 
+- [omarjs/iojs.org](https://github.com/omarjs/iojs.org) published to https://iojs.org
+- [omarjs/omarjs.org](https://github.com/omarjs/iojs.org) published to https://omarjs.org
+- [omarjs/omarjs.org-archive](https://github.com/omarjs/omarjs.org-archive) 
 
 The Website WG has final authority over this project including:
 
@@ -21,7 +21,7 @@ The Website WG has final authority over this project including:
 
 ## Collaborators
 
-The [nodejs/nodejs.org](https://github.com/nodejs/nodejs.org)
+The [omarjs/omarjs.org](https://github.com/omarjs/omarjs.org)
 GitHub repository is maintained by the WG and additional Collaborators who are
 added by the WG on an ongoing basis.
 
@@ -32,7 +32,7 @@ individuals are identified by the WG.
 _Note:_ If you make a significant contribution and are not considered
 for commit-access log an issue or contact a WG member directly.
 
-Modifications of the contents of the `nodejs/nodejs.org` repository are made on
+Modifications of the contents of the `omarjs/omarjs.org` repository are made on
 a collaborative basis. Anybody with a GitHub account may propose a
 modification via pull request and it will be considered by the project
 Collaborators. All pull requests must be reviewed and accepted by a

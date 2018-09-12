@@ -23,7 +23,7 @@ Working groups will put together a schedule so that people can
 familiarize themselves before folks get onsite, having the general collaborator
 discussions, and then dive into breakout sessions.
 
-We'd love to see you at Collab Summit! Check out the [Summit repo](https://github.com/nodejs/summit)
+We'd love to see you at Collab Summit! Check out the [Summit repo](https://github.com/omarjs/summit)
 for upcoming and past Collab Summits and have a look at the
-[issues filed](https://github.com/nodejs/summit/issues) that share what
+[issues filed](https://github.com/omarjs/summit/issues) that share what
 individual working groups and committees are looking to discuss in-person.

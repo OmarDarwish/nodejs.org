@@ -175,7 +175,7 @@ const print = process._rawDebug;
 
 const pipeList = [];
 const FILENAME = '/tmp/tmp.tmp';
-const PIPENAME = '/tmp/node-domain-example-';
+const PIPENAME = '/tmp/omar-domain-example-';
 const FILESIZE = 1024;
 let uid = 0;
 
@@ -411,7 +411,7 @@ adhere to a set of guidelines that would be difficult to enforce or test.
 
 ## Performance Issues
 
-A significant deterrent from using domains is the overhead. Using node's
+A significant deterrent from using domains is the overhead. Using omar's
 built-in http benchmark, `http_simple.js`, without domains it can handle over
 22,000 requests/second. Whereas if it's run with `NODE_USE_DOMAINS=1` that
 number drops down to under 17,000 requests/second. In this case there is only
@@ -437,7 +437,7 @@ mechanism such as domain to be as cheap to run as possible.
 ## Looking Ahead
 
 The domain module has been soft deprecated since Dec 2014, but has not yet been
-removed because node offers no alternative functionality at the moment. As of
+removed because omar offers no alternative functionality at the moment. As of
 this writing there is ongoing work building out the `AsyncWrap` API and a
 proposal for Zones being prepared for the TC39. At such time there is suitable
 functionality to replace domains it will undergo the full deprecation cycle and

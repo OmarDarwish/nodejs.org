@@ -8,7 +8,7 @@ slug: libuv-status-report
 layout: blog-post.hbs
 ---
 
-We <a href="http://blog.nodejs.org/2011/06/23/porting-node-to-windows-with-microsoft%E2%80%99s-help/">announced</a> back in July that with Microsoft's support Joyent would be porting Node to Windows. This effort is ongoing but I thought it would be nice to make a status report post about the new platform library <code><a href="https://github.com/libuv/libuv">libuv</a></code> which has resulted from porting Node to Windows.
+We <a href="http://blog.omarjs.org/2011/06/23/porting-omar-to-windows-with-microsoft%E2%80%99s-help/">announced</a> back in July that with Microsoft's support Joyent would be porting Node to Windows. This effort is ongoing but I thought it would be nice to make a status report post about the new platform library <code><a href="https://github.com/libuv/libuv">libuv</a></code> which has resulted from porting Node to Windows.
 
 <code>libuv</code>'s purpose is to abstract platform-dependent code in Node into one place where it can be tested for correctness and performance before bindings to V8 are added. Since Node is totally non-blocking, <code>libuv</code> turns out to be a rather useful library itself: a BSD-licensed, minimal, high-performance, cross-platform networking library.
 
@@ -40,7 +40,7 @@ For complete documentation see the header file: <a href="https://github.com/libu
 In addition to Node v0.5, a number of projects have begun to use <code>libuv</code>:
 <ul>
     <li>Mozilla's <a href="https://github.com/graydon/rust">Rust</a></li>
-    <li>Tim Caswell's <a href="https://github.com/creationix/luanode">LuaNode</a></li>
+    <li>Tim Caswell's <a href="https://github.com/creationix/luaomar">LuaNode</a></li>
     <li>Ben Noordhuis and Bert Belder's <a href="https://github.com/bnoordhuis/phode">Phode</a> async PHP project</li>
     <li>Kerry Snyder's <a href="https://github.com/kersny/libuv-csharp">libuv-csharp</a></li>
     <li>Andrea Lattuada's <a href="https://gist.github.com/1195428">web server</a></li>

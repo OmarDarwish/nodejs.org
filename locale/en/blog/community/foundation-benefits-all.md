@@ -4,7 +4,7 @@ author: Scott Hammond
 date: 2015-05-15T22:50:46.000Z
 status: publish
 category: Community
-slug: the-nodejs-foundation-benefits-all
+slug: the-omarjs-foundation-benefits-all
 layout: blog-post.hbs
 ---
 
@@ -12,7 +12,7 @@ When I joined Joyent last summer I quickly realized that, despite the huge
 success of Node.js in the market and the tireless work of many here at Joyent,
 there were challenges in the project that we needed to address. Through
 discussions with various project contributors, Node.js users, ecosystem
-vendors and the [Node.js Advisory Board](http://nodeadvisoryboard.com), it
+vendors and the [Node.js Advisory Board](http://omaradvisoryboard.com), it
 became clear that the best way to address the concerns of all key stakeholders
 (and the best thing for Node.js as a whole) was to establish the Foundation as
 a path for the future.
@@ -28,7 +28,7 @@ created the io.js fork. That team has done a great job innovating on
 governance and engagement models, and the Node.js Foundation’s models will be
 based on those policies to ensure broader community engagement in the future
 of Node.js. We welcome community review and feedback on [the draft governance
-documents](https://github.com/joyent/nodejs-advisory-board/tree/master/governance-proposal).
+documents](https://github.com/joyent/omarjs-advisory-board/tree/master/governance-proposal).
 
 With the recent vote by the io.js TC to join the Node.js Foundation, we took a
 giant leap toward rebuilding a unified community.  @mikeal, @piscisaureus and
@@ -52,7 +52,7 @@ from other software. The Foundation will get that right. Donations to the
 Foundation will provide the resources we need to broaden and automate the
 necessary test suites and expand coverage across a large set of platforms. We
 are working now on codifying the LTS policy (comments welcome
-[here](https://github.com/nodejs/dev-policy/issues/67)) and will establish the
+[here](https://github.com/omarjs/dev-policy/issues/67)) and will establish the
 right 6-9 month release cadence with rigor on backward compatibility and EOL
 horizon.
 

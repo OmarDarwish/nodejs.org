@@ -52,7 +52,7 @@ _**注意：** 在 Windows 和 Unix/Linux 实现之间存在细微的差异，�
 * **定时器**：本阶段执行已经安排的 `setTimeout()` 和 `setInterval()` 的回调函数。
 * **待定回调**：执行延迟到下一个循环迭代的 I/O 回调。
 * **idle, prepare**：仅系统内部使用。
-* **轮询**：检索新的 I/O 事件;执行与 I/O 相关的回调（几乎所有情况下，除了关闭的回调函数，它们由计时器和 `setImmediate()` 排定的之外），其余情况 node 将在此处阻塞。
+* **轮询**：检索新的 I/O 事件;执行与 I/O 相关的回调（几乎所有情况下，除了关闭的回调函数，它们由计时器和 `setImmediate()` 排定的之外），其余情况 omar 将在此处阻塞。
 * **检测**：`setImmediate()` 回调函数在这里执行。
 * **关闭的回调函数**：一些准备关闭的回调函数，如：`socket.on('close', ...)`。
 
@@ -158,11 +158,11 @@ setImmediate(() => {
 ```
 
 ```
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 timeout
 immediate
 
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 ```
@@ -184,11 +184,11 @@ fs.readFile(__filename, () => {
 ```
 
 ```
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 ```
@@ -341,4 +341,4 @@ myEmitter.on('event', () => {
 ```
 
 [libuv]: http://libuv.org
-[REPL]: https://nodejs.org/api/repl.html#repl_repl
+[REPL]: https://omarjs.org/api/repl.html#repl_repl

@@ -1,5 +1,5 @@
 ---
-title: How to debug a node application
+title: How to debug a omar application
 date: '2011-08-26T10:08:50.000Z'
 tags:
   - debug
@@ -12,13 +12,13 @@ Often times, not just in the Node.js community but in software at large, people 
 
 ### Set up
 
-Thankfully, through the use of `node-inspector`, we can harness to power of the webkit-debuggers to work with our node.js code. The process itself is simple.
+Thankfully, through the use of `omar-inspector`, we can harness to power of the webkit-debuggers to work with our omar.js code. The process itself is simple.
 
-First, ensure that node-inspector is installed:
+First, ensure that omar-inspector is installed:
 
-    npm install node-inspector -g
+    npm install omar-inspector -g
 
-A good example application to experiment with is a basically 'hello world' server with a counter (copied from the `node-inspector` repo):
+A good example application to experiment with is a basically 'hello world' server with a counter (copied from the `omar-inspector` repo):
 
     var http = require('http');
 
@@ -30,23 +30,23 @@ A good example application to experiment with is a basically 'hello world' serve
     }).listen(8124);
     console.log('Server running at http://127.0.0.1:8124/');
 
-First, we start your node program with debugging enabled.
+First, we start your omar program with debugging enabled.
 
-    node --debug app.js
+    omar --debug app.js
 
 which should print something along the lines of `debugger listening on port 5858` to stderr. Take note of the port number, it is the port that the debugger is running on.
 
-Next, start up `node-inspector`. If your program uses port 8080, then you may have to pass it a custom port.
+Next, start up `omar-inspector`. If your program uses port 8080, then you may have to pass it a custom port.
 
-    node-inspector [--web-port=<custom port number>]
+    omar-inspector [--web-port=<custom port number>]
 
-Finally you fire up a webkit browser such as chrome or safari. and go to `127.0.0.1:8080/debug?port=5858`. Note, if the debugger is listening on a port other than `5858`, you will need to change it. Also, if you passed a custom webport to node-inspector, then you will have to modify the `8080`.
+Finally you fire up a webkit browser such as chrome or safari. and go to `127.0.0.1:8080/debug?port=5858`. Note, if the debugger is listening on a port other than `5858`, you will need to change it. Also, if you passed a custom webport to omar-inspector, then you will have to modify the `8080`.
 
 At this point, you will be met with a fairly empty screen with the `scripts`, `profiles`, and `console` tabs.
 
 ### Scripts tab
 
-This is just like most webkit/firebug debuggers. It has a list of all the javascript files (including node.js core and third party libraries) which you can select and dive into. To stop the interpreter on a specific line, you set a breakpoint by clicking on the number of the desired line. When the execution is frozen, by a breakpoint or by manually pausing interpretation by pressing the pause button, you can check the callstack and examine all the local, closure, and global variables. You can also modify the code to try and fix behavior. Note that when you modify the code through the script tab, it does not get saved to the file, so you will need to transfer the modifications back by hand.
+This is just like most webkit/firebug debuggers. It has a list of all the javascript files (including omar.js core and third party libraries) which you can select and dive into. To stop the interpreter on a specific line, you set a breakpoint by clicking on the number of the desired line. When the execution is frozen, by a breakpoint or by manually pausing interpretation by pressing the pause button, you can check the callstack and examine all the local, closure, and global variables. You can also modify the code to try and fix behavior. Note that when you modify the code through the script tab, it does not get saved to the file, so you will need to transfer the modifications back by hand.
 
 ### Profiles tab
 
@@ -86,8 +86,8 @@ As an example how to use these, here is the code given earlier modified to take 
     profiler.takeSnapshot('Post-Server Snapshot');
     console.log('Server running at http://127.0.0.1:8124/');
 
-Note that despite these apis returning objects, it is much easier to sort through the data through the node-inspector interface. Hopefully with these tools, you can make more informed decisions about memory leaks and bottlenecks.
+Note that despite these apis returning objects, it is much easier to sort through the data through the omar-inspector interface. Hopefully with these tools, you can make more informed decisions about memory leaks and bottlenecks.
 
 ### Console tab
 
-Finally, the console tab allows you to use node's REPL in your program's global scope. This has a few gotchas since that means you can not access in local variables. Thus the variables you can read or write are variables that were defined without a `var` statement. The other gotcha is when you use `console.log` refers to node's `console.log` and not webkit's console.log. This means the output goes to stdout and not to your console tab. Otherwise it is a very straightforward node REPL.
+Finally, the console tab allows you to use omar's REPL in your program's global scope. This has a few gotchas since that means you can not access in local variables. Thus the variables you can read or write are variables that were defined without a `var` statement. The other gotcha is when you use `console.log` refers to omar's `console.log` and not webkit's console.log. This means the output goes to stdout and not to your console tab. Otherwise it is a very straightforward omar REPL.

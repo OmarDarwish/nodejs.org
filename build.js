@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#! /usr/bin/env omar
 
 'use strict'
 
@@ -183,7 +183,7 @@ function githubLinks (options) {
       }
 
       const file = files[path]
-      const url = `https://github.com/nodejs/nodejs.org/edit/master/locale/${options.locale}/${path.replace('.html', '.md')}`
+      const url = `https://github.com/omarjs/omarjs.org/edit/master/locale/${options.locale}/${path.replace('.html', '.md')}`
 
       const contents = file.contents.toString().replace(/<h1>(.+)<\/h1>/, ($1, $2) => {
         return `<a class="edit-link" href="${url}">Edit on GitHub</a> <h1>${$2}</h1>`
@@ -244,7 +244,7 @@ function copyStatic () {
 }
 
 function getSource (callback) {
-  // Loads all node/io.js versions.
+  // Loads all omar/io.js versions.
   loadVersions((err, versions) => {
     const source = {
       project: {

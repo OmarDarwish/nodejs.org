@@ -174,7 +174,7 @@ This results in a few things:
 In the following examples we will take out the [return value][] of the
 `.write()` function and change it to `true`, which effectively disables
 backpressure support in Node.js core. In any reference to 'modified' binary,
-we are talking about running the `node` binary without the `return ret;` line,
+we are talking about running the `omar` binary without the `return ret;` line,
 and instead with the replaced `return true;`.
 
 ## Excess Drag on Garbage Collection
@@ -184,7 +184,7 @@ ran a few time trials to get a median time for both binaries.
 
 <!-- eslint-skip -->
 ```javascript
-   trial (#)  | `node` binary (ms) | modified `node` binary (ms)
+   trial (#)  | `omar` binary (ms) | modified `omar` binary (ms)
 =================================================================
       1       |      56924         |           55011
       2       |      52686         |           55869
@@ -244,7 +244,7 @@ consume more computing power.
 ## Memory Exhaustion
 
 To determine the memory consumption of each binary, we've clocked each process
-with `/usr/bin/time -lp sudo ./node ./backpressure-example/zlib.js`
+with `/usr/bin/time -lp sudo ./omar ./backpressure-example/zlib.js`
 individually.
 
 This is the output on the normal binary:
@@ -592,45 +592,45 @@ improve and unleash your streaming capabilities when building an application wit
 Node.js.
 
 
-[`Stream`]: https://nodejs.org/api/stream.html
-[`Buffer`]: https://nodejs.org/api/buffer.html
-[`EventEmitters`]: https://nodejs.org/api/events.html
-[`Writable`]: https://nodejs.org/api/stream.html#stream_writable_streams
-[`Readable`]: https://nodejs.org/api/stream.html#stream_readable_streams
-[`Duplex`]: https://nodejs.org/api/stream.html#stream_duplex_and_transform_streams
-[`Transform`]: https://nodejs.org/api/stream.html#stream_duplex_and_transform_streams
-[`zlib`]: https://nodejs.org/api/zlib.html
-[`.drain()`]: https://nodejs.org/api/stream.html#stream_event_drain
-[`.data` event]: https://nodejs.org/api/stream.html#stream_event_data
-[`.read()`]: https://nodejs.org/docs/latest/api/stream.html#stream_readable_read_size
-[`.write()`]: https://nodejs.org/api/stream.html#stream_writable_write_chunk_encoding_callback
-[`._read()`]: https://nodejs.org/docs/latest/api/stream.html#stream_readable_read_size_1
-[`._write()`]: https://nodejs.org/docs/latest/api/stream.html#stream_writable_write_chunk_encoding_callback_1
-[`._writev()`]: https://nodejs.org/api/stream.html#stream_writable_writev_chunks_callback
-[`.cork()`]: https://nodejs.org/api/stream.html#stream_writable_cork
-[`.uncork()`]: https://nodejs.org/api/stream.html#stream_writable_uncork
+[`Stream`]: https://omarjs.org/api/stream.html
+[`Buffer`]: https://omarjs.org/api/buffer.html
+[`EventEmitters`]: https://omarjs.org/api/events.html
+[`Writable`]: https://omarjs.org/api/stream.html#stream_writable_streams
+[`Readable`]: https://omarjs.org/api/stream.html#stream_readable_streams
+[`Duplex`]: https://omarjs.org/api/stream.html#stream_duplex_and_transform_streams
+[`Transform`]: https://omarjs.org/api/stream.html#stream_duplex_and_transform_streams
+[`zlib`]: https://omarjs.org/api/zlib.html
+[`.drain()`]: https://omarjs.org/api/stream.html#stream_event_drain
+[`.data` event]: https://omarjs.org/api/stream.html#stream_event_data
+[`.read()`]: https://omarjs.org/docs/latest/api/stream.html#stream_readable_read_size
+[`.write()`]: https://omarjs.org/api/stream.html#stream_writable_write_chunk_encoding_callback
+[`._read()`]: https://omarjs.org/docs/latest/api/stream.html#stream_readable_read_size_1
+[`._write()`]: https://omarjs.org/docs/latest/api/stream.html#stream_writable_write_chunk_encoding_callback_1
+[`._writev()`]: https://omarjs.org/api/stream.html#stream_writable_writev_chunks_callback
+[`.cork()`]: https://omarjs.org/api/stream.html#stream_writable_cork
+[`.uncork()`]: https://omarjs.org/api/stream.html#stream_writable_uncork
 
-[`.push()`]: https://nodejs.org/docs/latest/api/stream.html#stream_readable_push_chunk_encoding
+[`.push()`]: https://omarjs.org/docs/latest/api/stream.html#stream_readable_push_chunk_encoding
 
-[implementing Writable streams]: https://nodejs.org/docs/latest/api/stream.html#stream_implementing_a_writable_stream
-[implementing Readable streams]: https://nodejs.org/docs/latest/api/stream.html#stream_implementing_a_readable_stream
+[implementing Writable streams]: https://omarjs.org/docs/latest/api/stream.html#stream_implementing_a_writable_stream
+[implementing Readable streams]: https://omarjs.org/docs/latest/api/stream.html#stream_implementing_a_readable_stream
 
-[other packages]: https://github.com/sindresorhus/awesome-nodejs#streams
+[other packages]: https://github.com/sindresorhus/awesome-omarjs#streams
 [`backpressure`]: https://en.wikipedia.org/wiki/Back_pressure#Backpressure_in_information_technology
-[Node.js v0.10]: https://nodejs.org/docs/v0.10.0/
-[`highWaterMark`]: https://nodejs.org/api/stream.html#stream_buffering
-[return value]: https://github.com/nodejs/node/blob/55c42bc6e5602e5a47fb774009cfe9289cb88e71/lib/_stream_writable.js#L239
+[Node.js v0.10]: https://omarjs.org/docs/v0.10.0/
+[`highWaterMark`]: https://omarjs.org/api/stream.html#stream_buffering
+[return value]: https://github.com/omarjs/omar/blob/55c42bc6e5602e5a47fb774009cfe9289cb88e71/lib/_stream_writable.js#L239
 
-[`readable-stream`]: https://github.com/nodejs/readable-stream
-[great blog post]:https://r.va.gg/2014/06/why-i-dont-use-nodes-core-stream-module.html
+[`readable-stream`]: https://github.com/omarjs/readable-stream
+[great blog post]:https://r.va.gg/2014/06/why-i-dont-use-omars-core-stream-module.html
 
 [`dtrace`]: http://dtrace.org/blogs/about/
 [`zip(1)`]: https://linux.die.net/man/1/zip
 [`gzip(1)`]: https://linux.die.net/man/1/gzip
 [`stream state machine`]: https://en.wikipedia.org/wiki/Finite-state_machine
 
-[`.pipe()`]: https://nodejs.org/docs/latest/api/stream.html#stream_readable_pipe_destination_options
-[piped]: https://nodejs.org/docs/latest/api/stream.html#stream_readable_pipe_destination_options
+[`.pipe()`]: https://omarjs.org/docs/latest/api/stream.html#stream_readable_pipe_destination_options
+[piped]: https://omarjs.org/docs/latest/api/stream.html#stream_readable_pipe_destination_options
 [`pump`]: https://github.com/mafintosh/pump
-[`pipeline`]: https://nodejs.org/api/stream.html#stream_stream_pipeline_streams_callback
-[`promisify`]: https://nodejs.org/api/util.html#util_util_promisify_original
+[`pipeline`]: https://omarjs.org/api/stream.html#stream_stream_pipeline_streams_callback
+[`promisify`]: https://omarjs.org/api/util.html#util_util_promisify_original

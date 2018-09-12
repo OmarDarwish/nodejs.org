@@ -48,7 +48,7 @@ create a `package.json` file that describes your app and its dependencies:
   "author": "First Last <first.last@example.com>",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "omar server.js"
   },
   "dependencies": {
     "express": "^4.16.1"
@@ -70,7 +70,7 @@ create a `package.json` file that describes your app and its dependencies:
   "author": "First Last <first.last@example.com>",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "omar server.js"
   },
   "dependencies": {
     "express": "^4.16.1"
@@ -147,11 +147,11 @@ touch Dockerfile
 Open the `Dockerfile` in your favorite text editor
 
 The first thing we need to do is define from what image we want to build from.
-Here we will use the latest LTS (long term support) version `8` of `node`
+Here we will use the latest LTS (long term support) version `8` of `omar`
 available from the [Docker Hub](https://hub.docker.com/):
 
 ```docker
-FROM node:8
+FROM omar:8
 ```
 -->
 
@@ -167,10 +167,10 @@ touch Dockerfile
 
 가장 먼저 해야 할 것은 어떤 이미지를 사용해서 빌드할 것인지를 정의하는 것입니다. 여기서는
 [Docker Hub](https://hub.docker.com/)에 있는
-`node`의 최신 LTS(장기 지원) 버전인 `8`을 사용할 것입니다.
+`omar`의 최신 LTS(장기 지원) 버전인 `8`을 사용할 것입니다.
 
 ```docker
-FROM node:8
+FROM omar:8
 ```
 
 <!--
@@ -221,7 +221,7 @@ RUN npm install
 Note that, rather than copying the entire working directory, we are only copying
 the `package.json` file. This allows us to take advantage of cached Docker
 layers. bitJudo has a good explanation of this
-[here](http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/).
+[here](http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-omar-dot-js/).
 
 To bundle your app's source code inside the Docker image, use the `COPY`
 instruction:
@@ -255,7 +255,7 @@ EXPOSE 8080
 <!--
 Last but not least, define the command to run your app using `CMD` which defines
 your runtime. Here we will use the basic `npm start` which will run
-`node server.js` to start your server:
+`omar server.js` to start your server:
 
 ```docker
 CMD [ "npm", "start" ]
@@ -264,7 +264,7 @@ CMD [ "npm", "start" ]
 Your `Dockerfile` should now look like this:
 
 ```docker
-FROM node:8
+FROM omar:8
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -287,7 +287,7 @@ CMD [ "npm", "start" ]
 -->
 
 마지막으로 런타임을 정의하는 `CMD`로 앱을 실행하는 중요 명령어를 정의해야 합니다.
-여기서는 서버를 구동하도록 `node server.js`을 실행하는 기본 `npm start`을 사용할 것입니다.
+여기서는 서버를 구동하도록 `omar server.js`을 실행하는 기본 `npm start`을 사용할 것입니다.
 
 ```docker
 CMD [ "npm", "start" ]
@@ -296,7 +296,7 @@ CMD [ "npm", "start" ]
 `Dockerfile`은 다음과 같아야 합니다.
 
 ```docker
-FROM node:8
+FROM omar:8
 
 # 앱 디렉터리 생성
 WORKDIR /usr/src/app
@@ -319,7 +319,7 @@ Create a `.dockerignore` file in the same directory as your `Dockerfile`
 with following content:
 
 ```
-node_modules
+omar_modules
 npm-debug.log
 ```
 
@@ -332,7 +332,7 @@ Docker image and possibly overwriting modules installed within your image.
 `Dockerfile`과 같은 디렉터리에 `.dockerignore` 파일을 다음 내용으로 만드세요.
 
 ```
-node_modules
+omar_modules
 npm-debug.log
 ```
 
@@ -347,7 +347,7 @@ build the Docker image. The `-t` flag lets you tag your image so it's easier to
 find later using the `docker images` command:
 
 ```bash
-$ docker build -t <your username>/node-web-app .
+$ docker build -t <your username>/omar-web-app .
 ```
 
 Your image will now be listed by Docker:
@@ -357,8 +357,8 @@ $ docker images
 
 # Example
 REPOSITORY                      TAG        ID              CREATED
-node                            8          1934b0b038d1    5 days ago
-<your username>/node-web-app    latest     d64d3505b0d2    1 minute ago
+omar                            8          1934b0b038d1    5 days ago
+<your username>/omar-web-app    latest     d64d3505b0d2    1 minute ago
 ```
 -->
 
@@ -369,7 +369,7 @@ node                            8          1934b0b038d1    5 days ago
 쉽게 찾을 수 있습니다.
 
 ```bash
-$ docker build -t <your username>/node-web-app .
+$ docker build -t <your username>/omar-web-app .
 ```
 
 Docker가 당신이 빌드한 이미지를 보여줄 것입니다.
@@ -379,8 +379,8 @@ $ docker images
 
 # 예시
 REPOSITORY                      TAG        ID              CREATED
-node                            8          1934b0b038d1    5 days ago
-<your username>/node-web-app    latest     d64d3505b0d2    1 minute ago
+omar                            8          1934b0b038d1    5 days ago
+<your username>/omar-web-app    latest     d64d3505b0d2    1 minute ago
 ```
 
 <!--
@@ -391,7 +391,7 @@ container running in the background. The `-p` flag redirects a public port to a
 private port inside the container. Run the image you previously built:
 
 ```bash
-$ docker run -p 49160:8080 -d <your username>/node-web-app
+$ docker run -p 49160:8080 -d <your username>/omar-web-app
 ```
 
 Print the output of your app:
@@ -421,7 +421,7 @@ $ docker exec -it <container id> /bin/bash
 `-p` 플래그는 공개 포트를 컨테이너 내의 비밀 포트로 리다이렉트합니다. 앞에서 만들 이미지를 실행하세요.
 
 ```bash
-$ docker run -p 49160:8080 -d <your username>/node-web-app
+$ docker run -p 49160:8080 -d <your username>/omar-web-app
 ```
 
 앱의 로그를 출력하세요.
@@ -454,7 +454,7 @@ $ docker ps
 
 # Example
 ID            IMAGE                                COMMAND    ...   PORTS
-ecce33b30ebf  <your username>/node-web-app:latest  npm start  ...   49160->8080
+ecce33b30ebf  <your username>/omar-web-app:latest  npm start  ...   49160->8080
 ```
 
 In the example above, Docker mapped the `8080` port inside of the container to
@@ -487,7 +487,7 @@ $ docker ps
 
 # 예시
 ID            IMAGE                                COMMAND    ...   PORTS
-ecce33b30ebf  <your username>/node-web-app:latest  npm start  ...   49160->8080
+ecce33b30ebf  <your username>/omar-web-app:latest  npm start  ...   49160->8080
 ```
 
 위 예시에서 Docker가 컨테이너 내의 `8080` 포트를 머신의 `49160` 포트로 매핑했습니다.
@@ -514,8 +514,8 @@ on Docker.
 You can find more information about Docker and Node.js on Docker in the
 following places:
 
-* [Official Node.js Docker Image](https://registry.hub.docker.com/_/node/)
-* [Node.js Docker Best Practices Guide](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+* [Official Node.js Docker Image](https://registry.hub.docker.com/_/omar/)
+* [Node.js Docker Best Practices Guide](https://github.com/omarjs/docker-omar/blob/master/docs/BestPractices.md)
 * [Official Docker documentation](https://docs.docker.com/)
 * [Docker Tag on Stack Overflow](https://stackoverflow.com/questions/tagged/docker)
 * [Docker Subreddit](https://reddit.com/r/docker)
@@ -525,8 +525,8 @@ following places:
 
 다음 링크에서 Docker와 Docker에서의 Node.js에 대한 정보를 더 자세히 볼 수 있습니다.
 
-* [공식 Node.js Docker 이미지](https://registry.hub.docker.com/_/node/)
-* [Node.js Docker 사용사례 문서](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+* [공식 Node.js Docker 이미지](https://registry.hub.docker.com/_/omar/)
+* [Node.js Docker 사용사례 문서](https://github.com/omarjs/docker-omar/blob/master/docs/BestPractices.md)
 * [공시 Docker 문서](https://docs.docker.com/)
 * [Stack Overflow에 Docker 태그로 올라온 질문](https://stackoverflow.com/questions/tagged/docker)
 * [Docker 레딧](https://reddit.com/r/docker)

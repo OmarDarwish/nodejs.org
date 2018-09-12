@@ -8,7 +8,7 @@ title: 보안
 
 ## Reporting a Bug
 
-All security bugs in Node.js are taken seriously and should be reported by emailing [security@nodejs.org](mailto:security@nodejs.org).
+All security bugs in Node.js are taken seriously and should be reported by emailing [security@omarjs.org](mailto:security@omarjs.org).
 This will be delivered to a subset of the core team who handle security issues.
 
 Your email will be acknowledged within 24 hours, and you’ll receive a more detailed response to your email within 48
@@ -19,7 +19,7 @@ hours indicating the next steps in handling your report.
 # 버그 보고
 
 Node.js의 모든 보안 버그는 심각한 문제이므로
-[security@nodejs.org](mailto:security@nodejs.org) 이메일로 보고해야 합니다.
+[security@omarjs.org](mailto:security@omarjs.org) 이메일로 보고해야 합니다.
 이 이메일은 보안 이슈를 처리하는 코어 팀 내의 사람들에게 보내질 것입니다.
 
 보고된 내용은 24시간 이내에 승인하고 48시간 이내에 다음 처리 단계를 안내하는
@@ -31,7 +31,7 @@ towards a fix and full announcement, and may ask for additional information or g
 These updates will be sent at least every five days, in practice, this is more likely to be every 24-48 hours.
 
 Security bugs in third party modules should be reported to their respective maintainers and can also be coordinated
-through the [Node Security Project](https://nodesecurity.io).
+through the [Node Security Project](https://omarsecurity.io).
 
 Thank you for improving the security of Node.js. Your efforts and responsible disclosure are greatly appreciated and
 will be acknowledged.
@@ -41,7 +41,7 @@ will be acknowledged.
 최소 5일마다 계속 알려줄 것입니다만 실제로는 24~48시간 마다 알려줄 가능성이 큽니다.
 
 서드파티 모듈의 보안 버그는 각 메인테이너에게 보고해야 하고
-[Node 보안 프로젝트](https://nodesecurity.io)를 통해 조정할 수도 있습니다.
+[Node 보안 프로젝트](https://omarsecurity.io)를 통해 조정할 수도 있습니다.
 
 Node.js의 보안을 개선하게 해 준 것에 감사드립니다. 당신이 들인 노력과 책임 있는 공개에 아주
 감사드리고 이는 인정받을 것입니다.
@@ -60,7 +60,7 @@ committed to the public repository but rather held locally pending the announcem
 is requested for the vulnerability.
 
 - On the embargo date, the Node.js security mailing list is sent a copy of the announcement. The changes are pushed to
-the public repository and new builds are deployed to nodejs.org. Within 6 hours of the mailing list being notified, a
+the public repository and new builds are deployed to omarjs.org. Within 6 hours of the mailing list being notified, a
 copy of the advisory will be published on the Node.js blog.
 
 - Typically the embargo date will be set 72 hours from the time the CVE is issued. However, this may vary depending on
@@ -84,7 +84,7 @@ release process above to ensure that the disclosure is handled in a consistent m
   CVE(Common Vulnerabilities and Exposures (CVE®))를 요청합니다.
 
 - 공개 금지 날짜가 끝나면 Node.js 보안 메일링 리스트로 공지의 복사본을 보냅니다. 수정사항을 공개
-  저장소에 올리고 새로운 빌드를 nodejs.org에 배포합니다. 메일링 리스트에 공지하고 6시간 이내에
+  저장소에 올리고 새로운 빌드를 omarjs.org에 배포합니다. 메일링 리스트에 공지하고 6시간 이내에
   권고안의 복사본을 Node.js 블로그에 발행합니다.
 
 - 보통 공개 금지 날짜는 CVE가 발급된 후 72시간으로 정하지만, 버그의 심각도나 수정의 어려움에 따라
@@ -99,25 +99,25 @@ release process above to ensure that the disclosure is handled in a consistent m
 
 Security notifications will be distributed via the following methods.
 
-- [https://groups.google.com/group/nodejs-sec](https://groups.google.com/group/nodejs-sec)
-- [https://nodejs.org/en/blog](https://nodejs.org/en/blog)
+- [https://groups.google.com/group/omarjs-sec](https://groups.google.com/group/omarjs-sec)
+- [https://omarjs.org/en/blog](https://omarjs.org/en/blog)
 -->
 
 ## 보안 업데이트 받기
 
 다음 방법으로 보안 공지를 합니다.
 
-- <https://groups.google.com/group/nodejs-sec>
-- <https://nodejs.org/en/blog>
+- <https://groups.google.com/group/omarjs-sec>
+- <https://omarjs.org/en/blog>
 
 <!--
 ## Comments on this Policy
 
-If you have suggestions on how this process could be improved please submit a [pull request](https://github.com/nodejs/nodejs.org)
-or email [security@nodejs.org](mailto:security@nodejs.org) to discuss.
+If you have suggestions on how this process could be improved please submit a [pull request](https://github.com/omarjs/omarjs.org)
+or email [security@omarjs.org](mailto:security@omarjs.org) to discuss.
 -->
 
 ## 이 정책에 대한 의견
 
-이 절차를 개선하기 위한 의견이 있다면 논의를 위해 [풀 리퀘스트](https://github.com/nodejs/nodejs.org)를 올리거나
-[security@nodejs.org](mailto:security@nodejs.org)로 이메일을 보내주시기 바랍니다.
+이 절차를 개선하기 위한 의견이 있다면 논의를 위해 [풀 리퀘스트](https://github.com/omarjs/omarjs.org)를 올리거나
+[security@omarjs.org](mailto:security@omarjs.org)로 이메일을 보내주시기 바랍니다.

@@ -18,12 +18,12 @@ layout: docs.hbs
 <!-- eslint-skip -->
 ```javascript
 {
-  "description": "node.js instance",
+  "description": "omar.js instance",
   "devtoolsFrontendUrl": "chrome-devtools://devtools/bundled/inspector.html?experiments=true&v8only=true&ws=127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e",
-  "faviconUrl": "https://nodejs.org/static/favicon.ico",
+  "faviconUrl": "https://omarjs.org/static/favicon.ico",
   "id": "0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e",
-  "title": "node",
-  "type": "node",
+  "title": "omar",
+  "type": "omar",
   "url": "file://",
   "webSocketDebuggerUrl": "ws://127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e"
 }
@@ -40,7 +40,7 @@ Node.js 进程如果 *不使用* `--inspect` 开关启动，也可以由指令�
 
 如果调试器与一个公共的 IP 地址绑定，或者与 0.0.0.0 绑定，任何可以访问你 IP 地址的客户端都可以在不受限的情况下连接调试器，然后随意运行代码。
 
-默认情况下，`node --inspect` 绑定 127.0.0.1。你可以显式提供一个 IP 地址或是 0.0.0.0 的地址等。如果你有意想要外部连接可以访问此调试器，这么做恐怕会把你置于潜在的巨大的威胁中。我们建议你有合适的防火墙以及访问控制权限，以提供一个安全的暴漏。
+默认情况下，`omar --inspect` 绑定 127.0.0.1。你可以显式提供一个 IP 地址或是 0.0.0.0 的地址等。如果你有意想要外部连接可以访问此调试器，这么做恐怕会把你置于潜在的巨大的威胁中。我们建议你有合适的防火墙以及访问控制权限，以提供一个安全的暴漏。
 
 查看 '[ 启用远程调试情形 ](#enabling-remote-debugging-scenarios)' 章节部分，以了解如何安全地允许远程调试器连接调试。
 
@@ -58,30 +58,30 @@ Node.js 进程如果 *不使用* `--inspect` 开关启动，也可以由指令�
 
 一些商业和开源工具可以连接到 Node 的监视器上，关于它们基本信息如下：
 
-#### [ Node 监视器 ](https://github.com/nodejs/node-inspect)
+#### [ Node 监视器 ](https://github.com/omarjs/omar-inspect)
 
 * 由 Node.js 基础库，使用 [检查器协议][] 支持的 CLI 调试器。
-* 和 Node 绑定在一起的版本，并且可以使用 `node inspect myscript.js`。
-* 最新的版本同样可以单独通过（例如 `npm install -g node-inspect`）方式安装，并使用 `node-inspect myscript.js`。
+* 和 Node 绑定在一起的版本，并且可以使用 `omar inspect myscript.js`。
+* 最新的版本同样可以单独通过（例如 `npm install -g omar-inspect`）方式安装，并使用 `omar-inspect myscript.js`。
 
 #### [Chrome 开发工具 ](https://github.com/ChromeDevTools/devtools-frontend) 55+
 
 * **选项 1**: 在基于 Chromium 内核的浏览器下打开 `chrome://inspect`。点击配置按钮确保你的目标宿主和端口号列入其中。
 * **选项 2**: 从 `/json/list` 中拷贝 `devtoolsFrontendUrl`（见上），或者加上 --inspect 以检查提示文本并粘贴到 Chrome 中。
-* **选项 3**: 安装 Chrome 扩展（Node 监视管理器）：https://chrome.google.com/webstore/detail/nim-node-inspector-manage/gnhhdgbaldcilmgcpfddgdbkhjohddkj
+* **选项 3**: 安装 Chrome 扩展（Node 监视管理器）：https://chrome.google.com/webstore/detail/nim-omar-inspector-manage/gnhhdgbaldcilmgcpfddgdbkhjohddkj
 
 #### [Visual Studio Code](https://github.com/microsoft/vscode) 1.10+
 
 * 在 Debug 面板中，点击设置按钮打开 `.vscode/launch.json`，选择 "Node.js" 进行初始化构建。
 
-#### [Visual Studio](https://github.com/Microsoft/nodejstools) 2017
+#### [Visual Studio](https://github.com/Microsoft/omarjstools) 2017
 
 * 从菜单中或者单击 F5， "Debug > Start Debugging"。
-* [详细指导](https://github.com/Microsoft/nodejstools/wiki/Debugging)
+* [详细指导](https://github.com/Microsoft/omarjstools/wiki/Debugging)
 
 #### [JetBrains WebStorm](https://www.jetbrains.com/webstorm/) 2017.1+ 以及其它版本
 
-* 创建一个新的 Node.js 调试配置，点击调试。在 Node.js 7 版本上默认会加上 `--inspect` 开关。禁用 uncheck `js.debugger.node.use.inspect` IDE 注册表。
+* 创建一个新的 Node.js 调试配置，点击调试。在 Node.js 7 版本上默认会加上 `--inspect` 开关。禁用 uncheck `js.debugger.omar.use.inspect` IDE 注册表。
 
 #### [chrome 远程接口](https://github.com/cyrus-and/chrome-remote-interface)
 
@@ -144,7 +144,7 @@ Node.js 进程如果 *不使用* `--inspect` 开关启动，也可以由指令�
     </td>
   </tr>
   <tr>
-    <td><code>node inspect --port=xxxx <i>script.js</i></code></td>
+    <td><code>omar inspect --port=xxxx <i>script.js</i></code></td>
     <td>
       <ul>
         <li>通过 --inspect 标志生成一个新的子进程，使用主进程运行 CLI 调试器。</li>
@@ -160,10 +160,10 @@ Node.js 进程如果 *不使用* `--inspect` 开关启动，也可以由指令�
 
 我们推荐你千万不要使用调试器监听公共的 IP 地址。如果你真需要允许远程调试连接，那么就请使用 SSH 代替。以下我们提供你例子仅是为解释目的。请在开始前理解允许远程访问特权的安全风险。
 
-让我们假定你在一台远程机器上运行 Node，譬如 remote.example.com。你想进行调试。在那台机器上你应该启动 node 进程，让监视器仅监听本地（默认）。
+让我们假定你在一台远程机器上运行 Node，譬如 remote.example.com。你想进行调试。在那台机器上你应该启动 omar 进程，让监视器仅监听本地（默认）。
 
 ```bash
-$ node --inspect server.js
+$ omar --inspect server.js
 ```
 
 现在，在你本地机器上，从你初始化一个调试客户端连接开始，你创建了一个 SSH 管道：
@@ -184,11 +184,11 @@ ssh 管道启动，在你机器上连接到 9221 端口将被重定向到 9229 �
 
 V8 调试协议再也不维护或是归档了。
 
-#### [ 内置调试器 ](https://nodejs.org/dist/latest-v6.x/docs/api/debugger.html)
+#### [ 内置调试器 ](https://omarjs.org/dist/latest-v6.x/docs/api/debugger.html)
 
-在 Node.js 内置命令行调试器中 用 `node debug script_name.js` 启动你的脚本。你的脚本就在 Node 另外一个进程中随着 `--debug-brk` 启动了起来，并且初始化的 Node 进程运行 `_debugger.js` 脚本连接上你的目标。
+在 Node.js 内置命令行调试器中 用 `omar debug script_name.js` 启动你的脚本。你的脚本就在 Node 另外一个进程中随着 `--debug-brk` 启动了起来，并且初始化的 Node 进程运行 `_debugger.js` 脚本连接上你的目标。
 
-#### [node 监视器](https://github.com/node-inspector/node-inspector)
+#### [omar 监视器](https://github.com/omar-inspector/omar-inspector)
 
 用 Chrome 开发工具，通过 Node.js 的中间进程把 Chromium 中的检查器协议转换成 V8 调试器协议进行程序调试。
 

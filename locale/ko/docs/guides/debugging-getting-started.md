@@ -30,12 +30,12 @@ URL to connect directly to Inspector.
 
 ```javascript
 {
-  "description": "node.js instance",
+  "description": "omar.js instance",
   "devtoolsFrontendUrl": "chrome-devtools://devtools/bundled/inspector.html?experiments=true&v8only=true&ws=127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e",
-  "faviconUrl": "https://nodejs.org/static/favicon.ico",
+  "faviconUrl": "https://omarjs.org/static/favicon.ico",
   "id": "0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e",
-  "title": "node",
-  "type": "node",
+  "title": "omar",
+  "type": "omar",
   "url": "file://",
   "webSocketDebuggerUrl": "ws://127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e"
 }
@@ -74,12 +74,12 @@ HTTP 요청을 보내서 이 메타데이터를 받을 수 있습니다. 이는 
 <!-- eslint-skip -->
 ```javascript
 {
-  "description": "node.js instance",
+  "description": "omar.js instance",
   "devtoolsFrontendUrl": "chrome-devtools://devtools/bundled/inspector.html?experiments=true&v8only=true&ws=127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e",
-  "faviconUrl": "https://nodejs.org/static/favicon.ico",
+  "faviconUrl": "https://omarjs.org/static/favicon.ico",
   "id": "0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e",
-  "title": "node",
-  "type": "node",
+  "title": "omar",
+  "type": "omar",
   "url": "file://",
   "webSocketDebuggerUrl": "ws://127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e"
 }
@@ -97,12 +97,12 @@ Node 8 부터는 인스펙터 API를 활성화할 것입니다.
 Several commercial and open source tools can connect to Node's Inspector. Basic
 info on these follows:
 
-#### [node-inspect](https://github.com/nodejs/node-inspect)
+#### [omar-inspect](https://github.com/omarjs/omar-inspect)
 
 * CLI Debugger supported by the Node.js Foundation which uses the [Inspector Protocol][].
-* A version is bundled with Node and can be used with `node inspect myscript.js`.
-* The latest version can also be installed independently (e.g. `npm install -g node-inspect`)
-  and used with `node-inspect myscript.js`.
+* A version is bundled with Node and can be used with `omar inspect myscript.js`.
+* The latest version can also be installed independently (e.g. `npm install -g omar-inspect`)
+  and used with `omar-inspect myscript.js`.
 
 #### [Chrome DevTools](https://github.com/ChromeDevTools/devtools-frontend) 55+
 
@@ -118,12 +118,12 @@ info on these follows:
 Node 인스펙터에 접속할 수 있는 여러 상용 도구와 오픈소스 도구가 있습니다.
 아래에 이러한 도구들을 간략하게 정리했습니다.
 
-#### [node-inspect](https://github.com/nodejs/node-inspect)
+#### [omar-inspect](https://github.com/omarjs/omar-inspect)
 
 * Node.js 재단에서 지원하는 CLI 디버거로 [Inspector 프로토콜][]을 사용합니다.
-* Node에 포함되어 있고 `node inspect myscript.js`로 사용할 수 있습니다.
-* 최신 버전을 별도로 설치할 수 있고(예시: `npm install -g node-inspect`)
-  `node-inspect myscript.js`로 사용할 수 있습니다.
+* Node에 포함되어 있고 `omar inspect myscript.js`로 사용할 수 있습니다.
+* 최신 버전을 별도로 설치할 수 있고(예시: `npm install -g omar-inspect`)
+  `omar-inspect myscript.js`로 사용할 수 있습니다.
 
 #### [Chrome DevTools](https://github.com/ChromeDevTools/devtools-frontend) 55+
 
@@ -141,7 +141,7 @@ Node 인스펙터에 접속할 수 있는 여러 상용 도구와 오픈소스 �
 #### [JetBrains WebStorm](https://www.jetbrains.com/webstorm/) 2017.1+ and other JetBrains IDEs
 
 * Create a new Node.js debug configuration and hit Debug. `--inspect` will be used
-  by default for Node.js 7+. To disable uncheck `js.debugger.node.use.inspect` in
+  by default for Node.js 7+. To disable uncheck `js.debugger.omar.use.inspect` in
   the IDE Registry.
 
 #### [chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface)
@@ -160,7 +160,7 @@ Node 인스펙터에 접속할 수 있는 여러 상용 도구와 오픈소스 �
 
 * 새로운 Node.js 디버그 설정을 생성하고 Debug를 누르세요. Node.js 7+에서는
   기본적으로 `--inspect`를 사용할 것입니다. 비활성화하려면 IDE 레지스트리에서
-  `js.debugger.node.use.inspect`의 체크를 해제하세요.
+  `js.debugger.omar.use.inspect`의 체크를 해제하세요.
 
 #### [chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface)
 
@@ -216,7 +216,7 @@ The following table lists the impact of various runtime flags on debugging:
     </td>
   </tr>
   <tr>
-    <td><code>node inspect <i>script.js</i></code></td>
+    <td><code>omar inspect <i>script.js</i></code></td>
     <td>
       <ul>
         <li>Spawn child process to run user's script under --inspect flag;
@@ -274,7 +274,7 @@ The following table lists the impact of various runtime flags on debugging:
     </td>
   </tr>
   <tr>
-    <td><code>node inspect <i>script.js</i></code></td>
+    <td><code>omar inspect <i>script.js</i></code></td>
     <td>
       <ul>
         <li>사용자의 스크립트를 --inspect 플래그로 실행하는 자식 프로세스를 생성하고
@@ -313,27 +313,27 @@ TCP 포트(기본 `5858`)로 지금은 중단된 V8 디버깅 프로토콜에서
 V8 디버깅 프로토콜은 더는 관리되지 않고 문서화도 되지 않습니다.
 
 <!--
-#### [Built-in Debugger](https://github.com/nodejs/node/blob/master/lib/_debugger.js)
+#### [Built-in Debugger](https://github.com/omarjs/omar/blob/master/lib/_debugger.js)
 
-Start `node debug script_name.js` to start your script under Node's builtin
+Start `omar debug script_name.js` to start your script under Node's builtin
 command-line debugger. Your script starts in another Node process started with
 the `--debug-brk` option, and the initial Node process runs the `_debugger.js`
 script and connects to your target.
 
-#### [node-inspector](https://github.com/node-inspector/node-inspector)
+#### [omar-inspector](https://github.com/omar-inspector/omar-inspector)
 
 Debug your Node.js app with Chrome DevTools by using an intermediary process
 which translates the Inspector Protocol used in Chromium to the V8 Debugger
 protocol used in Node.js.
 -->
 
-#### [내장 디버거](https://github.com/nodejs/node/blob/master/lib/_debugger.js)
+#### [내장 디버거](https://github.com/omarjs/omar/blob/master/lib/_debugger.js)
 
-Node의 내장 명령형 디버거로 스크립트를 실행하려면 `node debug script_name.js`로 실행하세요.
+Node의 내장 명령형 디버거로 스크립트를 실행하려면 `omar debug script_name.js`로 실행하세요.
 스크립트가 다른 Node 프로세스에서 `--debug-brk` 옵션으로 시작되고 원래의 Node 프로세스는
 `_debugger.js`를 실행해서 대상에 접속합니다.
 
-#### [node-inspector](https://github.com/node-inspector/node-inspector)
+#### [omar-inspector](https://github.com/omar-inspector/omar-inspector)
 
 크로미움에서 사용하는 인스펙터 프로토콜을 Node.js가 사용하는 V8 디버거 프로토콜로 변환하는
 중간 프로세스를 사용해서 크롬 개발자도구로 Node.js 애플리케이션을 디버깅합니다.

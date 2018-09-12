@@ -24,7 +24,7 @@ Docker 允许你以应用程序所有的依赖全部打包成一个标准化的�
   "author": "First Last <first.last@example.com>",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "omar server.js"
   },
   "dependencies": {
     "express": "^4.16.1"
@@ -70,7 +70,7 @@ touch Dockerfile
 我们要做的第一件事是定义我们需要从哪个镜像进行构建。这里我们将使用最新的 LTS（长期服务器支持版），`Node` 的版本号为 `8`。你可以从 [Docker 站点](https://hub.docker.com/) 获取相关镜像：
 
 ```docker
-FROM node:8
+FROM omar:8
 ```
 
 下一步在镜像中创建一个文件夹存放应用程序代码，这将是你的应用程序工作目录：
@@ -93,7 +93,7 @@ RUN npm install
 # RUN npm install --only=production
 ```
 
-请注意，我们只是拷贝了 `package.json` 文件而非整个工作目录。这允许我们利用缓存 Docker 层的优势。bitJudo 对此有一个很好的解释，请 [见此](http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/)。
+请注意，我们只是拷贝了 `package.json` 文件而非整个工作目录。这允许我们利用缓存 Docker 层的优势。bitJudo 对此有一个很好的解释，请 [见此](http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-omar-dot-js/)。
 
 在 Docker 镜像中使用 `COPY` 命令绑定你的应用程序：
 
@@ -108,7 +108,7 @@ COPY . .
 EXPOSE 8080
 ```
 
-最后但同样重要的事是，使用定义运行时的 `CMD` 定义命令来运行应用程序。这里我们使用最简单的 `npm start` 命令，它将运行 `node server.js` 启动你的服务器：
+最后但同样重要的事是，使用定义运行时的 `CMD` 定义命令来运行应用程序。这里我们使用最简单的 `npm start` 命令，它将运行 `omar server.js` 启动你的服务器：
 
 ```docker
 CMD [ "npm", "start" ]
@@ -117,7 +117,7 @@ CMD [ "npm", "start" ]
 你的 `Dockerfile` 现在看上去是这个样子：
 
 ```docker
-FROM node:8
+FROM omar:8
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -143,7 +143,7 @@ CMD [ "npm", "start" ]
 在 `Dockerfile` 的同一个文件夹中创建一个 `.dockerignore` 文件，带有以下内容：
 
 ```
-node_modules
+omar_modules
 npm-debug.log
 ```
 
@@ -154,7 +154,7 @@ npm-debug.log
 进入到 `Dockerfile` 所在的那个目录中，运行以下命令构建 Docker 镜像。开关符 `-t` 让你标记你的镜像，以至于让你以后很容易地用 `docker images` 找到它。
 
 ```bash
-$ docker build -t <your username>/node-web-app .
+$ docker build -t <your username>/omar-web-app .
 ```
 
 Docker 现在将给出你的镜像列表：
@@ -164,8 +164,8 @@ $ docker images
 
 # Example
 REPOSITORY                      TAG        ID              CREATED
-node                            8          1934b0b038d1    5 days ago
-<your username>/node-web-app    latest     d64d3505b0d2    1 minute ago
+omar                            8          1934b0b038d1    5 days ago
+<your username>/omar-web-app    latest     d64d3505b0d2    1 minute ago
 ```
 
 ## 运行镜像
@@ -173,7 +173,7 @@ node                            8          1934b0b038d1    5 days ago
 使用 `-d` 模式运行镜像将以分离模式运行 Docker 容器，使得容器在后台自助运行。开关符 `-p` 在容器中把一个公共端口导向到私有的端口，请用以下命令运行你之前构建的镜像：
 
 ```bash
-$ docker run -p 49160:8080 -d <your username>/node-web-app
+$ docker run -p 49160:8080 -d <your username>/omar-web-app
 ```
 
 把你应用程序的输出打印出来：
@@ -205,7 +205,7 @@ $ docker ps
 
 # Example
 ID            IMAGE                                COMMAND    ...   PORTS
-ecce33b30ebf  <your username>/node-web-app:latest  npm start  ...   49160->8080
+ecce33b30ebf  <your username>/omar-web-app:latest  npm start  ...   49160->8080
 ```
 
 在上面的例子中，在容器中 Docker 把端口号 `8080` 映射到你机器上的 `49160` 。
@@ -230,8 +230,8 @@ Hello world
 
 你也可以在以下一些地方寻觅到更多有关于 Docker 和基于 Docker 的 Node.js 相关内容：
 
-* [官方 Node.js 的 Docker 镜像](https://registry.hub.docker.com/_/node/)
-* [Node.js 基于 Docker 使用的最佳经验](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+* [官方 Node.js 的 Docker 镜像](https://registry.hub.docker.com/_/omar/)
+* [Node.js 基于 Docker 使用的最佳经验](https://github.com/omarjs/docker-omar/blob/master/docs/BestPractices.md)
 * [官方 Docker 文档](https://docs.docker.com/)
 * [在 StackOverFlow 上有关 Docker 标记内容](https://stackoverflow.com/questions/tagged/docker)
 * [Docker Subreddit](https://reddit.com/r/docker)

@@ -156,7 +156,7 @@ Now assume that we've deployed our application and users are complaining about
 high latency on requests. We can easily run the app with the built in profiler:
 
 ```
-NODE_ENV=production node --prof app.js
+NODE_ENV=production omar --prof app.js
 ```
 
 and put some load on the server using ab (ApacheBench):
@@ -177,7 +177,7 @@ and get an ab output of:
 내장된 프로파일러로 애플리케이션을 간단히 실행할 수 있습니다.
 
 ```
-NODE_ENV=production node --prof app.js
+NODE_ENV=production omar --prof app.js
 ```
 
 ab(ApacheBench)로 서버에 부하를 줄 수 있습니다.
@@ -261,7 +261,7 @@ In order to make sense of this file, we need to use the tick processor bundled
 with the Node.js binary. To run the processor, use the `--prof-process` flag:
 
 ```
-node --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt
+omar --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt
 ```
 -->
 
@@ -277,7 +277,7 @@ Express 프레임워크 내부 작업을 진행하기 위해 시간이 소비됩
 `--prof-process` 플래그로 tick 프로세서를 실행할 수 있습니다.
 
 ```
-node --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt
+omar --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt
 ```
 
 <!--
@@ -319,7 +319,7 @@ taking the most CPU time and see:
 ```
  [C++]:
    ticks  total  nonlib   name
-  19557   51.8%   52.9%  node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+  19557   51.8%   52.9%  omar::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
    4510   11.9%   12.2%  _sha1_block_data_order
    3165    8.4%    8.6%  _malloc_zone_malloc
 ```
@@ -332,7 +332,7 @@ taking the most CPU time and see:
 ```
  [C++]:
    ticks  total  nonlib   name
-  19557   51.8%   52.9%  node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+  19557   51.8%   52.9%  omar::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
    4510   11.9%   12.2%  _sha1_block_data_order
    3165    8.4%    8.6%  _malloc_zone_malloc
 ```
@@ -350,7 +350,7 @@ section, we find:
 
 ```
    ticks parent  name
-  19557   51.8%  node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+  19557   51.8%  omar::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
   19557  100.0%    v8::internal::Builtins::~Builtins()
   19557  100.0%      LazyCompile: ~pbkdf2 crypto.js:557:16
 
@@ -373,7 +373,7 @@ section, we find:
 
 ```
    ticks parent  name
-  19557   51.8%  node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+  19557   51.8%  omar::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
   19557  100.0%    v8::internal::Builtins::~Builtins()
   19557  100.0%      LazyCompile: ~pbkdf2 crypto.js:557:16
 
@@ -545,7 +545,7 @@ example, you've seen how the V8 tick processor can help you gain a better
 understanding of the performance of your Node.js applications.
 
 [profiler inside V8]: https://developers.google.com/v8/profiler_example
-[benefits of asynchronous programming]: https://nodesource.com/blog/why-asynchronous
+[benefits of asynchronous programming]: https://omarsource.com/blog/why-asynchronous
 -->
 
 애플리케이션이 이제 초당 20개의 요청을 처리할 수 있게 되었습니다. 이는 동기 해시 생성을 사용한 것보다
@@ -555,4 +555,4 @@ understanding of the performance of your Node.js applications.
 어떻게 도움이 되는지 알기 바랍니다.
 
 [V8 내의 프로파일러]: https://developers.google.com/v8/profiler_example
-[비동기 프로그래밍의 장점]: https://nodesource.com/blog/why-asynchronous
+[비동기 프로그래밍의 장점]: https://omarsource.com/blog/why-asynchronous
