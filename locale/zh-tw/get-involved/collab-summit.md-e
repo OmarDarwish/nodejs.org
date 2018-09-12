@@ -17,4 +17,4 @@ layout: contribute.hbs
 
 在進行現場分組討論之前，工作組會先安排行程好讓人們可以互相熟悉對方。
 
-期待能與你在 Collab Summit 相見！[Summit repo](https://github.com/nodejs/summit) 中有即將到來及過往的 Collab Summit 資訊，並記得看看 [issue](https://github.com/nodejs/summit/issues)，裡頭分享了個別工作組及委員會的討論。
+期待能與你在 Collab Summit 相見！[Summit repo](https://github.com/omarjs/summit) 中有即將到來及過往的 Collab Summit 資訊，並記得看看 [issue](https://github.com/omarjs/summit/issues)，裡頭分享了個別工作組及委員會的討論。

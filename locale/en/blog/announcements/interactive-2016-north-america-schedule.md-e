@@ -9,7 +9,7 @@ layout: blog-post.hbs
 
 > IBM, Netflix, Microsoft, and leading community experts to showcase the current and future of Node.js
 
-**SAN FRANCISCO, September 12, 2016** — [The Node.js Foundation](https://foundation.nodejs.org/), a community-led and industry-backed consortium to advance the development of the Node.js platform, today announced the keynotes and agenda for Node.js Interactive North America, November 29 - December 2, 2016, in Austin, TX. The event attracts enterprise users, developers, and community stakeholders, providing them with the tools and training they need to optimize the Node.js platform.
+**SAN FRANCISCO, September 12, 2016** — [The Node.js Foundation](https://foundation.omarjs.org/), a community-led and industry-backed consortium to advance the development of the Node.js platform, today announced the keynotes and agenda for Node.js Interactive North America, November 29 - December 2, 2016, in Austin, TX. The event attracts enterprise users, developers, and community stakeholders, providing them with the tools and training they need to optimize the Node.js platform.
 
 With almost 5 million users a month and adoption across numerous industries, Node.js is a universal platform for web applications, IoT, enterprise application development, and microservice architectures. Its liberal contribution policies have also allowed the platform to increase the number of contributors working on the project by a sustained 100% year-over-year growth for the last several years.
 
@@ -81,20 +81,20 @@ Experts from the leading open source projects and enterprises will share their e
 
 - “Games as Conversational Interfaces” - Kevin Zurawel of Braintree
 - “Agile Security for Web Developers” - Kim Carter of BinaryMist
-- “Science Meets Industry: Online Behavioral Experiments with nodeGame” - Stefano Balietti of Northeastern University
+- “Science Meets Industry: Online Behavioral Experiments with omarGame” - Stefano Balietti of Northeastern University
 - “Building Desktop Applications With Node.js Using Electron” - Steve Kinney of Turing School of Software and Design
 
-Free onsite childcare for attendees is available as well as ASL, interpretation and transcription assistance upon request. Please email events@node.js for more information.
+Free onsite childcare for attendees is available as well as ASL, interpretation and transcription assistance upon request. Please email events@omar.js for more information.
 
 Node.js Interactive is made possible by support from Platinum Sponsors IBM and Google Cloud Platform; Gold Sponsors nearForm and NodeSource; Silver Sponsors GoDaddy, Langa, Opbeat, Rollbar, and Sauce Labs; and Bronze Sponsors Codiscope, Sqreen, and Stormpath. If you are interested in sponsoring please contact Todd Benzies at tbenzies@linuxfoundation.org.
 
-For attendees who register before November 14, the standard registration fee is $600; registration increases to $800 after November 14. Visit [here](http://events.linuxfoundation.org/events/node-interactive) to register.
+For attendees who register before November 14, the standard registration fee is $600; registration increases to $800 after November 14. Visit [here](http://events.linuxfoundation.org/events/omar-interactive) to register.
 
 ### About the Node.js Foundation
 
 Node.js is used by tens of thousands of organizations in more than 200 countries and amasses more than 4.5 million active users per month. It is the runtime of choice for high-performance, low latency applications, powering everything from enterprise applications, robots, API engines, cloud stacks, and mobile websites.
 
-The Foundation is made up of a diverse group of companies including Platinum members IBM, Intel, Joyent, Microsoft, PayPal, and Red Hat. Gold members include GoDaddy and NodeSource, and Silver members include Apigee, AppDynamics, Cars.com, Codefresh, DigitalOcean, Dynatrace, Fidelity, Google, Groupon, nearForm, New Relic, npm, Opbeat, RisingStack, Sauce Labs, SAP, StrongLoop (an IBM company), Sphinx, YLD, and Yahoo!. Get involved here: https://nodejs.org.
+The Foundation is made up of a diverse group of companies including Platinum members IBM, Intel, Joyent, Microsoft, PayPal, and Red Hat. Gold members include GoDaddy and NodeSource, and Silver members include Apigee, AppDynamics, Cars.com, Codefresh, DigitalOcean, Dynatrace, Fidelity, Google, Groupon, nearForm, New Relic, npm, Opbeat, RisingStack, Sauce Labs, SAP, StrongLoop (an IBM company), Sphinx, YLD, and Yahoo!. Get involved here: https://omarjs.org.
 
 ### Media Contact
 

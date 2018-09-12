@@ -3,7 +3,7 @@ title: Node.js Foundation Individual Membership Now Open
 date: 2015-11-04T12:00:00.000Z
 status: publish
 category: Community
-slug: individual-membership-nodejs-foundation
+slug: individual-membership-omarjs-foundation
 layout: blog-post.hbs
 author: mikeal
 ---
@@ -30,7 +30,7 @@ Keep in mind that every meeting of the Board must reach quorum in order to pass 
 
 The Board meets every month to approve resolutions and discuss Node.js Foundation administrative matters. This includes legal considerations, budgeting and approving Foundation-led conferences and other initiatives. Technical governance is overseen by the TSC, not the Board of Directors.
 
-The current board members are listed [here](https://foundation.nodejs.org/about/leadership).
+The current board members are listed [here](https://foundation.omarjs.org/about/leadership).
 
 ## What are the term lengths?
 
@@ -46,4 +46,4 @@ However, in the first election two representatives will be elected; the represen
 
 ## How do I run in the 2016 election?
 
-After you've registered as a member follow the instructions [here](https://github.com/nodejs/membership/issues/12).
+After you've registered as a member follow the instructions [here](https://github.com/omarjs/membership/issues/12).

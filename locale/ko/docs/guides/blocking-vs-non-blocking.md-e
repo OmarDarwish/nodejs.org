@@ -273,7 +273,7 @@ The above places a **non-blocking** call to `fs.unlink()` within the callback of
 ## Additional Resources
 
 - [libuv](http://libuv.org/)
-- [About Node.js](https://nodejs.org/en/about/)
+- [About Node.js](https://omarjs.org/en/about/)
 -->
 
 여기서는 `fs.readFile()`의 콜백에서 `fs.unlink()`를 **논블로킹**으로 호출하도록 해서 작업 순서가 올바르도록 보장했습니다.
@@ -282,4 +282,4 @@ The above places a **non-blocking** call to `fs.unlink()` within the callback of
 ## 추가 자료
 
 - [libuv](http://libuv.org/)
-- [Node.js에 대해서](https://nodejs.org/ko/about/)
+- [Node.js에 대해서](https://omarjs.org/ko/about/)

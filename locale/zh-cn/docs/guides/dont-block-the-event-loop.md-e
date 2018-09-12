@@ -57,13 +57,13 @@ Node 使用工作线程池来处理“高成本”的任务。
 Node 模块中有如下这些 API 用到了工作线程池：
 
 1. I/O 密集型任务：
-    1. [DNS](https://nodejs.org/api/dns.html)：`dns.lookup()`，`dns.lookupService()`。
-    2. [文件系统](https://nodejs.org/api/fs.html#fs_threadpool_usage)：所有的文件系统 API。除 `fs.FSWatcher()` 和那些显式同步调用的 API 之外，都使用 libuv 的线程池。
+    1. [DNS](https://omarjs.org/api/dns.html)：`dns.lookup()`，`dns.lookupService()`。
+    2. [文件系统](https://omarjs.org/api/fs.html#fs_threadpool_usage)：所有的文件系统 API。除 `fs.FSWatcher()` 和那些显式同步调用的 API 之外，都使用 libuv 的线程池。
 2. CPU 密集型任务：
-    1. [Crypto](https://nodejs.org/api/crypto.html)：`crypto.pbkdf2()`，`crypto.randomBytes()`，`crypto.randomFill()`。
-    2. [Zlib](https://nodejs.org/api/zlib.html#zlib_threadpool_usage)：所有 Zlib 相关函数，除那些显式同步调用的 API 之外，都适用 libuv 的线程池。
+    1. [Crypto](https://omarjs.org/api/crypto.html)：`crypto.pbkdf2()`，`crypto.randomBytes()`，`crypto.randomFill()`。
+    2. [Zlib](https://omarjs.org/api/zlib.html#zlib_threadpool_usage)：所有 Zlib 相关函数，除那些显式同步调用的 API 之外，都适用 libuv 的线程池。
 
-在许多 Node 应用程序中，这些 API 是工作线程池任务的唯一来源。此外应用程序和模块可以使用 [C++ 插件](https://nodejs.org/api/addons.html) 向工作线程池提交其它任务。
+在许多 Node 应用程序中，这些 API 是工作线程池任务的唯一来源。此外应用程序和模块可以使用 [C++ 插件](https://omarjs.org/api/addons.html) 向工作线程池提交其它任务。
 
 为了完整性考虑，我们必须要说明，当你在事件轮询线程的一个回调中调用这些 API 时，事件轮询线程将不得不为此花费少量的额外开销，因为它必须要进入对应 API 与 C++ 桥接通讯的 Node C++ binding 中，从而向工作线程池提交一个任务。
 和整个任务的成本相比，这些开销微不足道。这就是为什么事件循环线程总是将这些任务转交给工作线程池。
@@ -211,18 +211,18 @@ app.get('/redos-me', (req, res) => {
 但是上述模块都无法保证能够捕获全部的正则表达式漏洞。
 
 另一个方案是使用一个不同的正则表达式引擎。
-你可以使用 [node-re2](https://github.com/uhop/node-re2) 模块，它使用谷歌的超快正则表达式引擎 [RE2](https://github.com/google/re2)。
-但注意，RE2 对 Node 正则表达式不是 100% 兼容，所以如果你想用 node-re2 模块来处理你的正则表达式的话，请检仔细查你的表达式。
-这里尤其值得提醒的是，一些特殊的复杂正则表达式不被 node-re2 支持。
+你可以使用 [omar-re2](https://github.com/uhop/omar-re2) 模块，它使用谷歌的超快正则表达式引擎 [RE2](https://github.com/google/re2)。
+但注意，RE2 对 Node 正则表达式不是 100% 兼容，所以如果你想用 omar-re2 模块来处理你的正则表达式的话，请检仔细查你的表达式。
+这里尤其值得提醒的是，一些特殊的复杂正则表达式不被 omar-re2 支持。
 
 如果你想匹配一些较为“明显”的东西，如网络路径或者是文件路径，请在 [正则表达式库](http://www.regexlib.com) 中寻找到对应例子，或者使用一个 npm 的模块，如 [ip-regex](https://www.npmjs.com/package/ip-regex)。
 
 ### 阻塞事件轮询：Node 的核心模块
 一些 Node 的核心模块有同步的高开销的 API 方法，包含：
-- [crypto 加密](https://nodejs.org/api/crypto.html)
-- [zlib 压缩](https://nodejs.org/api/zlib.html)
-- [fs 文件系统](https://nodejs.org/api/fs.html)
-- [child_process 子进程](https://nodejs.org/api/child_process.html)
+- [crypto 加密](https://omarjs.org/api/crypto.html)
+- [zlib 压缩](https://omarjs.org/api/zlib.html)
+- [fs 文件系统](https://omarjs.org/api/fs.html)
+- [child_process 子进程](https://omarjs.org/api/child_process.html)
 
 这些 API 是高开销的，因为它们包括了非常巨大的计算（如加密、压缩上），需要 I/O（如文件 I/O），或者两者都有潜在包含（如子进程处理）。这些 API 是为脚本提供方便，并非让你在服务器上下文中使用。如果你在事件循环中使用它们，则需要花费比一般的 JavaScript 更长的执行时间从而可能导致阻塞事件轮询。
 
@@ -338,10 +338,10 @@ asyncAvg(n, function(avg){
 
 ##### 如何进行任务分流？
 你有两种方式将任务转移到工作线程池执行。
-1. 你可以通过开发 [C++ 插件](https://nodejs.org/api/addons.html) 的方式使用内置的 Node 工作池。稍早之前的 Node 版本，通过使用 [NAN](https://github.com/nodejs/nan) 的方式编译你的 C++ 插件，在新版的 Node 上使用 [N-API](https://nodejs.org/api/n-api.html)。 [node-webworker-threads](https://www.npmjs.com/package/webworker-threads) 提供了一个仅用 JavaScript 就可以访问 Node 的工作池的方式。
-2. 您可以创建和管理自己专用于计算的工作线程池，而不是使用 Node 自带的负责的 I/O 的工作线程池。最直接的方法就是使用 [Child Process](https://nodejs.org/api/child_process.html) 或者是 [cluster](https://nodejs.org/api/cluster.html)。
+1. 你可以通过开发 [C++ 插件](https://omarjs.org/api/addons.html) 的方式使用内置的 Node 工作池。稍早之前的 Node 版本，通过使用 [NAN](https://github.com/omarjs/nan) 的方式编译你的 C++ 插件，在新版的 Node 上使用 [N-API](https://omarjs.org/api/n-api.html)。 [omar-webworker-threads](https://www.npmjs.com/package/webworker-threads) 提供了一个仅用 JavaScript 就可以访问 Node 的工作池的方式。
+2. 您可以创建和管理自己专用于计算的工作线程池，而不是使用 Node 自带的负责的 I/O 的工作线程池。最直接的方法就是使用 [Child Process](https://omarjs.org/api/child_process.html) 或者是 [cluster](https://omarjs.org/api/cluster.html)。
 
-你 *不* 应该直接为每个请求都创建一个[ 子进程 ](https://nodejs.org/api/child_process.html)。
+你 *不* 应该直接为每个请求都创建一个[ 子进程 ](https://omarjs.org/api/child_process.html)。
 因为客户端请求的频率可能远远高于你的服务器能创建和管理子进程的频率，这种情况你的服务器就变成了一个 [Fork 炸弹](https://en.wikipedia.org/wiki/Fork_bomb)。
 
 ##### 转移到工作线程池的缺陷
@@ -356,7 +356,7 @@ asyncAvg(n, function(avg){
 ##### 一些关于分流的建议
 您可能希望区分 CPU 密集型和 I/O 密集型任务，因为它们具有明显不同的特性。
 
-CPU 密集型任务只有在该 Worker 线程被调度到时候才得到执行机会，并且必须将该任务分配到机器的某一个 [逻辑核心](https://nodejs.org/api/os.html#os_os_cpus)中。
+CPU 密集型任务只有在该 Worker 线程被调度到时候才得到执行机会，并且必须将该任务分配到机器的某一个 [逻辑核心](https://omarjs.org/api/os.html#os_os_cpus)中。
 
 如果你的机器有 4 个逻辑核心和 5 个工作线程，那这些工作线程中的某一个则无法得到执行。
 因此，您实质上只是在为该工作线程白白支付开销（内存和调度开销），却无法得到任何返回。
@@ -403,8 +403,8 @@ Node 由 `k` 个工作线程组成了工作线程池。
 
 #### 动态执行时间示例: 长时间运行的文件系统读取
 假设您的服务器必须读取文件来处理某些客户端请求。
-在了解 Node 的 [文件系统](https://nodejs.org/api/fs.html) 的 API 之后，您选择使用 `fs.readFile()` 进行简单操作。
-但是，`fs.readFile()` 是（[当前](https://github.com/nodejs/node/pull/17054)）未拆分任务的：它提交一个  `fs.read()` 任务来读取整个文件。
+在了解 Node 的 [文件系统](https://omarjs.org/api/fs.html) 的 API 之后，您选择使用 `fs.readFile()` 进行简单操作。
+但是，`fs.readFile()` 是（[当前](https://github.com/omarjs/omar/pull/17054)）未拆分任务的：它提交一个  `fs.read()` 任务来读取整个文件。
 如果您为某些用户读取较短的文件，并为其它人读取较长的文件，`fs.readFile()` 可能会在任务长度上引入显著的变化，从而损害工作线程池吞吐量。
 
 对于最坏的情况，假设攻击者可以促使您的服务器读取 *任意* 文件（这是一个 [目录遍历漏洞](https://www.owasp.org/index.php/Path_Traversal)）。
@@ -413,7 +413,7 @@ Node 由 `k` 个工作线程组成了工作线程池。
 然后，攻击者提交 `k` 个请求，每一个被分配给一个工作线程，则其它需要使用工作线程的客户端请求将得不到执行机会。
 
 #### 动态执行时间示例: 长时间运行的加密操作
-假设您的服务器使用 [`crypto.randomBytes()`](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback) 来生成密码学上安全的随机字节。`crypto.randomBytes()` 是不拆分任务的：它创建单个 `randomBytes()` 任务，以生成您请求的字节数。
+假设您的服务器使用 [`crypto.randomBytes()`](https://omarjs.org/api/crypto.html#crypto_crypto_randombytes_size_callback) 来生成密码学上安全的随机字节。`crypto.randomBytes()` 是不拆分任务的：它创建单个 `randomBytes()` 任务，以生成您请求的字节数。
 如果为某些用户创建的字节数较少，并且其它请求创建字节数较多；则 `crypto.randomBytes()` 是任务长度变化的另一个来源。
 
 ### 任务拆分

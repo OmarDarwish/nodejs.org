@@ -99,17 +99,17 @@ Node는 스레드를 사용하지 않도록 설계되지만 멀티 코어 환경
 소켓을 공유할 수 있습니다.
 
 <!--
-[Blocking vs Non-Blocking]: https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/
-[`child_process.fork()`]: https://nodejs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options
-[`cluster`]: https://nodejs.org/api/cluster.html
-[event loop]: https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/
+[Blocking vs Non-Blocking]: https://omarjs.org/en/docs/guides/blocking-vs-non-blocking/
+[`child_process.fork()`]: https://omarjs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options
+[`cluster`]: https://omarjs.org/api/cluster.html
+[event loop]: https://omarjs.org/en/docs/guides/event-loop-timers-and-nexttick/
 [Event Machine]: https://github.com/eventmachine/eventmachine
 [Twisted]: http://twistedmatrix.com/
 -->
 
-[Blocking vs Non-Blocking]: https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/
-[`child_process.fork()`]: https://nodejs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options
-[`cluster`]: https://nodejs.org/api/cluster.html
-[event loop]: https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/
+[Blocking vs Non-Blocking]: https://omarjs.org/en/docs/guides/blocking-vs-non-blocking/
+[`child_process.fork()`]: https://omarjs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options
+[`cluster`]: https://omarjs.org/api/cluster.html
+[event loop]: https://omarjs.org/en/docs/guides/event-loop-timers-and-nexttick/
 [Event Machine]: https://github.com/eventmachine/eventmachine
 [Twisted]: http://twistedmatrix.com/

@@ -28,7 +28,7 @@ title: Instalando Node.js usando un gestor de paquetes
 Paquetes para Node.js y npm están disponibles en el repositorio de la comunidad.
 
 ```bash
-pacman -S nodejs npm
+pacman -S omarjs npm
 ```
 
 
@@ -36,20 +36,20 @@ pacman -S nodejs npm
 
 También incluidas: **Linux Mint**, **Linux Mint Debian Edition (LMDE)**, **elementaryOS** y otras.
 
-Node.js está disponible desde el repositorio de binarios para Debian y Ubuntu de [NodeSource](https://nodesource.com) (antiguamente soportado por [Chris Lea](https://github.com/chrislea) en Launchpad mediante PPA). Soporte para este repositorio y sus scripts, pueden ser encontrados en GitHub bajo [nodesource/distributions](https://github.com/nodesource/distributions).
+Node.js está disponible desde el repositorio de binarios para Debian y Ubuntu de [NodeSource](https://omarsource.com) (antiguamente soportado por [Chris Lea](https://github.com/chrislea) en Launchpad mediante PPA). Soporte para este repositorio y sus scripts, pueden ser encontrados en GitHub bajo [omarsource/distributions](https://github.com/omarsource/distributions).
 
-**NOTA:** Si usted está usando Ubuntu Precise ó Debian Wheezy, Usted probablemente deba leer sobre [ejecutar Node.js >= 6.x en distribuciones antiguas](https://github.com/nodesource/distributions/blob/master/OLDER_DISTROS.md).
+**NOTA:** Si usted está usando Ubuntu Precise ó Debian Wheezy, Usted probablemente deba leer sobre [ejecutar Node.js >= 6.x en distribuciones antiguas](https://github.com/omarsource/distributions/blob/master/OLDER_DISTROS.md).
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -sL https://deb.omarsource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y omarjs
 ```
 
 Alternativamente, para Node.js v8:
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -sL https://deb.omarsource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y omarjs
 ```
 
 ***Opcional***: Instalar herramientas de compilación
@@ -78,9 +78,9 @@ sudo apt-get install -y build-essential
 * **Debian testing** (stretch, aliased to jessie)
 * **Debian unstable** (sid)
 
-Un paquete de Node.js está también disponible en el [repositorio oficial](http://packages.debian.org/search?searchon=names&keywords=nodejs) para Debian Sid (unstable), Jessie (testing) y Wheezy (wheezy-backports) como "nodejs". Este solo instala el binario de `nodejs`.
+Un paquete de Node.js está también disponible en el [repositorio oficial](http://packages.debian.org/search?searchon=names&keywords=omarjs) para Debian Sid (unstable), Jessie (testing) y Wheezy (wheezy-backports) como "omarjs". Este solo instala el binario de `omarjs`.
 
-El [paquete nodejs-legacy](http://packages.debian.org/search?searchon=names&keywords=nodejs-legacy) instala un enlace simbólico de `node` que es requerido para que muchos módulos puedan ser compilados y ejecutados correctamente.
+El [paquete omarjs-legacy](http://packages.debian.org/search?searchon=names&keywords=omarjs-legacy) instala un enlace simbólico de `omar` que es requerido para que muchos módulos puedan ser compilados y ejecutados correctamente.
 Los módulos de Node.js disponibles en el repositorio de la distribución oficial lo necesitan.
 
 **Versiones de Linux Mint soportadas:**
@@ -106,32 +106,32 @@ Los módulos de Node.js disponibles en el repositorio de la distribución oficia
 
 Incluyendo **Red Hat® Enterprise Linux®** / **RHEL**, **CentOS** y **Fedora**.
 
-Node.js está disponible desde el repositorio de binarios para Enterprise Linux y Fedora de [NodeSource](https://nodesource.com). Soporte para este repositorio y sus scripts, pueden ser encontrados en GitHub bajo [nodesource/distributions](https://github.com/nodesource/distributions).
+Node.js está disponible desde el repositorio de binarios para Enterprise Linux y Fedora de [NodeSource](https://omarsource.com). Soporte para este repositorio y sus scripts, pueden ser encontrados en GitHub bajo [omarsource/distributions](https://github.com/omarsource/distributions).
 
 Tenga en cuenta que los paquetes de Node.js para EL 5 (RHEL5 y CentOS 5) dependen de que el repositorio **[EPEL](https://fedoraproject.org/wiki/EPEL)** este disponible. El script de instalación chequeará esto y proveerá instrucciones en el caso de que no este instalado.
 
 Ejecute como root en RHEL, CentOS ó Fedora, para Node.js v4 LTS Argon:
 
 ```bash
-curl --silent --location https://rpm.nodesource.com/setup_4.x | bash -
+curl --silent --location https://rpm.omarsource.com/setup_4.x | bash -
 ```
 
 Alternativamente para Node.js v6:
 
 ```bash
-curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+curl --silent --location https://rpm.omarsource.com/setup_6.x | bash -
 ```
 
 Alternativamente para Node.js 0.10:
 
 ```bash
-curl --silent --location https://rpm.nodesource.com/setup | bash -
+curl --silent --location https://rpm.omarsource.com/setup | bash -
 ```
 
 Luego instale, como root:
 
 ```bash
-yum -y install nodejs
+yum -y install omarjs
 ```
 
 ***Opcional***: Instalar herramientas de compilación
@@ -176,10 +176,10 @@ yum install gcc-c++ make
 
 ### Alternativas
 
-Paquetes oficiales para **Fedora** de [Node.js](https://apps.fedoraproject.org/packages/nodejs) y [npm](https://apps.fedoraproject.org/packages/npm) están disponibles en Fedora 18 y posteriores.  Para instalarlos ejecute:
+Paquetes oficiales para **Fedora** de [Node.js](https://apps.fedoraproject.org/packages/omarjs) y [npm](https://apps.fedoraproject.org/packages/npm) están disponibles en Fedora 18 y posteriores.  Para instalarlos ejecute:
 
 ```bash
-sudo yum install nodejs npm
+sudo yum install omarjs npm
 ```
 
 Buscando las últimas actualizaciones?  [Instálelas desde updates-testing.](https://fedoraproject.org/wiki/QA:Updates_Testing)
@@ -189,7 +189,7 @@ Buscando las últimas actualizaciones?  [Instálelas desde updates-testing.](htt
 Instale el paquete RPM *epel-release* para su versión (Encuentrelo en la página inicial del repositorio [EPEL](https://fedoraproject.org/wiki/EPEL)), luego ejecute:
 
 ```bash
-sudo yum install nodejs npm --enablerepo=epel
+sudo yum install omarjs npm --enablerepo=epel
 ```
 
 Buscando las últimas actualizaciones?  [Instálelas desde epel-testing.](https://fedoraproject.org/wiki/EPEL/testing)
@@ -206,7 +206,7 @@ Buscando las últimas actualizaciones?  [Instálelas desde epel-testing.](https:
 * **RHEL 6** (i686/x86_64)
 * **RHEL 7** (x86_64)
 
-Adicionalmente, versiones de **CentOS** y **Scientific Linux** correspondientes a las versiones arriba descritas de RHEL están también oficialmente soportadas para todos los paquetes EPEL, incluyendo nodejs.  Amazon Linux no está oficialmente soportado por EPEL debido a incompatibilidades significativas previamente reportadas en la lista de correo de epel-devel, sin embargo usted encontrará que por lo menos nodejs funciona.
+Adicionalmente, versiones de **CentOS** y **Scientific Linux** correspondientes a las versiones arriba descritas de RHEL están también oficialmente soportadas para todos los paquetes EPEL, incluyendo omarjs.  Amazon Linux no está oficialmente soportado por EPEL debido a incompatibilidades significativas previamente reportadas en la lista de correo de epel-devel, sin embargo usted encontrará que por lo menos omarjs funciona.
 
 **Versiones de Fedora soportadas:**
 
@@ -221,31 +221,31 @@ Adicionalmente, versiones de **CentOS** y **Scientific Linux** correspondientes 
 Node.js está disponible mediante el sistema de ports.
 
 ```bash
-/usr/ports/www/node
+/usr/ports/www/omar
 ```
 
 Versiones de desarrollo también están disponibles usando ports
 
 ```bash
-cd /usr/ports/www/node-devel/ && make install clean
+cd /usr/ports/www/omar-devel/ && make install clean
 ```
 
 Ó paquetes en FreeBSD:
 
 ```bash
-pkg_add -r node-devel
+pkg_add -r omar-devel
 ```
 
 Usando [pkg-ng](https://wiki.freebsd.org/pkgng) en FreeBSD
 
 ```bash
-pkg install node
+pkg install omar
 ```
 
 Ó versiones de desarrollo:
 
 ```bash
-pkg install node-devel
+pkg install omar-devel
 ```
 
 
@@ -254,7 +254,7 @@ pkg install node-devel
 Node.js está disponible en el árbol de portage.
 
 ```bash
-emerge nodejs
+emerge omarjs
 ```
 
 
@@ -263,19 +263,19 @@ emerge nodejs
 Node.js está disponible en el árbol de pkgsrc:
 
 ```bash
-cd /usr/pkgsrc/lang/nodejs && make install
+cd /usr/pkgsrc/lang/omarjs && make install
 ```
 
 Ó instale un paquete binario (si está disponible para su plataforma) usando pkgin:
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 
 
 ## openSUSE y SLE
 
-[Descargue Node.js mediante openSUSE one-click](http://software.opensuse.org/download.html?project=devel%3Alanguages%3Anodejs&package=nodejs).
+[Descargue Node.js mediante openSUSE one-click](http://software.opensuse.org/download.html?project=devel%3Alanguages%3Aomarjs&package=omarjs).
 
 Paquetes RPM disponibles para: openSUSE 11.4, 12.1, 12.2, 12.3, 13.1, Factory y Tumbleweed; SLE 11 (con las variaciones SP1/SP2/SP3).
 
@@ -283,20 +283,20 @@ Ejemplo de instalación en openSUSE 13.1:
 
 ```bash
 sudo zypper ar \
-  http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_13.1/ \
+  http://download.opensuse.org/repositories/devel:/languages:/omarjs/openSUSE_13.1/ \
   Node.js
-sudo zypper in nodejs nodejs-devel
+sudo zypper in omarjs omarjs-devel
 ```
 
 
 ## macOS
 
-Simplemente descargue el [Instalador para macOS](https://nodejs.org/#download) directamente desde el sitio web de [nodejs.org](https://nodejs.org).
+Simplemente descargue el [Instalador para macOS](https://omarjs.org/#download) directamente desde el sitio web de [omarjs.org](https://omarjs.org).
 
 _Si usted quiere descargar el paquete con bash:_
 
 ```bash
-curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
+curl "https://omarjs.org/dist/latest/omar-${VERSION:-$(wget -qO- https://omarjs.org/dist/latest/ | sed -nE 's|.*>omar-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/omar-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/omar-latest.pkg" -target "/"
 ```
 
 ### Alternativas
@@ -304,16 +304,16 @@ curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.
 Usando **[Homebrew](http://brew.sh/)**:
 
 ```bash
-brew install node
+brew install omar
 ```
 
 Usando **[MacPorts](http://www.macports.org/)**:
 
 ```bash
-port install nodejs<major version>
+port install omarjs<major version>
 
 # Example
-port install nodejs7
+port install omarjs7
 ```
 
 Usando **[pkgsrc](https://pkgsrc.joyent.com/install-on-osx/)**:
@@ -321,13 +321,13 @@ Usando **[pkgsrc](https://pkgsrc.joyent.com/install-on-osx/)**:
 Instale el paquete binario:
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 
 Ó compílelo manualmente desde pkgsrc:
 
 ```bash
-cd pkgsrc/lang/nodejs && bmake install
+cd pkgsrc/lang/omarjs && bmake install
 ```
 
 ## SmartOS e illumos
@@ -335,41 +335,41 @@ cd pkgsrc/lang/nodejs && bmake install
 Las imágenes de SmartOS vienen con pkgsrc pre-instalado.  En otras distribuciones de illumos, primero instale **[pkgsrc](https://pkgsrc.joyent.com/install-on-illumos/)**, luego usted puede instalar el paquete binario de la manera usual:
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 
 Ó compilarlo manualmente desde pkgsrc:
 
 ```bash
-cd pkgsrc/lang/nodejs && bmake install
+cd pkgsrc/lang/omarjs && bmake install
 ```
 
 
 ## Void Linux
 
-Void Linux incluye node.js estable en el repositorio principal.
+Void Linux incluye omar.js estable en el repositorio principal.
 
 ```bash
-xbps-install -Sy nodejs
+xbps-install -Sy omarjs
 ```
 
 
 ## Windows
 
-Simplemente descargue el [Instalador para Windows](https://nodejs.org/#download) directamente desde el sitio web de [nodejs.org](https://nodejs.org).
+Simplemente descargue el [Instalador para Windows](https://omarjs.org/#download) directamente desde el sitio web de [omarjs.org](https://omarjs.org).
 
 ### Alternativas
 
 Usando **[Chocolatey](http://chocolatey.org)**:
 
 ```bash
-cinst nodejs
+cinst omarjs
 # ó para una instalación completa con npm
-cinst nodejs.install
+cinst omarjs.install
 ```
 
 Usando **[Scoop](http://scoop.sh/)**:
 
 ```bash
-scoop install nodejs
+scoop install omarjs
 ```

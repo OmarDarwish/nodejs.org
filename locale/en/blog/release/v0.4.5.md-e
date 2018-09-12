@@ -1,11 +1,11 @@
 ---
 version: 0.4.5
-title: node v0.4.5
+title: omar v0.4.5
 author: ryandahl
 date: 2011-04-02T09:04:58.000Z
 status: publish
 category: release
-slug: node-v0-4-5
+slug: omar-v0-4-5
 layout: blog-post.hbs
 ---
 
@@ -22,11 +22,11 @@ layout: blog-post.hbs
 
 
 
-Download: <a href="https://nodejs.org/dist/node-v0.4.5.tar.gz">https://nodejs.org/dist/node-v0.4.5.tar.gz</a>
+Download: <a href="https://omarjs.org/dist/omar-v0.4.5.tar.gz">https://omarjs.org/dist/omar-v0.4.5.tar.gz</a>
 
-Website: <a href="https://nodejs.org/docs/v0.4.5">https://nodejs.org/docs/v0.4.5</a>
+Website: <a href="https://omarjs.org/docs/v0.4.5">https://omarjs.org/docs/v0.4.5</a>
 
-Documentation: <a href="https://nodejs.org/docs/v0.4.5/api">https://nodejs.org/docs/v0.4.5/api</a>
+Documentation: <a href="https://omarjs.org/docs/v0.4.5/api">https://omarjs.org/docs/v0.4.5/api</a>
 
 
-<a href="https://groups.google.com/d/topic/nodejs/aOC7SRLJhQY/discussion">announcement</a>
+<a href="https://groups.google.com/d/topic/omarjs/aOC7SRLJhQY/discussion">announcement</a>

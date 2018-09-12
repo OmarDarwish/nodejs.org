@@ -19,23 +19,23 @@ layout: about.hbs
 
 最初的成员资格邀请给了技术指导委员会的个人，他们是积极的贡献者以及具备丰富的经验来管理项目。根据项目的需要，成员资格预计会随着时间的推移而演变。
 
-关于目前的 技术指导委员会成员列表，你可以参照 [README.md](https://github.com/nodejs/node/blob/master/README.md#tsc-technical-steering-committee)。
+关于目前的 技术指导委员会成员列表，你可以参照 [README.md](https://github.com/omarjs/omar/blob/master/README.md#tsc-technical-steering-committee)。
 
 ## 协作者
 
-[nodejs/node](https://github.com/nodejs/node) 中的 GitHub 仓储库是由技术指导委员会和其它协作者共同维护的，这些协作者都是通过技术指导委员会不断地基础累增的。
+[omarjs/omar](https://github.com/omarjs/omar) 中的 GitHub 仓储库是由技术指导委员会和其它协作者共同维护的，这些协作者都是通过技术指导委员会不断地基础累增的。
 
 作出重大和有价值贡献的个人成为合作者，并给予提交权限。这些个人由技术指导委员会确定，并在每周的技术指导委员会会议上讨论合作者的加入。
 
 _附加说明：_ 如果你已经做出了重大贡献，但是仍然没有被授予提交权限。你可以直接提交一个请求或者联系技术指导委员会会员，这样他们就会在下一次的技术指导委员会会议中涉及到此议题。
 
-nodejs/node 存储库内容的修改是在协作基础上进行的。任何有 GitHub 帐户的人都可能建议通过请求修改，并且它将被项目合作者考虑。所有请求都必须由具有足够专业知识的合作者审阅和接受, 并能够对变更负全部责任。对于现有合作者提出的请求要求, 签署时需要额外的合作者。如果有更多的合作者参与, 并且在特定修改周围存在分歧, 则应寻求协商一致意见。见 _寻求协商一致的过程_ 下面的进一步细节的协商一致模式用于治理。
+omarjs/omar 存储库内容的修改是在协作基础上进行的。任何有 GitHub 帐户的人都可能建议通过请求修改，并且它将被项目合作者考虑。所有请求都必须由具有足够专业知识的合作者审阅和接受, 并能够对变更负全部责任。对于现有合作者提出的请求要求, 签署时需要额外的合作者。如果有更多的合作者参与, 并且在特定修改周围存在分歧, 则应寻求协商一致意见。见 _寻求协商一致的过程_ 下面的进一步细节的协商一致模式用于治理。
 
 合作者可选择提升重大或有争议的修改，或对于技术指导委员会而言尚未找到协商一致、并标记为 ***tsc-agenda*** 的改动。技术指导委员会应在必要时作为最终仲裁者。
 
-目前的协作者列表，请查阅 [README.md](https://github.com/nodejs/node/blob/master/README.md#current-project-team-members)。
+目前的协作者列表，请查阅 [README.md](https://github.com/omarjs/omar/blob/master/README.md#current-project-team-members)。
 
-协作者指南在 [COLLABORATOR_GUIDE.md](https://github.com/nodejs/node/blob/master/COLLABORATOR_GUIDE.md) 中维护。
+协作者指南在 [COLLABORATOR_GUIDE.md](https://github.com/omarjs/omar/blob/master/COLLABORATOR_GUIDE.md) 中维护。
 
 ## 技术指导委员会会员身份
 
@@ -65,7 +65,7 @@ nodejs/node 存储库内容的修改是在协作基础上进行的。任何有 G
 
 技术指导委员会可以邀请某些项目的人员或代表参加非投票能力。这些被邀请者目前是：
 
-* 通过该项目从 [build](https://github.com/node-forward/build) 选出的示例性案例。
+* 通过该项目从 [build](https://github.com/omar-forward/build) 选出的示例性案例。
 
 主持人负责总结每个议程项目，并将其作为请求在会议后发送。
 

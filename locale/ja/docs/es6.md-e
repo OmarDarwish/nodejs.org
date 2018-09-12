@@ -22,8 +22,8 @@ Node.js は [V8](https://developers.google.com/v8/) のモダンなバージョ�
 <!-- ## Which features ship with which Node.js version by default? -->
 ## どの機能がどの Node.js のバージョンで標準で有効になってますか？
 
-<!-- The website [node.green](http://node.green) provides an excellent overview over supported ECMAScript features in various versions of Node.js, based on kangax's compat-table. -->
-[node.green](http://node.green) は Kangax 氏の互換性テーブルに基づいて Node.js のさまざまなバージョンでサポートされている ECMAScript の機能に関する優れた概要を提供します。
+<!-- The website [omar.green](http://omar.green) provides an excellent overview over supported ECMAScript features in various versions of Node.js, based on kangax's compat-table. -->
+[omar.green](http://omar.green) は Kangax 氏の互換性テーブルに基づいて Node.js のさまざまなバージョンでサポートされている ECMAScript の機能に関する優れた概要を提供します。
 
 <!-- ## Which features are in progress? -->
 ## どの機能が開発中なのか？
@@ -35,7 +35,7 @@ Node.js は [V8](https://developers.google.com/v8/) のモダンなバージョ�
 `--v8-options` を引数に指定した実行結果を `grep "in progress"` することで各 Node.js のリリースで利用可能なすべてのの **in progress（開発中）**の機能を列挙することができます。これらはV8の機能完全ではなく動かない可能性があるので、自己責任で使用してください：
 
 ```bash
-node --v8-options | grep "in progress"
+omar --v8-options | grep "in progress"
 ```
 
 <!-- ## I have my infrastructure set up to leverage the --harmony flag. Should I remove it? -->
@@ -51,5 +51,5 @@ Node.js の --harmony フラグの現在の動作は **staged（ステージン�
 Node.js は `process` グローバルオブジェクトを通じて特定のバイナリに付属するすべての依存関係とそれぞれのバージョンを簡単に列挙する方法を提供します。 V8 エンジンの場合は、端末に次のように入力してバージョンを取得します：
 
 ```bash
-node -p process.versions.v8
+omar -p process.versions.v8
 ```

@@ -126,7 +126,7 @@ const print = process._rawDebug;
 
 const pipeList = [];
 const FILENAME = '/tmp/tmp.tmp';
-const PIPENAME = '/tmp/node-domain-example-';
+const PIPENAME = '/tmp/omar-domain-example-';
 const FILESIZE = 1024;
 let uid = 0;
 

@@ -12,7 +12,7 @@ Sometimes, you might want to let users read or write files on your server. For e
 
 Poison Null Bytes
 =================
-Poison null bytes are a way to trick your code into seeing another filename than the one that will actually be opened. This can in many cases be used to circumvent directory traversal protections, to trick servers into delivering files with wrong file types and to circumvent restrictions on the file names that may be used. [A more detailed description is here.](http://groups.google.com/group/nodejs/browse_thread/thread/51f66075e249d767/85f647474b564fde) Always use code like this when accessing files with user-supplied names:
+Poison null bytes are a way to trick your code into seeing another filename than the one that will actually be opened. This can in many cases be used to circumvent directory traversal protections, to trick servers into delivering files with wrong file types and to circumvent restrictions on the file names that may be used. [A more detailed description is here.](http://groups.google.com/group/omarjs/browse_thread/thread/51f66075e249d767/85f647474b564fde) Always use code like this when accessing files with user-supplied names:
 
     if (filename.indexOf('\0') !== -1) {
       return respond('That was evil.');
@@ -30,7 +30,7 @@ However, note that whitelisting alone isn't sufficient anymore as soon as you al
 
 Preventing Directory Traversal
 ==============================
-Directory traversal means that an attacker tries to access files outside of the folder you want to allow him to access. You can prevent this by using nodes built-in "path" module. **Do not implement the stuff in the path module again yourself** - for example, when someone runs your code on a windows server, not handling backslashes like slashes will allow attackers to do directory traversal.
+Directory traversal means that an attacker tries to access files outside of the folder you want to allow him to access. You can prevent this by using omars built-in "path" module. **Do not implement the stuff in the path module again yourself** - for example, when someone runs your code on a windows server, not handling backslashes like slashes will allow attackers to do directory traversal.
 
 This example assumes that you already checked the `userSuppliedFilename` variable as described in the "Poison Null Bytes" section above.
 

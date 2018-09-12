@@ -2,7 +2,7 @@
 body
   box-sizing border-box
   font 400 20px/1.5 'Source Sans Pro', Open Sans, Roboto, 'San Francisco', Helvetica, Arial, sans-serif
-  color $node-gray
+  color $omar-gray
   margin 0
   background-color $white
 
@@ -21,13 +21,13 @@ h5
 a,
 a:link,
 a:active
-  color $node-green
+  color $omar-green
   text-decoration none
   border-radius 2px
 
 a:hover
   color $white
-  background-color $node-green
+  background-color $omar-green
 
 a:hover
   code
@@ -54,7 +54,7 @@ img
 
   .logos &
     // Fixes logo size on Firefox, see:
-    // https://github.com/nodejs/nodejs.org/issues/558
+    // https://github.com/omarjs/omarjs.org/issues/558
     width 100%
 
 code
@@ -63,7 +63,7 @@ code
   padding 0.2em
 
 pre
-  background-color $node-gray
+  background-color $omar-gray
   border-radius 3px
   padding 0.75em 1.2em
   font-size 0.8em

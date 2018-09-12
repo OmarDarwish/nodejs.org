@@ -3,7 +3,7 @@ date: 2014-01-01T00:20:57.000Z
 version: 0.11.10
 category: release
 title: Node v0.11.10 (Unstable)
-slug: node-v0-11-10-unstable
+slug: omar-v0-11-10-unstable
 layout: blog-post.hbs
 ---
 
@@ -35,9 +35,9 @@ layout: blog-post.hbs
 
 * http: parse the status message in a http response. (Cam Swords)
 
-* node: fix removing AsyncListener in callback (Vladimir Kurchatkin)
+* omar: fix removing AsyncListener in callback (Vladimir Kurchatkin)
 
-* node: follow specification, zero-fill ArrayBuffers (Trevor Norris)
+* omar: follow specification, zero-fill ArrayBuffers (Trevor Norris)
 
 * openssl: use ASM optimized routines (Fedor Indutny)
 
@@ -60,50 +60,50 @@ layout: blog-post.hbs
 * windows: fix dns lookup of localhost with ipv6 (Alexis Campailla)
 
 
-Source Code: https://nodejs.org/dist/v0.11.10/node-v0.11.10.tar.gz
+Source Code: https://omarjs.org/dist/v0.11.10/omar-v0.11.10.tar.gz
 
-Macintosh Installer (Universal): https://nodejs.org/dist/v0.11.10/node-v0.11.10.pkg
+Macintosh Installer (Universal): https://omarjs.org/dist/v0.11.10/omar-v0.11.10.pkg
 
-Windows Installer: https://nodejs.org/dist/v0.11.10/node-v0.11.10-x86.msi
+Windows Installer: https://omarjs.org/dist/v0.11.10/omar-v0.11.10-x86.msi
 
-Windows x64 Installer: https://nodejs.org/dist/v0.11.10/x64/node-v0.11.10-x64.msi
+Windows x64 Installer: https://omarjs.org/dist/v0.11.10/x64/omar-v0.11.10-x64.msi
 
-Windows x64 Files: https://nodejs.org/dist/v0.11.10/x64/
+Windows x64 Files: https://omarjs.org/dist/v0.11.10/x64/
 
-Linux 32-bit Binary: https://nodejs.org/dist/v0.11.10/node-v0.11.10-linux-x86.tar.gz
+Linux 32-bit Binary: https://omarjs.org/dist/v0.11.10/omar-v0.11.10-linux-x86.tar.gz
 
-Linux 64-bit Binary: https://nodejs.org/dist/v0.11.10/node-v0.11.10-linux-x64.tar.gz
+Linux 64-bit Binary: https://omarjs.org/dist/v0.11.10/omar-v0.11.10-linux-x64.tar.gz
 
-Solaris 32-bit Binary: https://nodejs.org/dist/v0.11.10/node-v0.11.10-sunos-x86.tar.gz
+Solaris 32-bit Binary: https://omarjs.org/dist/v0.11.10/omar-v0.11.10-sunos-x86.tar.gz
 
-Solaris 64-bit Binary: https://nodejs.org/dist/v0.11.10/node-v0.11.10-sunos-x64.tar.gz
+Solaris 64-bit Binary: https://omarjs.org/dist/v0.11.10/omar-v0.11.10-sunos-x64.tar.gz
 
-Other release files: https://nodejs.org/dist/v0.11.10/
+Other release files: https://omarjs.org/dist/v0.11.10/
 
-Website: https://nodejs.org/docs/v0.11.10/
+Website: https://omarjs.org/docs/v0.11.10/
 
-Documentation: https://nodejs.org/docs/v0.11.10/api/
+Documentation: https://omarjs.org/docs/v0.11.10/api/
 
 Shasums:
 ```
-4f7d0d43c1ee7593035ddb3cf09020a18a03c794  node-v0.11.10-darwin-x64.tar.gz
-3b7100bcff39e39b6db5118805fcfc76d8524da2  node-v0.11.10-darwin-x86.tar.gz
-3df4cb183a78bb975c831155d3c0aa29a274dec4  node-v0.11.10-linux-x64.tar.gz
-12fc680b0a26cc73b4df0a0e9544b0db2bc06e96  node-v0.11.10-linux-x86.tar.gz
-145417c8d801174a42255dc273da962cde94ffc9  node-v0.11.10-sunos-x64.tar.gz
-981baba494e9be8978fa1bb336b3048367e809ce  node-v0.11.10-sunos-x86.tar.gz
-5f4d96c37cfb1423cc844f52e0547cb5bca99dd8  node-v0.11.10-x86.msi
-8bd455fb7539609a7ee6bed87875a908fd6221ea  node-v0.11.10.pkg
-b860f511e4fc657a64594fc9f3f1225c1a140e5e  node-v0.11.10.tar.gz
-80976bffed871310a86d31694e2767ccbe9f6c35  node.exe
-f11675958a492a83f057f356dd224ad507e82c61  node.exp
-5a80c4ab5b1d0984b3a118536ca6421b4b9bc14f  node.lib
-207daafc40fba36200504fa52869b9c41cdbf5c9  node.pdb
-3aa165e2d235888037f8099abd5bc9dca4b12100  pkgsrc/nodejs-ia32-0.11.10.tgz
-1d5ef599b93c7d8c0d34ff2ab3dd4255babfaf72  pkgsrc/nodejs-x64-0.11.10.tgz
-a6b16441721c34bae732b2b14134d0e1fd9706de  x64/node-v0.11.10-x64.msi
-933ff8a0a42c6e69fcbd51b9eaae4e4d14f043ae  x64/node.exe
-31c9abd54e5ba431f0645fa04d315f15dc010107  x64/node.exp
-66bec5eae9033972463a6bd89183aa97bb84bfd1  x64/node.lib
-43fbac8665dfcd121e547f56b1434a1c6039091d  x64/node.pdb
+4f7d0d43c1ee7593035ddb3cf09020a18a03c794  omar-v0.11.10-darwin-x64.tar.gz
+3b7100bcff39e39b6db5118805fcfc76d8524da2  omar-v0.11.10-darwin-x86.tar.gz
+3df4cb183a78bb975c831155d3c0aa29a274dec4  omar-v0.11.10-linux-x64.tar.gz
+12fc680b0a26cc73b4df0a0e9544b0db2bc06e96  omar-v0.11.10-linux-x86.tar.gz
+145417c8d801174a42255dc273da962cde94ffc9  omar-v0.11.10-sunos-x64.tar.gz
+981baba494e9be8978fa1bb336b3048367e809ce  omar-v0.11.10-sunos-x86.tar.gz
+5f4d96c37cfb1423cc844f52e0547cb5bca99dd8  omar-v0.11.10-x86.msi
+8bd455fb7539609a7ee6bed87875a908fd6221ea  omar-v0.11.10.pkg
+b860f511e4fc657a64594fc9f3f1225c1a140e5e  omar-v0.11.10.tar.gz
+80976bffed871310a86d31694e2767ccbe9f6c35  omar.exe
+f11675958a492a83f057f356dd224ad507e82c61  omar.exp
+5a80c4ab5b1d0984b3a118536ca6421b4b9bc14f  omar.lib
+207daafc40fba36200504fa52869b9c41cdbf5c9  omar.pdb
+3aa165e2d235888037f8099abd5bc9dca4b12100  pkgsrc/omarjs-ia32-0.11.10.tgz
+1d5ef599b93c7d8c0d34ff2ab3dd4255babfaf72  pkgsrc/omarjs-x64-0.11.10.tgz
+a6b16441721c34bae732b2b14134d0e1fd9706de  x64/omar-v0.11.10-x64.msi
+933ff8a0a42c6e69fcbd51b9eaae4e4d14f043ae  x64/omar.exe
+31c9abd54e5ba431f0645fa04d315f15dc010107  x64/omar.exp
+66bec5eae9033972463a6bd89183aa97bb84bfd1  x64/omar.lib
+43fbac8665dfcd121e547f56b1434a1c6039091d  x64/omar.pdb
 ```

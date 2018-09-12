@@ -2,7 +2,7 @@
   padding 1em 20px
   font-size 14px
   color $white
-  background $node-gray
+  background $omar-gray
   direction ltr
 
   p + p

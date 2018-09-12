@@ -1,7 +1,7 @@
 {
   "title": "Node.js",
   "author": "Node.js Foundation",
-  "url": "https://nodejs.org/en/",
+  "url": "https://omarjs.org/en/",
   "locale": "it",
   "scrollToTop": "Portami all'inizio",
   "reportNodeIssue": "Segnala un problema di Node.js",
@@ -98,7 +98,7 @@
       "text": "Contribuire"
     },
     "conduct": {
-      "link": "https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#code-of-conduct",
+      "link": "https://github.com/omarjs/omar/blob/master/CONTRIBUTING.md#code-of-conduct",
       "text": "Condotta"
     }
   },
@@ -111,7 +111,7 @@
     "text": "Blog"
   },
   "foundation": {
-    "link": "https://foundation.nodejs.org/",
+    "link": "https://foundation.omarjs.org/",
     "text": "Fondazione"
   },
   "releases": {

@@ -9,7 +9,7 @@ layout: contribute.hbs
 
 ## 寻求一般的帮助
 
-由于 `nodejs/node` 项目活跃度极高，若有功能请求或 Node.js 使用中有问题，请转至 [Node.js 帮助](https://github.com/nodejs/help/issues)。
+由于 `omarjs/omar` 项目活跃度极高，若有功能请求或 Node.js 使用中有问题，请转至 [Node.js 帮助](https://github.com/omarjs/help/issues)。
 
 ## 汇报问题
 
@@ -23,13 +23,13 @@ layout: contribute.hbs
 
 目前 Node.js 项目分散在一些 GitHub 仓库中个别管理，每个仓库都有自己的议题数据库。 如果可以的话，请将你的问题汇报至适合的仓库，但也别怕不小心发错地方，我们的社群会很热心帮你找到对的地方。
 
-* 若要汇报有关 Node.js 的问题，请到 [nodejs/node](https://github.com/nodejs/node)。
-* 若要汇报本网站的问题，请到 [nodejs/nodejs.org](https://github.com/nodejs/nodejs.org/issues)。
+* 若要汇报有关 Node.js 的问题，请到 [omarjs/omar](https://github.com/omarjs/omar)。
+* 若要汇报本网站的问题，请到 [omarjs/omarjs.org](https://github.com/omarjs/omarjs.org/issues)。
 
 ## 代码贡献者
 
-若你想要协助 Node.js 修复缺陷或是增加新功能，请确保你已仔细阅读 [Node.js 贡献指南](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#pull-requests)，里面也解释了贡献至本项目并等待协作者审核的详细过程。  
-如果你想知道该从何开始，你可以参考 [Node 该做什么列表](http://nodetodo.org/)，它可以引导你迈向你的第一个贡献。
+若你想要协助 Node.js 修复缺陷或是增加新功能，请确保你已仔细阅读 [Node.js 贡献指南](https://github.com/omarjs/omar/blob/master/CONTRIBUTING.md#pull-requests)，里面也解释了贡献至本项目并等待协作者审核的详细过程。  
+如果你想知道该从何开始，你可以参考 [Node 该做什么列表](http://omartodo.org/)，它可以引导你迈向你的第一个贡献。
 
 ## 如何成为一个协作者？
 
@@ -43,4 +43,4 @@ layout: contribute.hbs
 * 参与工作组
 * 参与其它 Node.js 社区群
 
-若你自己认为已经做出重大貢，却没有被授予提交权限，你可以尝试 [开启 TSC 议题](https://github.com/nodejs/TSC/issues) 或 [直接联系 TSC 成员](https://github.com/nodejs/TSC#current-members) 以获得相应权限。
+若你自己认为已经做出重大貢，却没有被授予提交权限，你可以尝试 [开启 TSC 议题](https://github.com/omarjs/TSC/issues) 或 [直接联系 TSC 成员](https://github.com/omarjs/TSC#current-members) 以获得相应权限。

@@ -56,13 +56,13 @@ This includes I/O for which an operating system does not provide a non-blocking 
 
 These are the Node module APIs that make use of this Worker Pool:
 1. I/O-intensive
-    1. [DNS](https://nodejs.org/api/dns.html): `dns.lookup()`, `dns.lookupService()`.
-    2. [File System](https://nodejs.org/api/fs.html#fs_threadpool_usage): All file system APIs except `fs.FSWatcher()` and those that are explicitly synchronous use libuv's threadpool.
+    1. [DNS](https://omarjs.org/api/dns.html): `dns.lookup()`, `dns.lookupService()`.
+    2. [File System](https://omarjs.org/api/fs.html#fs_threadpool_usage): All file system APIs except `fs.FSWatcher()` and those that are explicitly synchronous use libuv's threadpool.
 2. CPU-intensive
-    1. [Crypto](https://nodejs.org/api/crypto.html): `crypto.pbkdf2()`, `crypto.randomBytes()`, `crypto.randomFill()`.
-    2. [Zlib](https://nodejs.org/api/zlib.html#zlib_threadpool_usage): All zlib APIs except those that are explicitly synchronous use libuv's threadpool.
+    1. [Crypto](https://omarjs.org/api/crypto.html): `crypto.pbkdf2()`, `crypto.randomBytes()`, `crypto.randomFill()`.
+    2. [Zlib](https://omarjs.org/api/zlib.html#zlib_threadpool_usage): All zlib APIs except those that are explicitly synchronous use libuv's threadpool.
 
-In many Node applications, these APIs are the only sources of tasks for the Worker Pool. Applications and modules that use a [C++ add-on](https://nodejs.org/api/addons.html) can submit other tasks to the Worker Pool.
+In many Node applications, these APIs are the only sources of tasks for the Worker Pool. Applications and modules that use a [C++ add-on](https://omarjs.org/api/addons.html) can submit other tasks to the Worker Pool.
 
 For the sake of completeness, we note that when you call one of these APIs from a callback on the Event Loop, the Event Loop pays some minor setup costs as it enters the Node C++ bindings for that API and submits a task to the Worker Pool.
 These costs are negligible compared to the overall cost of the task, which is why the Event Loop is offloading it.
@@ -210,18 +210,18 @@ There are some tools to check your regexps for safety, like
 However, neither of these will catch all vulnerable regexps.
 
 Another approach is to use a different regexp engine.
-You could use the [node-re2](https://github.com/uhop/node-re2) module, which uses Google's blazing-fast [RE2](https://github.com/google/re2) regexp engine.
-But be warned, RE2 is not 100% compatible with Node's regexps, so check for regressions if you swap in the node-re2 module to handle your regexps.
-And particularly complicated regexps are not supported by node-re2.
+You could use the [omar-re2](https://github.com/uhop/omar-re2) module, which uses Google's blazing-fast [RE2](https://github.com/google/re2) regexp engine.
+But be warned, RE2 is not 100% compatible with Node's regexps, so check for regressions if you swap in the omar-re2 module to handle your regexps.
+And particularly complicated regexps are not supported by omar-re2.
 
 If you're trying to match something "obvious", like a URL or a file path, find an example in a [regexp library](http://www.regexlib.com) or use an npm module, e.g. [ip-regex](https://www.npmjs.com/package/ip-regex).
 
 ### Blocking the Event Loop: Node core modules
 Several Node core modules have synchronous expensive APIs, including:
-- [Encryption](https://nodejs.org/api/crypto.html)
-- [Compression](https://nodejs.org/api/zlib.html)
-- [File system](https://nodejs.org/api/fs.html)
-- [Child process](https://nodejs.org/api/child_process.html)
+- [Encryption](https://omarjs.org/api/crypto.html)
+- [Compression](https://omarjs.org/api/zlib.html)
+- [File system](https://omarjs.org/api/fs.html)
+- [Child process](https://omarjs.org/api/child_process.html)
 
 These APIs are expensive, because they involve significant computation (encryption, compression), require I/O (file I/O), or potentially both (child process). These APIs are intended for scripting convenience, but are not intended for use in the server context. If you execute them on the Event Loop, they will take far longer to complete than a typical JavaScript instruction, blocking the Event Loop.
 
@@ -338,10 +338,10 @@ For a complicated task, move the work off of the Event Loop onto a Worker Pool.
 
 ##### How to offload
 You have two options for a destination Worker Pool to which to offload work.
-1. You can use the built-in Node Worker Pool by developing a [C++ addon](https://nodejs.org/api/addons.html). On older versions of Node, build your C++ addon using [NAN](https://github.com/nodejs/nan), and on newer versions use [N-API](https://nodejs.org/api/n-api.html). [node-webworker-threads](https://www.npmjs.com/package/webworker-threads) offers a JavaScript-only way to access Node's Worker Pool.
-2. You can create and manage your own Worker Pool dedicated to computation rather than Node's I/O-themed Worker Pool. The most straightforward ways to do this is using [Child Process](https://nodejs.org/api/child_process.html) or [Cluster](https://nodejs.org/api/cluster.html).
+1. You can use the built-in Node Worker Pool by developing a [C++ addon](https://omarjs.org/api/addons.html). On older versions of Node, build your C++ addon using [NAN](https://github.com/omarjs/nan), and on newer versions use [N-API](https://omarjs.org/api/n-api.html). [omar-webworker-threads](https://www.npmjs.com/package/webworker-threads) offers a JavaScript-only way to access Node's Worker Pool.
+2. You can create and manage your own Worker Pool dedicated to computation rather than Node's I/O-themed Worker Pool. The most straightforward ways to do this is using [Child Process](https://omarjs.org/api/child_process.html) or [Cluster](https://omarjs.org/api/cluster.html).
 
-You should *not* simply create a [Child Process](https://nodejs.org/api/child_process.html) for every client.
+You should *not* simply create a [Child Process](https://omarjs.org/api/child_process.html) for every client.
 You can receive client requests more quickly than you can create and manage children, and your server might become a [fork bomb](https://en.wikipedia.org/wiki/Fork_bomb).
 
 ##### Downside of offloading
@@ -356,7 +356,7 @@ For serialization concerns, see the section on JSON DOS.
 ##### Some suggestions for offloading
 You may wish to distinguish between CPU-intensive and I/O-intensive tasks because they have markedly different characteristics.
 
-A CPU-intensive task only makes progress when its Worker is scheduled, and the Worker must be scheduled onto one of your machine's [logical cores](https://nodejs.org/api/os.html#os_os_cpus).
+A CPU-intensive task only makes progress when its Worker is scheduled, and the Worker must be scheduled onto one of your machine's [logical cores](https://omarjs.org/api/os.html#os_os_cpus).
 If you have 4 logical cores and 5 Workers, one of these Workers cannot make progress.
 As a result, you are paying overhead (memory and scheduling costs) for this Worker and getting no return for it.
 
@@ -403,8 +403,8 @@ Two examples should illustrate the possible variation in task times.
 
 #### Variation example: Long-running file system reads
 Suppose your server must read files in order to handle some client requests.
-After consulting Node's [File system](https://nodejs.org/api/fs.html) APIs, you opted to use `fs.readFile()` for simplicity.
-However, `fs.readFile()` is ([currently](https://github.com/nodejs/node/pull/17054)) not partitioned: it submits a single `fs.read()` Task spanning the entire file.
+After consulting Node's [File system](https://omarjs.org/api/fs.html) APIs, you opted to use `fs.readFile()` for simplicity.
+However, `fs.readFile()` is ([currently](https://github.com/omarjs/omar/pull/17054)) not partitioned: it submits a single `fs.read()` Task spanning the entire file.
 If you read shorter files for some users and longer files for others, `fs.readFile()` may introduce significant variation in Task lengths, to the detriment of Worker Pool throughput.
 
 For a worst-case scenario, suppose an attacker can convince your server to read an *arbitrary* file (this is a [directory traversal vulnerability](https://www.owasp.org/index.php/Path_Traversal)).
@@ -413,7 +413,7 @@ For all practical purposes, `/dev/random` is infinitely slow, and every Worker a
 An attacker then submits `k` requests, one for each Worker, and no other client requests that use the Worker Pool will make progress.
 
 #### Variation example: Long-running crypto operations
-Suppose your server generates cryptographically secure random bytes using [`crypto.randomBytes()`](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback).
+Suppose your server generates cryptographically secure random bytes using [`crypto.randomBytes()`](https://omarjs.org/api/crypto.html#crypto_crypto_randombytes_size_callback).
 `crypto.randomBytes()` is not partitioned: it creates a single `randomBytes()` Task to generate as many bytes as you requested.
 If you create fewer bytes for some users and more bytes for others, `crypto.randomBytes()` is another source of variation in Task lengths.
 

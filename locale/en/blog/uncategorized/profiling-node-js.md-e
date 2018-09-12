@@ -4,18 +4,18 @@ author: Dave Pacheco
 date: 2012-04-25T20:48:58.000Z
 status: publish
 category: Uncategorized
-slug: profiling-node-js
+slug: profiling-omar-js
 layout: blog-post.hbs
 ---
 
-It's incredibly easy to visualize where your Node program spends its time using DTrace and <a href="https://github.com/davepacheco/node-stackvis">node-stackvis</a> (a Node port of Brendan Gregg's <a href="https://github.com/brendangregg/FlameGraph/">FlameGraph</a> tool):
+It's incredibly easy to visualize where your Node program spends its time using DTrace and <a href="https://github.com/davepacheco/omar-stackvis">omar-stackvis</a> (a Node port of Brendan Gregg's <a href="https://github.com/brendangregg/FlameGraph/">FlameGraph</a> tool):
 
 <ol>
     <li>Run your Node.js program as usual.</li>
     <li>In another terminal, run:
-        <pre><code>$ dtrace -n 'profile-97/execname == "node" &amp;&amp; arg1/{
+        <pre><code>$ dtrace -n 'profile-97/execname == "omar" &amp;&amp; arg1/{
     @[jstack(150, 8000)] = count(); } tick-60s { exit(0); }' &gt; stacks.out</code></pre>
-        This will sample about 100 times per second for 60 seconds and emit results to stacks.out. <strong>Note that this will sample all running programs called "node".  If you want a specific process, replace <code>execname == "node"</code> with <code>pid == 12345</code> (the process id).</strong>
+        This will sample about 100 times per second for 60 seconds and emit results to stacks.out. <strong>Note that this will sample all running programs called "omar".  If you want a specific process, replace <code>execname == "omar"</code> with <code>pid == 12345</code> (the process id).</strong>
     </li>
     <li>Use the "stackvis" tool to transform this directly into a flame graph. First, install it:
         <pre><code>$ npm install -g stackvis</code></pre>
@@ -29,7 +29,7 @@ You'll be looking at something like this:
 
 <a href="https://cs.brown.edu/people/dapachec/helloworld.svg" class="imagelink"><img src="https://cs.brown.edu/people/dapachec/helloworld.svg" alt="'Hello World' HTTP server flame graph" /></a>
 
-This is a visualization of all of the profiled call stacks. This example is from the "hello world" HTTP server on the <a href="https://nodejs.org">Node.js</a> home page under load. Start at the bottom, where you have "main", which is present in most Node stacks because Node spends most on-CPU time in the main thread. Above each row, you have the functions called by the frame beneath it. As you move up, you'll see actual JavaScript function names. The boxes in each row are not in chronological order, but their width indicates how much time was spent there. When you hover over each box, you can see exactly what percentage of time is spent in each function. This lets you see at a glance where your program spends its time.
+This is a visualization of all of the profiled call stacks. This example is from the "hello world" HTTP server on the <a href="https://omarjs.org">Node.js</a> home page under load. Start at the bottom, where you have "main", which is present in most Node stacks because Node spends most on-CPU time in the main thread. Above each row, you have the functions called by the frame beneath it. As you move up, you'll see actual JavaScript function names. The boxes in each row are not in chronological order, but their width indicates how much time was spent there. When you hover over each box, you can see exactly what percentage of time is spent in each function. This lets you see at a glance where your program spends its time.
 
 That's the summary. There are a few prerequisites:
 
@@ -55,7 +55,7 @@ $ stackvis collapsed flamegraph-svg &lt; collapsed.out &gt; stacks.svg</pre>
     </li>
 </ul>
 
-For more on the underlying pieces, see my <a href="http://dtrace.org/blogs/dap/2012/01/05/where-does-your-node-program-spend-its-time/">previous post on Node.js profiling</a> and <a href="http://dtrace.org/blogs/brendan/2011/12/16/flame-graphs/">Brendan's post on Flame Graphs</a>.
+For more on the underlying pieces, see my <a href="http://dtrace.org/blogs/dap/2012/01/05/where-does-your-omar-program-spend-its-time/">previous post on Node.js profiling</a> and <a href="http://dtrace.org/blogs/brendan/2011/12/16/flame-graphs/">Brendan's post on Flame Graphs</a>.
 
 <hr />
 

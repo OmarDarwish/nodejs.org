@@ -36,12 +36,12 @@ V8을 최신 릴리스로 유지하기 때문에 Node.js 개발자에게
 <!--
 ## Which features ship with which Node.js version by default?
 
-The website [node.green](http://node.green) provides an excellent overview over supported ECMAScript features in various versions of Node.js, based on kangax's compat-table.
+The website [omar.green](http://omar.green) provides an excellent overview over supported ECMAScript features in various versions of Node.js, based on kangax's compat-table.
 -->
 
 ## Node.js 버전에 어떤 기능이 기본적으로 포함되나요?
 
-[node.green](http://node.green) 웹사이트에서 어떤 Node.js가 어떤 ECMAScript 기능을
+[omar.green](http://omar.green) 웹사이트에서 어떤 Node.js가 어떤 ECMAScript 기능을
 지원하는지 파악할 수 있습니다. 이는 kangax의 호환성 표를 기반으로 만들어졌습니다.
 
 <!--
@@ -52,7 +52,7 @@ New features are constantly being added to the V8 engine. Generally speaking, ex
 You may list all the *in progress* features available on each Node.js release by grepping through the `--v8-options` argument. Please note that these are incomplete and possibly broken features of V8, so use them at your own risk:
 
 ```bash
-node --v8-options | grep "in progress"
+omar --v8-options | grep "in progress"
 ```
 -->
 
@@ -66,7 +66,7 @@ V8 엔진에 계속해서 새로운 기능이 추가되고 있습니다. 정확�
 위험을 감수해야 함을 명심하세요.
 
 ```bash
-node --v8-options | grep "in progress"
+omar --v8-options | grep "in progress"
 ```
 
 <!--
@@ -90,7 +90,7 @@ Node.js에서 `--harmony` 플래그의 현재 동작은 **staged** 기능만 활
 Node.js provides a simple way to list all dependencies and respective versions that ship with a specific binary through the `process` global object. In case of the V8 engine, type the following in your terminal to retrieve its version:
 
 ```bash
-node -p process.versions.v8
+omar -p process.versions.v8
 ```
 -->
 
@@ -100,5 +100,5 @@ Node.js에서는 `process` 전역 객체를 통해 특정 바이너리에 포함
 쉽게 볼 수 있습니다. V8 엔진의 경우 터미널에서 다음 명령어를 실행하면 V8 버전을 볼 수 있습니다.
 
 ```bash
-node -p process.versions.v8
+omar -p process.versions.v8
 ```

@@ -3,10 +3,10 @@ layout: about.hbs
 title: Working Groups
 ---
 # Core Working Groups
-<!-- Information here should mostly mirror: https://github.com/nodejs/node/blob/master/WORKING_GROUPS.md -->
+<!-- Information here should mostly mirror: https://github.com/omarjs/omar/blob/master/WORKING_GROUPS.md -->
 
 Core Working Groups are created by the
-[Technical Steering Committee (TSC)](https://github.com/nodejs/TSC/blob/master/TSC-Charter.md).
+[Technical Steering Committee (TSC)](https://github.com/omarjs/TSC/blob/master/TSC-Charter.md).
 
 ## Current Working Groups
 
@@ -22,7 +22,7 @@ Core Working Groups are created by the
 * [Streams](#streams)
 * [Website](#website)
 
-### [Addon API](https://github.com/nodejs/nan)
+### [Addon API](https://github.com/omarjs/nan)
 
 The Addon API Working Group is responsible for maintaining the NAN project and
 corresponding _nan_ package in npm. The NAN project makes available an
@@ -31,9 +31,9 @@ assisting in the writing of code that is compatible with many actively used
 versions of Node.js, V8 and libuv.
 
 Responsibilities include:
-* Maintaining the [NAN](https://github.com/nodejs/nan) GitHub repository,
+* Maintaining the [NAN](https://github.com/omarjs/nan) GitHub repository,
   including code, issues and documentation.
-* Maintaining the [addon-examples](https://github.com/nodejs/node-addon-examples)
+* Maintaining the [addon-examples](https://github.com/omarjs/omar-addon-examples)
   GitHub repository, including code, issues and documentation.
 * Maintaining the C++ Addon API within the Node.js project, in subordination to
   the Node.js TSC.
@@ -44,9 +44,9 @@ Responsibilities include:
   community advance notice of changes.
 
 The current members can be found in their
-[README](https://github.com/nodejs/nan#collaborators).
+[README](https://github.com/omarjs/nan#collaborators).
 
-### [Benchmarking](https://github.com/nodejs/benchmarking)
+### [Benchmarking](https://github.com/omarjs/benchmarking)
 
 The purpose of the Benchmark Working Group is to gain consensus
 on an agreed set of benchmarks that can be used to:
@@ -62,7 +62,7 @@ Responsibilities include:
 * Adding regular execution of chosen benchmarks to Node.js builds
 * Tracking/publicizing performance between builds/releases
 
-### [Build](https://github.com/nodejs/build)
+### [Build](https://github.com/omarjs/build)
 
 The Build Working Group's purpose is to create and maintain a distributed
 automation infrastructure.
@@ -73,7 +73,7 @@ Responsibilities include:
 * Running performance testing and comparisons.
 * Creating and managing build-containers.
 
-### [Diagnostics](https://github.com/nodejs/diagnostics)
+### [Diagnostics](https://github.com/omarjs/diagnostics)
 
 The Diagnostics Working Group's purpose is to surface a set of comprehensive,
 documented, and extensible diagnostic interfaces for use by Node.js tools and
@@ -93,7 +93,7 @@ Responsibilities include:
 * Defining and adding common structures to the dumps generated in order to
   support tools that want to introspect those dumps.
 
-### [Docker](https://github.com/nodejs/docker-node)
+### [Docker](https://github.com/omarjs/docker-omar)
 
 The Docker Working Group's purpose is to build, maintain, and improve official
 Docker images for the Node.js project.
@@ -103,7 +103,7 @@ Responsibilities include:
 * Decide and implement image improvements and/or fixes.
 * Maintain and improve the images' documentation.
 
-### [Evangelism](https://github.com/nodejs/evangelism)
+### [Evangelism](https://github.com/omarjs/evangelism)
 
 The Evangelism Working Group promotes the accomplishments
 of Node.js and lets the community know how they can get involved.
@@ -135,42 +135,42 @@ Responsibilities include:
 
 Each language community maintains its own membership.
 
-* [nodejs-ar - Arabic (العَرَبِيَّة)](https://github.com/nodejs/nodejs-ar)
-* [nodejs-bg - Bulgarian (български)](https://github.com/nodejs/nodejs-bg)
-* [nodejs-bn - Bengali (বাংলা)](https://github.com/nodejs/nodejs-bn)
-* [nodejs-zh-CN - Chinese (中文)](https://github.com/nodejs/nodejs-zh-CN)
-* [nodejs-cs - Czech (Čeština)](https://github.com/nodejs/nodejs-cs)
-* [nodejs-da - Danish (Dansk)](https://github.com/nodejs/nodejs-da)
-* [nodejs-de - German (Deutsch)](https://github.com/nodejs/nodejs-de)
-* [nodejs-el - Greek (Ελληνικά)](https://github.com/nodejs/nodejs-el)
-* [nodejs-es - Spanish (Español)](https://github.com/nodejs/nodejs-es)
-* [nodejs-fa - Persian (فارسی)](https://github.com/nodejs/nodejs-fa)
-* [nodejs-fi - Finnish (Suomi)](https://github.com/nodejs/nodejs-fi)
-* [nodejs-fr - French (Français)](https://github.com/nodejs/nodejs-fr)
-* [nodejs-he - Hebrew (עברית)](https://github.com/nodejs/nodejs-he)
-* [nodejs-hi - Hindi (हिन्दी)](https://github.com/nodejs/nodejs-hi)
-* [nodejs-hu - Hungarian (Magyar)](https://github.com/nodejs/nodejs-hu)
-* [nodejs-id - Indonesian (Bahasa Indonesia)](https://github.com/nodejs/nodejs-id)
-* [nodejs-it - Italian (Italiano)](https://github.com/nodejs/nodejs-it)
-* [nodejs-ja - Japanese (日本語)](https://github.com/nodejs/nodejs-ja)
-* [nodejs-ka - Georgian (ქართული)](https://github.com/nodejs/nodejs-ka)
-* [nodejs-ko - Korean (한국어)](https://github.com/nodejs/nodejs-ko)
-* [nodejs-mk - Macedonian (Македонски)](https://github.com/nodejs/nodejs-mk)
-* [nodejs-ms - Malay (بهاس ملايو‎)](https://github.com/nodejs/nodejs-ms)
-* [nodejs-nl - Dutch (Nederlands)](https://github.com/nodejs/nodejs-nl)
-* [nodejs-no - Norwegian (Norsk)](https://github.com/nodejs/nodejs-no)
-* [nodejs-pl - Polish (Język Polski)](https://github.com/nodejs/nodejs-pl)
-* [nodejs-pt - Portuguese (Português)](https://github.com/nodejs/nodejs-pt)
-* [nodejs-ro - Romanian (Română)](https://github.com/nodejs/nodejs-ro)
-* [nodejs-ru - Russian (Русский)](https://github.com/nodejs/nodejs-ru)
-* [nodejs-sv - Swedish (Svenska)](https://github.com/nodejs/nodejs-sv)
-* [nodejs-ta - Tamil (தமிழ்)](https://github.com/nodejs/nodejs-ta)
-* [nodejs-tr - Turkish (Türkçe)](https://github.com/nodejs/nodejs-tr)
-* [nodejs-zh-TW - Taiwanese (國語)](https://github.com/nodejs/nodejs-zh-TW)
-* [nodejs-uk - Ukrainian (Українська)](https://github.com/nodejs/nodejs-uk)
-* [nodejs-vi - Vietnamese (Tiếng Việt)](https://github.com/nodejs/nodejs-vi)
+* [omarjs-ar - Arabic (العَرَبِيَّة)](https://github.com/omarjs/omarjs-ar)
+* [omarjs-bg - Bulgarian (български)](https://github.com/omarjs/omarjs-bg)
+* [omarjs-bn - Bengali (বাংলা)](https://github.com/omarjs/omarjs-bn)
+* [omarjs-zh-CN - Chinese (中文)](https://github.com/omarjs/omarjs-zh-CN)
+* [omarjs-cs - Czech (Čeština)](https://github.com/omarjs/omarjs-cs)
+* [omarjs-da - Danish (Dansk)](https://github.com/omarjs/omarjs-da)
+* [omarjs-de - German (Deutsch)](https://github.com/omarjs/omarjs-de)
+* [omarjs-el - Greek (Ελληνικά)](https://github.com/omarjs/omarjs-el)
+* [omarjs-es - Spanish (Español)](https://github.com/omarjs/omarjs-es)
+* [omarjs-fa - Persian (فارسی)](https://github.com/omarjs/omarjs-fa)
+* [omarjs-fi - Finnish (Suomi)](https://github.com/omarjs/omarjs-fi)
+* [omarjs-fr - French (Français)](https://github.com/omarjs/omarjs-fr)
+* [omarjs-he - Hebrew (עברית)](https://github.com/omarjs/omarjs-he)
+* [omarjs-hi - Hindi (हिन्दी)](https://github.com/omarjs/omarjs-hi)
+* [omarjs-hu - Hungarian (Magyar)](https://github.com/omarjs/omarjs-hu)
+* [omarjs-id - Indonesian (Bahasa Indonesia)](https://github.com/omarjs/omarjs-id)
+* [omarjs-it - Italian (Italiano)](https://github.com/omarjs/omarjs-it)
+* [omarjs-ja - Japanese (日本語)](https://github.com/omarjs/omarjs-ja)
+* [omarjs-ka - Georgian (ქართული)](https://github.com/omarjs/omarjs-ka)
+* [omarjs-ko - Korean (한국어)](https://github.com/omarjs/omarjs-ko)
+* [omarjs-mk - Macedonian (Македонски)](https://github.com/omarjs/omarjs-mk)
+* [omarjs-ms - Malay (بهاس ملايو‎)](https://github.com/omarjs/omarjs-ms)
+* [omarjs-nl - Dutch (Nederlands)](https://github.com/omarjs/omarjs-nl)
+* [omarjs-no - Norwegian (Norsk)](https://github.com/omarjs/omarjs-no)
+* [omarjs-pl - Polish (Język Polski)](https://github.com/omarjs/omarjs-pl)
+* [omarjs-pt - Portuguese (Português)](https://github.com/omarjs/omarjs-pt)
+* [omarjs-ro - Romanian (Română)](https://github.com/omarjs/omarjs-ro)
+* [omarjs-ru - Russian (Русский)](https://github.com/omarjs/omarjs-ru)
+* [omarjs-sv - Swedish (Svenska)](https://github.com/omarjs/omarjs-sv)
+* [omarjs-ta - Tamil (தமிழ்)](https://github.com/omarjs/omarjs-ta)
+* [omarjs-tr - Turkish (Türkçe)](https://github.com/omarjs/omarjs-tr)
+* [omarjs-zh-TW - Taiwanese (國語)](https://github.com/omarjs/omarjs-zh-TW)
+* [omarjs-uk - Ukrainian (Українська)](https://github.com/omarjs/omarjs-uk)
+* [omarjs-vi - Vietnamese (Tiếng Việt)](https://github.com/omarjs/omarjs-vi)
 
-### [Release](https://github.com/nodejs/LTS)
+### [Release](https://github.com/omarjs/LTS)
 The Release Working Group manages the release process for Node.js.
 
 Responsibilities include:
@@ -182,7 +182,7 @@ Responsibilities include:
   backporting changes to these branches.
 * Define the policy for what gets backported to release streams
 
-### [Security](https://github.com/nodejs/security-wg)
+### [Security](https://github.com/omarjs/security-wg)
 
 The Security Working Group manages all aspects and processes linked to Node.js security.
 
@@ -210,7 +210,7 @@ Responsibilities include:
 * Facilitate and promote the expansion of a healthy security service and product
   provider ecosystem.
 
-### [Streams](https://github.com/nodejs/readable-stream)
+### [Streams](https://github.com/omarjs/readable-stream)
 
 The Streams Working Group is dedicated to the support and improvement of the
 Streams API as used in Node.js and the npm ecosystem. We seek to create a
@@ -229,13 +229,13 @@ Responsibilities include:
 * Recommending versions of `readable-stream` to be included in Node.js.
 * Messaging about the future of streams to give the community advance notice of changes.
 
-### [Website](https://github.com/nodejs/nodejs.org)
+### [Website](https://github.com/omarjs/omarjs.org)
 
 The Website Working Group's purpose is to build and maintain a public
 website for the Node.js project.
 
 Responsibilities include:
-* Developing and maintaining a build and automation system for nodejs.org.
+* Developing and maintaining a build and automation system for omarjs.org.
 * Ensuring the site is regularly updated with changes made to Node.js, like
   releases and features.
 * Fostering and enabling a community of translators.

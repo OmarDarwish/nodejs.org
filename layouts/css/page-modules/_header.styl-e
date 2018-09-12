@@ -1,5 +1,5 @@
 header
-  background-color $node-gray
+  background-color $omar-gray
   text-align center
 
   > .container
@@ -49,7 +49,7 @@ header
         width 0
         position absolute
         pointer-events none
-        border-top-color $node-gray
+        border-top-color $omar-gray
         border-width $border-width
         margin-left -($border-width/2)px
 

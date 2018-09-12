@@ -5,7 +5,7 @@ author: piscisaureus
 date: 2011-11-25T10:54:08.000Z
 status: publish
 category: release
-slug: node-v0-6-3
+slug: omar-v0-6-3
 layout: blog-post.hbs
 ---
 
@@ -22,12 +22,12 @@ layout: blog-post.hbs
     <li>#2084 Add OS X .pkg build script to make file.</li>
     <li>#2160 Documentation improvements. (Ben Noordhuis)</li>
 </ul>
-Source Code: <a href="https://nodejs.org/dist/v0.6.3/node-v0.6.3.tar.gz">https://nodejs.org/dist/v0.6.3/node-v0.6.3.tar.gz</a>
+Source Code: <a href="https://omarjs.org/dist/v0.6.3/omar-v0.6.3.tar.gz">https://omarjs.org/dist/v0.6.3/omar-v0.6.3.tar.gz</a>
 
-Windows Installer: <a href="https://nodejs.org/dist/v0.6.3/node-v0.6.3.msi">https://nodejs.org/dist/v0.6.3/node-v0.6.3.msi</a>
+Windows Installer: <a href="https://omarjs.org/dist/v0.6.3/omar-v0.6.3.msi">https://omarjs.org/dist/v0.6.3/omar-v0.6.3.msi</a>
 
-Macintosh Installer: <a href="https://nodejs.org/dist/v0.6.3/node-v0.6.3.pkg">https://nodejs.org/dist/v0.6.3/node-v0.6.3.pkg</a>
+Macintosh Installer: <a href="https://omarjs.org/dist/v0.6.3/omar-v0.6.3.pkg">https://omarjs.org/dist/v0.6.3/omar-v0.6.3.pkg</a>
 
-Website: <a href="https://nodejs.org/docs/v0.6.3/">https://nodejs.org/docs/v0.6.3/</a>
+Website: <a href="https://omarjs.org/docs/v0.6.3/">https://omarjs.org/docs/v0.6.3/</a>
 
-Documentation: <a href="https://nodejs.org/docs/v0.6.3/api/">https://nodejs.org/docs/v0.6.3/api/</a>
+Documentation: <a href="https://omarjs.org/docs/v0.6.3/api/">https://omarjs.org/docs/v0.6.3/api/</a>

@@ -1,7 +1,7 @@
 {
   "title": "Node.js",
   "author": "Node.js Foundation",
-  "url": "https://nodejs.org/uk/",
+  "url": "https://omarjs.org/uk/",
   "locale": "uk",
   "scrollToTop": "Вгору",
   "reportNodeIssue": "Проблеми з Node.js",
@@ -76,7 +76,7 @@
     "shasums": {
       "link": "SHASUMS256.txt.asc",
       "text": "Підписані SHASUMS для файлів релізу",
-      "verify-link": "https://github.com/nodejs/node#verifying-binaries",
+      "verify-link": "https://github.com/omarjs/omar#verifying-binaries",
       "verify-text": "Як перевірити"
     }
   },
@@ -121,7 +121,7 @@
       "text": "Сприяння"
     },
     "conduct": {
-      "link": "https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#code-of-conduct",
+      "link": "https://github.com/omarjs/omar/blob/master/CONTRIBUTING.md#code-of-conduct",
       "text": "Правила"
     }
   },
@@ -134,7 +134,7 @@
     "text": "Новини"
   },
   "foundation": {
-    "link": "https://foundation.nodejs.org/",
+    "link": "https://foundation.omarjs.org/",
     "text": "Фундація"
   },
   "releases": {

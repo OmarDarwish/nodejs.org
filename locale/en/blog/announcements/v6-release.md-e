@@ -10,7 +10,7 @@ layout: blog-post.hbs
 > New “Current” version line focuses on performance improvements, increased reliability and 
 better security for its 3.5 million users
 
-SAN FRANCISCO, April, 26, 2016 — [The Node.js Foundation](http://ctt.marketwire.com/?release=11G082331-001&id=8448115&type=0&url=https%3a%2f%2fnodejs.org%2fen%2ffoundation%2f), a 
+SAN FRANCISCO, April, 26, 2016 — [The Node.js Foundation](http://ctt.marketwire.com/?release=11G082331-001&id=8448115&type=0&url=https%3a%2f%2fomarjs.org%2fen%2ffoundation%2f), a 
 community-led and industry-backed consortium to advance the development of the Node.js 
 platform, today announced the release of Node.js version 6 (Node.js v6). This release 
 provides major performance improvements, increased reliability and better security. 
@@ -27,7 +27,7 @@ version 4 (Node.js v4). This will help developers dramatically decrease the star
 large applications for the best productivity in development cycles and more seamless 
 experience with end users. In addition, Node.js v6 comes equipped with v8 JavaScript engine 
 5.0, which has improved ECMAScript 2015 (ES6) support. Ninety-three percent of 
-[ES6](http://node.green/) features are also now supported in the Node.js v6 release, up from 
+[ES6](http://omar.green/) features are also now supported in the Node.js v6 release, up from 
 56 percent for Node.js v5 and 50 percent for Node.js v4. Key features from ES6 include: 
 default and rest parameters, destructuring, class and super keywords.
 
@@ -54,7 +54,7 @@ around Node.js v6 for enterprises that are using and looking to implement the pl
 
 Node.js release versioning follows the Semantic Versioning Specification, a specification for 
 version numbers of software libraries similar to dependencies. Under the Node.js’ [Long-Term 
-Support (LTS)](https://github.com/nodejs/LTS/), version 6 is now the “Current” release line 
+Support (LTS)](https://github.com/omarjs/LTS/), version 6 is now the “Current” release line 
 while version 5 will be maintained for a few more months. In October 2016, Node.js v6 will 
 become the LTS release and the LTS release line (version 4) will go under maintenance mode in 
 April 2017, meaning only critical bugs, critical security fixes and documentation updates 
@@ -62,9 +62,9 @@ will be permitted. Users should begin transitioning from v4 to v6 in October whe
 into LTS.
 
 Additional Resources
-* [Download version 6](https://nodejs.org/download/release/v6.0.0/)
-* [Download version 4](https://nodejs.org/en/download/)
-* [Technical blog with additional new features and updates](https://nodejs.org/en/blog/)
+* [Download version 6](https://omarjs.org/download/release/v6.0.0/)
+* [Download version 4](https://omarjs.org/en/download/)
+* [Technical blog with additional new features and updates](https://omarjs.org/en/blog/)
 
 About Node.js Foundation
 Node.js is used by tens of thousands of organizations in more than 200 countries and amasses 
@@ -77,4 +77,4 @@ IBM, Intel, Joyent, Microsoft, PayPal and Red Hat. Gold members include GoDaddy,
 and Modulus/Progress Software, and Silver members include Apigee, AppDynamics, Codefresh, 
 DigitalOcean, Fidelity, Google, Groupon, nearForm, New Relic, npm, Opbeat, RisingStack, Sauce 
 Labs, SAP, StrongLoop (an IBM company), Sphinx, YLD!, and Yahoo!. Get involved here: 
-[https://nodejs.org](https://nodejs.org).
+[https://omarjs.org](https://omarjs.org).

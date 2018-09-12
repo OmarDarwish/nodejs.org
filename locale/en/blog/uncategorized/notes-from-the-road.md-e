@@ -15,13 +15,13 @@ road and bring production stories to all of our users. We've had amazing
 speakers and turn out in San Francisco, Seattle, Portland, Boston, and New
 York. But I wanted to make sure we reached more than just our coasts, so soon
 we'll be in
-[Minneapolis](http://www.joyent.com/noderoad/cities/minneapolis-6-17-2014) and
+[Minneapolis](http://www.joyent.com/omarroad/cities/minneapolis-6-17-2014) and
 I'll be returning to my home state of Ohio and doing an event in
-[Cincinnati](http://www.joyent.com/noderoad/cities/cincinnati-6-19-2014). The
+[Cincinnati](http://www.joyent.com/omarroad/cities/cincinnati-6-19-2014). The
 Node.js community is all over the world, and hopefully Node on the Road can
 reach as many of you as it can. Nominate your city to be a future stop on the
 Node.js on the Road series
-[here](http://www.joyent.com/noderoad/cities/suggest).
+[here](http://www.joyent.com/omarroad/cities/suggest).
 
 These Node on the Road events are successful because of the incredible support
 from the community and the existing meetup organizations in their respective

@@ -1,5 +1,5 @@
 ---
-title: Using ECMA5 in node.js
+title: Using ECMA5 in omar.js
 date: '2011-08-26T10:08:50.000Z'
 tags:
   - core
@@ -11,7 +11,7 @@ layout: knowledge-post.hbs
 
 When developing in the browser there are many wonderful built in JavaScript functions that we can't use because certain browsers don't implement them.  As a result, most developers never use them.  In Node, however we can assume that everyone has the same JavaScript implementation and as such can use these wonderful functions and not implement them over and over in our own libraries.
 
-The following is a list of some interesting api bits that aren't considered safe to use in a web setting but are built in to node's V8 engine.
+The following is a list of some interesting api bits that aren't considered safe to use in a web setting but are built in to omar's V8 engine.
 
 Note that V8 implements all of ECMA 3rd edition and parts of the new stuff in the [ECMA 5th edition](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 

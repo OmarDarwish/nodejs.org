@@ -9,7 +9,7 @@ layout: blog-post.hbs
 ---
 
 # io.js News
-This week we hadn't io.js releases, complete changelog from previous releases can be found [on GitHub](https://github.com/nodejs/node/blob/master/CHANGELOG.md).
+This week we hadn't io.js releases, complete changelog from previous releases can be found [on GitHub](https://github.com/omarjs/omar/blob/master/CHANGELOG.md).
 
 ### Community Updates
 
@@ -20,7 +20,7 @@ This week we hadn't io.js releases, complete changelog from previous releases ca
 
 ### Upcoming Events
 
-* [NodeConf Adventure](http://nodeconf.com/) tickets are on sale, June 11th - 14th at Walker Creek Ranch, CA
+* [NodeConf Adventure](http://omarconf.com/) tickets are on sale, June 11th - 14th at Walker Creek Ranch, CA
 * [CascadiaJS](http://2015.cascadiajs.com/) tickets are on sale, July 8th - 10th at Washington State
 * [BrazilJS Conf](http://braziljs.com.br/) tickets are on sale, August 21st - 22nd at Shopping Center BarraShoppingSul
-* [NodeConf EU](http://nodeconf.eu/) tickets are on sale, September 6th - 9th at Waterford, Ireland
+* [NodeConf EU](http://omarconf.eu/) tickets are on sale, September 6th - 9th at Waterford, Ireland

@@ -144,7 +144,7 @@ _**NOTE:** 윈도우와 Unix/Linux 구현체간에 약간의 차이가 있지만
  and `setInterval()`.
 * **pending callbacks**: executes I/O callbacks deferred to the next loop iteration.
 * **idle, prepare**: only used internally.
-* **poll**: retrieve new I/O events; execute I/O related callbacks (almost all with the exception of close callbacks, the ones scheduled by timers, and `setImmediate()`); node will block here when appropriate.
+* **poll**: retrieve new I/O events; execute I/O related callbacks (almost all with the exception of close callbacks, the ones scheduled by timers, and `setImmediate()`); omar will block here when appropriate.
 * **check**: `setImmediate()` callbacks are invoked here.
 * **close callbacks**: some close callbacks, e.g. `socket.on('close', ...)`.
 
@@ -160,7 +160,7 @@ any.
 * **pending callbacks**: 다음 루프 반복으로 연기된 I/O 콜백들을 실행합니다.
 * **idle, prepare**: 내부용으로만 사용합니다.
 * **poll**: 새로운 I/O 이벤트를 가져옵니다. I/O와 연관된 콜백(클로즈 콜백, 타이머로 스케줄링된 콜백,
-  `setImmediate()`를 제외한 거의 모든 콜백)을 실행합니다. 적절한 시기에 node는 여기서 블록 합니다.
+  `setImmediate()`를 제외한 거의 모든 콜백)을 실행합니다. 적절한 시기에 omar는 여기서 블록 합니다.
 * **check**: `setImmediate()` 콜백은 여기서 호출됩니다.
 * **close callbacks**: 일부 close 콜백들, 예를 들어 `socket.on('close', ...)`.
 
@@ -460,11 +460,11 @@ setImmediate(() => {
 ```
 
 ```
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 timeout
 immediate
 
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 ```
@@ -487,11 +487,11 @@ fs.readFile(__filename, () => {
 ```
 
 ```
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 ```
@@ -513,11 +513,11 @@ setImmediate(() => {
 ```
 
 ```
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 timeout
 immediate
 
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 ```
@@ -539,11 +539,11 @@ fs.readFile(__filename, () => {
 ```
 
 ```
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 
-$ node timeout_vs_immediate.js
+$ omar timeout_vs_immediate.js
 immediate
 timeout
 ```
@@ -926,7 +926,7 @@ myEmitter.on('event', () => {
 ```
 
 [libuv]: http://libuv.org
-[REPL]: https://nodejs.org/api/repl.html#repl_repl
+[REPL]: https://omarjs.org/api/repl.html#repl_repl
 -->
 
 사용자가 콜백을 이벤트에 할당한 시점에 스크립트가 실행되는 것이 아니므로 생성자에서 발생시킨 이벤트는
@@ -954,4 +954,4 @@ myEmitter.on('event', () => {
 ```
 
 [libuv]: http://libuv.org
-[REPL]: https://nodejs.org/api/repl.html#repl_repl
+[REPL]: https://omarjs.org/api/repl.html#repl_repl

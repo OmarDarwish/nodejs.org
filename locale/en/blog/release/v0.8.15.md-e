@@ -1,7 +1,7 @@
 ---
 date: 2012-11-26T17:14:49.000Z
 title: Node v0.8.15 (Stable)
-slug: node-v0-8-15
+slug: omar-v0-8-15
 version: v0.8.15
 category: release
 layout: blog-post.hbs
@@ -26,49 +26,49 @@ layout: blog-post.hbs
 * net, tls: fix connect() resource leak (Ben Noordhuis)
 
 
-Source Code: https://nodejs.org/dist/v0.8.15/node-v0.8.15.tar.gz
+Source Code: https://omarjs.org/dist/v0.8.15/omar-v0.8.15.tar.gz
 
-Macintosh Installer (Universal): https://nodejs.org/dist/v0.8.15/node-v0.8.15.pkg
+Macintosh Installer (Universal): https://omarjs.org/dist/v0.8.15/omar-v0.8.15.pkg
 
-Windows Installer: https://nodejs.org/dist/v0.8.15/node-v0.8.15-x86.msi
+Windows Installer: https://omarjs.org/dist/v0.8.15/omar-v0.8.15-x86.msi
 
-Windows x64 Installer: https://nodejs.org/dist/v0.8.15/x64/node-v0.8.15-x64.msi
+Windows x64 Installer: https://omarjs.org/dist/v0.8.15/x64/omar-v0.8.15-x64.msi
 
-Windows x64 Files: https://nodejs.org/dist/v0.8.15/x64/
+Windows x64 Files: https://omarjs.org/dist/v0.8.15/x64/
 
-Linux 32-bit Binary: https://nodejs.org/dist/v0.8.15/node-v0.8.15-linux-x86.tar.gz
+Linux 32-bit Binary: https://omarjs.org/dist/v0.8.15/omar-v0.8.15-linux-x86.tar.gz
 
-Linux 64-bit Binary: https://nodejs.org/dist/v0.8.15/node-v0.8.15-linux-x64.tar.gz
+Linux 64-bit Binary: https://omarjs.org/dist/v0.8.15/omar-v0.8.15-linux-x64.tar.gz
 
-Solaris 32-bit Binary: https://nodejs.org/dist/v0.8.15/node-v0.8.15-sunos-x86.tar.gz
+Solaris 32-bit Binary: https://omarjs.org/dist/v0.8.15/omar-v0.8.15-sunos-x86.tar.gz
 
-Solaris 64-bit Binary: https://nodejs.org/dist/v0.8.15/node-v0.8.15-sunos-x64.tar.gz
+Solaris 64-bit Binary: https://omarjs.org/dist/v0.8.15/omar-v0.8.15-sunos-x64.tar.gz
 
-Other release files: https://nodejs.org/dist/v0.8.15/
+Other release files: https://omarjs.org/dist/v0.8.15/
 
-Website: https://nodejs.org/docs/v0.8.15/
+Website: https://omarjs.org/docs/v0.8.15/
 
-Documentation: https://nodejs.org/docs/v0.8.15/api/
+Documentation: https://omarjs.org/docs/v0.8.15/api/
 
 Shasums:
 
 ```
-084f5132d8f2ad704086285a600790c4de323e59  node-v0.8.15-darwin-x64.tar.gz
-8a17c611d96aba9427de21125c2d1696e937245e  node-v0.8.15-darwin-x86.tar.gz
-cbd126c613eb42438a63a789b380b840793b2c83  node-v0.8.15-linux-x64.tar.gz
-73431db2519d4520c6f8ac7303ec6170e6eb17c6  node-v0.8.15-linux-x86.tar.gz
-1ed591003d0f502131540aadbabd95c22d2d936a  node-v0.8.15-sunos-x64.tar.gz
-0c5908f857a65d5f6e8cfc17e4d8114aa4d9f521  node-v0.8.15-sunos-x86.tar.gz
-5c5447b6ef451cfa4762db00aabd740425ea112d  node-v0.8.15-x86.msi
-1e06dc52609dd106fd3553f4a9d12e66bcac1f45  node-v0.8.15.pkg
-a7874cde1a87497992f1f8ea0fdaa760f617a94f  node-v0.8.15.tar.gz
-9251cc51eaa856bdf7c1a92d49419731e6dec830  node.exe
-e4230b867122b42a16cc27eccadde3996cfdf266  node.exp
-f4f7ca1d11877bcb1e50f0a139a0b7438ea406cb  node.lib
-02bc3e986eebb77fcabde4e492d858e14096ac34  node.pdb
-9c1020cc2c7443238093f0cde3875097788e5c7f  x64/node-v0.8.15-x64.msi
-8a76699adbee52ee704408e6708ff5b5b6ebc02f  x64/node.exe
-b9fba72a0da7d2b25dcdcbcf514b877f1cb6399a  x64/node.exp
-81511b51ef403214f0ba97ed29cb5d45ff6a21f7  x64/node.lib
-1519acd77acd41e03238f6ed9a006d97ade4a055  x64/node.pdb
+084f5132d8f2ad704086285a600790c4de323e59  omar-v0.8.15-darwin-x64.tar.gz
+8a17c611d96aba9427de21125c2d1696e937245e  omar-v0.8.15-darwin-x86.tar.gz
+cbd126c613eb42438a63a789b380b840793b2c83  omar-v0.8.15-linux-x64.tar.gz
+73431db2519d4520c6f8ac7303ec6170e6eb17c6  omar-v0.8.15-linux-x86.tar.gz
+1ed591003d0f502131540aadbabd95c22d2d936a  omar-v0.8.15-sunos-x64.tar.gz
+0c5908f857a65d5f6e8cfc17e4d8114aa4d9f521  omar-v0.8.15-sunos-x86.tar.gz
+5c5447b6ef451cfa4762db00aabd740425ea112d  omar-v0.8.15-x86.msi
+1e06dc52609dd106fd3553f4a9d12e66bcac1f45  omar-v0.8.15.pkg
+a7874cde1a87497992f1f8ea0fdaa760f617a94f  omar-v0.8.15.tar.gz
+9251cc51eaa856bdf7c1a92d49419731e6dec830  omar.exe
+e4230b867122b42a16cc27eccadde3996cfdf266  omar.exp
+f4f7ca1d11877bcb1e50f0a139a0b7438ea406cb  omar.lib
+02bc3e986eebb77fcabde4e492d858e14096ac34  omar.pdb
+9c1020cc2c7443238093f0cde3875097788e5c7f  x64/omar-v0.8.15-x64.msi
+8a76699adbee52ee704408e6708ff5b5b6ebc02f  x64/omar.exe
+b9fba72a0da7d2b25dcdcbcf514b877f1cb6399a  x64/omar.exp
+81511b51ef403214f0ba97ed29cb5d45ff6a21f7  x64/omar.lib
+1519acd77acd41e03238f6ed9a006d97ade4a055  x64/omar.pdb
 ```

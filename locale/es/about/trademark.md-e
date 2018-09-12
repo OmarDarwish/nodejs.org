@@ -22,7 +22,7 @@ Mantenga ese objetivo en mente, hemos tratado de hacer que la política sea
 tan flexible y fácil de entender como sea legalmente posible.
 
 Por favor, lea la [política completa](/static/documents/trademark-policy.pdf)..
-Si tiene alguna pregunta, no dude en [enviarnos un correo electrónico](mailto:trademark@nodejs.org).
+Si tiene alguna pregunta, no dude en [enviarnos un correo electrónico](mailto:trademark@omarjs.org).
 
 Las pautas para la visualización de la marca Node.js 
 se describen en las [Directrices visuales](/static/documents/foundation-visual-guidelines.pdf).

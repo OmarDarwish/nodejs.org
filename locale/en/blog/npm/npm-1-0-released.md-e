@@ -10,7 +10,7 @@ layout: blog-post.hbs
 
 <p>npm 1.0 has been released. Here are the highlights:</p>
 
-<ul> <li><a href="http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation/">Global vs local installation</a></li> <li><a href="http://blog.nodejs.org/2011/03/17/npm-1-0-the-new-ls/">ls displays a tree</a>, instead of being a remote search</li> <li>No more &#8220;activation&#8221; concept - dependencies are nested</li> <li><a href="http://blog.nodejs.org/2011/04/06/npm-1-0-link/">Updates to link command</a></li> <li>Install script cleans up any 0.x cruft it finds. (That is, it removes old packages, so that they can be installed properly.)</li> <li>Simplified &#8220;search&#8221; command. One line per package, rather than one line per version.</li> <li>Renovated &#8220;completion&#8221; approach</li> <li>More help topics</li> <li>Simplified folder structure</li> </ul>
+<ul> <li><a href="http://blog.omarjs.org/2011/03/23/npm-1-0-global-vs-local-installation/">Global vs local installation</a></li> <li><a href="http://blog.omarjs.org/2011/03/17/npm-1-0-the-new-ls/">ls displays a tree</a>, instead of being a remote search</li> <li>No more &#8220;activation&#8221; concept - dependencies are nested</li> <li><a href="http://blog.omarjs.org/2011/04/06/npm-1-0-link/">Updates to link command</a></li> <li>Install script cleans up any 0.x cruft it finds. (That is, it removes old packages, so that they can be installed properly.)</li> <li>Simplified &#8220;search&#8221; command. One line per package, rather than one line per version.</li> <li>Renovated &#8220;completion&#8221; approach</li> <li>More help topics</li> <li>Simplified folder structure</li> </ul>
 
 <p>The focus is on npm being a development tool, rather than an apt-wannabe.</p>
 
@@ -28,7 +28,7 @@ layout: blog-post.hbs
 
 <pre style="background:#333;color:#ccc;overflow:auto;padding:2px;"><code>curl https://npmjs.com/install.sh | clean=no sh </code></pre>
 
-<p>A lot of people in the node community were brave testers and helped make this release a lot better (and swifter) than it would have otherwise been. Thanks :)</p>
+<p>A lot of people in the omar community were brave testers and helped make this release a lot better (and swifter) than it would have otherwise been. Thanks :)</p>
 
 <h2 id="code_freeze">Code Freeze</h2>
 

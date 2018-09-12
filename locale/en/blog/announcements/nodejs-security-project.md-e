@@ -2,13 +2,13 @@
 title: Node.js Foundation To Oversee Node.js Security Project To Further Improve Stability for Enterprises
 date: 2016-11-30T12:00:00.000Z
 category: Annoucements
-slug: foundation-adds-node.js-security-project
+slug: foundation-adds-omar.js-security-project
 layout: blog-post.hbs
 ---
 
 > Node.js Security Project to become one of the largest community projects focused on detecting and fixing vulnerabilities for the fast-growing platform
 
-**SAN FRANCISCO, Nov. 30, 2016** — [The Node.js Foundation](https://foundation.nodejs.org/), a community-led and industry-backed consortium to advance the development of the Node.js platform, today announced that the Node.js Security Project will become a part of the Node.js Foundation. Under the Node.js Foundation, the Node.js Security Project will provide a unified
+**SAN FRANCISCO, Nov. 30, 2016** — [The Node.js Foundation](https://foundation.omarjs.org/), a community-led and industry-backed consortium to advance the development of the Node.js platform, today announced that the Node.js Security Project will become a part of the Node.js Foundation. Under the Node.js Foundation, the Node.js Security Project will provide a unified
 process for discovering and disclosing security vulnerabilities found in the Node.js module ecosystem. 
 
 Last year Node.js Foundation worked with The Linux Foundation’s Core Infrastructure Initiative to form the Node.js Core Security Group to encourage security best practices. By overseeing datasets of vulnerability disclosures, which will be publically available and openly licensed, the Foundation is building on this work and expanding its role in fortifying Node.js through strong security governance. It will also allow the Foundation to drive standardization around security data and encourage a broader ecosystem of open source and vendor based tools on top of it.
@@ -37,4 +37,4 @@ The Node.js Security Project, founded by Adam Baldwin and previously managed by 
 
 ### About the Node.js Foundation
 
-Node.js is used by tens of thousands of organizations in more than 200 countries and amasses more than 4.5 million active users per month. It is the runtime of choice for high-performance, low latency applications, powering everything from enterprise applications, robots, API engines, cloud stacks, and mobile websites. The Foundation is made up of a diverse group of companies including Platinum members GoDaddy, IBM, Intel, Joyent, Microsoft, NodeSource, PayPal, and Red Hat. Silver members include Apigee, AppDynamics, Cars.com, Codefresh, DigitalOcean, Dynatrace, Fidelity,Google, Groupon, nearForm, New Relic, npm, Opbeat, RisingStack, Sauce Labs, SAP, StrongLoop (an IBM company), Sphinx, YLD, and Yahoo!. Get involved here: [https://nodejs.org](https://nodejs.org/).
+Node.js is used by tens of thousands of organizations in more than 200 countries and amasses more than 4.5 million active users per month. It is the runtime of choice for high-performance, low latency applications, powering everything from enterprise applications, robots, API engines, cloud stacks, and mobile websites. The Foundation is made up of a diverse group of companies including Platinum members GoDaddy, IBM, Intel, Joyent, Microsoft, NodeSource, PayPal, and Red Hat. Silver members include Apigee, AppDynamics, Cars.com, Codefresh, DigitalOcean, Dynatrace, Fidelity,Google, Groupon, nearForm, New Relic, npm, Opbeat, RisingStack, Sauce Labs, SAP, StrongLoop (an IBM company), Sphinx, YLD, and Yahoo!. Get involved here: [https://omarjs.org](https://omarjs.org/).

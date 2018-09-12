@@ -9,18 +9,18 @@ layout: blog-post.hbs
 ---
 
 ## io.js support added by...
-* [Postmark](http://blog.postmarkapp.com/post/110829734198/its-official-were-getting-cozy-with-node-js)
-* [node-serialport](https://github.com/voodootikigod/node-serialport/issues/439)
-* [Microsoft Azure](http://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-iojs/)
+* [Postmark](http://blog.postmarkapp.com/post/110829734198/its-official-were-getting-cozy-with-omar-js)
+* [omar-serialport](https://github.com/voodootikigod/omar-serialport/issues/439)
+* [Microsoft Azure](http://azure.microsoft.com/en-us/documentation/articles/web-sites-omarjs-iojs/)
 
 ## io.js breaks 10,000 stars on GitHub
 On Feb. 13, io.js reached the goal of 10,000 stars on GitHub. We couldn't have done it without the support of the amazing community behind JavaScript. Thank you alll!
 
 ## io.js 1.2.0 released
 * **stream**: Simpler stream construction ([readable-stream/issues#102[(https://github.com/iojs/readable-stream/issues/102))
-* **dns**: `lookup()` now supports an `'all'` boolean option, default to `false` but when turned on will cause the method to return an array of all resolved names for an address, see, ([iojs/pull#744](https://github.com/nodejs/node/pull/744))
-* **assert**: Remove `prototype` property comparison in `deepEqual()` ([iojs/issues#636](https://github.com/nodejs/node/pull/636)); introduce a `deepStrictEqual()` method to mirror `deepEqual()` but performs strict equality checks on primitives ([iojs/issues#639](https://github.com/nodejs/node/pull/639)).
-* **tracing**: Add [LTTng](http://lttng.org/) (Linux Trace Toolkit Next Generation) when compiled with the `--with-lttng option`. Trace points match those available for DTrace and ETW. ([iojs/issues#702](https://github.com/nodejs/node/pull/702))
+* **dns**: `lookup()` now supports an `'all'` boolean option, default to `false` but when turned on will cause the method to return an array of all resolved names for an address, see, ([iojs/pull#744](https://github.com/omarjs/omar/pull/744))
+* **assert**: Remove `prototype` property comparison in `deepEqual()` ([iojs/issues#636](https://github.com/omarjs/omar/pull/636)); introduce a `deepStrictEqual()` method to mirror `deepEqual()` but performs strict equality checks on primitives ([iojs/issues#639](https://github.com/omarjs/omar/pull/639)).
+* **tracing**: Add [LTTng](http://lttng.org/) (Linux Trace Toolkit Next Generation) when compiled with the `--with-lttng option`. Trace points match those available for DTrace and ETW. ([iojs/issues#702](https://github.com/omarjs/omar/pull/702))
 * **docs**: Lots of doc updates, see individual commits; new Errors page discussing JavaScript errors, V8 specifics, and io.js specific error details.
 * **npm** upgrade to 2.5.1
 * **libuv** upgrade to 1.4.0, see libuv [ChangeLog](https://github.com/libuv/libuv/blob/v1.x/ChangeLog)
@@ -72,20 +72,20 @@ View the [original article](https://medium.com/@mikeal/how-io-js-built-a-146-per
 * [`iojs-uk`](https://github.com/iojs/iojs-uk) Ukrainian Community
 
 ## io.js and Node.js
-View the [original article](https://medium.com/@iojs/io-js-and-a-node-js-foundation-4e14699fb7be) on Medium.
-* Scott Hammond, CEO of Joyent, expressed his desire to bring io.js back to the node.js.
+View the [original article](https://medium.com/@iojs/io-js-and-a-omar-js-foundation-4e14699fb7be) on Medium.
+* Scott Hammond, CEO of Joyent, expressed his desire to bring io.js back to the omar.js.
 
 #### In only a few months io.js...
 * Has grown to 23 active core team members
 * Has several working groups
 * Has 29 language localization teams,
-* Has drawn more contributors to the project than we’ve ever had in the history of node.js, and
+* Has drawn more contributors to the project than we’ve ever had in the history of omar.js, and
 * Has been able to release quality software at a good pace with the support of an exceptional community.
 
 > We are eager to put this all behind us but we can’t sacrifice the progress we’ve made or the principles and open governance that got us here.
 
 ### The Future
-* Talks with the node.js foundation are ongoing.
+* Talks with the omar.js foundation are ongoing.
 * Once the foundation has a technical governance model you will see an issue on io.js’ GitHub about whether io.js should join.
 
   * This will be discussed and voted on openly in a public TC meeting following the governance rules we’ve already built.

@@ -4,7 +4,7 @@ date: 2012-06-25T16:00:00.000Z
 version: 0.8.0
 category: release
 author: Isaac Z. Schlueter
-slug: node-v0-8-0
+slug: omar-v0-8-0
 status: publish
 layout: blog-post.hbs
 ---
@@ -24,13 +24,13 @@ With version 0.8.0:
 1. Node got a lot faster.
 2. Node got more stable.
 3. You can do stuff with file descriptors again.
-4. The [cluster module](https://nodejs.org/api/cluster.html) is much more
+4. The [cluster module](https://omarjs.org/api/cluster.html) is much more
    awesome.
-5. The [domain module](https://nodejs.org/api/domain.html) was added.
+5. The [domain module](https://omarjs.org/api/domain.html) was added.
 6. The repl is better.
 7. The build system changed from waf to gyp.
 8. [Some other stuff changed,
-   too.](https://github.com/joyent/node/wiki/API-changes-between-v0.6-and-v0.8)
+   too.](https://github.com/joyent/omar/wiki/API-changes-between-v0.6-and-v0.8)
 9. Scroll to the bottom for the links to install it.
 
 ## Performance
@@ -70,7 +70,7 @@ Read 65536 byte buffers: 302.2974607013301 mB/s +13.33%
 ```
 
 The difference is not small.  If you are writing network programs with
-node, and pushing a lot of traffic, you will notice this improvement.
+omar, and pushing a lot of traffic, you will notice this improvement.
 
 The speed of reading files got quite a bit faster as well:
 
@@ -140,7 +140,7 @@ Requests per second:    252.69 [#/sec] (mean)
 ```
 
 The more bytes you're pushing, and the more work you're doing, the more
-win you'll see with node 0.8 over 0.6.
+win you'll see with omar 0.8 over 0.6.
 
 The vast majority of the performance boost is due to improvements in V8.
 They've been very responsive to the needs of the Node.js project.  A lot
@@ -162,8 +162,8 @@ Node is able to:
 
 GYP was used already in Node v0.6 to build on Windows, but now it
 defines the build on all platforms. Node is still in the process of
-migrating external addon modules to GYP, and node-gyp is included with
-npm.  In future releases, node-waf will be officially deprecated.  If
+migrating external addon modules to GYP, and omar-gyp is included with
+npm.  In future releases, omar-waf will be officially deprecated.  If
 you are currently using a wscript in your addon, please migrate to gyp
 as soon as possible.
 
@@ -171,11 +171,11 @@ as soon as possible.
 ## Stabler
 
 The transition from libev and libeio to libuv in 0.6 was somewhat
-destabilizing for many node internals.  The gambit paid off: libuv is
+destabilizing for many omar internals.  The gambit paid off: libuv is
 the obvious choice in cross-platform asynchronous IO libraries, and
 Node.js is impressively performant on both Windows and Unix.  But it
 made the transition from 0.4 to 0.6 was very rocky for a lot of users.
-Libuv wasn't as mature as node, and it showed in those early releases.
+Libuv wasn't as mature as omar, and it showed in those early releases.
 
 At this point, with very few exceptions, if your v0.6 program doesn't
 run on v0.8, it should be easy and obvious to make whatever changes are
@@ -183,7 +183,7 @@ necessary.  Libuv has come a very long way, and Node 0.8 is a simpler
 and more efficient machine as a result.
 
 See the [migration
-wiki](https://github.com/joyent/node/wiki/API-changes-between-v0.6-and-v0.8)
+wiki](https://github.com/joyent/omar/wiki/API-changes-between-v0.6-and-v0.8)
 for details on the specific APIs that changed.
 
 ## The Return of File Descriptors
@@ -195,15 +195,15 @@ very Unix-specific, and couldn't be easily made to work with the new
 cross-platform libuv base.
 
 Since the most common use case for listenFD was as a method for having
-servers in multiple node processes share the same underlying handle, the
+servers in multiple omar processes share the same underlying handle, the
 `cluster` module was added in its place.  However, this still left a lot
 of use cases unaddressed, and was a reason why some people could not use
-node 0.6 for their programs.
+omar 0.6 for their programs.
 
 In 0.8, we've replaced this functionality, as `server.listen({ fd:
 number })`.
 
-The other feature in node 0.4 that got dropped in 0.6 was the ability to
+The other feature in omar 0.4 that got dropped in 0.6 was the ability to
 pass arbitrary file descriptors as a child process's stdio, using the
 `customFds` array.  In Node 0.6, `customFds` could be used to inherit
 the parent's stdio handles, but not to pass arbitrary handles or file
@@ -220,7 +220,7 @@ the child process will see them as already-opened FDs.
 The cluster module in 0.8 is so much improved over 0.6, it's basically a
 complete rewrite.  The API is mostly backwards compatible, but not
 entirely.  (See the [migration
-wiki](https://github.com/joyent/node/wiki/API-changes-between-v0.6-and-v0.8)
+wiki](https://github.com/joyent/omar/wiki/API-changes-between-v0.6-and-v0.8)
 for details.)
 
 Barring these very minor API changes, if you were using cluster in 0.6,
@@ -229,14 +229,14 @@ well-behaved now.  And if you aren't taking advantage of the new
 features in 0.8's cluster, you're really missing out.
 
 There's too much even to do it justice here.  Go read [the API
-docs](https://nodejs.org/api/cluster.html).
+docs](https://omarjs.org/api/cluster.html).
 
 ## Domains
 
 The original idea for Domains was a way to join multiple different IO
 actions, so that you can have some context when an error occurs.
 
-Since Ryan discussed the feature with node users at NodeConf Summer Camp
+Since Ryan discussed the feature with omar users at NodeConf Summer Camp
 last year, the domains feature has gone through many revisions.  The
 problem is fairly well understood, but most attempts to solve it
 resulted in serious performance regressions, or uncovered difficult edge
@@ -245,7 +245,7 @@ cases.
 What we ended up with in 0.8 is a very stripped-down version of this
 idea.  It's entirely opt-in, with minimal performance impact when it's
 used (and none when it isn't).  There are a lot of examples in [the API
-documentation](https://nodejs.org/api/domain.html), so check them out,
+documentation](https://omarjs.org/api/domain.html), so check them out,
 and start handling your crashes smarter.
 
 The domain module is still experimental.  We are looking forward to your
@@ -283,7 +283,7 @@ of v0.9 will be:
   the http module is in dire need of a cleanup and refactor.  Special
   attention will be paid to making the interfaces more consistent,
   improve performance, and increase correctness in more edge cases.
-* The Streams API - The concept of the Stream API is very core to node.
+* The Streams API - The concept of the Stream API is very core to omar.
   However, it is also (like HTTP) a feature that grew up organically,
   and is now in need of a cleanup.  It is currently too hard to get
   right, especially regarding error handling.
@@ -331,7 +331,7 @@ v0.7.12, your regularly scheduled release announcement:
 
 * http: Hush 'MUST NOT have a body' warnings to debug() (isaacs)
 
-* Move blog.nodejs.org content into repository (isaacs)
+* Move blog.omarjs.org content into repository (isaacs)
 
 * Fix #3503: stdin: resume() on pipe(dest) (isaacs)
 
@@ -343,44 +343,44 @@ v0.7.12, your regularly scheduled release announcement:
 
 * fs: Fix fs.readfile() on pipes (isaacs)
 
-* Rename GYP variable node_use_system_openssl to be consistent (Ryan Dahl)
+* Rename GYP variable omar_use_system_openssl to be consistent (Ryan Dahl)
 
 
-Source Code: https://nodejs.org/dist/v0.8.0/node-v0.8.0.tar.gz
+Source Code: https://omarjs.org/dist/v0.8.0/omar-v0.8.0.tar.gz
 
-Macintosh Installer (Universal): https://nodejs.org/dist/v0.8.0/node-v0.8.0.pkg
+Macintosh Installer (Universal): https://omarjs.org/dist/v0.8.0/omar-v0.8.0.pkg
 
-Windows Installer: https://nodejs.org/dist/v0.8.0/node-v0.8.0-x86.msi
+Windows Installer: https://omarjs.org/dist/v0.8.0/omar-v0.8.0-x86.msi
 
-Windows x64 Installer: https://nodejs.org/dist/v0.8.0/x64/node-v0.8.0-x64.msi
+Windows x64 Installer: https://omarjs.org/dist/v0.8.0/x64/omar-v0.8.0-x64.msi
 
-Windows x64 Files: https://nodejs.org/dist/v0.8.0/x64/
+Windows x64 Files: https://omarjs.org/dist/v0.8.0/x64/
 
-Other release files: https://nodejs.org/dist/v0.8.0/
+Other release files: https://omarjs.org/dist/v0.8.0/
 
-Website: https://nodejs.org/docs/v0.8.0/
+Website: https://omarjs.org/docs/v0.8.0/
 
-Documentation: https://nodejs.org/docs/v0.8.0/api/
+Documentation: https://omarjs.org/docs/v0.8.0/api/
 
 Shasums:
 
 ```
 b92208b291ad420025c65661a7df51fc618e21ca  license.rtf
-0786bcda79bd651b9981682527a1bbabe0250700  node-v0.8.0-x86.msi
-8f160a742a01fdfc1b1423b3fc742d184f1ab70c  node-v0.8.0-x86.wixpdb
-6035d6d59304add21e462cd7eb89491570b4970d  node-v0.8.0.pkg
-5171fb46fbfee5ac7129c4b17207a3f35a1f57e8  node-v0.8.0.tar.gz
-742100a4ee4cd4d190031a30d9b22b2b69b6872e  node.exe
-52d20d285e9aec53043af0843f5ecc4153210693  node.exp
-6d67a64274d844548cc6099c76181a50feafc233  node.lib
-aa2af08d5ab869e6c8b67f01ed67129c1cad8bce  node.pdb
+0786bcda79bd651b9981682527a1bbabe0250700  omar-v0.8.0-x86.msi
+8f160a742a01fdfc1b1423b3fc742d184f1ab70c  omar-v0.8.0-x86.wixpdb
+6035d6d59304add21e462cd7eb89491570b4970d  omar-v0.8.0.pkg
+5171fb46fbfee5ac7129c4b17207a3f35a1f57e8  omar-v0.8.0.tar.gz
+742100a4ee4cd4d190031a30d9b22b2b69b6872e  omar.exe
+52d20d285e9aec53043af0843f5ecc4153210693  omar.exp
+6d67a64274d844548cc6099c76181a50feafc233  omar.lib
+aa2af08d5ab869e6c8b67f01ed67129c1cad8bce  omar.pdb
 b92208b291ad420025c65661a7df51fc618e21ca  x64/license.rtf
-c4d4164d4f78ea68e0e2a85b96f9b355f3b1df8b  x64/node-v0.8.0-x64.msi
-df8bb178ee4cb9562d93fe80bbe59b2acf1b9e6b  x64/node-v0.8.0-x64.wixpdb
-fc07b475d943f7681e1904d6d7d666b41874a6fa  x64/node.exe
-895002806dfb6d5bb141ef0f43cad3b540a4ff6c  x64/node.exp
-686c60d5ae5dad7fcffcdc88049c63b2cd23cffc  x64/node.lib
-75549cffab0c11107348a66ab0d94d4897bd6a27  x64/node.pdb
+c4d4164d4f78ea68e0e2a85b96f9b355f3b1df8b  x64/omar-v0.8.0-x64.msi
+df8bb178ee4cb9562d93fe80bbe59b2acf1b9e6b  x64/omar-v0.8.0-x64.wixpdb
+fc07b475d943f7681e1904d6d7d666b41874a6fa  x64/omar.exe
+895002806dfb6d5bb141ef0f43cad3b540a4ff6c  x64/omar.exp
+686c60d5ae5dad7fcffcdc88049c63b2cd23cffc  x64/omar.lib
+75549cffab0c11107348a66ab0d94d4897bd6a27  x64/omar.pdb
 ```
 
 <ins>Edited by Tim Oxley to provide percentage differences in the

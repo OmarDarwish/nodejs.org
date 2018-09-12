@@ -31,36 +31,36 @@ Node.js 애플리케이션을 디버그에 도움이 되는 많은 도구와 라
 
 These commercial and open source tools make debugging Node.js apps easier.
 
-### [node-inspect](https://github.com/nodejs/node-inspect)
+### [omar-inspect](https://github.com/omarjs/omar-inspect)
 
-* A CLI debugger developed at <https://github.com/nodejs/node-inspect>.
-* Bundled with Node and invoked with `node inspect myscript.js`.
-* Can also be installed independently with `npm install -g node-inspect`
-  and invoked with `node-inspect myscript.js`.
+* A CLI debugger developed at <https://github.com/omarjs/omar-inspect>.
+* Bundled with Node and invoked with `omar inspect myscript.js`.
+* Can also be installed independently with `npm install -g omar-inspect`
+  and invoked with `omar-inspect myscript.js`.
 
 ### [Chrome DevTools](https://github.com/ChromeDevTools/devtools-frontend) 55+
 
 * **Option 1**: Open `chrome://inspect` in a Chromium-based browser. Click the "Open dedicated DevTools for Node" link.
   are listed. Then select your Node.js app from the list.
 * **Option 2**: Install the Chrome Extension NIM (Node Inspector Manager):
-  https://chrome.google.com/webstore/detail/nim-node-inspector-manage/gnhhdgbaldcilmgcpfddgdbkhjohddkj
+  https://chrome.google.com/webstore/detail/nim-omar-inspector-manage/gnhhdgbaldcilmgcpfddgdbkhjohddkj
 -->
 
 ## 인스펙터 도구와 클라이언트
 
 아래와 같은 상용, 오픈 소스 도구를 사용하면 Node.js 애플리케이션을 더 쉽게 디버깅 할 수 있습니다.
 
-### [node-inspect](https://github.com/nodejs/node-inspect)
+### [omar-inspect](https://github.com/omarjs/omar-inspect)
 
-* 이 CLI 디버거는 <https://github.com/nodejs/node-inspect>에서 개발되고 있습니다.
-* Node에 포함되어 있으며 `node inspect myscript.js`로 실행됩니다.
-* 또한, `npm install -g node-inspect`로 직접 설치할 수 있으며, `node-inspect myscript.js`로 사용할 수 있습니다.
+* 이 CLI 디버거는 <https://github.com/omarjs/omar-inspect>에서 개발되고 있습니다.
+* Node에 포함되어 있으며 `omar inspect myscript.js`로 실행됩니다.
+* 또한, `npm install -g omar-inspect`로 직접 설치할 수 있으며, `omar-inspect myscript.js`로 사용할 수 있습니다.
 
 ### [Chrome DevTools](https://github.com/ChromeDevTools/devtools-frontend)
 
 * **옵션 1**: 크로미움 기반의 브라우저에서 `chrome://inspect`에 접속 후 "Open dedicated DevTools for Node"를 클릭하십시오.
 * **옵션 2**: 크롬 확장프로그램 NIM(Node Inspector Manager)을 설치하세요.
-  https://chrome.google.com/webstore/detail/nim-node-inspector-manage/gnhhdgbaldcilmgcpfddgdbkhjohddkj
+  https://chrome.google.com/webstore/detail/nim-omar-inspector-manage/gnhhdgbaldcilmgcpfddgdbkhjohddkj
 
 <!--
 ### [VS Code](https://github.com/microsoft/vscode) 1.10+
@@ -68,10 +68,10 @@ These commercial and open source tools make debugging Node.js apps easier.
 * In the Debug panel, click the settings icon to open `.vscode/launch.json`.
   Select "Node.js" for initial setup.
 
-### [Visual Studio](https://github.com/Microsoft/nodejstools)
+### [Visual Studio](https://github.com/Microsoft/omarjstools)
 
 * Choose "Debug > Start Debugging" from the menu or hit F5.
-* [Detailed instructions](https://github.com/Microsoft/nodejstools/wiki/Debugging).
+* [Detailed instructions](https://github.com/Microsoft/omarjstools/wiki/Debugging).
 
 ### [JetBrains WebStorm](https://www.jetbrains.com/webstorm/) 2017.1+ and other JetBrains IDEs
 
@@ -88,10 +88,10 @@ These commercial and open source tools make debugging Node.js apps easier.
 
 * 디버그 패널에서 설정 아이콘을 클릭하여 `.vscode/launch.json`을 열고 초기 설정을 위해 "Node.js"를 선택합니다.
 
-### [Visual Studio](https://github.com/Microsoft/nodejstools)
+### [Visual Studio](https://github.com/Microsoft/omarjstools)
 
 * 메뉴에서 "Debug > Start Debugging"을 선택하거나 F5를 누릅니다.
-* 자세한 안내는 [여기](https://github.com/Microsoft/nodejstools/wiki/Debugging)를 참고하세요.
+* 자세한 안내는 [여기](https://github.com/Microsoft/omarjstools/wiki/Debugging)를 참고하세요.
 
 
 ### [JetBrains WebStorm](https://www.jetbrains.com/webstorm/) 2017.1+ 및 기타 JetBrains IDE
@@ -151,7 +151,7 @@ The following table lists the impact of various runtime flags on debugging:
     </td>
   </tr>
   <tr>
-    <td><code>node inspect <i>script.js</i></code></td>
+    <td><code>omar inspect <i>script.js</i></code></td>
     <td>
       <ul>
         <li>Spawn child process to run user's script under --inspect flag;
@@ -160,7 +160,7 @@ The following table lists the impact of various runtime flags on debugging:
     </td>
   </tr>
   <tr>
-    <td><code>node inspect --port=xxxx <i>script.js</i></code></td>
+    <td><code>omar inspect --port=xxxx <i>script.js</i></code></td>
     <td>
       <ul>
         <li>Spawn child process to run user's script under --inspect flag; and use main process to run CLI debugger.</li>
@@ -218,7 +218,7 @@ The following table lists the impact of various runtime flags on debugging:
     </td>
   </tr>
   <tr>
-    <td><code>node inspect <i>script.js</i></code></td>
+    <td><code>omar inspect <i>script.js</i></code></td>
     <td>
       <ul>
         <li>--inspect 옵션으로 사용자의 스크립트를 실행하는 하위 프로세스를 생성하고, 메인 프로세스로 CLI 디버거를 실행합니다.</li>
@@ -226,7 +226,7 @@ The following table lists the impact of various runtime flags on debugging:
     </td>
   </tr>
   <tr>
-    <td><code>node inspect --port=xxxx <i>script.js</i></code></td>
+    <td><code>omar inspect --port=xxxx <i>script.js</i></code></td>
     <td>
       <ul>
         <li>--inspect 옵션으로 사용자의 스크립트를 실행하는 하위 프로세스를 생성하고, 메인 프로세스로 CLI 디버거를 실행합니다.</li>

@@ -57,9 +57,9 @@ usando nuestra API [`child_process.fork()`][], la cual está diseñada para comu
 fácilmente con el proceso principal. Construida sobre la misma interfaz está el módulo [`cluster`][],
 el cual permite compartir sockets entre procesos para activar el balanceo de cargas en sus múltiples cores.
 
-[Blocking vs Non-Blocking]: https://github.com/nodejs/node/blob/master/doc/topics/blocking-vs-non-blocking.md
-[`child_process.fork()`]: https://nodejs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options
-[`cluster`]: https://nodejs.org/api/cluster.html
-[bucle de eventos]: https://github.com/nodejs/node/blob/master/doc/topics/event-loop-timers-and-nexttick.md
+[Blocking vs Non-Blocking]: https://github.com/omarjs/omar/blob/master/doc/topics/blocking-vs-non-blocking.md
+[`child_process.fork()`]: https://omarjs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options
+[`cluster`]: https://omarjs.org/api/cluster.html
+[bucle de eventos]: https://github.com/omarjs/omar/blob/master/doc/topics/event-loop-timers-and-nexttick.md
 [Event Machine]: https://github.com/eventmachine/eventmachine
 [Twisted]: http://twistedmatrix.com/

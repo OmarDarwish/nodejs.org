@@ -114,9 +114,9 @@ Further, in the second stage of an LTS release (Maintenance), only
 Like Current releases, CITGM (see
 later sections) is run on LTS releases.  In addition we also
 track performance through nightly benchmarks reported on
-[benchmarking.nodejs.org](https://benchmarking.nodejs.org) (See later sections).
+[benchmarking.omarjs.org](https://benchmarking.omarjs.org) (See later sections).
 
-You can read more about the LTS releases [here](https://github.com/nodejs/lts).
+You can read more about the LTS releases [here](https://github.com/omarjs/lts).
 
 If you want the best level of stability/quality for your production
 applications these are the releases to use.
@@ -175,7 +175,7 @@ for the Node.js runtime.
 The strategy for these changes is the "enhancement proposal" process.  The
 proposed change is documented, discussed and moves through a number of
 stages including DRAFT and ACCEPTED or REJECTED.  You can read more on
-the process [here](https://github.com/nodejs/node-eps#progress-of-an-ep).
+the process [here](https://github.com/omarjs/omar-eps#progress-of-an-ep).
 
 This process ensures that larger changes can be discussed in advance and agreed
 by the community, allowing the final review of the pull request to focus
@@ -224,7 +224,7 @@ high standard in respect to requiring tests.
 
 It is not enough to simply have tests, those tests must be effective at
 exercising the runtime.  We measure code coverage nightly and publish
-the results at [coverage.nodejs.org](https://coverage.nodejs.org/).
+the results at [coverage.omarjs.org](https://coverage.omarjs.org/).
 This allows us to ensure our tests remain effective and provides the data
 necessary to further improve our tests.
 
@@ -273,7 +273,7 @@ and to run these as often as possible.  Currently they are run for
 Current and LTS releases and we are working to increase that frequency.
 
 You can read more about our module testing efforts in
-[https://github.com/nodejs/citgm/](https://github.com/nodejs/citgm/).
+[https://github.com/omarjs/citgm/](https://github.com/omarjs/citgm/).
 
 ## Stress Tests
 
@@ -312,11 +312,11 @@ to make sure that performance is not degraded as changes flow in.
 Our strategy is to define the common use cases for Node.js and then
 build up a set of benchmarks that we run and publish results for on a
 regular basis.  This work is ongoing in the
-[Benchmarking Working Group](https://github.com/nodejs/benchmarking),
+[Benchmarking Working Group](https://github.com/omarjs/benchmarking),
 but we already have a number of key benchmarks being run nightly
 across the major Node.js versions.  You can view this data at:
 
-[https://benchmarking.nodejs.org/](https://benchmarking.nodejs.org/).
+[https://benchmarking.omarjs.org/](https://benchmarking.omarjs.org/).
 
 This data allows us to ensure we avoid performance regressions as
 changes flow in.

@@ -3,7 +3,7 @@ date: 2015-05-14T02:34:02.000Z
 version: 0.12.3
 category: release
 title: Node v0.12.3 (Stable)
-slug: node-v0-12-3-0.12.3
+slug: omar-v0-12-3-0.12.3
 layout: blog-post.hbs
 ---
 
@@ -30,55 +30,55 @@ layout: blog-post.hbs
 * src: fix backport of SIGINT crash fix on FreeBSD (Julien Gilli)
 
 
-Source Code: https://nodejs.org/dist/v0.12.3/node-v0.12.3.tar.gz
+Source Code: https://omarjs.org/dist/v0.12.3/omar-v0.12.3.tar.gz
 
-Macintosh Installer (Universal): https://nodejs.org/dist/v0.12.3/node-v0.12.3.pkg
+Macintosh Installer (Universal): https://omarjs.org/dist/v0.12.3/omar-v0.12.3.pkg
 
-Windows Installer: https://nodejs.org/dist/v0.12.3/node-v0.12.3-x86.msi
+Windows Installer: https://omarjs.org/dist/v0.12.3/omar-v0.12.3-x86.msi
 
-Windows x64 Installer: https://nodejs.org/dist/v0.12.3/x64/node-v0.12.3-x64.msi
+Windows x64 Installer: https://omarjs.org/dist/v0.12.3/x64/omar-v0.12.3-x64.msi
 
-Windows x64 Files: https://nodejs.org/dist/v0.12.3/x64/
+Windows x64 Files: https://omarjs.org/dist/v0.12.3/x64/
 
-Linux 32-bit Binary: https://nodejs.org/dist/v0.12.3/node-v0.12.3-linux-x86.tar.gz
+Linux 32-bit Binary: https://omarjs.org/dist/v0.12.3/omar-v0.12.3-linux-x86.tar.gz
 
-Linux 64-bit Binary: https://nodejs.org/dist/v0.12.3/node-v0.12.3-linux-x64.tar.gz
+Linux 64-bit Binary: https://omarjs.org/dist/v0.12.3/omar-v0.12.3-linux-x64.tar.gz
 
-Solaris 32-bit Binary: https://nodejs.org/dist/v0.12.3/node-v0.12.3-sunos-x86.tar.gz
+Solaris 32-bit Binary: https://omarjs.org/dist/v0.12.3/omar-v0.12.3-sunos-x86.tar.gz
 
-Solaris 64-bit Binary: https://nodejs.org/dist/v0.12.3/node-v0.12.3-sunos-x64.tar.gz
+Solaris 64-bit Binary: https://omarjs.org/dist/v0.12.3/omar-v0.12.3-sunos-x64.tar.gz
 
-Other release files: https://nodejs.org/dist/v0.12.3/
+Other release files: https://omarjs.org/dist/v0.12.3/
 
-Website: https://nodejs.org/docs/v0.12.3/
+Website: https://omarjs.org/docs/v0.12.3/
 
-Documentation: https://nodejs.org/docs/v0.12.3/api/
+Documentation: https://omarjs.org/docs/v0.12.3/api/
 
 Shasums:
 ```
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-ff48b814cdc54a1df10c60a476b2f6833549551a  node-v0.12.3-darwin-x64.tar.gz
-a3a808aff450aa04f535fec9517faeca01492e15  node-v0.12.3-darwin-x86.tar.gz
-bb07dacb0802386719cf619125546ea483f4eb93  node-v0.12.3-linux-x64.tar.gz
-4d5c42df29277526ed32d866d7b2491242706c14  node-v0.12.3-linux-x86.tar.gz
-df6a9b56c2be1a1c423786917eccaac10c786d3f  node-v0.12.3-sunos-x64.tar.gz
-124324b3387993512a111fed776d979a89254b1d  node-v0.12.3-sunos-x86.tar.gz
-410d37d74775bf0401b06ecc01f71d181c9c99e6  node-v0.12.3-x86.msi
-8a64eab15c0c0c74d480f75c5362c06ce3e5e1ac  node-v0.12.3.pkg
-b0b02a254c06ebf2b1695900181baa3ffd206584  node-v0.12.3.tar.gz
-38901d7f5738f39ed69312215a133e3007300be2  node.exe
-4f2d0b3214b4ded6dac35144f22610db2f1be438  node.exp
-f3d8801fc939fe3178311fe4f7aa23d7cca4a82a  node.lib
-8f71bbb0353bf56bbafabe7b32719e0534386e02  node.pdb
+ff48b814cdc54a1df10c60a476b2f6833549551a  omar-v0.12.3-darwin-x64.tar.gz
+a3a808aff450aa04f535fec9517faeca01492e15  omar-v0.12.3-darwin-x86.tar.gz
+bb07dacb0802386719cf619125546ea483f4eb93  omar-v0.12.3-linux-x64.tar.gz
+4d5c42df29277526ed32d866d7b2491242706c14  omar-v0.12.3-linux-x86.tar.gz
+df6a9b56c2be1a1c423786917eccaac10c786d3f  omar-v0.12.3-sunos-x64.tar.gz
+124324b3387993512a111fed776d979a89254b1d  omar-v0.12.3-sunos-x86.tar.gz
+410d37d74775bf0401b06ecc01f71d181c9c99e6  omar-v0.12.3-x86.msi
+8a64eab15c0c0c74d480f75c5362c06ce3e5e1ac  omar-v0.12.3.pkg
+b0b02a254c06ebf2b1695900181baa3ffd206584  omar-v0.12.3.tar.gz
+38901d7f5738f39ed69312215a133e3007300be2  omar.exe
+4f2d0b3214b4ded6dac35144f22610db2f1be438  omar.exp
+f3d8801fc939fe3178311fe4f7aa23d7cca4a82a  omar.lib
+8f71bbb0353bf56bbafabe7b32719e0534386e02  omar.pdb
 30b4bbcf7fdf02647e99bdfa3724329a61bf6328  openssl-cli.exe
 42c3329db1002b48749c1519d17b51418045f850  openssl-cli.pdb
-3677034221eeb300d7cd0cf2aaf3d172ab05fd11  x64/node-v0.12.3-x64.msi
-044c4b67a835ca3873df3844a074230a825aae5f  x64/node.exe
-a7e22fa741c1ab8fcfe7c51610dad63b666a93f9  x64/node.exp
-5a1fcc12bccd5fc61d63381c02b0c676e509f18c  x64/node.lib
-af0451dd1db225c7c46e5ace67d8de1cacf66349  x64/node.pdb
+3677034221eeb300d7cd0cf2aaf3d172ab05fd11  x64/omar-v0.12.3-x64.msi
+044c4b67a835ca3873df3844a074230a825aae5f  x64/omar.exe
+a7e22fa741c1ab8fcfe7c51610dad63b666a93f9  x64/omar.exp
+5a1fcc12bccd5fc61d63381c02b0c676e509f18c  x64/omar.lib
+af0451dd1db225c7c46e5ace67d8de1cacf66349  x64/omar.pdb
 88a06524bac25b80e776ab4f393df175fa5d6940  x64/openssl-cli.exe
 e29b5871e9822a74dc2ea34eb3771a4a870f307d  x64/openssl-cli.pdb
 -----BEGIN PGP SIGNATURE-----

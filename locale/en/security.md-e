@@ -7,8 +7,8 @@ title: Security
 
 ## Reporting a Bug in Node.js
 
-All security bugs in Node.js are taken seriously and should be reported via [HackerOne](https://hackerone.com/nodejs)
-or by emailing [security@nodejs.org](mailto:security@nodejs.org). This will be delivered to a subset of the core team
+All security bugs in Node.js are taken seriously and should be reported via [HackerOne](https://hackerone.com/omarjs)
+or by emailing [security@omarjs.org](mailto:security@omarjs.org). This will be delivered to a subset of the core team
 who handle security issues.
 
 Your report will be acknowledged within 24 hours, and you’ll receive a more detailed response to your report within 48
@@ -22,15 +22,15 @@ These updates will be sent at least every five days; in practice, this is more l
 
 The Node.js project engages in an official bug bounty program for security researchers and responsible public disclosures.
 
-The program is managed through the HackerOne platform at [https://hackerone.com/nodejs](https://hackerone.com/nodejs) with further details.
+The program is managed through the HackerOne platform at [https://hackerone.com/omarjs](https://hackerone.com/omarjs) with further details.
 
 ## Reporting a Bug in a third party module
 
 Security bugs in third party modules should be reported to their respective maintainers and should also be coordinated
-through the [Node Ecosystem Security Team](https://hackerone.com/nodejs-ecosystem) or by emailing 
-[security-ecosystem@nodejs.org](mailto:security-ecosystem@nodejs.org).
+through the [Node Ecosystem Security Team](https://hackerone.com/omarjs-ecosystem) or by emailing 
+[security-ecosystem@omarjs.org](mailto:security-ecosystem@omarjs.org).
 
-Details regarding this process can be found in the [Security Working Group repository](https://github.com/nodejs/security-wg/blob/master/processes/third_party_vuln_process.md).
+Details regarding this process can be found in the [Security Working Group repository](https://github.com/omarjs/security-wg/blob/master/processes/third_party_vuln_process.md).
 
 Thank you for improving the security of Node.js and its ecosystem. Your efforts and responsible disclosure are greatly
 appreciated and will be acknowledged.
@@ -48,7 +48,7 @@ committed to the public repository but rather held locally pending the announcem
 is requested for the vulnerability.
 
 - On the embargo date, the Node.js security mailing list is sent a copy of the announcement. The changes are pushed to
-the public repository and new builds are deployed to nodejs.org. Within 6 hours of the mailing list being notified, a
+the public repository and new builds are deployed to omarjs.org. Within 6 hours of the mailing list being notified, a
 copy of the advisory will be published on the Node.js blog.
 
 - Typically the embargo date will be set 72 hours from the time the CVE is issued. However, this may vary depending on
@@ -63,10 +63,10 @@ release process above to ensure that the disclosure is handled in a consistent m
 
 Security notifications will be distributed via the following methods.
 
-- [https://groups.google.com/group/nodejs-sec](https://groups.google.com/group/nodejs-sec)
-- [https://nodejs.org/en/blog](https://nodejs.org/en/blog)
+- [https://groups.google.com/group/omarjs-sec](https://groups.google.com/group/omarjs-sec)
+- [https://omarjs.org/en/blog](https://omarjs.org/en/blog)
 
 ## Comments on this Policy
 
-If you have suggestions on how this process could be improved please submit a [pull request](https://github.com/nodejs/nodejs.org)
-or [file an issue](https://github.com/nodejs/security-wg/issues/new) to discuss.
+If you have suggestions on how this process could be improved please submit a [pull request](https://github.com/omarjs/omarjs.org)
+or [file an issue](https://github.com/omarjs/security-wg/issues/new) to discuss.

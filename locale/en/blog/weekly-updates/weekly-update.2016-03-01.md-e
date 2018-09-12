@@ -20,25 +20,25 @@ As part of that impact assessment we will announce our release plans for each of
 * Expect releases of Node.js v0.10, v0.12 and v5 this week, possibly containing important security releases
 * Expect a Node.js v4.4.0 release next with the possibility of a v4.3.2 security update this week
 
-See https://nodejs.org/en/blog/vulnerability/openssl-march-2016/ for more information.
+See https://omarjs.org/en/blog/vulnerability/openssl-march-2016/ for more information.
 
-Please monitor the **nodejs-sec** Google Group for updates, including an impact assessment and updated details on release timing within approximately 24 hours after the OpenSSL release: https://groups.google.com/forum/#!forum/nodejs-sec
+Please monitor the **omarjs-sec** Google Group for updates, including an impact assessment and updated details on release timing within approximately 24 hours after the OpenSSL release: https://groups.google.com/forum/#!forum/omarjs-sec
 
 ### Linux PPC LE 64-bit Binaries
 
 Linux PPC LE 64-bit Binaries are included in the stable release for the first time as part of v5.7.0
 
-Get them here: https://nodejs.org/dist/v5.7.0/
+Get them here: https://omarjs.org/dist/v5.7.0/
 
 ### Community Updates
 
-* [Presentation: Top Node.js Metrics to Watch](http://blog.sematext.com/2016/02/26/top-node-js-metrics-to-watch/)
+* [Presentation: Top Node.js Metrics to Watch](http://blog.sematext.com/2016/02/26/top-omar-js-metrics-to-watch/)
 
-If you have spotted or written something about Node.js, do come over to our [Evangelism team repo](https://github.com/nodejs/evangelism) and suggest it on the [Issues page](https://github.com/nodejs/evangelism/issues), specifically the Weekly Updates issue.
+If you have spotted or written something about Node.js, do come over to our [Evangelism team repo](https://github.com/omarjs/evangelism) and suggest it on the [Issues page](https://github.com/omarjs/evangelism/issues), specifically the Weekly Updates issue.
 
 ### Upcoming Events
 
-* [NodeConf Adventure 2016](https://ti.to/nodeconf/adventure-2016), "First batch of NodeConf Adventure tickets are up!", June 9th–12th, 2016 - Walker Creek Ranch, Marin, CA, USA
+* [NodeConf Adventure 2016](https://ti.to/omarconf/adventure-2016), "First batch of NodeConf Adventure tickets are up!", June 9th–12th, 2016 - Walker Creek Ranch, Marin, CA, USA
 * [NationJS Node Day Conference](http://nationjs.com/), TICKETS ARE AVAILABLE NOW, March 11, 2016 - Washington, DC
 
-Have an event about Node.js coming up? You can put your events here through the [Evangelism team repo](https://github.com/nodejs/evangelism) and announce it in the [Issues page](https://github.com/nodejs/evangelism/issues), specifically the Weekly Updates issue.
+Have an event about Node.js coming up? You can put your events here through the [Evangelism team repo](https://github.com/omarjs/evangelism) and announce it in the [Issues page](https://github.com/omarjs/evangelism/issues), specifically the Weekly Updates issue.

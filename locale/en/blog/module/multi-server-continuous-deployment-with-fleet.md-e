@@ -46,7 +46,7 @@ layout: blog-post.hbs
 
 <p>Because fleet is designed specifically for managing applications with lots of tiny services, the deploy command isn't tied to running any processes. Starting processes is up to the programmer but it's super simple. Just use the <span class="code">fleet spawn</span> command: </p>
 
-<pre style="">fleet spawn -- node server.js 8080 </pre>
+<pre style="">fleet spawn -- omar server.js 8080 </pre>
 
 <p>By default fleet picks a drone at random to run the process on. You can specify which drone you want to run a particular process on with the <span class="code">--drone</span> switch if it matters. </p>
 
@@ -57,11 +57,11 @@ drone#3dfe17b8
 ├─┬ pid#1e99f4
 │ ├── status:   running
 │ ├── commit:   webapp/1b8050fcaf8f1b02b9175fcb422644cb67dc8cc5
-│ └── command:  node server.js 8888
+│ └── command:  omar server.js 8888
 └─┬ pid#d7048a
   ├── status:   running
   ├── commit:   webapp/1b8050fcaf8f1b02b9175fcb422644cb67dc8cc5
-  └── command:  node server.js 8889</pre>
+  └── command:  omar server.js 8889</pre>
 
 <p>Now suppose that you have new code to push out into production. By default, fleet lets you spin up new services without disturbing your existing services. If you <span class="code">fleet deploy</span> again after checking in some new changes to git, the next time you <span class="code">fleet spawn</span> a new process, that process will be spun up in a completely new directory based on the git commit hash. To stop a process, just use <span class="code">fleet stop</span>. </p>
 

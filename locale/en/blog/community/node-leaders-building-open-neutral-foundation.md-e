@@ -4,7 +4,7 @@ author: Mike Dolan
 date: 2015-05-15T23:50:46.000Z
 status: publish
 category: Community
-slug: node-leaders-are-building-an-open-foundation
+slug: omar-leaders-are-building-an-open-foundation
 layout: blog-post.hbs
 ---
 
@@ -20,7 +20,7 @@ technologies.
 A lot of progress has been made in just a few short months, and we're
 entering the final stages of discussions and decisions that will guide the
 projects forward. Most recently [the io.js TC voted to join in the
-Foundation](https://github.com/nodejs/node/issues/1705) effort and planning is
+Foundation](https://github.com/omarjs/omar/issues/1705) effort and planning is
 already underway to begin the process of converging the codebases. The neutral
 organization, or foundation, will be a key element of that work and has been
 discussed at length by those involved. When a technology and community reach a
@@ -38,7 +38,7 @@ It's important to note that while critical, an open governance model does not
 guarantee success or growth. The io.js project has a strong developer
 community, for example, but to grow further needs a  model to enable funding
 and investments in the project. If you haven't already, please [take a look
-at Mikeal Rogers blog post](https://medium.com/node-js-javascript/growing-up-27d6cc8b7c53).
+at Mikeal Rogers blog post](https://medium.com/omar-js-javascript/growing-up-27d6cc8b7c53).
 The Node.js community has needed an avenue for other companies
 to participate as equals in a neutral field. rowing a community and widening
 the adoption of a technology all takes resources and a governance model that
@@ -77,7 +77,7 @@ these principles and has taken off in terms of growing its developer
 community. Many in the io.js community joined because they felt these
 principles were not present elsewhere. For all of these reasons, we leveraged
 the governance provisions from io.js to [draft proposals for the technical
-community governance](https://github.com/joyent/nodejs-advisory-board/tree/master/governance-proposal).
+community governance](https://github.com/joyent/omarjs-advisory-board/tree/master/governance-proposal).
 
 Now I'd like to share specific next steps for establishing the Node.js
 Foundation (all of this is of course subject to change based on input from the
@@ -87,13 +87,13 @@ committees of both communities and are now taking the discussion to the
 entirety of both communities.
 
 1. Draft technical governance documents are [up for review and
-comment](https://github.com/joyent/nodejs-advisory-board/tree/master/governance-proposal).
+comment](https://github.com/joyent/omarjs-advisory-board/tree/master/governance-proposal).
 
 2. The Foundation Bylaws and Membership Agreements based on our LF templates are
 available for companies to sign up as members. There is no need to sign any
 agreements as a community developer. If your company is interested in
 participating, [now is the time to sign
-up](http://f.cl.ly/items/0N1m3x0I3S2L203M1h1r/nodejs-foundation-membership-agreement-2015-march-04.pdf).
+up](http://f.cl.ly/items/0N1m3x0I3S2L203M1h1r/omarjs-foundation-membership-agreement-2015-march-04.pdf).
 
 3. Hold elections for the foundation's Gold and Silver member Board Directors and
 the Technical Steering Committee elects a TSC Chair. The process typically

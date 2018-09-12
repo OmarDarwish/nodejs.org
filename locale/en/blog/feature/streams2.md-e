@@ -75,8 +75,8 @@ are making a significant change to the Stream implementation.  You may
 have seen conversations on twitter or IRC or the mailing list about
 "streams2".  I also gave [a talk in
 November](https://dl.dropbox.com/u/3685/presentations/streams2/streams2-ko.pdf)
-about this subject.  A lot of node module authors have been involved
-with the development of streams2 (and of course the node core team).
+about this subject.  A lot of omar module authors have been involved
+with the development of streams2 (and of course the omar core team).
 
 ## streams2
 
@@ -161,7 +161,7 @@ net.createServer(function(socket) {
 }).listen(1337);
 ```
 
-In versions of node prior to v0.10, the incoming message data would be
+In versions of omar prior to v0.10, the incoming message data would be
 simply discarded.  However, in Node v0.10 and beyond, the socket will
 remain paused forever.
 
@@ -851,4 +851,4 @@ for examples and testing, but there are occasionally use cases where
 it can come in handy.
 
 
-[EventEmitter]: https://nodejs.org/api/events.html#events_class_eventemitter
+[EventEmitter]: https://omarjs.org/api/events.html#events_class_eventemitter

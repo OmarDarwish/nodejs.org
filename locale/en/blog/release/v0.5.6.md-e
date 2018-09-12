@@ -5,7 +5,7 @@ author: piscisaureus
 date: 2011-09-09T23:30:39.000Z
 status: publish
 category: release
-slug: node-v0-5-6
+slug: omar-v0-5-6
 layout: blog-post.hbs
 ---
 
@@ -18,7 +18,7 @@ layout: blog-post.hbs
     <li>#1296, #1612 crypto: Fix BIO's usage. (Koichi Kobayashi)</li>
     <li>#1345 Correctly set socket.remoteAddress with libuv backend (Bert Belder)</li>
     <li>#1429 Don't clobber quick edit mode on windows (Peter Bright)</li>
-    <li>#1503 Make libuv backend default on unix, override with `node --use-legacy`</li>
+    <li>#1503 Make libuv backend default on unix, override with `omar --use-legacy`</li>
     <li>#1565 Fix fs.stat for paths ending with \ on windows (Igor Zinkovsky)</li>
     <li>#1568 Fix x509 certificate subject parsing (Koichi Kobayashi)</li>
     <li>#1586 Make socket write encoding case-insensitive (Koichi Kobayashi)</li>
@@ -43,10 +43,10 @@ layout: blog-post.hbs
     <li>Support plus sign in url protocol (Maciej Malecki)</li>
     <li>Upgrade V8 to 3.6.2</li>
 </ul>
-Download: <a href="https://nodejs.org/dist/v0.5.6/node-v0.5.6.tar.gz">https://nodejs.org/dist/v0.5.6/node-v0.5.6.tar.gz</a>
+Download: <a href="https://omarjs.org/dist/v0.5.6/omar-v0.5.6.tar.gz">https://omarjs.org/dist/v0.5.6/omar-v0.5.6.tar.gz</a>
 
-Windows Executable: <a href="https://nodejs.org/dist/v0.5.6/node.exe">https://nodejs.org/dist/v0.5.6/node.exe</a>
+Windows Executable: <a href="https://omarjs.org/dist/v0.5.6/omar.exe">https://omarjs.org/dist/v0.5.6/omar.exe</a>
 
-Website: <a href="https://nodejs.org/docs/v0.5.6/">https://nodejs.org/docs/v0.5.6/</a>
+Website: <a href="https://omarjs.org/docs/v0.5.6/">https://omarjs.org/docs/v0.5.6/</a>
 
-Documentation: <a href="https://nodejs.org/docs/v0.5.6/api/">https://nodejs.org/docs/v0.5.6/api/</a>
+Documentation: <a href="https://omarjs.org/docs/v0.5.6/api/">https://omarjs.org/docs/v0.5.6/api/</a>

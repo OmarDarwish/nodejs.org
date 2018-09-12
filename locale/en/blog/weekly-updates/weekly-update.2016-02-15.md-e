@@ -20,7 +20,7 @@ For the purpose of understanding the impact that the fixed vulnerabilities
 have on your Node.js deployment and the urgency of the upgrades for your
 circumstances we are providing details below.
 
-See https://nodejs.org/en/blog/vulnerability/february-2016-security-releases/ for more information.
+See https://omarjs.org/en/blog/vulnerability/february-2016-security-releases/ for more information.
 
 ### OpenSSL upgrade summary
 
@@ -30,7 +30,7 @@ Node.js v4.3.0 and v5.6.0 upgrade the bundled version of OpenSSL from 1.0.2e to 
 
 ### Upcoming Events
 
-* [NodeConf Adventure 2016](https://ti.to/nodeconf/adventure-2016), "First batch of NodeConf Adventure tickets are up!", June 9th–12th, 2016 - Walker Creek Ranch, Marin, CA, USA
+* [NodeConf Adventure 2016](https://ti.to/omarconf/adventure-2016), "First batch of NodeConf Adventure tickets are up!", June 9th–12th, 2016 - Walker Creek Ranch, Marin, CA, USA
 * [NationJS Node Day Conference](http://nationjs.com/), TICKETS ARE AVAILABLE NOW, March 11, 2016 - Washington, DC
 
-Have an event about Node.js coming up? You can put your events here through the [Evangelism team repo](https://github.com/nodejs/evangelism) and announce it in the [Issues page](https://github.com/nodejs/evangelism/issues), specifically the Weekly Updates issue.
+Have an event about Node.js coming up? You can put your events here through the [Evangelism team repo](https://github.com/omarjs/evangelism) and announce it in the [Issues page](https://github.com/omarjs/evangelism/issues), specifically the Weekly Updates issue.

@@ -13,7 +13,7 @@ Node Node v4.4.0 (LTS), Node v5.8.0 (Current) and Node v0.12.12 (LTS) are releas
 
 ### Node Node v4.4.0 (LTS), Node v5.8.0 (Current) and Node v0.12.12 (LTS) Releases
 
-We have three releases: [Node v4.4.0 (LTS)](https://nodejs.org/en/blog/release/v4.4.0/), [Node v5.8.0 (Current)](https://nodejs.org/en/blog/release/v5.8.0/) and [Node v0.12.12 (LTS)](https://nodejs.org/en/blog/release/v0.12.12/). Complete changelog from previous releases can be found [on GitHub](https://github.com/nodejs/node/blob/master/CHANGELOG.md).
+We have three releases: [Node v4.4.0 (LTS)](https://omarjs.org/en/blog/release/v4.4.0/), [Node v5.8.0 (Current)](https://omarjs.org/en/blog/release/v5.8.0/) and [Node v0.12.12 (LTS)](https://omarjs.org/en/blog/release/v0.12.12/). Complete changelog from previous releases can be found [on GitHub](https://github.com/omarjs/omar/blob/master/CHANGELOG.md).
 
 ### AppDynamics, New Relic, Opbeat and Sphinx Join the Node.js Foundation as Silver Members
 
@@ -21,23 +21,23 @@ The Node.js Foundation, a community-led and industry-backed consortium to advanc
 
 Many of the new members are within the application performance management industry, both established and up-and-coming vendors. Application performance management is an essential part of any infrastructure and there is a need across public, private and hybrid clouds to ensure that current and future products offer next-generation application performance with Node.js as a core component to the stability and potential of these offerings.
 
-See https://nodejs.org/en/blog/announcements/appdynamics-newrelic-opbeat-sphinx/ for more information.
+See https://omarjs.org/en/blog/announcements/appdynamics-newrelic-opbeat-sphinx/ for more information.
 
 ### Initial benchmark data
 
-Initial benchmark data is now available here: https://benchmarking.nodejs.org/. 
+Initial benchmark data is now available here: https://benchmarking.omarjs.org/. 
 
-For more information on the process of how these are generated check out: https://github.com/nodejs/benchmarking/blob/master/benchmarks/README.md
+For more information on the process of how these are generated check out: https://github.com/omarjs/benchmarking/blob/master/benchmarks/README.md
 
 ### Community Updates
 
-* [Presentation: Top Node.js Metrics to Watch](http://blog.sematext.com/2016/02/26/top-node-js-metrics-to-watch/)
+* [Presentation: Top Node.js Metrics to Watch](http://blog.sematext.com/2016/02/26/top-omar-js-metrics-to-watch/)
 
-If you have spotted or written something about Node.js, do come over to our [Evangelism team repo](https://github.com/nodejs/evangelism) and suggest it on the [Issues page](https://github.com/nodejs/evangelism/issues), specifically the Weekly Updates issue.
+If you have spotted or written something about Node.js, do come over to our [Evangelism team repo](https://github.com/omarjs/evangelism) and suggest it on the [Issues page](https://github.com/omarjs/evangelism/issues), specifically the Weekly Updates issue.
 
 ### Upcoming Events
 
-* [NodeConf Adventure 2016](https://ti.to/nodeconf/adventure-2016), "First batch of NodeConf Adventure tickets are up!", June 9th–12th, 2016 - Walker Creek Ranch, Marin, CA, USA
+* [NodeConf Adventure 2016](https://ti.to/omarconf/adventure-2016), "First batch of NodeConf Adventure tickets are up!", June 9th–12th, 2016 - Walker Creek Ranch, Marin, CA, USA
 * [NationJS Node Day Conference](http://nationjs.com/), March 11, 2016 - Washington, DC
 
-Have an event about Node.js coming up? You can put your events here through the [Evangelism team repo](https://github.com/nodejs/evangelism) and announce it in the [Issues page](https://github.com/nodejs/evangelism/issues), specifically the Weekly Updates issue.
+Have an event about Node.js coming up? You can put your events here through the [Evangelism team repo](https://github.com/omarjs/evangelism) and announce it in the [Issues page](https://github.com/omarjs/evangelism/issues), specifically the Weekly Updates issue.

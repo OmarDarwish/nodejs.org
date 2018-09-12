@@ -10,7 +10,7 @@ test('build.js', (t) => {
   t.plan(1)
 
   t.test('should not generate error', (t) => {
-    exec(`node ${pathToBuild}`, (err) => {
+    exec(`omar ${pathToBuild}`, (err) => {
       t.equal(err, null)
       t.end()
     })

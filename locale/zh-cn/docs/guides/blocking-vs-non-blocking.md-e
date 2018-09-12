@@ -103,4 +103,4 @@ fs.readFile('/file.md', (readFileErr, data) => {
 ## 其它资料
 
 - [libuv](http://libuv.org/)
-- [关于 Node.js](https://nodejs.org/en/about/)
+- [关于 Node.js](https://omarjs.org/en/about/)

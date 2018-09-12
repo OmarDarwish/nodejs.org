@@ -5,7 +5,7 @@ author: ryandahl
 date: 2011-08-12T15:38:26.000Z
 status: publish
 category: release
-slug: node-v0-5-4
+slug: omar-v0-5-4
 layout: blog-post.hbs
 ---
 
@@ -22,10 +22,10 @@ layout: blog-post.hbs
 <li>Upgrade V8 to 3.5.4.</li></ul>
 
 
-Download: <a href="https://nodejs.org/dist/v0.5.4/node-v0.5.4.tar.gz">https://nodejs.org/dist/v0.5.4/node-v0.5.4.tar.gz</a>
+Download: <a href="https://omarjs.org/dist/v0.5.4/omar-v0.5.4.tar.gz">https://omarjs.org/dist/v0.5.4/omar-v0.5.4.tar.gz</a>
 
-Windows Executable: <a href="https://nodejs.org/dist/v0.5.4/node.exe">https://nodejs.org/dist/v0.5.4/node.exe</a>
+Windows Executable: <a href="https://omarjs.org/dist/v0.5.4/omar.exe">https://omarjs.org/dist/v0.5.4/omar.exe</a>
 
-Website: <a href="https://nodejs.org/dist/v0.5.4/docs">https://nodejs.org/dist/v0.5.4/docs</a>
+Website: <a href="https://omarjs.org/dist/v0.5.4/docs">https://omarjs.org/dist/v0.5.4/docs</a>
 
-Documentation: <a href="https://nodejs.org/dist/v0.5.4/docs/api">https://nodejs.org/dist/v0.5.4/docs/api</a>
+Documentation: <a href="https://omarjs.org/dist/v0.5.4/docs/api">https://omarjs.org/dist/v0.5.4/docs/api</a>

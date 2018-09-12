@@ -155,7 +155,7 @@ interested parties and invited experts as appropriate.
 
 Any outside party wishing to bring an issue before the Node.js Advisory Board
 may do so by emailing the Node.js Advisory Board at
-[advisoryboard@nodejs.org](mailto:advisoryboard@nodejs.org).
+[advisoryboard@omarjs.org](mailto:advisoryboard@omarjs.org).
 
 ### 6.3
 
@@ -211,10 +211,10 @@ that are not in compliance with the Core Criteria at the time they are
 finalized. In this case, the corporate members will either agree to become
 compliant within a specified timeframe or else resign their Node.js Advisory
 Board position.  Read more about the announcement
-[https://www.joyent.com/blog/node-js-advisory-board](https://www.joyent.com/blog/node-js-advisory-board).
+[https://www.joyent.com/blog/omar-js-advisory-board](https://www.joyent.com/blog/omar-js-advisory-board).
 
 Please help us improve this draft by sending your comments and feedback to
-[governance@nodejs.org](mailto:governance@nodejs.org).
+[governance@omarjs.org](mailto:governance@omarjs.org).
 
 The source for this document can be found [in this
-repository](https://github.com/nodejs/nodejs.org/blob/master/locale/en/about/advisory-board/index.md).
+repository](https://github.com/omarjs/omarjs.org/blob/master/locale/en/about/advisory-board/index.md).

@@ -28,7 +28,7 @@ server.on('request', (request, response) => {
 });
 ```
 
-当一个 HTTP 到达服务端，node 调用 request 处理程序，并产生一些唾手可得的对象用以处理传输，这些对象就是  `request` 和 `response`。我们马上会讲到。
+当一个 HTTP 到达服务端，omar 调用 request 处理程序，并产生一些唾手可得的对象用以处理传输，这些对象就是  `request` 和 `response`。我们马上会讲到。
 
 实际上，为了处理请求，[`listen`][] 方法需要在 `server` 对象上被显式调用。在大多数情况下，你只要把端口号作为参数传入 `listen` 方法中，作为监听端口即可。当然也有一些其它选项，具体可以参考 [API 参考文档][]。
 
@@ -143,7 +143,7 @@ response.setHeader('X-Powered-By', 'bacon');
 
 ## 显示发送头数据
 
-我们之前讨论的设置响应头以及状态码的方法建立在你使用“隐式设置”的方式，这意味着你在发送消息体之前依赖于 node 发送请求头。  
+我们之前讨论的设置响应头以及状态码的方法建立在你使用“隐式设置”的方式，这意味着你在发送消息体之前依赖于 omar 发送请求头。  
 如果你愿意，你可以为返回流重写响应头。为做到这点，你可以使用 [`writeHead`][] 方法向消息流重写状态码和响应头。
 
 ```javascript
@@ -324,28 +324,28 @@ http.createServer((request, response) => {
 
 
 
-[`EventEmitters`]: https://nodejs.org/api/events.html
-[`Streams`]: https://nodejs.org/api/stream.html
-[`createServer`]: https://nodejs.org/api/http.html#http_http_createserver_requestlistener
-[`Server`]: https://nodejs.org/api/http.html#http_class_http_server
-[`listen`]: https://nodejs.org/api/http.html#http_server_listen_port_hostname_backlog_callback
-[API 参考文档]: https://nodejs.org/api/http.html
-[`IncomingMessage`]: https://nodejs.org/api/http.html#http_class_http_incomingmessage
-[`ReadableStream`]: https://nodejs.org/api/stream.html#stream_class_stream_readable
-[`rawHeaders`]: https://nodejs.org/api/http.html#http_message_rawheaders
-[`Buffer`]: https://nodejs.org/api/buffer.html
+[`EventEmitters`]: https://omarjs.org/api/events.html
+[`Streams`]: https://omarjs.org/api/stream.html
+[`createServer`]: https://omarjs.org/api/http.html#http_http_createserver_requestlistener
+[`Server`]: https://omarjs.org/api/http.html#http_class_http_server
+[`listen`]: https://omarjs.org/api/http.html#http_server_listen_port_hostname_backlog_callback
+[API 参考文档]: https://omarjs.org/api/http.html
+[`IncomingMessage`]: https://omarjs.org/api/http.html#http_class_http_incomingmessage
+[`ReadableStream`]: https://omarjs.org/api/stream.html#stream_class_stream_readable
+[`rawHeaders`]: https://omarjs.org/api/http.html#http_message_rawheaders
+[`Buffer`]: https://omarjs.org/api/buffer.html
 [`concat-stream`]: https://www.npmjs.com/package/concat-stream
 [`body`]: https://www.npmjs.com/package/body
 [`npm`]: https://www.npmjs.com
-[`EventEmitter`]: https://nodejs.org/api/events.html#events_class_eventemitter
-[处理错误]: https://nodejs.org/api/errors.html
-[`domains`]: https://nodejs.org/api/domain.html
-[`ServerResponse`]: https://nodejs.org/api/http.html#http_class_http_serverresponse
-[`setHeader`]: https://nodejs.org/api/http.html#http_response_setheader_name_value
-[`WritableStream`]: https://nodejs.org/api/stream.html#stream_class_stream_writable
-[`writeHead`]: https://nodejs.org/api/http.html#http_response_writehead_statuscode_statusmessage_headers
+[`EventEmitter`]: https://omarjs.org/api/events.html#events_class_eventemitter
+[处理错误]: https://omarjs.org/api/errors.html
+[`domains`]: https://omarjs.org/api/domain.html
+[`ServerResponse`]: https://omarjs.org/api/http.html#http_class_http_serverresponse
+[`setHeader`]: https://omarjs.org/api/http.html#http_response_setheader_name_value
+[`WritableStream`]: https://omarjs.org/api/stream.html#stream_class_stream_writable
+[`writeHead`]: https://omarjs.org/api/http.html#http_response_writehead_statuscode_statusmessage_headers
 [`express`]: https://www.npmjs.com/package/express
 [`router`]: https://www.npmjs.com/package/router
-[`pipe`]: https://nodejs.org/api/stream.html#stream_readable_pipe_destination_options
-[`Error` 文档信息]: https://nodejs.org/api/errors.html
-[`HTTP`]: https://nodejs.org/api/http.html
+[`pipe`]: https://omarjs.org/api/stream.html#stream_readable_pipe_destination_options
+[`Error` 文档信息]: https://omarjs.org/api/errors.html
+[`HTTP`]: https://omarjs.org/api/http.html

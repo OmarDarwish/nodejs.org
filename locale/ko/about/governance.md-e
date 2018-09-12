@@ -37,19 +37,19 @@ experience with the management of the project. Membership is
 expected to evolve over time according to the needs of the project.
 
 For the current list of TSC members, see the project
-[README.md](https://github.com/nodejs/node/blob/master/README.md#tsc-technical-steering-committee).
+[README.md](https://github.com/omarjs/omar/blob/master/README.md#tsc-technical-steering-committee).
 -->
 최초의 TSC 멤버십 초대는 활발한 기여자나 프로젝트 관리에 충분한 경험을 가진 사람들에게 주어졌습니다.
 멤버십은 프로젝트의 요구사항에 따라 발전될 것입니다.
 
 현재 TSC 회원 목록은 프로젝트
-[README.md](https://github.com/nodejs/node/blob/master/README.md#tsc-technical-steering-committee)에서
+[README.md](https://github.com/omarjs/omar/blob/master/README.md#tsc-technical-steering-committee)에서
 볼 수 있습니다.
 
 <!--
 ## Collaborators
 
-The [nodejs/node](https://github.com/nodejs/node) GitHub repository is
+The [omarjs/omar](https://github.com/omarjs/omar) GitHub repository is
 maintained by the TSC and additional Collaborators who are added by the
 TSC on an ongoing basis.
 
@@ -61,7 +61,7 @@ Collaborators is discussed during the weekly TSC meeting.
 ## 협업자
 
 TSC와 TSC가 지속적으로 추가한 협업자들이
-[nodejs/node](https://github.com/nodejs/node) GitHub 저장소를 관리하고 있습니다.
+[omarjs/omar](https://github.com/omarjs/omar) GitHub 저장소를 관리하고 있습니다.
 
 중요하고 가치 있는 기여를 하는 개인이 협업자가 되고 프로젝트의 커밋-접근 권한을 받습니다. 이러한 개인은
 TSC가 인정하고 주간 TSC 회의에서 협업자로 추가하는 것을 논의합니다.
@@ -71,7 +71,7 @@ _Note:_ If you make a significant contribution and are not considered
 for commit-access, log an issue or contact a TSC member directly and it
 will be brought up in the next TSC meeting.
 
-Modifications of the contents of the nodejs/node repository are made on
+Modifications of the contents of the omarjs/omar repository are made on
 a collaborative basis. Anybody with a GitHub account may propose a
 modification via pull request and it will be considered by the project
 Collaborators. All pull requests must be reviewed and accepted by a
@@ -86,7 +86,7 @@ on the consensus model used for governance.
 _Note:_ 중요한 기여를 했음에도 커밋 접근 권한을 얻지 못한다면 이슈를 남기거나 TSC 멤버에게
 직접 연락을 취하면 다음 TSC 회의 때 다루게 될 것입니다.
 
-nodejs/node 저장소 내용의 수정은 협업을 통해서 이뤄집니다. GitHub 계정을 가진 누구나 풀 리퀘스트로
+omarjs/omar 저장소 내용의 수정은 협업을 통해서 이뤄집니다. GitHub 계정을 가진 누구나 풀 리퀘스트로
 수정을 제안할 수 있고 프로젝트 협업자가 이를 검토할 것입니다. 모든 풀 리퀘스트는 반드시 리뷰를
 받아야 하고 변경사항에 대한 전체 책임을 지고 상당한 전문성을 가진 협업자가 이를 받아들일 것입니다.
 기존의 협업자가 제안한 풀 리퀘스트는 다른 협업자가 승인해야 합니다. 다른 협업자가 관여해서
@@ -101,21 +101,21 @@ request or issue. The TSC should serve as the final arbiter where
 required.
 
 For the current list of Collaborators, see the project
-[README.md](https://github.com/nodejs/node/blob/master/README.md#current-project-team-members).
+[README.md](https://github.com/omarjs/omar/blob/master/README.md#current-project-team-members).
 
 A guide for Collaborators is maintained in
-[COLLABORATOR_GUIDE.md](https://github.com/nodejs/node/blob/master/COLLABORATOR_GUIDE.md).
+[COLLABORATOR_GUIDE.md](https://github.com/omarjs/omar/blob/master/COLLABORATOR_GUIDE.md).
 -->
 협업자는 TSC에서 논의하려고 풀 리퀘스트나 이슈에 ***tsc-agenda*** 태그를 할당함으로써 중요하거나
 논쟁이 되는 수정사항이나 합의점을 찾지 못한 수정사항을 개선하려고 할 수도 있습니다.
 TSC는 필요한 경우 최종 중재자가 되어야 합니다.
 
 현재 협업자 목록은 프로젝트
-[README.md](https://github.com/nodejs/node/blob/master/README.md#current-project-team-members)에서
+[README.md](https://github.com/omarjs/omar/blob/master/README.md#current-project-team-members)에서
 볼 수 있습니다.
 
 협업자 가이드는
-[COLLABORATOR_GUIDE.md](https://github.com/nodejs/node/blob/master/COLLABORATOR_GUIDE.md)에서
+[COLLABORATOR_GUIDE.md](https://github.com/omarjs/omar/blob/master/COLLABORATOR_GUIDE.md)에서
 관리되어 있습니다.
 
 <!--
@@ -210,7 +210,7 @@ cannot veto or remove items.
 The TSC may invite persons or representatives from certain projects to
 participate in a non-voting capacity. These invitees currently are:
 
-* A representative from [build](https://github.com/node-forward/build)
+* A representative from [build](https://github.com/omar-forward/build)
   chosen by that project.
 
 The moderator is responsible for summarizing the discussion of each
@@ -218,7 +218,7 @@ agenda item and sending it as a pull request after the meeting.
 -->
 TSC는 특정 프로젝트의 사람들이나 대표자가 투표권 없이 회의에 참여하도록 초대할 수 있습니다. 현재 이렇게 초대된 사람은 다음과 같습니다.
 
-* [build](https://github.com/node-forward/build) 프로젝트에서 선택된 대표자
+* [build](https://github.com/omar-forward/build) 프로젝트에서 선택된 대표자
 
 중재자는 각 의제를 논의한 내용을 요약하고 미팅 후에 풀 리퀘스트로 보낼 책임이 있습니다.
 

@@ -14,11 +14,11 @@ Node.js 0.12.x と iojsの旧リリースラインは、Node.js 4.0.0 からリ�
     最新のリリースバージョン用ブランチをお探しですか？
 
     <ul class="list-divider-pipe">
-        <li><a href="https://nodejs.org/dist/latest-v8.x/">Node.js 8.x</a></li>
-        <li><a href="https://nodejs.org/dist/latest-v6.x/">Node.js 6.x</a></li>
-        <li><a href="https://nodejs.org/dist/latest-v5.x/">Node.js 5.x</a></li>
-        <li><a href="https://nodejs.org/dist/latest-v0.12.x/">Node.js 0.12.x</a></li>
-        <li><a href="https://nodejs.org/dist/latest-v0.10.x/">Node.js 0.10.x</a></li>
-        <li><a href="https://nodejs.org/dist/">全てのバージョン</a></li>
+        <li><a href="https://omarjs.org/dist/latest-v8.x/">Node.js 8.x</a></li>
+        <li><a href="https://omarjs.org/dist/latest-v6.x/">Node.js 6.x</a></li>
+        <li><a href="https://omarjs.org/dist/latest-v5.x/">Node.js 5.x</a></li>
+        <li><a href="https://omarjs.org/dist/latest-v0.12.x/">Node.js 0.12.x</a></li>
+        <li><a href="https://omarjs.org/dist/latest-v0.10.x/">Node.js 0.10.x</a></li>
+        <li><a href="https://omarjs.org/dist/">全てのバージョン</a></li>
     </ul>
 </div>

@@ -38,7 +38,7 @@ Node.js. This list only scratches the surface, but these are a few of the unsung
 contributors that deserve some attention:
 
 Node.js wanted to have a [living breathing
-site](https://github.com/joyent/node-website), one that could attract our
+site](https://github.com/joyent/omar-website), one that could attract our
 community and be the canonical source of documentation and tutorials for
 Node.js. Leading the charge has been [Robert
 Kowalski](https://github.com/robertkowalski) and [Wyatt
@@ -78,7 +78,7 @@ with all our tests passing and on all of our supported platforms. This was the
 first Node.js release ever to have that feature. He has also been working
 tirelessly to iterate on the process by which the team manages Node.js. Case in
 point is the excellent
-[documentation](https://nodejs.org/documentation/workflow/) he's put together
+[documentation](https://omarjs.org/documentation/workflow/) he's put together
 describing how to manage the workflow of developing and contributing to the
 project.
 

@@ -1,6 +1,6 @@
 ---
 title: Node v0.8.20 (Stable)
-slug: node-v0-8-20-stable
+slug: omar-v0-8-20-stable
 category: release
 date: 2013-02-15T19:21:42.000Z
 version: 0.8.20
@@ -18,48 +18,48 @@ layout: blog-post.hbs
 * http: protect against response splitting attacks (Bert Belder)
 
 
-Source Code: https://nodejs.org/dist/v0.8.20/node-v0.8.20.tar.gz
+Source Code: https://omarjs.org/dist/v0.8.20/omar-v0.8.20.tar.gz
 
-Macintosh Installer (Universal): https://nodejs.org/dist/v0.8.20/node-v0.8.20.pkg
+Macintosh Installer (Universal): https://omarjs.org/dist/v0.8.20/omar-v0.8.20.pkg
 
-Windows Installer: https://nodejs.org/dist/v0.8.20/node-v0.8.20-x86.msi
+Windows Installer: https://omarjs.org/dist/v0.8.20/omar-v0.8.20-x86.msi
 
-Windows x64 Installer: https://nodejs.org/dist/v0.8.20/x64/node-v0.8.20-x64.msi
+Windows x64 Installer: https://omarjs.org/dist/v0.8.20/x64/omar-v0.8.20-x64.msi
 
-Windows x64 Files: https://nodejs.org/dist/v0.8.20/x64/
+Windows x64 Files: https://omarjs.org/dist/v0.8.20/x64/
 
-Linux 32-bit Binary: https://nodejs.org/dist/v0.8.20/node-v0.8.20-linux-x86.tar.gz
+Linux 32-bit Binary: https://omarjs.org/dist/v0.8.20/omar-v0.8.20-linux-x86.tar.gz
 
-Linux 64-bit Binary: https://nodejs.org/dist/v0.8.20/node-v0.8.20-linux-x64.tar.gz
+Linux 64-bit Binary: https://omarjs.org/dist/v0.8.20/omar-v0.8.20-linux-x64.tar.gz
 
-Solaris 32-bit Binary: https://nodejs.org/dist/v0.8.20/node-v0.8.20-sunos-x86.tar.gz
+Solaris 32-bit Binary: https://omarjs.org/dist/v0.8.20/omar-v0.8.20-sunos-x86.tar.gz
 
-Solaris 64-bit Binary: https://nodejs.org/dist/v0.8.20/node-v0.8.20-sunos-x64.tar.gz
+Solaris 64-bit Binary: https://omarjs.org/dist/v0.8.20/omar-v0.8.20-sunos-x64.tar.gz
 
-Other release files: https://nodejs.org/dist/v0.8.20/
+Other release files: https://omarjs.org/dist/v0.8.20/
 
-Website: https://nodejs.org/docs/v0.8.20/
+Website: https://omarjs.org/docs/v0.8.20/
 
-Documentation: https://nodejs.org/docs/v0.8.20/api/
+Documentation: https://omarjs.org/docs/v0.8.20/api/
 
 Shasums:
 ```
-2b87bf077022b8fa1cbcec10ea3866574fed2b75  node-v0.8.20-darwin-x64.tar.gz
-42023ffbdbf36ef69250bd750f112e684eb97008  node-v0.8.20-darwin-x86.tar.gz
-93480cbc67f2c757879228434bce1fd765db7df8  node-v0.8.20-linux-x64.tar.gz
-7fedae5ce4b366d5dcaa7f2e770b3ff739648a51  node-v0.8.20-linux-x86.tar.gz
-fd66ea1bfbe5c8fe8df5ba8cc79cd3fab6e753ac  node-v0.8.20-sunos-x64.tar.gz
-ca6ad9aa92330358f6201191347451ab42fe12cf  node-v0.8.20-sunos-x86.tar.gz
-200ff5e5083df2a6bb4552e673d81b498e9812f0  node-v0.8.20-x86.msi
-54440b1f525da0126b434440ee6433c2b96959ae  node-v0.8.20.pkg
-b780f58f0e3bc43d2380d4a935f2b45350783b37  node-v0.8.20.tar.gz
-8e13b125c3572a1cb46364b3241405cdf7af1a82  node.exe
-f67ea64d6686207dbacb9bb8feacce3ac8899ec8  node.exp
-c338212caf48d945e8e8049c2a0c30e38e8730d6  node.lib
-019b24c60cdb03f9d8209290e7af90e8565999e7  node.pdb
-67fff498c5271033073a3ca9fc01178b5f5c309a  x64/node-v0.8.20-x64.msi
-6ecab177a47ff5c74397799b329c2359b40c7d1f  x64/node.exe
-bcd51345c05a28be5db3553fc578aa3dd52fc97e  x64/node.exp
-825f2ba0bb9d7bd170adef89009b84ee147754e5  x64/node.lib
-50c4cc483cc4b675966c7ec524afacb59ff99164  x64/node.pdb
+2b87bf077022b8fa1cbcec10ea3866574fed2b75  omar-v0.8.20-darwin-x64.tar.gz
+42023ffbdbf36ef69250bd750f112e684eb97008  omar-v0.8.20-darwin-x86.tar.gz
+93480cbc67f2c757879228434bce1fd765db7df8  omar-v0.8.20-linux-x64.tar.gz
+7fedae5ce4b366d5dcaa7f2e770b3ff739648a51  omar-v0.8.20-linux-x86.tar.gz
+fd66ea1bfbe5c8fe8df5ba8cc79cd3fab6e753ac  omar-v0.8.20-sunos-x64.tar.gz
+ca6ad9aa92330358f6201191347451ab42fe12cf  omar-v0.8.20-sunos-x86.tar.gz
+200ff5e5083df2a6bb4552e673d81b498e9812f0  omar-v0.8.20-x86.msi
+54440b1f525da0126b434440ee6433c2b96959ae  omar-v0.8.20.pkg
+b780f58f0e3bc43d2380d4a935f2b45350783b37  omar-v0.8.20.tar.gz
+8e13b125c3572a1cb46364b3241405cdf7af1a82  omar.exe
+f67ea64d6686207dbacb9bb8feacce3ac8899ec8  omar.exp
+c338212caf48d945e8e8049c2a0c30e38e8730d6  omar.lib
+019b24c60cdb03f9d8209290e7af90e8565999e7  omar.pdb
+67fff498c5271033073a3ca9fc01178b5f5c309a  x64/omar-v0.8.20-x64.msi
+6ecab177a47ff5c74397799b329c2359b40c7d1f  x64/omar.exe
+bcd51345c05a28be5db3553fc578aa3dd52fc97e  x64/omar.exp
+825f2ba0bb9d7bd170adef89009b84ee147754e5  x64/omar.lib
+50c4cc483cc4b675966c7ec524afacb59ff99164  x64/omar.pdb
 ```

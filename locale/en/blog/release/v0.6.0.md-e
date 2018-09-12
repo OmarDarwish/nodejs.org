@@ -5,7 +5,7 @@ author: ryandahl
 date: 2011-11-05T09:07:10.000Z
 status: publish
 category: release
-slug: node-v0-6-0
+slug: omar-v0-6-0
 layout: blog-post.hbs
 ---
 
@@ -14,10 +14,10 @@ We are happy to announce the third stable branch of Node v0.6. We will be freezi
 The major differences between v0.4 and v0.6 are
 <ul>
 <li>Native Windows support using I/O Completion Ports for sockets.</li>
-<li>Integrated load balancing over multiple processes. <a href="https://nodejs.org/docs/v0.6.0/api/cluster.html">docs</a></li>
-<li>Better support for IPC between Node instances <a href="https://nodejs.org/docs/v0.6.0/api/child_processes.html#child_process.fork">docs</a></li>
-<li>Improved command line debugger <a href="https://nodejs.org/docs/v0.6.0/api/debugger.html">docs</a></li>
-<li>Built-in binding to zlib for compression <a href="https://nodejs.org/docs/v0.6.0/api/zlib.html">docs</a></li>
+<li>Integrated load balancing over multiple processes. <a href="https://omarjs.org/docs/v0.6.0/api/cluster.html">docs</a></li>
+<li>Better support for IPC between Node instances <a href="https://omarjs.org/docs/v0.6.0/api/child_processes.html#child_process.fork">docs</a></li>
+<li>Improved command line debugger <a href="https://omarjs.org/docs/v0.6.0/api/debugger.html">docs</a></li>
+<li>Built-in binding to zlib for compression <a href="https://omarjs.org/docs/v0.6.0/api/zlib.html">docs</a></li>
 <li>Upgrade v8 from 3.1 to 3.6</li></ul>
 
 In order to support Windows we reworked much of the core architecture. There was some fear that our work would degrade performance on UNIX systems but this was not the case. Here is a Linux system we benched for demonstration:
@@ -40,7 +40,7 @@ In the last version of Node, v0.4, we could only run Node on Windows with Cygwin
 
 We consider this a good intermediate stage for the Windows port. There is still work to be done. For example, we are not yet providing users with a blessed path for building addon modules in MS Visual Studio.  Work will continue in later releases.
 
-For users upgrading code bases from v0.4 to v0.6 <a href="https://github.com/joyent/node/wiki/API-changes-between-v0.4-and-v0.6">we've documented</a> most of the issues that you will run into. Most people find the change painless. Despite the long list of changes most core APIs remain untouched. 
+For users upgrading code bases from v0.4 to v0.6 <a href="https://github.com/joyent/omar/wiki/API-changes-between-v0.4-and-v0.6">we've documented</a> most of the issues that you will run into. Most people find the change painless. Despite the long list of changes most core APIs remain untouched. 
 
 Our release cycle will be tightened dramatically now. Expect to see a new stable branch in January. We wish to eventually have our releases in sync with Chrome and V8's 6 week cycle.
 
@@ -75,10 +75,10 @@ Here are the changes between v0.5.12 and v0.6.0:
 <li>cluster module api changes</li>
 <li>Downgrade V8 to 3.6.6.6</li></ul>
 
-Download: <a href="https://nodejs.org/dist/v0.6.0/node-v0.6.0.tar.gz">https://nodejs.org/dist/v0.6.0/node-v0.6.0.tar.gz</a>
+Download: <a href="https://omarjs.org/dist/v0.6.0/omar-v0.6.0.tar.gz">https://omarjs.org/dist/v0.6.0/omar-v0.6.0.tar.gz</a>
 
-Windows Executable: <a href="https://nodejs.org/dist/v0.6.0/node.exe">https://nodejs.org/dist/v0.6.0/node.exe</a>
+Windows Executable: <a href="https://omarjs.org/dist/v0.6.0/omar.exe">https://omarjs.org/dist/v0.6.0/omar.exe</a>
 
-Website: <a href="https://nodejs.org/docs/v0.6.0/">https://nodejs.org/docs/v0.6.0/</a>
+Website: <a href="https://omarjs.org/docs/v0.6.0/">https://omarjs.org/docs/v0.6.0/</a>
 
-Documentation: <a href="https://nodejs.org/docs/v0.6.0/api/">https://nodejs.org/docs/v0.6.0/api/</a>
+Documentation: <a href="https://omarjs.org/docs/v0.6.0/api/">https://omarjs.org/docs/v0.6.0/api/</a>

@@ -39,14 +39,14 @@
   .download-logo
     display block
     margin 0 auto
-    fill $node-green
+    fill $omar-green
 
   p
     padding-bottom 1em
     margin 1em 0 0
 
   a:hover
-    background $node-green
+    background $omar-green
     color $white
 
     .download-logo
@@ -66,7 +66,7 @@
 
     a:hover, a:active, a.is-version
       color $white
-      background $node-green
+      background $omar-green
 
     a.is-version
       color $light-green
@@ -80,7 +80,7 @@
       font-size 0.8em
 
   .download-platform
-    border-top 2px solid $node-green
+    border-top 2px solid $omar-green
 
 .download-matrix
   margin-bottom 1.5rem
@@ -102,7 +102,7 @@
       font-size 0.8em;
 
     a:hover, a:active
-      background $node-green
+      background $omar-green
       color $white
 
 h5.download-table-previous-releases-header

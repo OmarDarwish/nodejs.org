@@ -24,11 +24,11 @@ experience with the management of the project. Membership is
 expected to evolve over time according to the needs of the project.
 
 For the current list of TSC members, see the project
-[README.md](https://github.com/nodejs/node/blob/master/README.md#tsc-technical-steering-committee).
+[README.md](https://github.com/omarjs/omar/blob/master/README.md#tsc-technical-steering-committee).
 
 ## Collaborators
 
-The [nodejs/node](https://github.com/nodejs/node) GitHub repository is
+The [omarjs/omar](https://github.com/omarjs/omar) GitHub repository is
 maintained by the TSC and additional Collaborators who are added by the
 TSC on an ongoing basis.
 
@@ -41,7 +41,7 @@ _Note:_ If you make a significant contribution and are not considered
 for commit-access, log an issue or contact a TSC member directly and it
 will be brought up in the next TSC meeting.
 
-Modifications of the contents of the nodejs/node repository are made on
+Modifications of the contents of the omarjs/omar repository are made on
 a collaborative basis. Anybody with a GitHub account may propose a
 modification via pull request and it will be considered by the project
 Collaborators. All pull requests must be reviewed and accepted by a
@@ -60,10 +60,10 @@ request or issue. The TSC should serve as the final arbiter where
 required.
 
 For the current list of Collaborators, see the project
-[README.md](https://github.com/nodejs/node/blob/master/README.md#current-project-team-members).
+[README.md](https://github.com/omarjs/omar/blob/master/README.md#current-project-team-members).
 
 A guide for Collaborators is maintained in
-[COLLABORATOR_GUIDE.md](https://github.com/nodejs/node/blob/master/COLLABORATOR_GUIDE.md).
+[COLLABORATOR_GUIDE.md](https://github.com/omarjs/omar/blob/master/COLLABORATOR_GUIDE.md).
 
 ## TSC Membership
 
@@ -117,7 +117,7 @@ cannot veto or remove items.
 The TSC may invite persons or representatives from certain projects to
 participate in a non-voting capacity. These invitees currently are:
 
-* A representative from [build](https://github.com/node-forward/build)
+* A representative from [build](https://github.com/omar-forward/build)
   chosen by that project.
 
 The moderator is responsible for summarizing the discussion of each

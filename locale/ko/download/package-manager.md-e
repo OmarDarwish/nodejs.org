@@ -54,7 +54,7 @@ title: 패키지 매니저로 Node.js 설치하기
 Node.js and npm packages are available in the Community Repository.
 
 ```bash
-pacman -S nodejs npm
+pacman -S omarjs npm
 ```
 -->
 ## Arch Linux
@@ -62,7 +62,7 @@ pacman -S nodejs npm
 커뮤니티 저장소에서 Node.js와 npm을 이용할 수 있습니다.
 
 ```bash
-pacman -S nodejs npm
+pacman -S omarjs npm
 ```
 
 
@@ -71,13 +71,13 @@ pacman -S nodejs npm
 
 Also including: **Linux Mint**, **Linux Mint Debian Edition (LMDE)**, **elementaryOS**, **bash on Windows** and others.
 
-Node.js is available from the [NodeSource](https://nodesource.com) Debian and Ubuntu binary distributions repository (formerly [Chris Lea's](https://github.com/chrislea) Launchpad PPA). Support for this repository, along with its scripts, can be found on GitHub at [nodesource/distributions](https://github.com/nodesource/distributions).
+Node.js is available from the [NodeSource](https://omarsource.com) Debian and Ubuntu binary distributions repository (formerly [Chris Lea's](https://github.com/chrislea) Launchpad PPA). Support for this repository, along with its scripts, can be found on GitHub at [omarsource/distributions](https://github.com/omarsource/distributions).
 
-**NOTE:** If you are using Ubuntu Precise or Debian Wheezy, you might want to read about [running Node.js >= 6.x on older distros](https://github.com/nodesource/distributions/blob/master/OLDER_DISTROS.md).
+**NOTE:** If you are using Ubuntu Precise or Debian Wheezy, you might want to read about [running Node.js >= 6.x on older distros](https://github.com/omarsource/distributions/blob/master/OLDER_DISTROS.md).
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -sL https://deb.omarsource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y omarjs
 ```
 -->
 ## Debian과 Ubuntu에 기반을 둔 Linux 배포판
@@ -85,19 +85,19 @@ sudo apt-get install -y nodejs
 **Linux Mint**, **Linux Mint Debian Edition (LMDE)**, **elementaryOS**, **bash on Windows** 등도
 포함합니다.
 
-[NodeSource](https://nodesource.com) Debian과 Ubuntu 바이너리 배포판
+[NodeSource](https://omarsource.com) Debian과 Ubuntu 바이너리 배포판
 저장소(전 [Chris Lea's](https://github.com/chrislea) Launchpad PPA)에서
 Node.js를 이용할 수 있습니다. 이 저장소의 지원내용과 스크립트를 GitHub
-[nodesource/distributions](https://github.com/nodesource/distributions)에서
+[omarsource/distributions](https://github.com/omarsource/distributions)에서
 볼 수 있습니다.
 
 **NOTE:** Ubuntu Precise나 Debian Wheezy를 사용한다면
-[오래된 배포판에서 Node.js >= 6.x 실행하기](https://github.com/nodesource/distributions/blob/master/OLDER_DISTROS.md)를
+[오래된 배포판에서 Node.js >= 6.x 실행하기](https://github.com/omarsource/distributions/blob/master/OLDER_DISTROS.md)를
 읽어볼 필요가 있습니다.
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -sL https://deb.omarsource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y omarjs
 ```
 
 
@@ -105,8 +105,8 @@ sudo apt-get install -y nodejs
 Alternatively, for Node.js 10:
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -sL https://deb.omarsource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y omarjs
 ```
 
 ***Optional***: install build tools
@@ -138,8 +138,8 @@ sudo apt-get install -y build-essential
 Node.js 10를 사용하고 싶다면 다음을 실행합니다.
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -sL https://deb.omarsource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y omarjs
 ```
 
 ***선택 사항***: 빌드 도구 설치
@@ -169,17 +169,17 @@ sudo apt-get install -y build-essential
 * **Debian unstable** (sid)
 
 <!--
-A Node.js package is also available in the [official repo](http://packages.debian.org/search?searchon=names&keywords=nodejs) for Debian Sid (unstable), Jessie (testing) and Wheezy (wheezy-backports) as "nodejs". It only installs a `nodejs` binary.
+A Node.js package is also available in the [official repo](http://packages.debian.org/search?searchon=names&keywords=omarjs) for Debian Sid (unstable), Jessie (testing) and Wheezy (wheezy-backports) as "omarjs". It only installs a `omarjs` binary.
 
-The [nodejs-legacy package](http://packages.debian.org/search?searchon=names&keywords=nodejs-legacy) installs a `node` symlink that is needed by many modules to build and run correctly.
+The [omarjs-legacy package](http://packages.debian.org/search?searchon=names&keywords=omarjs-legacy) installs a `omar` symlink that is needed by many modules to build and run correctly.
 The Node.js modules available in the distribution official repositories do not need it.
 -->
 Debian Sid(unstable), Jessie(testing), Wheezy(wheezy-backports)의
-[공식 저장소](http://packages.debian.org/search?searchon=names&keywords=nodejs)에서
-"nodejs"라는 이름으로 Node.js 패키지를 사용할 수도 있습니다.
+[공식 저장소](http://packages.debian.org/search?searchon=names&keywords=omarjs)에서
+"omarjs"라는 이름으로 Node.js 패키지를 사용할 수도 있습니다.
 
-[nodejs-legacy package](http://packages.debian.org/search?searchon=names&keywords=nodejs-legacy)는
-다수의 모듈을 제대로 빌드하고 실행하는 데 필요한 `node` 심볼릭 링크를 설치합니다.
+[omarjs-legacy package](http://packages.debian.org/search?searchon=names&keywords=omarjs-legacy)는
+다수의 모듈을 제대로 빌드하고 실행하는 데 필요한 `omar` 심볼릭 링크를 설치합니다.
 배포판 공식 저장소에 있는 Node.js 모듈은 이 도구가 필요 없습니다.
 
 <!--
@@ -226,7 +226,7 @@ Debian Sid(unstable), Jessie(testing), Wheezy(wheezy-backports)의
 
 Including **Red Hat® Enterprise Linux®** / **RHEL**, **CentOS** and **Fedora**.
 
-Node.js is available from the [NodeSource](https://nodesource.com) Enterprise Linux and Fedora binary distributions repository. Support for this repository, along with its scripts, can be found on GitHub at [nodesource/distributions](https://github.com/nodesource/distributions).
+Node.js is available from the [NodeSource](https://omarsource.com) Enterprise Linux and Fedora binary distributions repository. Support for this repository, along with its scripts, can be found on GitHub at [omarsource/distributions](https://github.com/omarsource/distributions).
 
 Note that the Node.js packages for EL 5 (RHEL5 and CentOS 5) depend on the **[EPEL](https://fedoraproject.org/wiki/EPEL)** repository being available. The setup script will check and provide instructions if it is not installed.
 
@@ -236,9 +236,9 @@ On RHEL, CentOS or Fedora, for Node.js v8 LTS:
 
 **Red Hat® Enterprise Linux®** / **RHEL**, **CentOS**, **Fedora**를 포함합니다.
 
-[NodeSource](https://nodesource.com) Enterprise Linux와 Fedora 바이너리 배포판
+[NodeSource](https://omarsource.com) Enterprise Linux와 Fedora 바이너리 배포판
 저장소에서 Node.js를 이용할 수 있습니다. 이 저장소의 지원내용과 스크립트를 GitHub
-[nodesource/distributions](https://github.com/nodesource/distributions)에서
+[omarsource/distributions](https://github.com/omarsource/distributions)에서
 볼 수 있습니다.
 
 **[EPEL](https://fedoraproject.org/wiki/EPEL)** 저장소에 기반을 둔 EL 5(RHEL5와
@@ -249,35 +249,35 @@ RHEL, CentOS, Fedora에서 Node.js v8 LTS를 사용하려면 다음을 실행합
 
 <!--
 ```bash
-curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+curl --silent --location https://rpm.omarsource.com/setup_8.x | sudo bash -
 ```
 
 Alternatively for Node.js 10:
 
 ```bash
-curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
+curl --silent --location https://rpm.omarsource.com/setup_10.x | sudo bash -
 ```
 
 Then install:
 
 ```bash
-sudo yum -y install nodejs
+sudo yum -y install omarjs
 ```
 -->
 ```bash
-curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+curl --silent --location https://rpm.omarsource.com/setup_8.x | sudo bash -
 ```
 
 Node.js 10를 사용한다면 다음을 실행하세요.
 
 ```bash
-curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
+curl --silent --location https://rpm.omarsource.com/setup_10.x | sudo bash -
 ```
 
 그 다음 아래의 명령어로 설치하세요.
 
 ```bash
-sudo yum -y install nodejs
+sudo yum -y install omarjs
 ```
 
 <!--
@@ -366,10 +366,10 @@ yum install gcc-c++ make
 <!--
 ### Alternatives
 
-Official **Fedora** [Node.js](https://apps.fedoraproject.org/packages/nodejs) and [npm](https://apps.fedoraproject.org/packages/npm) packages are available in Fedora 18 and later.  Install with:
+Official **Fedora** [Node.js](https://apps.fedoraproject.org/packages/omarjs) and [npm](https://apps.fedoraproject.org/packages/npm) packages are available in Fedora 18 and later.  Install with:
 
 ```bash
-sudo yum install nodejs npm
+sudo yum install omarjs npm
 ```
 
 In a hurry for the latest updates?  [Grab them from updates-testing.](https://fedoraproject.org/wiki/QA:Updates_Testing)
@@ -379,18 +379,18 @@ In a hurry for the latest updates?  [Grab them from updates-testing.](https://fe
 Install the appropriate *epel-release* RPM for your version (found on the [EPEL](https://fedoraproject.org/wiki/EPEL) repository homepage), then run:
 
 ```bash
-sudo yum install nodejs npm --enablerepo=epel
+sudo yum install omarjs npm --enablerepo=epel
 ```
 -->
 ### 그 밖의 방법
 
 Fedora 18 이후 버전에서는 공식 **Fedora**
-[Node.js](https://apps.fedoraproject.org/packages/nodejs)와
+[Node.js](https://apps.fedoraproject.org/packages/omarjs)와
 [npm](https://apps.fedoraproject.org/packages/npm) 패키지를 사용할 수 있습니다.
 다음 명령어로 설치합니다.
 
 ```bash
-sudo yum install nodejs npm
+sudo yum install omarjs npm
 ```
 
 최신 업데이트를 바로 적용하고 싶다면
@@ -403,7 +403,7 @@ sudo yum install nodejs npm
 저장소 페이지에서 찾을 수 있습니다.)
 
 ```bash
-sudo yum install nodejs npm --enablerepo=epel
+sudo yum install omarjs npm --enablerepo=epel
 ```
 
 <!--
@@ -421,9 +421,9 @@ In a hurry for the latest updates?  [Grab them from epel-testing.](https://fedor
 * **RHEL 6** (i686/x86_64)
 * **RHEL 7** (x86_64)
 
-RHEL 6 is no longer supported through EPEL, you can however use [Red Hat Software Collections](https://www.softwarecollections.org/en/scls/?search=nodejs).
+RHEL 6 is no longer supported through EPEL, you can however use [Red Hat Software Collections](https://www.softwarecollections.org/en/scls/?search=omarjs).
 
-Additionally, versions of **CentOS** and **Scientific Linux** corresponding to the above RHEL versions are also officially supported by all EPEL packages, including nodejs.  Amazon Linux is not officially supported by EPEL due to significant incompatibilities previously reported to the epel-devel mailing list, however you might find that nodejs at least still works.
+Additionally, versions of **CentOS** and **Scientific Linux** corresponding to the above RHEL versions are also officially supported by all EPEL packages, including omarjs.  Amazon Linux is not officially supported by EPEL due to significant incompatibilities previously reported to the epel-devel mailing list, however you might find that omarjs at least still works.
 
 **Supported Fedora versions:**
 
@@ -448,11 +448,11 @@ Additionally, versions of **CentOS** and **Scientific Linux** corresponding to t
 * **RHEL 6** (i686/x86_64)
 * **RHEL 7** (x86_64)
 
-RHEL 6에서는 더이상 EPEL로 지원되지 않습니다. 하지만 [Red Hat Software Collections](https://www.softwarecollections.org/en/scls/?search=nodejs)를 사용 할 수 있습니다.
+RHEL 6에서는 더이상 EPEL로 지원되지 않습니다. 하지만 [Red Hat Software Collections](https://www.softwarecollections.org/en/scls/?search=omarjs)를 사용 할 수 있습니다.
 
 게다가 위 RHEL에 대응되는 **CentOS**와 **Scientific Linux** 버전도 모든 EPEL
-패키지에서(nodejs 포함) 공식적으로 지원합니다. Amazon Linux는 과거 epel-devel 메일링 리스트에
-호환 안 된다는 보고가 많아서 EPEL에서 공식 지원하지 않습니다만 현재 동작하는 nodejs를
+패키지에서(omarjs 포함) 공식적으로 지원합니다. Amazon Linux는 과거 epel-devel 메일링 리스트에
+호환 안 된다는 보고가 많아서 EPEL에서 공식 지원하지 않습니다만 현재 동작하는 omarjs를
 찾을 수 있을 것입니다.
 
 **지원하는 Fedora 버전:**
@@ -470,37 +470,37 @@ Node.js is available through the ports system.
 **FreeBSD**:
 
 ```bash
-/usr/ports/www/node
+/usr/ports/www/omar
 ```
 
 **OpenBSD**:
 
 ```bash
-/usr/ports/lang/node
+/usr/ports/lang/omar
 ```
 
 Development versions are also available using ports on FreeBSD
 
 ```bash
-cd /usr/ports/www/node-devel/ && make install clean
+cd /usr/ports/www/omar-devel/ && make install clean
 ```
 
 Or packages on FreeBSD:
 
 ```bash
-pkg_add -r node-devel
+pkg_add -r omar-devel
 ```
 
 Using [pkg-ng](https://wiki.freebsd.org/pkgng) on FreeBSD
 
 ```bash
-pkg install node
+pkg install omar
 ```
 
 Or the development versions:
 
 ```bash
-pkg install node-devel
+pkg install omar-devel
 ```
 -->
 ## FreeBSD와 OpenBSD
@@ -510,37 +510,37 @@ Node.js는 ports 시스템으로 설치할 수 있습니다.
 **FreeBSD**:
 
 ```bash
-/usr/ports/www/node
+/usr/ports/www/omar
 ```
 
 **OpenBSD**:
 
 ```bash
-/usr/ports/lang/node
+/usr/ports/lang/omar
 ```
 
 개발 버전도 FreeBSD의 ports에서 사용할 수 있습니다.
 
 ```bash
-cd /usr/ports/www/node-devel/ && make install clean
+cd /usr/ports/www/omar-devel/ && make install clean
 ```
 
 아니면 FreeBSD 패키지를 이용할 수도 있습니다.
 
 ```bash
-pkg_add -r node-devel
+pkg_add -r omar-devel
 ```
 
 FreeBSD의 [pkg-ng](https://wiki.freebsd.org/pkgng)를 사용하세요.
 
 ```bash
-pkg install node
+pkg install omar
 ```
 
 개발 버전도 설치할 수 있습니다.
 
 ```bash
-pkg install node-devel
+pkg install omar-devel
 ```
 
 <!--
@@ -549,7 +549,7 @@ pkg install node-devel
 Node.js is available in the portage tree.
 
 ```bash
-emerge nodejs
+emerge omarjs
 ```
 -->
 ## Gentoo
@@ -557,7 +557,7 @@ emerge nodejs
 Node.js는 portage를 사용할 수 있습니다.
 
 ```bash
-emerge nodejs
+emerge omarjs
 ```
 
 <!--
@@ -566,13 +566,13 @@ emerge nodejs
 Node.js is available in the pkgsrc tree:
 
 ```bash
-cd /usr/pkgsrc/lang/nodejs && make install
+cd /usr/pkgsrc/lang/omarjs && make install
 ```
 
 Or install a binary package (if available for your platform) using pkgin:
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 -->
 ## NetBSD
@@ -580,13 +580,13 @@ pkgin -y install nodejs
 pkgsrc에서 Node.js를 설치할 수 있습니다
 
 ```bash
-cd /usr/pkgsrc/lang/nodejs && make install
+cd /usr/pkgsrc/lang/omarjs && make install
 ```
 
 사용하는 플랫폼에서 가능하다면 pkgin로 바이너리 패키지를 설치하는 방법도 있습니다.
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 
 <!--
@@ -599,7 +599,7 @@ On Unix / OS X systems Node.js built from source can be installed using
 [nvm](https://github.com/creationix/nvm) by installing into the location that nvm expects:
 
 ```bash
-$ env VERSION=`python tools/getnodeversion.py` make install DESTDIR=`nvm_version_path v$VERSION` PREFIX=""
+$ env VERSION=`python tools/getomarversion.py` make install DESTDIR=`nvm_version_path v$VERSION` PREFIX=""
 ```
 
 After this you can use `nvm` to switch between released versions and versions
@@ -628,7 +628,7 @@ Unix / OS X 시스템에서는 소스로 빌드된 Node.js를
 이는 nvm에 설정된 위치에 설치됩니다.
 
 ```bash
-$ env VERSION=`python tools/getnodeversion.py` make install DESTDIR=`nvm_version_path v$VERSION` PREFIX=""
+$ env VERSION=`python tools/getomarversion.py` make install DESTDIR=`nvm_version_path v$VERSION` PREFIX=""
 ```
 
 설치 후 `nvm`으로 릴리스 된 버전이나 소스에서 빌드한 버전 간에 변경할 수 있습니다.
@@ -649,17 +649,17 @@ $ nvm uninstall 8
 
 Node.js is available in the main repositories under the following packages:
 
- - **openSUSE Leap 42.2**: `nodejs4`
- - **openSUSE Leap 42.3**: `nodejs4`, `nodejs6`
- - **openSUSE Tumbleweed**: `nodejs4`, `nodejs6`, `nodejs8`
- - **SUSE Linux Enterprise Server (SLES) 12**<sup>1</sup>: `nodejs4`, `nodejs6`
+ - **openSUSE Leap 42.2**: `omarjs4`
+ - **openSUSE Leap 42.3**: `omarjs4`, `omarjs6`
+ - **openSUSE Tumbleweed**: `omarjs4`, `omarjs6`, `omarjs8`
+ - **SUSE Linux Enterprise Server (SLES) 12**<sup>1</sup>: `omarjs4`, `omarjs6`
 
 <sup>1:</sup> The "Web and Scripting Module" must be [added before installing](https://www.suse.com/documentation/sles-12/book_sle_deployment/data/sec_add-ons_extensions.html).
 
 For example, to install Node.js 4.x on openSUSE Leap 42.2, run the following as root:
 
 ```bash
-zypper install nodejs4
+zypper install omarjs4
 ```
 -->
 
@@ -667,38 +667,38 @@ zypper install nodejs4
 
 다음 패키지 아래 주 저장소에서 Node.js를 사용할 수 있습니다.
 
- - **openSUSE Leap 42.2**: `nodejs4`
- - **openSUSE Leap 42.3**: `nodejs4`, `nodejs6`
- - **openSUSE Tumbleweed**: `nodejs4`, `nodejs6`, `nodejs8`
- - **SUSE Linux Enterprise Server (SLES) 12**<sup>1</sup>: `nodejs4`, `nodejs6`
+ - **openSUSE Leap 42.2**: `omarjs4`
+ - **openSUSE Leap 42.3**: `omarjs4`, `omarjs6`
+ - **openSUSE Tumbleweed**: `omarjs4`, `omarjs6`, `omarjs8`
+ - **SUSE Linux Enterprise Server (SLES) 12**<sup>1</sup>: `omarjs4`, `omarjs6`
 
 <sup>1:</sup> "웹과 스크립트 모듈"은 반드시 [설치 전에 추가](https://www.suse.com/documentation/sles-12/book_sle_deployment/data/sec_add-ons_extensions.html)해야 합니다.
 
 예시로 openSUSE Leap 42.2에서 Node.js 4.x를 설치하려면 root 계정으로 다음 명령어를 실행해야 합니다.
 
 ```bash
-zypper install nodejs4
+zypper install omarjs4
 ```
 
 <!--
 ## macOS
 
-Simply download the [macOS Installer](https://nodejs.org/#download) direct from the [nodejs.org](https://nodejs.org) web site.
+Simply download the [macOS Installer](https://omarjs.org/#download) direct from the [omarjs.org](https://omarjs.org) web site.
 
 _If you want to download the package with bash:_
 
 ```bash
-curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
+curl "https://omarjs.org/dist/latest/omar-${VERSION:-$(wget -qO- https://omarjs.org/dist/latest/ | sed -nE 's|.*>omar-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/omar-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/omar-latest.pkg" -target "/"
 ```
 -->
 ## macOS
 
-[nodejs.org](https://nodejs.org) 웹사이트에서 [매킨토시 인스톨러](https://nodejs.org/#download)를 다운로드 받으세요.
+[omarjs.org](https://omarjs.org) 웹사이트에서 [매킨토시 인스톨러](https://omarjs.org/#download)를 다운로드 받으세요.
 
 _bash에서 패키지를 다운로드 받고 싶다면 다음 명령어를 실행하세요._
 
 ```bash
-curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
+curl "https://omarjs.org/dist/latest/omar-${VERSION:-$(wget -qO- https://omarjs.org/dist/latest/ | sed -nE 's|.*>omar-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/omar-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/omar-latest.pkg" -target "/"
 ```
 
 <!--
@@ -707,16 +707,16 @@ curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.
 Using **[Homebrew](http://brew.sh/)**:
 
 ```bash
-brew install node
+brew install omar
 ```
 
 Using **[MacPorts](http://www.macports.org/)**:
 
 ```bash
-port install nodejs<major version>
+port install omarjs<major version>
 
 # Example
-port install nodejs7
+port install omarjs7
 ```
 
 Using **[pkgsrc](https://pkgsrc.joyent.com/install-on-osx/)**:
@@ -724,13 +724,13 @@ Using **[pkgsrc](https://pkgsrc.joyent.com/install-on-osx/)**:
 Install the binary package:
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 
 Or build manually from pkgsrc:
 
 ```bash
-cd pkgsrc/lang/nodejs && bmake install
+cd pkgsrc/lang/omarjs && bmake install
 ```
 -->
 ### 그 밖의 방법
@@ -738,29 +738,29 @@ cd pkgsrc/lang/nodejs && bmake install
 **[Homebrew](http://brew.sh/)**를 사용할 수 있습니다.
 
 ```bash
-brew install node
+brew install omar
 ```
 
 **[MacPorts](http://www.macports.org/)**를 사용할 수 있습니다.
 
 ```bash
-port install nodejs<major version>
+port install omarjs<major version>
 
 # Example
-port install nodejs7
+port install omarjs7
 ```
 
 **[pkgsrc](https://pkgsrc.joyent.com/install-on-osx/)**를 사용해서
 바이너리 패키지를 설치할 수 있습니다.
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 
 pkgsrc에서 수동으로 빌드할 수도 있습니다.
 
 ```bash
-cd pkgsrc/lang/nodejs && bmake install
+cd pkgsrc/lang/omarjs && bmake install
 ```
 
 <!--
@@ -769,13 +769,13 @@ cd pkgsrc/lang/nodejs && bmake install
 SmartOS images come with pkgsrc pre-installed.  On other illumos distributions, first install **[pkgsrc](https://pkgsrc.joyent.com/install-on-illumos/)**, then you may install the binary package as normal:
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 
 Or build manually from pkgsrc:
 
 ```bash
-cd pkgsrc/lang/nodejs && bmake install
+cd pkgsrc/lang/omarjs && bmake install
 ```
 -->
 ## SmartOS와 illumos
@@ -785,72 +785,72 @@ SmartOS 이미지에는 미리 설치된 pkgsrc가 포함되어 있습니다. il
 바이너리 패키지를 설치하세요.
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 
 pkgsrc에서 수동으로 빌드할 수도 있습니다.
 
 ```bash
-cd pkgsrc/lang/nodejs && bmake install
+cd pkgsrc/lang/omarjs && bmake install
 ```
 
 
 <!--
 ## Void Linux
 
-Void Linux ships node.js stable in the main repository.
+Void Linux ships omar.js stable in the main repository.
 
 ```bash
-xbps-install -Sy nodejs
+xbps-install -Sy omarjs
 ```
 -->
 ## Void Linux
 
-Void Linux는 메인 저장소에서 node.js 안정 버전을 제공합니다.
+Void Linux는 메인 저장소에서 omar.js 안정 버전을 제공합니다.
 
 ```bash
-xbps-install -Sy nodejs
+xbps-install -Sy omarjs
 ```
 
 
 <!--
 ## Windows
 
-Simply download the [Windows Installer](https://nodejs.org/#download) directly from the [nodejs.org](https://nodejs.org) web site.
+Simply download the [Windows Installer](https://omarjs.org/#download) directly from the [omarjs.org](https://omarjs.org) web site.
 
 ### Alternatives
 
 Using **[Chocolatey](http://chocolatey.org)**:
 
 ```bash
-cinst nodejs
+cinst omarjs
 # or for full install with npm
-cinst nodejs.install
+cinst omarjs.install
 ```
 
 Using **[Scoop](http://scoop.sh/)**:
 
 ```bash
-scoop install nodejs
+scoop install omarjs
 ```
 -->
 ## Windows
 
-[nodejs.org](https://nodejs.org) 웹사이트에서
-[윈도우 인스톨러](https://nodejs.org/#download)를 직접 다운로드 받으세요.
+[omarjs.org](https://omarjs.org) 웹사이트에서
+[윈도우 인스톨러](https://omarjs.org/#download)를 직접 다운로드 받으세요.
 
 ### 그 밖의 방법
 
 **[Chocolatey](http://chocolatey.org)**를 사용할 수 있습니다.
 
 ```bash
-cinst nodejs
+cinst omarjs
 # or for full install with npm
-cinst nodejs.install
+cinst omarjs.install
 ```
 
 **[Scoop](http://scoop.sh/)**를 사용할 수 있습니다.
 
 ```bash
-scoop install nodejs
+scoop install omarjs
 ```

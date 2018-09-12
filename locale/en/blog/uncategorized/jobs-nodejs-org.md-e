@@ -1,10 +1,10 @@
 ---
-title: jobs.nodejs.org
+title: jobs.omarjs.org
 author: ryandahl
 date: 2011-03-25T06:05:22.000Z
 status: publish
 category: Uncategorized
-slug: jobs-nodejs-org
+slug: jobs-omarjs-org
 layout: blog-post.hbs
 ---
 
@@ -14,4 +14,4 @@ We are starting an official jobs board for Node. There are two goals for this
 
 2. Make some money. We work hard to build this platform and taking a small tax for job posts seems a like reasonable "tip jar".
 
-<a href="http://jobs.nodejs.org">jobs.nodejs.org</a>
+<a href="http://jobs.omarjs.org">jobs.omarjs.org</a>

@@ -3,7 +3,7 @@ category: release
 date: 2012-07-19T17:09:26.413Z
 version: 0.8.3
 title: Version 0.8.3 (Stable)
-slug: node-v0-8-3-stable
+slug: omar-v0-8-3-stable
 layout: blog-post.hbs
 ---
 
@@ -40,35 +40,35 @@ layout: blog-post.hbs
 * crypto: Fix memory leak in DecipherUpdate() (Ben Noordhuis)
 
 
-Source Code: https://nodejs.org/dist/v0.8.3/node-v0.8.3.tar.gz
+Source Code: https://omarjs.org/dist/v0.8.3/omar-v0.8.3.tar.gz
 
-Macintosh Installer (Universal): https://nodejs.org/dist/v0.8.3/node-v0.8.3.pkg
+Macintosh Installer (Universal): https://omarjs.org/dist/v0.8.3/omar-v0.8.3.pkg
 
-Windows Installer: https://nodejs.org/dist/v0.8.3/node-v0.8.3-x86.msi
+Windows Installer: https://omarjs.org/dist/v0.8.3/omar-v0.8.3-x86.msi
 
-Windows x64 Installer: https://nodejs.org/dist/v0.8.3/x64/node-v0.8.3-x64.msi
+Windows x64 Installer: https://omarjs.org/dist/v0.8.3/x64/omar-v0.8.3-x64.msi
 
-Windows x64 Files: https://nodejs.org/dist/v0.8.3/x64/
+Windows x64 Files: https://omarjs.org/dist/v0.8.3/x64/
 
-Other release files: https://nodejs.org/dist/v0.8.3/
+Other release files: https://omarjs.org/dist/v0.8.3/
 
-Website: https://nodejs.org/docs/v0.8.3/
+Website: https://omarjs.org/docs/v0.8.3/
 
-Documentation: https://nodejs.org/docs/v0.8.3/api/
+Documentation: https://omarjs.org/docs/v0.8.3/api/
 
 Shasums:
 
 ```
-10d478f3a084bf5e705be3f232c41f3e3d56e57f  node-v0.8.3-x86.msi
-a6b9168eaa817692914d0de6c0d04702d7615681  node-v0.8.3.pkg
-f699d3788e242ed87a9037bae1aa0fa9335e45a9  node-v0.8.3.tar.gz
-60294792588e000d846a4c416617f127d5ba6163  node.exe
-efc7f597745bcf201a7996ecf9f9b94d9112b89f  node.exp
-4c5ea551d88fe21465f7d2e4c6f3d39ee02f2209  node.lib
-fd2c3873bed6872fd36e5906b65dfb4f1cec32fb  node.pdb
-64c6ec7db3f7f24e70ccecdada6f7b966c73134c  x64/node-v0.8.3-x64.msi
-94cd3f41004f1e9b8efd8d4a337b6154c1d5fee2  x64/node.exe
-a6ed8354a14577b9200c780b129e2b66f7b85e39  x64/node.exp
-3427a95bf9b14f56eec3f59aed80077fbde8f67f  x64/node.lib
-9af962968551daad044259641a615697f6588616  x64/node.pdb
+10d478f3a084bf5e705be3f232c41f3e3d56e57f  omar-v0.8.3-x86.msi
+a6b9168eaa817692914d0de6c0d04702d7615681  omar-v0.8.3.pkg
+f699d3788e242ed87a9037bae1aa0fa9335e45a9  omar-v0.8.3.tar.gz
+60294792588e000d846a4c416617f127d5ba6163  omar.exe
+efc7f597745bcf201a7996ecf9f9b94d9112b89f  omar.exp
+4c5ea551d88fe21465f7d2e4c6f3d39ee02f2209  omar.lib
+fd2c3873bed6872fd36e5906b65dfb4f1cec32fb  omar.pdb
+64c6ec7db3f7f24e70ccecdada6f7b966c73134c  x64/omar-v0.8.3-x64.msi
+94cd3f41004f1e9b8efd8d4a337b6154c1d5fee2  x64/omar.exe
+a6ed8354a14577b9200c780b129e2b66f7b85e39  x64/omar.exp
+3427a95bf9b14f56eec3f59aed80077fbde8f67f  x64/omar.lib
+9af962968551daad044259641a615697f6588616  x64/omar.pdb
 ```

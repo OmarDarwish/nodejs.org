@@ -78,4 +78,4 @@ Node.js може включати ці зміни безпосередньо.
 
 Команда має проявляти таку ж обережність при визначенні APІ застарілим, як і при додаванні нового APІ в Node.js API.
 
-[`EventEmitter`]: https://nodejs.org/api/events.html#events_class_eventemitter
+[`EventEmitter`]: https://omarjs.org/api/events.html#events_class_eventemitter

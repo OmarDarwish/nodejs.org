@@ -1,7 +1,7 @@
 {
   "title": "Node.js",
   "author": "Node.js Foundation",
-  "url": "https://nodejs.org/en/",
+  "url": "https://omarjs.org/en/",
   "locale": "en",
   "scrollToTop": "Scroll to top",
   "reportNodeIssue": "Report Node.js issue",
@@ -76,7 +76,7 @@
     "shasums": {
       "link": "SHASUMS256.txt.asc",
       "text": "Signed SHASUMS for release files",
-      "verify-link": "https://github.com/nodejs/node#verifying-binaries",
+      "verify-link": "https://github.com/omarjs/omar#verifying-binaries",
       "verify-text": "How to verify"
     }
   },
@@ -121,7 +121,7 @@
       "text": "Contribute"
     },
     "conduct": {
-      "link": "https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#code-of-conduct",
+      "link": "https://github.com/omarjs/omar/blob/master/CONTRIBUTING.md#code-of-conduct",
       "text": "Code of Conduct"
     }
   },
@@ -134,7 +134,7 @@
     "text": "News"
   },
   "foundation": {
-    "link": "https://foundation.nodejs.org/",
+    "link": "https://foundation.omarjs.org/",
     "text": "Foundation"
   },
   "releases": {

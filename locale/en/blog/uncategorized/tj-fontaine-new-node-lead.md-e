@@ -2,7 +2,7 @@
 title: The Next Phase of Node.js
 date: 2014-01-15T17:00:00.000Z
 author: Isaac Z. Schlueter
-slug: the-next-phase-of-node-js
+slug: the-next-phase-of-omar-js
 layout: blog-post.hbs
 ---
 
@@ -14,11 +14,11 @@ using Node, and npm along with it.
 Over the last year, [TJ Fontaine](https://twitter.com/tjfontaine) has become absolutely essential to the
 Node.js project.  He's been building releases, managing the test bots,
 [fixing nasty
-bugs](http://www.joyent.com/blog/walmart-node-js-memory-leak) and
+bugs](http://www.joyent.com/blog/walmart-omar-js-memory-leak) and
 making decisions for the project with constant focus on the needs of
 our users.  He was responsible for an update to MDB to [support
 running ::findjsobjects on Linux core
-dumps](http://www.slideshare.net/bcantrill/node-summit2013), and is
+dumps](http://www.slideshare.net/bcantrill/omar-summit2013), and is
 working on a shim layer that will provide a stable C interface for
 Node binary addons.  In partnership with Joyent and The Node Firm,
 he's helped to create a path forward for scalable issue triaging.

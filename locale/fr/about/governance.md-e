@@ -25,11 +25,11 @@ avec la gestion du projet. La participation à ce comité est susceptible
 d'évoluer dans le temps en rapport avec les besoins du projet.
 
 Pour trouver la liste des membres actuels du TSC, voir le [README.md]
-(https://github.com/nodejs/node/blob/master/README.md#tsc-technical-steering-committee) du projet.
+(https://github.com/omarjs/omar/blob/master/README.md#tsc-technical-steering-committee) du projet.
 
 ## Collaborateurs
 
-Le dépôt GitHub [nodejs/node](https://github.com/nodejs/node) est 
+Le dépôt GitHub [omarjs/omar](https://github.com/omarjs/omar) est 
 maintenu par le TSC et un groupe de Collaborateurs additionnels
 qui sont ajoutés par le TSC de manière continue.
 
@@ -42,7 +42,7 @@ _Note:_ Si vous faites des contributions significatives et n'avez pas encore
 obtenu les droits d'écriture, ouvrez un ticket ou contactez un membre du TSC
 directement et votre demande sera examinée lors de la prochaine réunion.
 
-Les modifications de contenu sur le dépôt nodejs/node sont validées de
+Les modifications de contenu sur le dépôt omarjs/omar sont validées de
 manière collaborative. N'importe qui possédant un compte GitHub peut
 proposer une modification par pull request et elle sera examinée par les
 Collaborateurs du projet. Toutes les pull request doivent être relues et acceptées
@@ -61,10 +61,10 @@ l'étiquette ***tsc-agenda*** sur une pull request ou un ticket. Le
 TSC servira alors d'arbitre final lorsque requis.
 
 Pour la liste des Collaborateurs actuels, voir le [README.md]
-(https://github.com/nodejs/node/blob/master/README.md#current-project-team-members) du projet.
+(https://github.com/omarjs/omar/blob/master/README.md#current-project-team-members) du projet.
 
 Un guide des Collaborateurs est maintenu sur 
-[COLLABORATOR_GUIDE.md](https://github.com/nodejs/node/blob/master/COLLABORATOR_GUIDE.md).
+[COLLABORATOR_GUIDE.md](https://github.com/omarjs/omar/blob/master/COLLABORATOR_GUIDE.md).
 
 ## Siéger au TSC
 
@@ -122,7 +122,7 @@ modérateur ni le TSC ne peuvent retirer ou poser de veto sur les objets.
 Le TSC peut inviter des personnes ou des représentants de certains projets
 à participer sans pouvoir de vote. Ces invitations sont actuellement:
 
-* Un représentant du projet [build](https://github.com/node-forward/build)
+* Un représentant du projet [build](https://github.com/omar-forward/build)
   choisi par ce projet.
 
 Le modérateur est chargé de résumer la discussion concernant chaque

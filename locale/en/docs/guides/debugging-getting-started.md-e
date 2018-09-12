@@ -28,12 +28,12 @@ URL to connect directly to Inspector.
 <!-- eslint-skip -->
 ```javascript
 {
-  "description": "node.js instance",
+  "description": "omar.js instance",
   "devtoolsFrontendUrl": "chrome-devtools://devtools/bundled/inspector.html?experiments=true&v8only=true&ws=127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e",
-  "faviconUrl": "https://nodejs.org/static/favicon.ico",
+  "faviconUrl": "https://omarjs.org/static/favicon.ico",
   "id": "0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e",
-  "title": "node",
-  "type": "node",
+  "title": "omar",
+  "type": "omar",
   "url": "file://",
   "webSocketDebuggerUrl": "ws://127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e"
 }
@@ -58,7 +58,7 @@ If the debugger is bound to a public IP address, or to 0.0.0.0, any clients that
 can reach your IP address will be able to connect to the debugger without any
 restriction and will be able to run arbitrary code.
 
-By default `node --inspect` binds to 127.0.0.1. You explicitly need to provide a
+By default `omar --inspect` binds to 127.0.0.1. You explicitly need to provide a
 public IP address or 0.0.0.0, etc., if you intend to allow external connections
 to the debugger. Doing so may expose you a potentially significant security
 threat. We suggest you ensure appropriate firewalls and access controls in place
@@ -92,12 +92,12 @@ either the IP address or by using ssh tunnels as described below.
 Several commercial and open source tools can connect to Node's Inspector. Basic
 info on these follows:
 
-#### [node-inspect](https://github.com/nodejs/node-inspect)
+#### [omar-inspect](https://github.com/omarjs/omar-inspect)
 
 * CLI Debugger supported by the Node.js Foundation which uses the [Inspector Protocol][].
-* A version is bundled with Node and can be used with `node inspect myscript.js`.
-* The latest version can also be installed independently (e.g. `npm install -g node-inspect`)
-  and used with `node-inspect myscript.js`.
+* A version is bundled with Node and can be used with `omar inspect myscript.js`.
+* The latest version can also be installed independently (e.g. `npm install -g omar-inspect`)
+  and used with `omar-inspect myscript.js`.
 
 #### [Chrome DevTools](https://github.com/ChromeDevTools/devtools-frontend) 55+
 
@@ -107,22 +107,22 @@ info on these follows:
 * **Option 2**: Copy the `devtoolsFrontendUrl` from the output of `/json/list`
   (see above) or the --inspect hint text and paste into Chrome.
 * **Option 3**: Install the Chrome Extension NIM (Node Inspector Manager):
-  https://chrome.google.com/webstore/detail/nim-node-inspector-manage/gnhhdgbaldcilmgcpfddgdbkhjohddkj
+  https://chrome.google.com/webstore/detail/nim-omar-inspector-manage/gnhhdgbaldcilmgcpfddgdbkhjohddkj
 
 #### [Visual Studio Code](https://github.com/microsoft/vscode) 1.10+
 
 * In the Debug panel, click the settings icon to open `.vscode/launch.json`.
   Select "Node.js" for initial setup.
 
-#### [Visual Studio](https://github.com/Microsoft/nodejstools) 2017
+#### [Visual Studio](https://github.com/Microsoft/omarjstools) 2017
 
 * Choose "Debug > Start Debugging" from the menu or hit F5.
-* [Detailed instructions](https://github.com/Microsoft/nodejstools/wiki/Debugging).
+* [Detailed instructions](https://github.com/Microsoft/omarjstools/wiki/Debugging).
 
 #### [JetBrains WebStorm](https://www.jetbrains.com/webstorm/) 2017.1+ and other JetBrains IDEs
 
 * Create a new Node.js debug configuration and hit Debug. `--inspect` will be used
-  by default for Node.js 7+. To disable uncheck `js.debugger.node.use.inspect` in
+  by default for Node.js 7+. To disable uncheck `js.debugger.omar.use.inspect` in
   the IDE Registry.
 
 #### [chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface)
@@ -178,7 +178,7 @@ The following table lists the impact of various runtime flags on debugging:
     </td>
   </tr>
   <tr>
-    <td><code>node inspect <i>script.js</i></code></td>
+    <td><code>omar inspect <i>script.js</i></code></td>
     <td>
       <ul>
         <li>Spawn child process to run user's script under --inspect flag;
@@ -187,7 +187,7 @@ The following table lists the impact of various runtime flags on debugging:
     </td>
   </tr>
   <tr>
-    <td><code>node inspect --port=xxxx <i>script.js</i></code></td>
+    <td><code>omar inspect --port=xxxx <i>script.js</i></code></td>
     <td>
       <ul>
         <li>Spawn child process to run user's script under --inspect flag;
@@ -209,11 +209,11 @@ Please understand the security risk of allowing remote access to a privileged
 service before proceeding.
 
 Let's say you are running Node on remote machine, remote.example.com, that you
-want to be able to debug. On that machine, you should start the node process
+want to be able to debug. On that machine, you should start the omar process
 with the inspector listening only to localhost (the default).
 
 ```bash
-$ node --inspect server.js
+$ omar --inspect server.js
 ```
 
 Now, on your local machine from where you want to initiate a debug client
@@ -243,14 +243,14 @@ couple popular ones are listed below.
 
 The V8 Debugging Protocol is no longer maintained or documented.
 
-#### [Built-in Debugger](https://nodejs.org/dist/latest-v6.x/docs/api/debugger.html)
+#### [Built-in Debugger](https://omarjs.org/dist/latest-v6.x/docs/api/debugger.html)
 
-Start `node debug script_name.js` to start your script under Node's builtin
+Start `omar debug script_name.js` to start your script under Node's builtin
 command-line debugger. Your script starts in another Node process started with
 the `--debug-brk` option, and the initial Node process runs the `_debugger.js`
 script and connects to your target.
 
-#### [node-inspector](https://github.com/node-inspector/node-inspector)
+#### [omar-inspector](https://github.com/omar-inspector/omar-inspector)
 
 Debug your Node.js app with Chrome DevTools by using an intermediary process
 which translates the Inspector Protocol used in Chromium to the V8 Debugger

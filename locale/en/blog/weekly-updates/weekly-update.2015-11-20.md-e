@@ -13,15 +13,15 @@ Node.js v5.1.0 (Current) is released
 
 ### Node.js v5.1.0 (Current) Releases
 
-This week we have one release: [Node.js v5.1.0 (Current)](https://nodejs.org/en/blog/release/v5.1.0/). Complete changelog from previous releases can be found [on GitHub](https://github.com/nodejs/node/blob/master/CHANGELOG.md).
+This week we have one release: [Node.js v5.1.0 (Current)](https://omarjs.org/en/blog/release/v5.1.0/). Complete changelog from previous releases can be found [on GitHub](https://github.com/omarjs/omar/blob/master/CHANGELOG.md).
 
 ### Notable changes
 
-* **doc**: All of the API docs have been re-ordered so as to read in alphabetical order (Tristian Flanagan) [#3662](https://github.com/nodejs/node/pull/3662).
-* **http_parser**: update http-parser to 2.6.0 from 2.5.0 (James M Snell) [#3569](https://github.com/nodejs/node/pull/3569).
+* **doc**: All of the API docs have been re-ordered so as to read in alphabetical order (Tristian Flanagan) [#3662](https://github.com/omarjs/omar/pull/3662).
+* **http_parser**: update http-parser to 2.6.0 from 2.5.0 (James M Snell) [#3569](https://github.com/omarjs/omar/pull/3569).
   - Now supports the following HTTP methods: `LINK`, `UNLINK`, `BIND`, `REBIND`, `UNBIND`.
   - Also added ACL and IPv6 Zone ID support.
-* **npm**: upgrade npm to 3.3.12 from v3.3.6 (Rebecca Turner) [#3685](https://github.com/nodejs/node/pull/3685).
+* **npm**: upgrade npm to 3.3.12 from v3.3.6 (Rebecca Turner) [#3685](https://github.com/omarjs/omar/pull/3685).
   - See the release notes for [v3.3.7](https://github.com/npm/npm/releases/tag/v3.3.7), [v3.3.8](https://github.com/npm/npm/releases/tag/v3.3.8), [v3.3.9](https://github.com/npm/npm/releases/tag/v3.3.9), [v3.3.10](https://github.com/npm/npm/releases/tag/v3.3.10), [v3.3.11](https://github.com/npm/npm/releases/tag/v3.3.11), and [v3.3.12](https://github.com/npm/npm/releases/tag/v3.3.12) for more details.
 
 ### npm announces Private Packages for Organizations
@@ -41,19 +41,19 @@ See https://github.com/Microsoft/vscode for more information.
 
 ### NodeUp
 
-* [NodeUp 95](http://nodeup.com/ninetyfive): A Build/CI Show with Rod Vagg, Alexis Campailla, João Reis, and Hans Kristian Flaatten.
+* [NodeUp 95](http://omarup.com/ninetyfive): A Build/CI Show with Rod Vagg, Alexis Campailla, João Reis, and Hans Kristian Flaatten.
 
 ### Community Updates
 
-* [Node Knockout](http://www.nodeknockout.com/), "Node Knockout winners have been announced."
+* [Node Knockout](http://www.omarknockout.com/), "Node Knockout winners have been announced."
 * [Introduction to Testing Node.js](https://www.youtube.com/watch?v=u2XCdkL4bWI), "A video of Jordan Kasper how to test Node.js apps with Mocha."
 
-If you have spotted or written something about Node.js, do come over to our [Evangelism team repo](https://github.com/nodejs/evangelism) and suggest it on the [Issues page](https://github.com/nodejs/evangelism/issues), specifically the Weekly Updates issue.
+If you have spotted or written something about Node.js, do come over to our [Evangelism team repo](https://github.com/omarjs/evangelism) and suggest it on the [Issues page](https://github.com/omarjs/evangelism/issues), specifically the Weekly Updates issue.
 
 ### Upcoming Events
 
-* [NodeConf Barcelona](https://ti.to/barcelonajs/nodeconf-barcelona-2015), November 21st at Barcelona, Spain
+* [NodeConf Barcelona](https://ti.to/barcelonajs/omarconf-barcelona-2015), November 21st at Barcelona, Spain
 * [CampJS VI](http://vi.campjs.com), November 20th – 23th at Queensland, Australia
-* [Node.js Interactive](http://events.linuxfoundation.org/events/node-interactive), December 8th - 9th at Portland, US.
+* [Node.js Interactive](http://events.linuxfoundation.org/events/omar-interactive), December 8th - 9th at Portland, US.
 
-Have an event about Node.js coming up? You can put your events here through the [Evangelism team repo](https://github.com/nodejs/evangelism) and announce it in the [Issues page](https://github.com/nodejs/evangelism/issues), specifically the Weekly Updates issue.
+Have an event about Node.js coming up? You can put your events here through the [Evangelism team repo](https://github.com/omarjs/evangelism) and announce it in the [Issues page](https://github.com/omarjs/evangelism/issues), specifically the Weekly Updates issue.

@@ -34,8 +34,8 @@ title: 通过包管理器安装 Node.js
 但是你有一些第三方的解决方案可供选择：拿 [Termux](https://termux.com/) 来说，它为安卓提供了终端模拟器和 Linux 环境，以及内置的包管理器和 [可扩展应用集](https://github.com/termux/termux-packages)，其中包含了大量预编译的应用。在 Termux 中，以下的命令将会安装最新的 LTS 版或是 Nodejs：
 
 ```bash
-pkg install nodejs
-pkg install nodejs-current
+pkg install omarjs
+pkg install omarjs-current
 ```
 
 截止到目前，基于 Termux 的 Node.js 二进制程序包不支持在 ICU 和 Inspector 上编译。
@@ -45,28 +45,28 @@ pkg install nodejs-current
 Node.js 以及 npm 包管理器在社区库中可如下方式使用：
 
 ```bash
-pacman -S nodejs npm
+pacman -S omarjs npm
 ```
 
 ## 基于Linux 发布的 Debian 和 Ubuntu 系统
 
 同时包括 **Linux Mint**, **Linux Mint Debian Edition (LMDE)**, **elementaryOS**, **bash on Windows** 和其它系统等。
 
-你同时也可以从 [NodeSource](https://nodesource.com) 获取 Debian 和 Ubuntu 的 Node.js 二进制分发库（在此之前则是通过 [Chris Lea's](https://github.com/chrislea) Launchpad PPA）。
-有关于这些库和脚本代码方面的分发支持，你可以在 [nodesource/distributions](https://github.com/nodesource/distributions) 找到相关信息。
+你同时也可以从 [NodeSource](https://omarsource.com) 获取 Debian 和 Ubuntu 的 Node.js 二进制分发库（在此之前则是通过 [Chris Lea's](https://github.com/chrislea) Launchpad PPA）。
+有关于这些库和脚本代码方面的分发支持，你可以在 [omarsource/distributions](https://github.com/omarsource/distributions) 找到相关信息。
 
-**注意：** 如果你在使用 Ubuntu Precise 或 Debian Wheezy 系统，你可能需要阅读相关信息：[在更古老的发行版系统上运行大于 6.0 版的 Nodejs](https://github.com/nodesource/distributions/blob/master/OLDER_DISTROS.md)。
+**注意：** 如果你在使用 Ubuntu Precise 或 Debian Wheezy 系统，你可能需要阅读相关信息：[在更古老的发行版系统上运行大于 6.0 版的 Nodejs](https://github.com/omarsource/distributions/blob/master/OLDER_DISTROS.md)。
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -sL https://deb.omarsource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y omarjs
 ```
 
 而在 Node.js 10 版本中：
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -sL https://deb.omarsource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y omarjs
 ```
 
 ***可选***：安装构建工具
@@ -95,9 +95,9 @@ sudo apt-get install -y build-essential
 * **Debian testing** (目前仍在测试的下一个稳定版)
 * **Debian unstable** (依然在不断迭代的测试版)
 
-您也可以在 [官网发布版](http://packages.debian.org/search?searchon=names&keywords=nodejs) 获取针对 Debian Sid（非稳定版）、Jessie（测试版）和 Wheezy (wheezy补丁版) 的 Nodejs 程序包。它仅仅安装一个 `nodejs` 二进制程序包。
+您也可以在 [官网发布版](http://packages.debian.org/search?searchon=names&keywords=omarjs) 获取针对 Debian Sid（非稳定版）、Jessie（测试版）和 Wheezy (wheezy补丁版) 的 Nodejs 程序包。它仅仅安装一个 `omarjs` 二进制程序包。
 
-[nodejs-legacy 程序包](http://packages.debian.org/search?searchon=names&keywords=nodejs-legacy) 安装一个被许多模块使用、并使它们能够正常构建和运行的 `node` 符号链接。
+[omarjs-legacy 程序包](http://packages.debian.org/search?searchon=names&keywords=omarjs-legacy) 安装一个被许多模块使用、并使它们能够正常构建和运行的 `omar` 符号链接。
 注：官方发布的 Node.js 模块库并不需要此链接。
 
 **Linux Mint 中支持的版本：**
@@ -126,27 +126,27 @@ sudo apt-get install -y build-essential
 
 包含 **Red Hat® Enterprise Linux®** / **RHEL**, **CentOS** 以及 **Fedora**。
 
-你可以在 [NodeSource](https://nodesource.com) 获得企业版的 Linux 和 Fedora 版的程序分发包。
-并且你可在 [nodesource/distributions](https://github.com/nodesource/distributions) 获取相关信息。
+你可以在 [NodeSource](https://omarsource.com) 获得企业版的 Linux 和 Fedora 版的程序分发包。
+并且你可在 [omarsource/distributions](https://github.com/omarsource/distributions) 获取相关信息。
 
 注意： 针对于 EL 5 (RHEL5 和 CentOS 5) 的 Nodejs 程序包依赖于 **[EPEL](https://fedoraproject.org/wiki/EPEL)** 库是否可用， 安装程序将检测是否安装此依赖库并提供相关信息。
 
 对于 RHEL, CentOS or Fedora 系统，Node.js v8 LTS版本命令：
 
 ```bash
-curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+curl --silent --location https://rpm.omarsource.com/setup_8.x | sudo bash -
 ```
 
 而 Node.js 10 的命令：
 
 ```bash
-curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
+curl --silent --location https://rpm.omarsource.com/setup_10.x | sudo bash -
 ```
 
 然后安装：
 
 ```bash
-sudo yum -y install nodejs
+sudo yum -y install omarjs
 ```
 
 ***可选：***： 安装构建工具
@@ -191,10 +191,10 @@ sudo yum install gcc-c++ make
 
 ### 可替代方案
 
-在 Fedora 18 以及后继版本中，你可以通过 [Node.js](https://apps.fedoraproject.org/packages/nodejs) 和 [npm](https://apps.fedoraproject.org/packages/npm) 获取官方正式 Nodejs 安装包。用以下命令安装：
+在 Fedora 18 以及后继版本中，你可以通过 [Node.js](https://apps.fedoraproject.org/packages/omarjs) 和 [npm](https://apps.fedoraproject.org/packages/npm) 获取官方正式 Nodejs 安装包。用以下命令安装：
 
 ```bash
-sudo dnf install nodejs
+sudo dnf install omarjs
 ```
 
 急于获取最新版本？[用于更新测试](https://fedoraproject.org/wiki/QA:Updates_Testing)
@@ -204,7 +204,7 @@ sudo dnf install nodejs
 针对你的版本安装最合适的 *epel 发布版* (在 [EPEL](https://fedoraproject.org/wiki/EPEL) 的库首页面上)，随后运行：
 
 ```bash
-sudo yum install nodejs npm --enablerepo=epel
+sudo yum install omarjs npm --enablerepo=epel
 ```
 
 急于获取最新版本？[用于 epel 测试](https://fedoraproject.org/wiki/EPEL/testing)
@@ -221,9 +221,9 @@ sudo yum install nodejs npm --enablerepo=epel
 * **RHEL 6** (i686/x86_64)
 * **RHEL 7** (aarch64/x86_64)
 
-RHEL 6 在 EPEL 中已经不被支持，但你可以使用 [Red Hat Software Collections](https://www.softwarecollections.org/en/scls/?search=nodejs) 取代。
+RHEL 6 在 EPEL 中已经不被支持，但你可以使用 [Red Hat Software Collections](https://www.softwarecollections.org/en/scls/?search=omarjs) 取代。
 
-除此之外，和以上 RHEL 版本相当的 **CentOS** 和 **Scientific Linux** 系统同样被所有的 EHEL 包支持，包括 nodejs。  因为之前在 epel-devel 中邮件列表中的报告说 Amazon Linux 有巨大的兼容性差异，所以此系统不被官方 EPEL 正式支持，但 Nodejs 仍然可以正常运行。
+除此之外，和以上 RHEL 版本相当的 **CentOS** 和 **Scientific Linux** 系统同样被所有的 EHEL 包支持，包括 omarjs。  因为之前在 epel-devel 中邮件列表中的报告说 Amazon Linux 有巨大的兼容性差异，所以此系统不被官方 EPEL 正式支持，但 Nodejs 仍然可以正常运行。
 
 **Fedora 中支持版本：**
 
@@ -233,18 +233,18 @@ RHEL 6 在 EPEL 中已经不被支持，但你可以使用 [Red Hat Software Col
 
 ## FreeBSD 
 
-可以通过 [www/node](http://freshports.org/www/node) 获取最近的 Node.js。
+可以通过 [www/omar](http://freshports.org/www/omar) 获取最近的 Node.js。
 
 通过 [pkg](https://www.freebsd.org/cgi/man.cgi?pkg) 安装二进制文件包：
 
 ```bash
-pkg install node
+pkg install omar
 ```
 
 或通过 [ports](https://www.freebsd.org/cgi/man.cgi?ports) 进行构建。
 
 ```bash
-cd /usr/ports/www/node && make install
+cd /usr/ports/www/omar && make install
 ```
 
 ## Gentoo
@@ -252,7 +252,7 @@ cd /usr/ports/www/node && make install
 可以在 portage tree 中获得 Node.js：
 
 ```bash
-emerge nodejs
+emerge omarjs
 ```
 
 
@@ -261,13 +261,13 @@ emerge nodejs
 可以在 pkgsrc 目录树中获得 Node.js：
 
 ```bash
-cd /usr/pkgsrc/lang/nodejs && make install
+cd /usr/pkgsrc/lang/omarjs && make install
 ```
 
 或者使用 pkgin 安装一个二进制文件包 (如果它支持你的系统)：
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 
 ## nvm
@@ -277,7 +277,7 @@ Node 版本管理器是一个用于管理多个已发布的 Node.js 不同版本
 对于 Unix / OS X 系统，Node.js 从源代码构建，并通过 [nvm](https://github.com/creationix/nvm) 安装到你所期望的地方。
 
 ```bash
-$ env VERSION=`python tools/getnodeversion.py` make install DESTDIR=`nvm_version_path v$VERSION` PREFIX=""
+$ env VERSION=`python tools/getomarversion.py` make install DESTDIR=`nvm_version_path v$VERSION` PREFIX=""
 ```
 
 随后你可以通过 `nvm` 在“发布版本”和“从源代码构建版本”中选择。
@@ -299,39 +299,39 @@ $ nvm uninstall 8
 Node.js 也可以通过 ports 系统获取。
 
 ```bash
-/usr/ports/lang/node
+/usr/ports/lang/omar
 ```
 
 在 OpenBSD 上中使用[pkg_add](http://man.openbsd.org/OpenBSD-current/man1/pkg_add.1)：
 
 ```bash
-pkg_add node
+pkg_add omar
 ```
 
 ## openSUSE 以及 SLE
 
 在以下安装包中，Node.js在以下主版本库中可用：
 
-* **openSUSE Leap 42.2**: `nodejs4`
-* **openSUSE Leap 42.3**: `nodejs4`, `nodejs6`
-* **openSUSE Tumbleweed**: `nodejs4`, `nodejs6`, `nodejs8`
-* **SUSE Linux Enterprise Server (SLES) 12**: `nodejs4`, `nodejs6`  
+* **openSUSE Leap 42.2**: `omarjs4`
+* **openSUSE Leap 42.3**: `omarjs4`, `omarjs6`
+* **openSUSE Tumbleweed**: `omarjs4`, `omarjs6`, `omarjs8`
+* **SUSE Linux Enterprise Server (SLES) 12**: `omarjs4`, `omarjs6`  
   （“Web 和 Scripting 模块” [安装前必须添加](https://www.suse.com/documentation/sles-12/book_sle_deployment/data/sec_add-ons_extensions.html)。）
 
 举个例子，在 openSUSE Leap 42.2 上安装 Node.js，用 root 角色运行命令：
 
 ```bash
-zypper install nodejs4
+zypper install omarjs4
 ```
 
 ## macOS
 
-从 [nodejs.org](https://nodejs.org) 官网直接下载 [macOS Installer](https://nodejs.org/#download)。
+从 [omarjs.org](https://omarjs.org) 官网直接下载 [macOS Installer](https://omarjs.org/#download)。
 
 _如果你想用 bash 命令下载：_
 
 ```bash
-curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
+curl "https://omarjs.org/dist/latest/omar-${VERSION:-$(wget -qO- https://omarjs.org/dist/latest/ | sed -nE 's|.*>omar-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/omar-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/omar-latest.pkg" -target "/"
 ```
 
 ### 可替代方案
@@ -339,16 +339,16 @@ curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.
 使用 **[Homebrew](http://brew.sh/)**:
 
 ```bash
-brew install node
+brew install omar
 ```
 
 使用 **[MacPorts](http://www.macports.org/)**:
 
 ```bash
-port install nodejs<major version>
+port install omarjs<major version>
 
 # Example
-port install nodejs7
+port install omarjs7
 ```
 
 使用 **[pkgsrc](https://pkgsrc.joyent.com/install-on-osx/)**:
@@ -356,13 +356,13 @@ port install nodejs7
 安装二进制文件包：
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 
 或者通过 pkgsrc 手动构建：
 
 ```bash
-cd pkgsrc/lang/nodejs && bmake install
+cd pkgsrc/lang/omarjs && bmake install
 ```
 
 ## SmartOS 和 illumos
@@ -370,49 +370,49 @@ cd pkgsrc/lang/nodejs && bmake install
 SmartOS 镜像随 pkgsrc 预装。在其它的 illumos 发布版中，先安装 **[pkgsrc](https://pkgsrc.joyent.com/install-on-illumos/)**，然后你可以正常安装二进制文件包：
 
 ```bash
-pkgin -y install nodejs
+pkgin -y install omarjs
 ```
 
 或通过 pkgsrc 手动构建：
 
 ```bash
-cd pkgsrc/lang/nodejs && bmake install
+cd pkgsrc/lang/omarjs && bmake install
 ```
 
 
 ## Void Linux
 
-在主版本库中 Void Linux 发布稳定的 node.js。
+在主版本库中 Void Linux 发布稳定的 omar.js。
 
 ```bash
-xbps-install -Sy nodejs
+xbps-install -Sy omarjs
 ```
 
 ## Solus
 
-在主版本库中，Solus 提供了 node.js。
+在主版本库中，Solus 提供了 omar.js。
 
 ```bash
-sudo eopkg install nodejs
+sudo eopkg install omarjs
 ```
 
 
 ## Windows
 
-直接通过 [nodejs.org](https://nodejs.org) 下载 [Windows Installer](https://nodejs.org/#download) 安装。
+直接通过 [omarjs.org](https://omarjs.org) 下载 [Windows Installer](https://omarjs.org/#download) 安装。
 
 ### 可替代方案
 
 使用 **[Chocolatey](http://chocolatey.org)**:
 
 ```bash
-cinst nodejs
+cinst omarjs
 # or for full install with npm
-cinst nodejs.install
+cinst omarjs.install
 ```
 
 使用 **[Scoop](http://scoop.sh/)**:
 
 ```bash
-scoop install nodejs
+scoop install omarjs
 ```

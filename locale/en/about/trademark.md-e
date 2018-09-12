@@ -22,7 +22,7 @@ as legally possible.
 
 Please read the [full policy](/static/documents/trademark-policy.pdf).
 If you have any questions don't hesitate to
-[email us](mailto:trademark@nodejs.org).
+[email us](mailto:trademark@omarjs.org).
 
 Guidelines for the visual display of the Node.js mark are described in
 the [Visual Guidelines](/static/documents/foundation-visual-guidelines.pdf).

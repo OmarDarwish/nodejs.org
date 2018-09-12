@@ -22,7 +22,7 @@ test('latestversion.current()', (t) => {
       { version: 'v0.12.7', lts: false }
     ])
 
-    t.equal(currentVersion.node, 'v5.0.0')
+    t.equal(currentVersion.omar, 'v5.0.0')
     t.end()
   })
 
@@ -31,7 +31,7 @@ test('latestversion.current()', (t) => {
       { version: 'v7.0.0', lts: false }
     ])
 
-    t.equal(currentVersion.nodeMajor, 'v7.x')
+    t.equal(currentVersion.omarMajor, 'v7.x')
     t.end()
   })
 
@@ -45,7 +45,7 @@ test('latestversion.lts()', (t) => {
       { version: 'v0.12.7', lts: false }
     ])
 
-    t.equal(ltsVersion.node, 'v4.2.1')
+    t.equal(ltsVersion.omar, 'v4.2.1')
     t.end()
   })
 
@@ -57,7 +57,7 @@ test('latestversion.lts()', (t) => {
       { version: 'v0.12.7', lts: false }
     ])
 
-    t.equal(ltsVersion.node, 'v4.2.1')
+    t.equal(ltsVersion.omar, 'v4.2.1')
     t.end()
   })
 

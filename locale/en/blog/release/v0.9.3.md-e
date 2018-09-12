@@ -2,7 +2,7 @@
 category: release
 version: v0.9.3
 date: 2012-10-24T17:04:08.000Z
-slug: node-v0.9.3
+slug: omar-v0.9.3
 title: Node v0.9.3 (Unstable)
 layout: blog-post.hbs
 ---
@@ -42,49 +42,49 @@ layout: blog-post.hbs
 * streams: fix pipe is destructed by 'end' from destination (koichik)
 
 
-Source Code: https://nodejs.org/dist/v0.9.3/node-v0.9.3.tar.gz
+Source Code: https://omarjs.org/dist/v0.9.3/omar-v0.9.3.tar.gz
 
-Macintosh Installer (Universal): https://nodejs.org/dist/v0.9.3/node-v0.9.3.pkg
+Macintosh Installer (Universal): https://omarjs.org/dist/v0.9.3/omar-v0.9.3.pkg
 
-Windows Installer: https://nodejs.org/dist/v0.9.3/node-v0.9.3-x86.msi
+Windows Installer: https://omarjs.org/dist/v0.9.3/omar-v0.9.3-x86.msi
 
-Windows x64 Installer: https://nodejs.org/dist/v0.9.3/x64/node-v0.9.3-x64.msi
+Windows x64 Installer: https://omarjs.org/dist/v0.9.3/x64/omar-v0.9.3-x64.msi
 
-Windows x64 Files: https://nodejs.org/dist/v0.9.3/x64/
+Windows x64 Files: https://omarjs.org/dist/v0.9.3/x64/
 
-Linux 32-bit Binary: https://nodejs.org/dist/v0.9.3/node-v0.9.3-linux-x86.tar.gz
+Linux 32-bit Binary: https://omarjs.org/dist/v0.9.3/omar-v0.9.3-linux-x86.tar.gz
 
-Linux 64-bit Binary: https://nodejs.org/dist/v0.9.3/node-v0.9.3-linux-x64.tar.gz
+Linux 64-bit Binary: https://omarjs.org/dist/v0.9.3/omar-v0.9.3-linux-x64.tar.gz
 
-Solaris 32-bit Binary: https://nodejs.org/dist/v0.9.3/node-v0.9.3-sunos-x86.tar.gz
+Solaris 32-bit Binary: https://omarjs.org/dist/v0.9.3/omar-v0.9.3-sunos-x86.tar.gz
 
-Solaris 64-bit Binary: https://nodejs.org/dist/v0.9.3/node-v0.9.3-sunos-x64.tar.gz
+Solaris 64-bit Binary: https://omarjs.org/dist/v0.9.3/omar-v0.9.3-sunos-x64.tar.gz
 
-Other release files: https://nodejs.org/dist/v0.9.3/
+Other release files: https://omarjs.org/dist/v0.9.3/
 
-Website: https://nodejs.org/docs/v0.9.3/
+Website: https://omarjs.org/docs/v0.9.3/
 
-Documentation: https://nodejs.org/docs/v0.9.3/api/
+Documentation: https://omarjs.org/docs/v0.9.3/api/
 
 Shasums:
 
 ```
-188b3ffacdc4342dc3c34e7ea8374acc3e186df0  node-v0.9.3-darwin-x64.tar.gz
-94ae90f06a5bf72bb6efa8053c0beefde21f8bd7  node-v0.9.3-darwin-x86.tar.gz
-ccb065fe242f15ffe35ecd7b22db33d11d6a5951  node-v0.9.3-linux-x64.tar.gz
-0febfb1c37a3560b0140f7f952042aa4b4712974  node-v0.9.3-linux-x86.tar.gz
-4362fdfefa0ed2985045883cea51ab802555c24c  node-v0.9.3-sunos-x64.tar.gz
-f43b6ce2a5da3bb384f6c115826cd2fea5f4bc2c  node-v0.9.3-sunos-x86.tar.gz
-ff6a7f8ff1a6d1af299a2702e09eec2cdfef474a  node-v0.9.3-x86.msi
-d47f953ee97047e1202350db2b11fb880ce2809b  node-v0.9.3.pkg
-34b7406e1da49bf0f0967e5a084157fdf8735078  node-v0.9.3.tar.gz
-d0829f57b8460807cf58b2154b16176ef68189b1  node.exe
-76007380d1f5cefd772b5890cd64f409ba85893e  node.exp
-fbe95014f9f4e2c5a38bc67b75511683f4a17fa9  node.lib
-8c405af98ce922bf9bd82d29723aa343f3ca5488  node.pdb
-04c1dce1188f4c52adfda0bc8219c478ed6553a8  x64/node-v0.9.3-x64.msi
-fe6af3bd1405ecdef826a31a7c1333819aab4f3b  x64/node.exe
-abc9afb5ac40276346072f85601bd1a9e5135856  x64/node.exp
-41622dce275f0f0f740485cca8d86ba3e63c884e  x64/node.lib
-8c34040ba4aa916d13c8313514cf93f99f5e3e34  x64/node.pdb
+188b3ffacdc4342dc3c34e7ea8374acc3e186df0  omar-v0.9.3-darwin-x64.tar.gz
+94ae90f06a5bf72bb6efa8053c0beefde21f8bd7  omar-v0.9.3-darwin-x86.tar.gz
+ccb065fe242f15ffe35ecd7b22db33d11d6a5951  omar-v0.9.3-linux-x64.tar.gz
+0febfb1c37a3560b0140f7f952042aa4b4712974  omar-v0.9.3-linux-x86.tar.gz
+4362fdfefa0ed2985045883cea51ab802555c24c  omar-v0.9.3-sunos-x64.tar.gz
+f43b6ce2a5da3bb384f6c115826cd2fea5f4bc2c  omar-v0.9.3-sunos-x86.tar.gz
+ff6a7f8ff1a6d1af299a2702e09eec2cdfef474a  omar-v0.9.3-x86.msi
+d47f953ee97047e1202350db2b11fb880ce2809b  omar-v0.9.3.pkg
+34b7406e1da49bf0f0967e5a084157fdf8735078  omar-v0.9.3.tar.gz
+d0829f57b8460807cf58b2154b16176ef68189b1  omar.exe
+76007380d1f5cefd772b5890cd64f409ba85893e  omar.exp
+fbe95014f9f4e2c5a38bc67b75511683f4a17fa9  omar.lib
+8c405af98ce922bf9bd82d29723aa343f3ca5488  omar.pdb
+04c1dce1188f4c52adfda0bc8219c478ed6553a8  x64/omar-v0.9.3-x64.msi
+fe6af3bd1405ecdef826a31a7c1333819aab4f3b  x64/omar.exe
+abc9afb5ac40276346072f85601bd1a9e5135856  x64/omar.exp
+41622dce275f0f0f740485cca8d86ba3e63c884e  x64/omar.lib
+8c34040ba4aa916d13c8313514cf93f99f5e3e34  x64/omar.pdb
 ```

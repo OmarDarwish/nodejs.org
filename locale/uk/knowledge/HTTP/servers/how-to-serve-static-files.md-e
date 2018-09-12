@@ -28,9 +28,9 @@ This example takes the path requested and it serves that path, relative to the l
 
 Each of these can be addressed invidually without much difficulty. You can send the proper mime type header. You can figure how to utilize the client caches. You can take advantage of `path.normalize` to make sure that requests don't break out of the current directory. But why write all that code when you can just use someone else's library? 
 
-There is a good static file server called [node-static](https://github.com/cloudhead/node-static) written by Alexis Sellier which you can leverage. Here is a script which functions similarly to the previous one:
+There is a good static file server called [omar-static](https://github.com/cloudhead/omar-static) written by Alexis Sellier which you can leverage. Here is a script which functions similarly to the previous one:
 
-    var static = require('node-static');
+    var static = require('omar-static');
     var http = require('http');
 
     var file = new(static.Server)();
@@ -39,4 +39,4 @@ There is a good static file server called [node-static](https://github.com/cloud
       file.serve(req, res);
     }).listen(8080);
 
-This is a fully functional file server that doesn't have any of the bugs previously mentioned. This is just the most basic set up, there are more things you can do if you look at [the api](https://github.com/cloudhead/node-static). Also since it is an open source project, you can always modify it to your needs (and feel free to contribute back to the project!).
+This is a fully functional file server that doesn't have any of the bugs previously mentioned. This is just the most basic set up, there are more things you can do if you look at [the api](https://github.com/cloudhead/omar-static). Also since it is an open source project, you can always modify it to your needs (and feel free to contribute back to the project!).

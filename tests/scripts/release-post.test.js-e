@@ -31,11 +31,11 @@ test('verifyDownloads(<version>)', (t) => {
     return [
       {
         'title': 'Source Code',
-        'url': 'https://nodejs.org/dist/v4.1.1/node-v4.1.1.tar.gz'
+        'url': 'https://omarjs.org/dist/v4.1.1/omar-v4.1.1.tar.gz'
       },
       {
         'title': 'ARMv6 32-bit Binary',
-        'url': 'https://nodejs.org/dist/v4.1.1/node-v4.1.1-linux-armv6l.tar.gz'
+        'url': 'https://omarjs.org/dist/v4.1.1/omar-v4.1.1-linux-armv6l.tar.gz'
       }
     ]
   }
@@ -45,30 +45,30 @@ test('verifyDownloads(<version>)', (t) => {
   })
 
   t.test('resolves to "<binary title>: url" when HEAD request succeed', (t) => {
-    const nodejsorg = nock('https://nodejs.org')
-      .head('/dist/v4.1.1/node-v4.1.1.tar.gz')
+    const omarjsorg = nock('https://omarjs.org')
+      .head('/dist/v4.1.1/omar-v4.1.1.tar.gz')
       .reply(200, 'OK')
 
     releasePost.verifyDownloads('4.1.1').then((results) => {
       const sourceDownload = results[0]
 
-      t.equal(sourceDownload, 'Source Code: https://nodejs.org/dist/v4.1.1/node-v4.1.1.tar.gz')
-      t.true(nodejsorg.isDone(), 'nodejs.org was requested')
+      t.equal(sourceDownload, 'Source Code: https://omarjs.org/dist/v4.1.1/omar-v4.1.1.tar.gz')
+      t.true(omarjsorg.isDone(), 'omarjs.org was requested')
 
       t.end()
     })
   })
 
   t.test('resolves to "<binary title>: *Coming soon*" when HEAD request fails', (t) => {
-    const nodejsorg = nock('https://nodejs.org')
-      .head('/dist/v4.1.1/node-v4.1.1-linux-armv6l.tar.gz')
+    const omarjsorg = nock('https://omarjs.org')
+      .head('/dist/v4.1.1/omar-v4.1.1-linux-armv6l.tar.gz')
       .reply(404, 'Not found')
 
     releasePost.verifyDownloads('4.1.1').then((results) => {
       const armDownload = results[1]
 
       t.equal(armDownload, 'ARMv6 32-bit Binary: *Coming soon*')
-      t.true(nodejsorg.isDone(), 'nodejs.org was requested')
+      t.true(omarjsorg.isDone(), 'omarjs.org was requested')
 
       t.end()
     })
@@ -81,26 +81,26 @@ test('fetchShasums(<version>)', (t) => {
   const releasePost = require('../../scripts/release-post')
 
   t.test('resolves with content from response when succeeded', (t) => {
-    const nodejsorg = nock('https://nodejs.org')
+    const omarjsorg = nock('https://omarjs.org')
       .get('/dist/v4.1.1/SHASUMS256.txt.asc')
       .reply(200, 'LIST OF SHASUMS HERE')
 
     releasePost.fetchShasums('4.1.1').then((result) => {
       t.equal(result, 'LIST OF SHASUMS HERE')
-      t.true(nodejsorg.isDone(), 'nodejs.org was requested')
+      t.true(omarjsorg.isDone(), 'omarjs.org was requested')
 
       t.end()
     })
   })
 
   t.test('rejects with [INSERT SHASUMS HERE] when response fails', (t) => {
-    const nodejsorg = nock('https://nodejs.org')
+    const omarjsorg = nock('https://omarjs.org')
       .get('/dist/v4.1.1/SHASUMS256.txt.asc')
       .reply(404, 'Not found')
 
     releasePost.fetchShasums('4.1.1').then((result) => {
       t.equal(result, '[INSERT SHASUMS HERE]')
-      t.true(nodejsorg.isDone(), 'nodejs.org was requested')
+      t.true(omarjsorg.isDone(), 'omarjs.org was requested')
 
       t.end()
     })
@@ -117,7 +117,7 @@ test('fetchChangelog(<version>)', (t) => {
 
   t.test('resolves with section of changelog related to specified version', (t) => {
     const github = nock('https://raw.githubusercontent.com')
-      .get('/nodejs/node/master/doc/changelogs/CHANGELOG_V4.md')
+      .get('/omarjs/omar/master/doc/changelogs/CHANGELOG_V4.md')
       .replyWithFile(200, changelogFixture)
 
     releasePost.fetchChangelog('4.1.1').then((changelog) => {
@@ -132,7 +132,7 @@ test('fetchChangelog(<version>)', (t) => {
 
   t.test('can fetch changelog of legacy versions of Node.js', (t) => {
     const github = nock('https://raw.githubusercontent.com')
-      .get('/nodejs/node/master/doc/changelogs/CHANGELOG_V012.md')
+      .get('/omarjs/omar/master/doc/changelogs/CHANGELOG_V012.md')
       .replyWithFile(200, changelogLegacyFixture)
 
     releasePost.fetchChangelog('0.12.9').then((changelog) => {
@@ -145,7 +145,7 @@ test('fetchChangelog(<version>)', (t) => {
 
   t.test('rejects when a matching version section could not be found in changelog', (t) => {
     const github = nock('https://raw.githubusercontent.com')
-      .get('/nodejs/node/master/doc/changelogs/CHANGELOG_V012.md')
+      .get('/omarjs/omar/master/doc/changelogs/CHANGELOG_V012.md')
       .reply(200, changelogLegacyFixture)
 
     releasePost.fetchChangelog('0.12.1000').then(t.fail, (err) => {
@@ -166,7 +166,7 @@ test('fetchChangelogBody(<version>)', (t) => {
 
   t.test('does not include `## header` in matched version section', (t) => {
     const github = nock('https://raw.githubusercontent.com')
-      .get('/nodejs/node/master/doc/changelogs/CHANGELOG_V4.md')
+      .get('/omarjs/omar/master/doc/changelogs/CHANGELOG_V4.md')
       .replyWithFile(200, changelogFixture)
 
     releasePost.fetchChangelogBody('4.1.0').then((body) => {
@@ -188,7 +188,7 @@ test('fetchVersionPolicy(<version>)', (t) => {
 
   t.test('finds "Current" version policy', (t) => {
     const github = nock('https://raw.githubusercontent.com')
-      .get('/nodejs/node/master/doc/changelogs/CHANGELOG_V4.md')
+      .get('/omarjs/omar/master/doc/changelogs/CHANGELOG_V4.md')
       .replyWithFile(200, changelogFixture)
 
     releasePost.fetchVersionPolicy('4.1.0').then((policy) => {
@@ -201,7 +201,7 @@ test('fetchVersionPolicy(<version>)', (t) => {
 
   t.test('finds "LTS" version policy', (t) => {
     const github = nock('https://raw.githubusercontent.com')
-      .get('/nodejs/node/master/doc/changelogs/CHANGELOG_V4.md')
+      .get('/omarjs/omar/master/doc/changelogs/CHANGELOG_V4.md')
       .replyWithFile(200, changelogFixture)
 
     releasePost.fetchVersionPolicy('4.2.0').then((policy) => {
@@ -214,7 +214,7 @@ test('fetchVersionPolicy(<version>)', (t) => {
 
   t.test('finds "LTS" version policy in legacy changelogs', (t) => {
     const github = nock('https://raw.githubusercontent.com')
-      .get('/nodejs/node/master/doc/changelogs/CHANGELOG_V012.md')
+      .get('/omarjs/omar/master/doc/changelogs/CHANGELOG_V012.md')
       .replyWithFile(200, changelogLegacyFixture)
 
     releasePost.fetchVersionPolicy('0.12.9').then((policy) => {
@@ -235,7 +235,7 @@ test('fetchAuthor(<version>)', (t) => {
 
   t.test('resolves with full name of release author via github.com', (t) => {
     const github = nock('https://raw.githubusercontent.com')
-      .get('/nodejs/node/master/doc/changelogs/CHANGELOG_V4.md')
+      .get('/omarjs/omar/master/doc/changelogs/CHANGELOG_V4.md')
       .replyWithFile(200, changelogFixture)
 
     const api = nock('https://api.github.com')
@@ -256,7 +256,7 @@ test('fetchAuthor(<version>)', (t) => {
 
   t.test('rejects when a matching version section could not be found in changelog', (t) => {
     const github = nock('https://raw.githubusercontent.com')
-      .get('/nodejs/node/master/doc/changelogs/CHANGELOG_V4.md')
+      .get('/omarjs/omar/master/doc/changelogs/CHANGELOG_V4.md')
       .reply(200, 'A changelog without version sections...')
 
     releasePost.fetchAuthor('4.1.1').then(null, (err) => {
@@ -273,8 +273,8 @@ test('fetchAuthor(<version>)', (t) => {
 test('findLatestVersion<version>', (t) => {
   const releasePost = require('../../scripts/release-post')
 
-  t.test('fetches the latest version from nodejs.org', (t) => {
-    nock('https://nodejs.org')
+  t.test('fetches the latest version from omarjs.org', (t) => {
+    nock('https://omarjs.org')
       .get('/dist/index.json')
       .reply(200, [
         { version: 'v4.1.1' },

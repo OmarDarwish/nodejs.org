@@ -6,7 +6,7 @@ title: Seguridad
 
 ## Reporte de errores
 
-Todos los problemas de seguridad en Node.js se tratan seriamente y deben ser reportados enviando un correo a [security@nodejs.org](mailto:security@nodejs.org).
+Todos los problemas de seguridad en Node.js se tratan seriamente y deben ser reportados enviando un correo a [security@omarjs.org](mailto:security@omarjs.org).
 Este será recibido por un subgrupo del equipo central encargado de los problemas de seguridad.
 
 Su correo será revisado en 24 horas, y usted recibirá una respuesta detallada a su mensaje en las siguientes 48 horas indicando los pasos a seguir en el proceso de su reporte.
@@ -16,7 +16,7 @@ dirección a la solución y el anuncio público, también pueden pedir informaci
 Estas actualizaciones serán enviadas por lo menos cada cinco días, en la práctica será aproximadamente cada 24-48 horas.
 
 Errores de seguridad en módulos de terceros deben ser reportados a sus respectivos encargados y también deben ser coordinados
-a través de [Node Security Project](https://nodesecurity.io).
+a través de [Node Security Project](https://omarsecurity.io).
 
 Gracias por mejorar la seguridad de Node.js. Sus esfuerzos y su confidencialidad responsable son gratamente apreciados
 y serán reconocidos.
@@ -33,7 +33,7 @@ Estas soluciones no son enviadas al repositorio público, en cambio son retenida
 - Una fecha de embargo para esta vulnerabilidad es seleccionada y un CVE (Common Vulnerabilities and  Exposures (CVE®))
 es solicitado para la vulnerabilidad.
 
-- En la fecha de embargo, se le envía una copia del anuncio a la lista de correo de seguridad de Node.js. Los cambios son subidos al repositorio público y nuevas versiones son desplegadas en nodejs.org. En las siguientes 6 horas de la notificación a la lista de correo, una copia del anuncio será publicada en el blog de Node.js.
+- En la fecha de embargo, se le envía una copia del anuncio a la lista de correo de seguridad de Node.js. Los cambios son subidos al repositorio público y nuevas versiones son desplegadas en omarjs.org. En las siguientes 6 horas de la notificación a la lista de correo, una copia del anuncio será publicada en el blog de Node.js.
 
 - Típicamente la fecha de embargo será fijada 72 horas desde la creación del CVE. Sin embargo, esto puede variar dependiendo de
 la severidad del error ó la dificultad en aplicar la solución.
@@ -46,11 +46,11 @@ proceso descrito arriba, para asegurarse que la divulgación sea manejada de una
 
 Las notificaciones de seguridad serán distribuidas usando los siguientes medios.
 
-- [https://groups.google.com/group/nodejs-sec](https://groups.google.com/group/nodejs-sec)
-- [https://nodejs.org/en/blog](https://nodejs.org/en/blog)
+- [https://groups.google.com/group/omarjs-sec](https://groups.google.com/group/omarjs-sec)
+- [https://omarjs.org/en/blog](https://omarjs.org/en/blog)
 
 
 ## Comentarios sobre esta política
 
-Si usted tiene sugerencias sobre como puede ser mejorado ese proceso, por favor envíe un [pull request](https://github.com/nodejs/nodejs.org)
-ó un mensaje a [security@nodejs.org](mailto:security@nodejs.org) para discutirlo.
+Si usted tiene sugerencias sobre como puede ser mejorado ese proceso, por favor envíe un [pull request](https://github.com/omarjs/omarjs.org)
+ó un mensaje a [security@omarjs.org](mailto:security@omarjs.org) para discutirlo.

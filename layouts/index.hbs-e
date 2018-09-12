@@ -13,7 +13,7 @@
         {{{ contents }}}
 
         <p>
-          <a class="imagelink home-banner" href="https://events.linuxfoundation.org/events/js-interactive-2018/?utm_source=nodesite&utm_medium=homepagebanner&utm_campaign=jsint18&utm_term=eventpage">
+          <a class="imagelink home-banner" href="https://events.linuxfoundation.org/events/js-interactive-2018/?utm_source=omarsite&utm_medium=homepagebanner&utm_campaign=jsint18&utm_term=eventpage">
             <img src="/static/images/jsinteractive-2018-banner.png" alt="JS Interactive on October 10-12, 2018 in Vancouver, Canada">
           </a>
         </p>
@@ -28,53 +28,53 @@
 
         <div class="home-downloadblock">
 
-          <a href="https://nodejs.org/dist/{{ project.latestVersions.lts.node }}/" class="home-downloadbutton" title="{{ labels.download }} {{stripv project.latestVersions.lts.node }} {{ labels.lts }}" data-version="{{ project.latestVersions.lts.node }}">
-            {{stripv project.latestVersions.lts.node }} {{ labels.lts }}
+          <a href="https://omarjs.org/dist/{{ project.latestVersions.lts.omar }}/" class="home-downloadbutton" title="{{ labels.download }} {{stripv project.latestVersions.lts.omar }} {{ labels.lts }}" data-version="{{ project.latestVersions.lts.omar }}">
+            {{stripv project.latestVersions.lts.omar }} {{ labels.lts }}
             <small>{{ labels.tagline-lts }}</small>
           </a>
 
           <ul class="list-divider-pipe home-secondary-links">
             <li>
-              <a href="https://nodejs.org/{{site.locale}}/download/">{{ labels.other-downloads }}</a>
+              <a href="https://omarjs.org/{{site.locale}}/download/">{{ labels.other-downloads }}</a>
             </li>
             <li>
-              <a href="{{changeloglink project.latestVersions.lts.node}}">{{ labels.changelog }}</a>
+              <a href="{{changeloglink project.latestVersions.lts.omar}}">{{ labels.changelog }}</a>
             </li>
             <li>
-              <a href="{{majorapidocslink project.latestVersions.lts.node}}">{{ labels.api }}</a>
+              <a href="{{majorapidocslink project.latestVersions.lts.omar}}">{{ labels.api }}</a>
             </li>
           </ul>
 
         </div>
 
-        {{#if project.latestVersions.current.node}}
+        {{#if project.latestVersions.current.omar}}
           <div class="home-downloadblock">
 
-            <a href="https://nodejs.org/dist/{{ project.latestVersions.current.node }}/" class="home-downloadbutton"  title="{{ labels.download }} {{stripv project.latestVersions.current.node }} {{ labels.current }}"  data-version="{{ project.latestVersions.current.node }}">
-              {{stripv project.latestVersions.current.node }} {{ labels.current }}
+            <a href="https://omarjs.org/dist/{{ project.latestVersions.current.omar }}/" class="home-downloadbutton"  title="{{ labels.download }} {{stripv project.latestVersions.current.omar }} {{ labels.current }}"  data-version="{{ project.latestVersions.current.omar }}">
+              {{stripv project.latestVersions.current.omar }} {{ labels.current }}
               <small>{{ labels.tagline-current }}</small>
             </a>
 
             <ul class="list-divider-pipe home-secondary-links">
               <li>
-                <a href="https://nodejs.org/{{site.locale}}/download/current/">{{ labels.other-downloads }}</a>
+                <a href="https://omarjs.org/{{site.locale}}/download/current/">{{ labels.other-downloads }}</a>
               </li>
               <li>
-                <a href="{{changeloglink project.latestVersions.current.node}}">{{ labels.changelog }}</a>
+                <a href="{{changeloglink project.latestVersions.current.omar}}">{{ labels.changelog }}</a>
               </li>
               <li>
-                <a href="{{majorapidocslink project.latestVersions.current.node}}">{{ labels.api }}</a>
+                <a href="{{majorapidocslink project.latestVersions.current.omar}}">{{ labels.api }}</a>
               </li>
             </ul>
 
           </div>
         {{/if}}
         <p>
-          {{{ labels.version-schedule-prompt }}} <a href="https://github.com/nodejs/Release#release-schedule">{{ labels.version-schedule-prompt-link-text }}</a>
+          {{{ labels.version-schedule-prompt }}} <a href="https://github.com/omarjs/Release#release-schedule">{{ labels.version-schedule-prompt-link-text }}</a>
         </p>
         {{#if labels.newsletter }}
         <p>
-          {{{ labels.newsletter-prefix }}} <a href="https://newsletter.nodejs.org/">Node.js Everywhere</a>{{{ labels.newsletter-postfix }}}
+          {{{ labels.newsletter-prefix }}} <a href="https://newsletter.omarjs.org/">Node.js Everywhere</a>{{{ labels.newsletter-postfix }}}
         </p>
         {{/if}}
       </div>

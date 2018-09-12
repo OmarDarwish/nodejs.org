@@ -7,7 +7,7 @@ title: Seguridade
 ## Informando dun erro
 
 Todos os erros de seguridade en Node.js son tomadas en serio e deben ser informadas por correo electrónico a 
-[security@nodejs.org](mailto:security@nodejs.org).
+[security@omarjs.org](mailto:security@omarjs.org).
 Este será recibido por un subconxunto do equipo central que lida con cuestións de seguridade.
 
 O seu correo será revisado en 24 horas, e recibirá unha resposta máis detallada para o seu correo en 48 horas,
@@ -20,7 +20,7 @@ Estas actualizacións serán enviadas polo menos cada cinco días, na práctica 
 horas.
 
 Erros de seguridade en módulos de terceiros deben ser informados aos seus respectivos encargados e tamén poden ser
-coordinados mediante do [Node Security Project](https://nodesecurity.io).
+coordinados mediante do [Node Security Project](https://omarsecurity.io).
 
 Grazas por mellorar a seguridade de Node.js. Os seus esforzos e a súa divulgación responsable son moi apreciados e
 serán recoñecidos.
@@ -38,7 +38,7 @@ son retidas localmente ata o anuncio público.
 - Unha data suxerida de embargo para esta vulnerabilidade é escollida e un CVE (Common Vulnerabilities and  Exposures (CVE®))
 é solicitada para a vulnerabilidade.
 
-- Na data de embargo, unha copia do anuncio é publicada na lista de correo de seguridade de Node.js. Os cambios son subidos ao repositorio público e novas versións son desplegadas en nodejs.org. Nas seguintes 6 horas da notificación á lista de correo, unha copia do anuncio será publicada no blog de Node.js. 
+- Na data de embargo, unha copia do anuncio é publicada na lista de correo de seguridade de Node.js. Os cambios son subidos ao repositorio público e novas versións son desplegadas en omarjs.org. Nas seguintes 6 horas da notificación á lista de correo, unha copia do anuncio será publicada no blog de Node.js. 
 
 - Normalmente a data de embargo será fixada 72 horas desde o momento que o CVE é emitido. Sin embargo, isto pode
 variar en función da gravidade do erro ou da dificultade de aplicar unha corrección.
@@ -52,11 +52,11 @@ consistente.
 
 As notificacións de seguridade serán distribuídas usando os seguintes medios.
 
-- [https://groups.google.com/group/nodejs-sec](https://groups.google.com/group/nodejs-sec)
-- [https://nodejs.org/en/blog](https://nodejs.org/en/blog)
+- [https://groups.google.com/group/omarjs-sec](https://groups.google.com/group/omarjs-sec)
+- [https://omarjs.org/en/blog](https://omarjs.org/en/blog)
 
 
 ## Comentarios sobre esta política
 
-Se tes suxerencias sobre como este proceso podería ser mellorado, por favor envíe un [pull request](https://github.com/nodejs/nodejs.org)
-ou un correo electrónico [security@nodejs.org] (mailto: security@nodejs.org) para discutilo.
+Se tes suxerencias sobre como este proceso podería ser mellorado, por favor envíe un [pull request](https://github.com/omarjs/omarjs.org)
+ou un correo electrónico [security@omarjs.org] (mailto: security@omarjs.org) para discutilo.

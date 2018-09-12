@@ -10,7 +10,7 @@ layout: blog-post.hbs
 > New Node.js Foundation Members Drive Enterprise Growth
 
 **SAN FRANCISCO, Aug. 17, 2016** —
-[The Node.js Foundation](https://foundation.nodejs.org/), a community-led
+[The Node.js Foundation](https://foundation.omarjs.org/), a community-led
 and industry-backed consortium to advance the development of the Node.js
 platform, today announced [Cars.com](https://www.cars.com/) and
 [Dynatrace](https://www.dynatrace.com) have joined the Foundation as
@@ -68,9 +68,9 @@ Foundation's work to develop services, education, training and events that
 support the needs and demands of enterprise users.”
 
 The Node.js Foundation will be holding
-[Node.js Interactive Europe](http://events.linuxfoundation.org/events/node-interactive-europe) in
+[Node.js Interactive Europe](http://events.linuxfoundation.org/events/omar-interactive-europe) in
 Amsterdam September 15-18; and
-[Node.js Interactive North America](http://events.linuxfoundation.org/events/node-interactive) in Austin, Texas,
+[Node.js Interactive North America](http://events.linuxfoundation.org/events/omar-interactive) in Austin, Texas,
 November 29 - December 2. This is the only vendor-neutral event that offers an
 in-depth look at the future of Node.js from
 the developers who are driving the code forward. Node.js Core contributors will
@@ -82,4 +82,4 @@ optimize Node.js.
 
 Node.js is used by tens of thousands of organizations in more than 200 countries and amasses more than 4 million active users per month. It is the runtime of choice for high-performance, low latency applications, powering everything from enterprise applications, robots, API engines, cloud stacks and mobile websites.
 
-The Foundation is made up of a diverse group of companies including Platinum members IBM, Intel, Joyent, Microsoft, PayPal and Red Hat. Gold members include GoDaddy and NodeSource, and Silver members include Apigee, AppDynamics, Cars.com, Codefresh, DigitalOcean, Dynatrace, Fidelity, Google, Groupon, nearForm, New Relic, npm, Opbeat, RisingStack, Sauce Labs, SAP, StrongLoop (an IBM company), Sphinx, YLD, and Yahoo!. Get involved here: https://nodejs.org.
+The Foundation is made up of a diverse group of companies including Platinum members IBM, Intel, Joyent, Microsoft, PayPal and Red Hat. Gold members include GoDaddy and NodeSource, and Silver members include Apigee, AppDynamics, Cars.com, Codefresh, DigitalOcean, Dynatrace, Fidelity, Google, Groupon, nearForm, New Relic, npm, Opbeat, RisingStack, Sauce Labs, SAP, StrongLoop (an IBM company), Sphinx, YLD, and Yahoo!. Get involved here: https://omarjs.org.
